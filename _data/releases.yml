@@ -1,0 +1,4 @@
+- release:
+  name: v2.0
+  image: docs.astronomer.io
+  current: true

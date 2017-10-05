@@ -1,0 +1,46 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Astronomer
+  version: v2
+  current: true
+  folders:
+
+  - title: Platform
+    output: web, pdf
+    folderitems:
+
+    - title: Getting started
+      url: /v2/platform/getting_started.html
+      output: web, pdf
+
+    - title: Introduction
+      url: /v2/platform/introduction.html
+      output: web, pdf
+
+  - title: Clickstream
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /v2/clickstream/introduction.html
+      output: web, pdf
+
+      subfolders:
+      - title: Sources
+        url: /v2/sources/index.html
+        output: web, pdf
+        subfolderitems:
+
+        - title: iOS
+          url: /v2/sources/ios.html
+          output: web, pdf
+
+        - title: Android
+          url: /v2/sources/android.html
+          output: web, pdf
+
+        - title: Analytics.js
+          url: /v2/sources/analyticsjs.html
+          output: web, pdf

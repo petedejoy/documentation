@@ -1,29 +1,38 @@
 ---
-title: Platform Introduction
+title: Introduction
 sidebar: platform_sidebar
 ---
-# Introduction
+
 ## Overview
 
-This site provides documentation, training, and other notes for the Jekyll Documentation theme. There's a lot of information about how to do a variety of things here, and it's not all unique to this theme. But by and large, understanding how to do things in Jekyll depends on how your theme is coded. As a result, these additional details are provided.
+Astronomer is a modern data engineering platform that collects, processes and routes data. Astronomer is built upon industry proven open-source technologies and provides a foundation for handling Clickstream event ingestion and building complex data workflows with Apache Airflow. Check out the [Getting Started](getting_started.html) guide to get started building your next data pipeline right now!
 
-The instructions here are geared towards technical writers working on documentation. You may have a team of one or more technical writers working on documentation for multiple projects. You can use this same theme to author all of your documentation for each of your products. The theme is built to accommodate documentation for multiple products on the same site.
+## SaaS
 
-## Survey of features
+Astronomer available as a fully managed SaaS offering. It's primarily comprised of the following components:
 
-Some of the more prominent features of this theme include the following:
+* Amazon EC2
+* Amazon S3
+* Apache Mesos 
+* Apache Kafka
+* Apache Spark
+* Docker
+* For more information check out [Building Next-Gen Data Infrastructure](https://www.astronomer.io/blog/building-next-generation-data-infrastructure-with-apache-mesos-and-dc-os/).
 
-* Bootstrap framework
-* [Navgoco multi-level sidebar](http://www.komposta.net/article/navgoco) for table of contents
-* Ability to specify different sidebars for different products
-* Top navigation bar with drop-down menus
-* Notes, tips, and warning information notes
-* Tags for alternative navigation
-* Advanced landing page layouts from the [Modern Business theme](http://startbootstrap.com/template-overviews/modern-business/).
+## Enterprise
 
-## Getting started
+Astronomer Enterprise allows highly customized installation options. 
 
-To get started, see [Getting Started][index].
+* Dedicated Environment
+* VPN Support
+* Custom Python Packages
+* On Premises Installations
+
+## Platform
+
+## Clickstream
+
+## Airflow 
 
 {% include links.html %}
 

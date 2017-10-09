@@ -11,12 +11,12 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Getting started
-      url: /v2/platform/getting_started.html
-      output: web, pdf
-
     - title: Introduction
       url: /v2/platform/introduction.html
+      output: web, pdf
+
+    - title: Getting Started
+      url: /v2/platform/getting_started.html
       output: web, pdf
 
   - title: Clickstream
@@ -44,3 +44,11 @@ entries:
         - title: Analytics.js
           url: /v2/sources/analyticsjs.html
           output: web, pdf
+
+  - title: Airflow
+    output: web, pdf
+    folderitems:
+    
+    - title: Introduction
+      url: /v2/airflow/introduction.html
+      output: web, pdf

@@ -12,7 +12,7 @@ entries:
     folderitems:
 
     - title: Introduction
-      url: /v2/platform/introduction.html
+      url: /
       output: web, pdf
 
     - title: Getting Started
@@ -23,32 +23,159 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Introduction
-      url: /v2/clickstream/introduction.html
+    - title: Overview
+      url: /v2/clickstream/overview.html
       output: web, pdf
-
       subfolders:
+
       - title: Sources
-        url: /v2/sources/index.html
         output: web, pdf
         subfolderitems:
 
-        - title: iOS
-          url: /v2/sources/ios.html
-          output: web, pdf
-
-        - title: Android
-          url: /v2/sources/android.html
+        - title: Overview
+          url: /v2/clickstream/sources/overview.html
           output: web, pdf
 
         - title: Analytics.js
-          url: /v2/sources/analyticsjs.html
+          url: /v2/clickstream/sources/analyticsjs.html
+          output: web, pdf
+
+        - title: Android
+          url: /v2/clickstream/sources/android.html
+          output: web, pdf
+
+        - title: iOS
+          url: /v2/clickstream/sources/ios.html
+          output: web, pdf
+
+      - title: Destinations
+        output: web, pdf
+        subfolderitems:
+
+        - title: Overview
+          url: /v2/clickstream/destinations/overview.html
+          output: web, pdf
+
+        - title: Acquisio
+          url: /v2/clickstream/destinations/acquisio.html
+          output: web, pdf
+
+        - title: Amazon Redshift
+          url: /v2/clickstream/destinations/amazon-redshift.html
+          output: web, pdf
+
+        - title: Amplitude
+          url: /v2/clickstream/destinations/amplitude.html
+          output: web, pdf
+
+        - title: Calq
+          url: /v2/clickstream/destinations/calq.html
+          output: web, pdf
+
+        - title: Clicky
+          url: /v2/clickstream/destinations/clicky.html
+          output: web, pdf
+
+        - title: Criteo
+          url: /v2/clickstream/destinations/criteo.html
+          output: web, pdf
+
+        - title: Customer.io
+          url: /v2/clickstream/destinations/customerio.html
+          output: web, pdf
+
+        - title: DoubleClick Floodlight
+          url: /v2/clickstream/destinations/doubleclick-floodlight.html
+          output: web, pdf
+
+        - title: Facebook Pixel
+          url: /v2/clickstream/destinations/facebook-pixel.html
+          output: web, pdf
+
+        - title: Google Analytics
+          url: /v2/clickstream/destinations/google-analytics.html
+          output: web, pdf
+
+        - title: Heap Analytics
+          url: /v2/clickstream/destinations/heap-analytics.html
+          output: web, pdf
+
+        - title: Hubspot
+          url: /v2/clickstream/destinations/hubspot.html
+          output: web, pdf
+
+        - title: Intercom
+          url: /v2/clickstream/destinations/intercom.html
+          output: web, pdf
+
+        - title: Keen IO
+          url: /v2/clickstream/destinations/keen-io.html
+          output: web, pdf
+
+        - title: Kenshoo Infinity Pixel
+          url: /v2/clickstream/destinations/kenshoo-infinity-pixel.html
+          output: web, pdf
+
+        - title: KISSmetrics
+          url: /v2/clickstream/destinations/kissmetrics.html
+          output: web, pdf
+
+        - title: Lytics
+          url: /v2/clickstream/destinations/lytics.html
+          output: web, pdf
+
+        - title: Mixpanel
+          url: /v2/clickstream/destinations/mixpanel.html
+          output: web, pdf
+
+        - title: Optimizely
+          url: /v2/clickstream/destinations/optimizely.html
+          output: web, pdf
+
+        - title: Pinterest
+          url: /v2/clickstream/destinations/pinterest.html
+          output: web, pdf
+
+        - title: Resonate
+          url: /v2/clickstream/destinations/resonate.html
+          output: web, pdf
+
+        - title: Retention Science
+          url: /v2/clickstream/destinations/retention-science.html
+          output: web, pdf
+
+        - title: Rubicon
+          url: /v2/clickstream/destinations/rubicon.html
+          output: web, pdf
+
+        - title: S3 Event Logs
+          url: /v2/clickstream/destinations/s3-event-logs.html
+          output: web, pdf
+
+        - title: Taboola
+          url: /v2/clickstream/destinations/taboola.html
+          output: web, pdf
+
+        - title: Twitter Ads
+          url: /v2/clickstream/destinations/twitter-ads.html
+          output: web, pdf
+
+        - title: Webhooks
+          url: /v2/clickstream/destinations/webhooks.html
+          output: web, pdf
+
+        - title: Woopra
+          url: /v2/clickstream/destinations/woopra.html
           output: web, pdf
 
   - title: Airflow
     output: web, pdf
     folderitems:
     
-    - title: Introduction
-      url: /v2/airflow/introduction.html
+    - title: Overview
+      url: /v2/airflow/overview.html
+      output: web, pdf
+
+    - title: CLI
+      url: /v2/airflow/cli.html
       output: web, pdf

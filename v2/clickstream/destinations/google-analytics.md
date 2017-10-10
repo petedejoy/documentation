@@ -1,6 +1,6 @@
 ---
-title: destination - Google Analytics
-sidebar: 
+title: Google Analytics
+sidebar: platform_sidebar
 ---
 
 Astronomer makes is super simple to send your data to Google Analytics. Once you've set up your source to start tracking data, we'll translate and route that data to Google Analytics. Keep reading to learn how to use Google Analytics with Astronomer.

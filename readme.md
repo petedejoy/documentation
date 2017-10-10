@@ -62,4 +62,4 @@ git push origin master
 
 ## Going live!
 
-[Astronomer Temp Doc Site]("https://astronomerio.github.io/documentation/") 
+[Astronomer Temp Doc Site](https://astronomerio.github.io/documentation/) 

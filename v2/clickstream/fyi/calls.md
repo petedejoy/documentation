@@ -1,3 +1,8 @@
+---
+title: Calls
+sidebar: platform_sidebar
+---
+
 Astronomer utilizes 6 different types of API calls to track users. Each call represents a distinct type of semantic information about a user and shares the same common fields. 
 
 * Identify

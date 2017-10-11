@@ -21,6 +21,7 @@ We recommend calling `identify` at a couple of points:
   * Upon loading any pages that are accessible by a logged-in user
 
 Here's a sample `identify` snippet:
+
 ```
 analytics.identify("1205119", {
     "name": "Dagny Smith",
@@ -30,6 +31,7 @@ analytics.identify("1205119", {
 ```
 
 And the resulting payload:
+
 ```
 {
     "type": "identify",
@@ -67,6 +69,7 @@ In an `identify` call, traits are pieces of information that you know about a us
 To record any actions your users perform, along with properties that describe the action, you will want to use a `track` call. Each of these actions is known as an event, and each of these events has a name. Calling `track` is one of the first steps to getting the most out of Astronomer Clickstream, keep reading to see how to do it...
 
 Here's a sample `track` call:
+
 ```
 analytics.track("Viewed Product", {
   "product": "Cat Feather Toy",
@@ -76,6 +79,7 @@ analytics.track("Viewed Product", {
 ```
 
 That sample call would yield the following payload:
+
 ```
 {
     "type":  "track",
@@ -102,11 +106,13 @@ The `page` call allows you to record whenever a user sees a page of your webiste
 **Important** In the `analytics.js` snippet, a `page` call is included by default (just after the `analytics.load`). We do this because this method needs to be called at least once per page load. You have the option of sprucing up the call with a `name` or `properties` and can call it multiple times if you have a single-page application. 
 
 Here's a sample `page` call:
+
 ```
 analytics.page("Home")
 ```
 
 And, here's the corresponding payload:
+
 ```
 {
     "type": "page",
@@ -137,6 +143,7 @@ While a user can be in more than one group, not all platforms support multiple g
 Calling `group` is slightly more advanced than `identify`, `track`, or `page` but it's pretty useful if you have accounts with multiple users. 
 
 Here's a sample `group` call:
+
 ```
 analytics.group("ak9g2hgpcf",{
     "name": "Astronomer",
@@ -146,6 +153,7 @@ analytics.group("ak9g2hgpcf",{
 ```
 
 And, the corresponding payload:
+
 ```
 {
     "type": "Group",

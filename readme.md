@@ -1,6 +1,7 @@
 ## Requirements
 
 * git
+* rvm
 * Ruby 2.4.2
 * Jekyll 2
 
@@ -9,6 +10,17 @@
 Verify that you have git installed.
 
 `git -v`
+
+Install RVM. Make sure you follow the final instructions to source the rvm command or restart your terminal after installation is complete.
+
+`\curl -sSL https://get.rvm.io | bash`
+
+Install a version of ruby and set it to the default version.
+
+```
+rvm instal ruby-2.4.2
+rvm use ruby-2.4.2 --default
+```
 
 Verify you have the correct version of ruby.
 

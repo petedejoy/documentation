@@ -3,15 +3,12 @@ title: Source - Analytics.js
 sidebar: platform_sidebar
 ---
 ## Getting Started with Astronomer Clickstream - Website
-
 Using our analytics.js library, you can start sending customer data from your website to Astronomer, giving you valuable user data that yields rich, actionable insights for your business. The best part is that it only takes a few minutes to get started!
 
-### Step 1: Create a Client-Side Source in the Astronomer UI
-
+### Create a Client-Side Source in the Astronomer UI
 After logging in with your Astronomer credentials, add a new Source → Client-Side. Give your source a friendly name and copy that Source ID for the next step.
 
-### Step 2: Copy & Paste the Snippet
-
+### Copy & Paste the Snippet
 Next, you’ll need to copy and paste the snippet below into the <head> of your website.
 
 ```javascript
@@ -35,8 +32,7 @@ Good News: If you are just looking for basic clickstream functions, you’re all
 
 If you’d like to use any tool that deals with the identity of your users (e.g. Mixpanel), keep reading to learn how to use the `identify` call.
 
-### Step 3: Identify Your Users
-
+### Identify Your Users
 The `identify` method helps you associate your users and their actions to a unique and recognizable `userID` and `traits`. We recommend using a backend template to insert an `identify` call directly into the footer of every page of your site where the user is logged in. That way, your users will always be identified, no matter what page they first land on.
 
 `identify` follows this basic definition:
@@ -59,8 +55,7 @@ More Good News: You’re now set up to use any basic CRM! Go ahead and switch on
 
 But wait! There’s more. A lot of analytics tools go beyond just identifying users; they record the actions each user performs too. See below for how to get to an even more holistic event tracking analytics setup.
 
-### Step 4: Track Your Users’ Actions
-
+### Track Your Users’ Actions
 To get to a more complete event tracking analytics setup, you can add a `track` call to your website. This will tell Astronomer which actions you are performing on your site. With `track`, each user action triggers an “event”, which can also have associated properties.
 
 Setting up a `track` is very similar to the process you just went through to set up an `identify`. Here’s the basic `track` definition:
@@ -82,8 +77,8 @@ Note: In order to use a `track` call, you must specify a name for the event you 
 
 A lot of analytics tools support custom event mapping so, with `track` implemented, you’ll be able to attribute events to your users and start targeting them in a more informed and relevant way.
 
-### Congratulations, you’ve now successfully installed website tracking with Astronomer Connect!
+Congratulations, you’ve now successfully installed website tracking with Astronomer Connect!
 
-### Now the fun begins: head back to our app, turn on some destinations, and hit your business with insightful and impactful user info!
+Now the fun begins: head back to our app, turn on some destinations, and hit your business with insightful and impactful user info!
 
 {% include links.html %}

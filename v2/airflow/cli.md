@@ -110,6 +110,7 @@ redshift_sink.set_upstream(custom_transform)
 ```
 
 # Developing
+
 ## Metadata
 When running/building locally you will need to generate the metadata file.  Running `make build-meta` or a `make build`
 will build the meta data file.  Once generated, you should be able to build/run without problem.

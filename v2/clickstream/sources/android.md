@@ -4,12 +4,12 @@ sidebar: platform_sidebar
 ---
 
 ## Getting Started with Astronomer Clickstream - Android
-Using our analytics-android library, you can start sending customer data from your app to Astronomer, giving you valuable user data that yields rich, actionable insights for your business. The best part is that it only takes a few minutes to get started!
+Using our analytics-android library, you can start sending customer data from your app to Astronomer, giving you valuable user data that yields rich, actionable insights for your business. The best part is that it only takes a few minutes to get started! Follow this step-by-step guide to se how:
 
-### Step 1: Create an iOS in the Astronomer UI
+### Create an Android Source in the Astronomer UI
 After logging in with your Astronomer credentials, add a new Source → Android. Give your source a friendly name and copy that Source ID for the next step.
 
-### Step 2: Install the SDK
+### Install the SDK
 
 We recommend installing the library for Android with a build system like Gradle to make upgrading versions and adding destinations simple. The library is distributed via [Maven Central](http://search.maven.org/). 
 
@@ -20,7 +20,7 @@ dependencies {
 }
 ```
 
-### Step 3: Initialize the Client
+### Initialize the Client
 
 We recommend initializing the client in your `Application` subclass.
 ```
@@ -36,10 +36,10 @@ Analytics.setSingletonInstance(analytics);
 
 **Notes:**
 
-* Automatically tracking lifecycle events (`Application Opened`, `Application Installed`, `Application Updated`) and is optional, but highly recommended to hit the ground running with core events! See below for more info!
+* Automatically tracking lifecycle events (`Application Opened`, `Application Installed`, `Application Updated`) is optional, but we highly recommending doing so to ensure you get the most out of Astronomer Clickstream!
 * This only installs the Astronomer destination - meaning all your data will be sent server side to tools.
 
-### Step 4: Add Permissions
+### Add Permissions
 
 Ensure that the necessary permissions are declared in your application’s `AndroidManifest.xml`.
 ```
@@ -47,7 +47,7 @@ Ensure that the necessary permissions are declared in your application’s `Andr
 <uses-permission android:name="android.permission.INTERNET"/>
 ```
 
-### Step 5: Identify Your Users
+### Identify Your Users
 
 The `identify` method helps you associate your users and their actions to a unique and recognizable `userID` and any optional `traits` that you know about them. We recommend calling an `identify` a single time - when the user's account is first created and only again when their traits change.
 
@@ -62,7 +62,7 @@ This call is identifying a user by her unique `userID` (from your database) and 
 
 Once you have the `identify` call implemented, you're ready to move on to the `track` call.
 
-### Step 6: Track Your Users' Actions
+### Track Your Users' Actions
 
 To get to a more complete event tracking analytics setup, you can add a `track` call to your app. This will tell Astronomer which actions users are performing in your app. With `track`, each user action triggers an “event”, which can also have associated properties.
 
@@ -88,8 +88,6 @@ Analytics.with(context).track("Viewed Product", new Properties()
   .putValue("revenue", "9.99"));
   ```
 
-### Guess what? You have now successfully implemented your Android app! Now you're ready to head back to our app and start switching on some destinations.
-
-### For extra credit, head [here](https://segment.com/docs/sources/mobile/android/) to learn what else is possible with Astronomer Analytics for Android.
+Guess what? You have now successfully implemented your Android app! Now you're ready to head back to our app and start switching on some destinations.
 
 {% include links.html %}

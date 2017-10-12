@@ -2,7 +2,7 @@
 title: Hubspot
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 To get started sending events to [Hubspot](http://www.hubspot.com), all you'll need is your Portal ID and API, both of which can be found shortly after you create an account.
 
 **Getting Credentials from Hubspot:**

@@ -2,7 +2,7 @@
 title: Acquisio
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 To get started sending events to Acquisio, you'll need to have signed up for [Acquisio](http://www.acquisio.com/), worked with an account manager to create your company's specific campaign, and received your Advertiser ID and any custom event names from them.  
 
 ### This connector supports client-side analytics.js only.  You also need to have instrumented Astronomer [inside your website](https://docs.astronomer.io/docs/1.0/streaming/clickstream/collectors/analyticsjs/) prior to enabling this connector.

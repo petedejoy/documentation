@@ -2,7 +2,7 @@
 title: Taboola
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 To get started sending events to Taboola, all you'll need is your script source, which can be retrieved when you create your Taboola conversion tracking code.
 
 ### This connector supports client-side analytics.js only.  You also need to have instrumented Astronomer [inside your website](https://docs.astronomer.io/docs/1.0/streaming/clickstream/collectors/analyticsjs/) prior to enabling this connector.

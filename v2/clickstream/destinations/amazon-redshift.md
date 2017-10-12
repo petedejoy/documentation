@@ -2,7 +2,7 @@
 title: Amazon Redshift
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 Redshift is Amazon Web Service's custom take on a traditional Postgres database or, as they put it, "[A fully managed petabyte-scale data warehouse service in the cloud.](http://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)" It is cost-effective at nearly any level, capable of scaling from gigabytes to petabytes without a loss in performance, and uses [columnar storage](http://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html) (among other optimizations) for incredibly fast querying speeds.
 
 With Astronomer's Redshift integration, you can now easily leverage this technology to easily query your customer data.

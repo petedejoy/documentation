@@ -2,7 +2,7 @@
 title: Heap Analytics
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 To get started sending events to Heap, all you'll need is your Event Key, which can be found as soon as you create an account with them.
 
 **Step 1 -** Create a Heap Analytics account via their [website](http://www.heapanalytics.com)

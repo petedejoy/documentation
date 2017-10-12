@@ -2,7 +2,7 @@
 title: Customer.io
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 To get started sending events to Customer.io, you're going to need both your Site ID and your API Key, both of which are 20 random characters and quite easy to find.
 
 <b>Step 1 -</b> Create a Customer.io account via their [website](http://www.customer.io). After you create your account, you'll be asked to create an organization.

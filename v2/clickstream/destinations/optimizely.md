@@ -2,7 +2,7 @@
 title: Optimizely
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 Our Optimizely connector allows you to send events directly into Optimizely.  From there, you can record your Optimizely experiments or campaigns back into Astronomer, enabling you to analyze Optimizely data inside any other enabled tools within your Astronomer application.
 
 This connector supports either Classic, Optimizely X, or both.

@@ -2,6 +2,7 @@
 title: Keen IO
 sidebar: platform_sidebar
 ---
+#NOT DONE
 To get started sending events to Keen IO, you'll need a Project ID and Write Key. The ID is what tells Astronomer which project within Keen IO is yours and the Write Key gives Astronomer permission to send data into it. Both will be long strings of random characters (the ID will be 24 characters and the Write Key will be 224.)
 
 <b>Step 1</b> Create a Keen IO account via their [website](http://www.keen.io)

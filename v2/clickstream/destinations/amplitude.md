@@ -2,7 +2,7 @@
 title: Amplitude
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 To get started sending events to Amplitude, all you'll need is your API Key, which can be found as soon as you create an account with them.
 
 ### Step 1:

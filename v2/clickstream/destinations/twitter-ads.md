@@ -2,7 +2,7 @@
 title: Twitter Ads
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 To get started sending events to Twitter Ads, all you'll need is your Twitter Pixel ID, which can be retrieved when you create your Twitter Ads conversion tracking website tag.
 
 ### This connector supports client-side analytics.js only.  You also need to have instrumented Astronomer [inside your website](https://docs.astronomer.io/docs/1.0/streaming/clickstream/collectors/analyticsjs/) prior to enabling this connector.

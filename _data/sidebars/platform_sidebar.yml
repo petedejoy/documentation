@@ -56,6 +56,10 @@ entries:
           url: /v2/clickstream/sources/ios.html
           output: web, pdf
 
+          title: Server Side
+          url: /v2/clickstream/sources/serverside.html
+          output: web, pdf
+
       - title: Destinations
         output: web, pdf
         subfolderitems:

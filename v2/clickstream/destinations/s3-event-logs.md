@@ -2,7 +2,7 @@
 title: S3 Event Logs
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 Astronomer makes it easy to copy broadcasted events to an [Amazon Simple Storage Service (S3) bucket](https://aws.amazon.com/s3/).  You'll only need to configure the S3 Event Logs connector within your [Astronomer App](https://app.astronomer.io/), and include our bucket policy.
 
 ### Step 1: 

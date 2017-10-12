@@ -2,7 +2,7 @@
 title: Calq
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 To get started sending events to Calq, you're only going to need your Write Key.
 
 **Step 1:** Create a Calq account via their [website](http://www.calq.io). After you create your account, you'll be asked to create a new project.

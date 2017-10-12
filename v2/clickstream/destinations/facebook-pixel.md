@@ -2,7 +2,7 @@
 title: Facebook Pixel
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 **Step 1-** To get started using the Facebook Pixel, you will first need to create a Facebook for Business account and [follow the instructions](https://www.facebook.com/business/a/online-sales/custom-audiences-website) for creating a Pixel. You'll only create one pixel for your site (typically labeled with the name of your business). This pixel will [replace all the functionality](https://www.facebook.com/business/help/1686199411616919) previously given to Facebook Audiences and Facebook Conversions (as well as allowing some additional features, such as custom conversions.)
 
 ![facebook-pixel1](/1.0/assets/img/guides/streaming/clickstream/facebook-pixel/facebook-pixel1.png)

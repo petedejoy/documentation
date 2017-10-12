@@ -2,6 +2,7 @@
 title: KISSmetrics
 sidebar: platform_sidebar
 ---
+#NOT DONE
 To get started sending events to Kissmetrics, you'll need your project specific API Key. The ID is what tells Astronomer which project within Kissmetrics is yours and the Write Key gives Astronomer permission to send data into it. Both will be long strings of random characters (the ID will be 24 characters and the Write Key will be 224.)
 
 ### Step 1:

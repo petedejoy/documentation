@@ -2,7 +2,7 @@
 title: Mixpanel
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 This connector allows you to easily send customer data to [Mixpanel](https://mixpanel.com/).  
 
 **Step 1:** Create a Mixpanel account via their [website](http://www.mixpanel.com).  When you sign in for the first time, you should have sample project called "My new project."  

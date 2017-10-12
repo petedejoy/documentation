@@ -2,7 +2,7 @@
 title: Clicky
 sidebar: platform_sidebar
 ---
-
+#NOT DONE
 To get started sending events to Clicky, you'll need to your Site ID, which is a 9 character string that uniquely identifies your site with Clicky.  To get up and running you'll need to:
 
 <b>Step 1 -</b> Create a Clicky account via their [website](http://www.clicky.com). Just look for the giant red button with the words 'Register Now.' You really can't miss it ;)

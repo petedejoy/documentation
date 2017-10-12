@@ -2,6 +2,7 @@
 title: Lytics
 sidebar: platform_sidebar
 ---
+#NOT DONE
 To get started sending events to Lytics, you're only going to need your Data API Key and Account ID.
 
 <b>Step 1</b> Create a Lytics account via their [website](http://www.getlytics.com).

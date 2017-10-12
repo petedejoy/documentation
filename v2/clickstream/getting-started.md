@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Astronomer Clickstream
+title: Getting Started
 sidebar: platform_sidebar
 ---
 

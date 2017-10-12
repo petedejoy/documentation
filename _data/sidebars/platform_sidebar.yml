@@ -27,7 +27,7 @@ entries:
       url: /v2/clickstream/overview.html
       output: web, pdf
 
-    - title: Getting Started with Astronomer Clickstream
+    - title: Getting Started
       url: /v2/clickstream/getting-started.html
       output: web, pdf
 

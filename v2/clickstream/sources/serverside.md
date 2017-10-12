@@ -1,0 +1,30 @@
+---
+title: Server Side Sources
+sidebar: platform_sidebar
+---
+
+## Getting Started with Server-Side Sources
+
+Server-side ingestion allows you to send data to Astronomer directly from your servers. These sources should be used only when standard analytics.js will not work. Use cases will include payment events, data sets where accuracy is extremely important, dat d that needs to be calculated from a database query, or sensitive information.
+
+We support a number of open source libraries, including:
+* HTTP API
+* MeteorJS
+* Node.js
+* PHP
+* Python
+* Ruby
+
+## HTTP API
+
+## MeteorJS
+
+## Node.js
+
+This library lets you record all analytics data from your node code. You can check out it's open source code [here] (https://github.com/segmentio/analytics-node).
+
+
+
+
+
+

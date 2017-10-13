@@ -2,18 +2,46 @@
 title: Amazon Redshift
 sidebar: platform_sidebar
 ---
-#NOT DONE
-Redshift is Amazon Web Service's custom take on a traditional Postgres database or, as they put it, "[A fully managed petabyte-scale data warehouse service in the cloud.](http://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)" It is cost-effective at nearly any level, capable of scaling from gigabytes to petabytes without a loss in performance, and uses [columnar storage](http://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html) (among other optimizations) for incredibly fast querying speeds.
+# Getting started with Amazon Redshift. 
+Redshift is Amazon Web Services' custom take on a traditional Postgres database. As they put it, "[A fully managed petabyte-scale data warehouse service in the cloud.](http://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)" It's cost-effective at nearly any level, capable of scaling from gigabytes to petabytes without a loss in performance, and uses [columnar storage](http://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html) (among other optimizations) for incredibly fast querying speeds.
 
-With Astronomer's Redshift integration, you can now easily leverage this technology to easily query your customer data.
+This guide will explain how to integrate Redshift into Astronomer's clickstream platform as a destination, allowing you to leverage Amazon's technology to access, store, and query your customer data.
+
+Our connector periodically runs an ETL (Exract - Transform - Load) process that pulls raw event data in S3, processes and transforms those raw events into a structured format, and then inserts structured event data from our bucket into your Redshift cluster. 
 
 ---
 
-## Step 1: Log in to your AWS account and Redshift console.
+## Step 1: Pick a cluster that fits your needs and provision it. 
+ 
+ Once you've logged into your AWS account and Redshift console, it's time to pick and select your cluster. 
+ 
+ As you do this, remember that the capacity you'll need and utilize depends primarily on the number of unique tables and columns created in the cluster, not the number of events (database records).
+ Each unique `.track(_)` event creates a new table, and each property sent creates a new column in that table. For this reason, think about creating a detailed tracking plan to make sure that all events being passed to Astronomer are necessary and consistent.
 
-![connecting-redshift2](/1.0/assets/img/guides/streaming/clickstream/amazon-redshift/amazon-redshift2.png)
+ There are two kinds of Redshift clusters, Dense Compute and Dense Storage. 
 
-## Step 2: Select Your Cluster
+ ### 1. Pick a cluster
+
+ #### Dense Compute Cluster
+Dense Compute clusters maximize query speed and performance, but in turn have less capacity for storage. While there is no set process to size a cluster, most customers with less than 20 million monthly events start with a single DC1 cluster and add nodes as needed. A single node cluster includes 200GB of storage and a maximum side of 2.56TB. 
+
+#### 2. Dense Storage Cluster
+Dense storage clusters maximize storage capacity and allow customers with hundreds of millions of events to save money on Redshift hosting costs by using disk-based storage, slower CPU's, and less RAM. A single DS2 node cluster includes 2TB of space, with a max size of 16TB.
+
+
+
+### 2. Provision it.
+
+(If you already have a Redshift cluster, go ahead to step 3!)
+
+1. Open the Redshift Console 
+2. CLick on "Launch Cluster"
+3. Input cluster details 
+4. Choose cluster size
+5. Set up your cluster Security Group or VPC and proceed to review
+
+
+## Step 2. Select Your Cluster
 
 Click on the 'Clusters' tab from the left hand menu and into the cluster you wish to send data into from Astronomer. If you have not yet created a cluster on Redshift yet, simply click the 'Launch Cluster' button and [follow the configuration steps](http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-launch-sample-cluster.html).
 

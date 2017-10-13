@@ -17,6 +17,95 @@ We support a number of open source libraries, including:
 
 ## HTTP API
 
+This library lets you record analytics data from any website or application. You can then route that data to any destination supported by our platform.
+
+### Getting Started with HTTP API
+
+#### Authentication
+
+You'll need to supply your app_ID with each request using HTTP Basic Auth.
+
+Basic Auth base64 encodes a 'username:password' and prepends it with the string 'Basic'. The native libraries should handle this for you, but if they do not you'll need to base64 encode a string in which the username is the app_ID and the password is empty.
+
+For example, if your app_ID is `bXlhcHA6`, you'll need to encode `bXlhcHA6:`. The resut of this will be `Basic YlhsaGNIQTY6`. The complete authorization header would then be `Authorization: Basic YlhsaGNIQTY6`.
+
+#### Content-Type
+
+Make sure to set the content-type header to `application/json`.
+
+### Calls in HTTP API
+
+Check out our 'Calls' section for information on when you should use each call. Below are some examples of how you'd call specific objects in HTTP API.
+
+#### Identify
+
+Post `https://api.astronomer.io/v1/identify`
+```
+{
+  'userId': '1234qwerty',
+  'traits': {
+    'name': 'Arthur Dent',
+    'email': 'earthling1@hitchhikersguide.com',
+    'hasTowel': True,
+  }
+  'timestamp': '2015-11-10T00:45:23.412Z'
+}
+```
+
+#### Track
+
+Post `https://api.astronomer.io/v1/track`
+```
+{
+  'userId': '1234qwerty',
+  'event': 'Added File',
+  'properties': {
+    'fileTitle': 'Life, the Universe, and Everything',
+    'fileSize': '42kb',
+    'fileType': 'PDF'
+  },
+  'timestamp': '2015-11-10T00:45:23.412Z'
+}
+```
+
+#### Page
+
+Post `https://api.astronomer.io/v1/page`
+```
+{
+  'userId': '1234qwerty',
+  'section': 'Blog',
+  'name': '10 Questions with Marvin, the clinically depressed robot',
+  'properties': {
+    'referrer': 'http://reddit.com/r/AMA'
+  }
+}
+```
+
+#### Group
+
+Post `https://api.astronomer.io/v1/group`
+```
+{
+  'userId': '1234qwerty',
+  'groupId': '5678dvorak',
+  'traits': {
+    'name': 'The Hitchhikers',
+    'relativePosition': '[39.1000 N, 84.5167 W]'
+    }
+}
+```
+
+#### Alias
+
+Post  `https://api.astronomer.io/v1/alias`
+```
+{
+  "previousId": "anonymous_id",
+  "userId": "assigned_id_or_email",
+  "timestamp": "2015-11-10T00:45:23.412Z"
+}
+```
 
 ## MeteorJS
 
@@ -236,7 +325,7 @@ analytics.app_id = ‘astronomer_app_id’
 ```
 *Note that you can find your app_id in the settings section of your Astronomer App.*
 
-### Calls in Python
+### Calls in Python - NOT DONE
 
 Check out our 'Calls' section for information on when you should use each call. Below are some examples of how you'd call specific objects in Python.
 
@@ -250,9 +339,50 @@ analytics.identify('userID' : '1234qwerty', {
 ```
 
 #### Track
-
-'''
+```
 analytics.track('userID' : '1234qwerty', 'Signed Up')
 ```
 
+#### Page
+```
+analytics.page('user_id', 'Docs', 'Python', {
+  'url': 'http://astronomer.io'
+})
+```
 
+#### Group
+```
+analytics.group('user_id', 'group_id', {
+  'name': 'Initech',
+  'domain': 'Accounting Software'
+})
+```
+
+
+### Ruby
+
+This library lets you record analytics data from your Ruby code. You can use this library in your web server controller code. It is high-performing in that it uses an internal queue to make 'identify' and 'track' calls non-blocking and fast. It also batches messages and flushes aysynchronously to our servers.
+
+Check out our `astronomer` [Ruby gem](https://rubygems.org/gems/astronomer/) to see the library.
+
+#### Step 1
+
+Install `astronomer` either:
+* Directly into a Gemfile
+'''
+gem 'astronomer', '~>2.0', '>= 2.0.14'
+'''
+* Directly into environment gems
+```
+gem install astronomer
+```
+
+#### Step 2
+
+Inside your Ruby application, you'll want to set your app_id inside an instance of the Analytics object:
+```
+analytics = Segment::Analytics.new({
+  app_id: 'YOUR_APP_ID'
+})
+```
+*Note that you can find your app_id in the settings section of your Astronomer App.*

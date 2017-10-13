@@ -46,7 +46,7 @@ Set your event methods(identify, track, etc.) throughout your app.
 
 ### Calls in Node.js
 
-Check out our 'Calls' section for information on when you should use each call.
+Check out our 'Calls' section for information on when you should use each call. Below are some examples of how you'd call specific objects in node.js.
 
 #### Identify
 
@@ -153,7 +153,7 @@ After this initialization, you have a ready-to-use instance with all calls built
 
 ### Calls in PHP
 
-Check out our 'Calls' section for information on when you should use each call.
+Check out our 'Calls' section for information on when you should use each call. Below are some examples of how you'd call specific objects in PHP.
 
 #### Identify
 ```
@@ -209,6 +209,50 @@ analytics::alias(array(
         "previousId" => "1ff049u10459u7",
         "userId" => "1234qwerty")
 );
+```
+
+
+## Python
+
+This library lets you record analytics data from your Python code. You can use this library in your web server controller code. It is high-performing in that it uses an internal queue to make 'identify' and 'track' calls non-blocking and fast. It also batches messages and flushes aysynchronously to our servers.
+
+Visit the [Python Package Index (PyPI)] (https://pypi.python.org/pypi/astronomer-analytics) for the `astronomer-analytics` package details.
+
+### Getting Started with Python
+
+#### Step 1
+
+Install `astronomer-analytics` using `pip`
+```
+pip install astronomer-analytics
+```
+
+#### Step 2
+
+Inside your python app, set you app_id inside an instance of the Analytics object.
+```
+import analytics
+analytics.app_id = ‘astronomer_app_id’
+```
+*Note that you can find your app_id in the settings section of your Astronomer App.*
+
+### Calls in Python
+
+Check out our 'Calls' section for information on when you should use each call. Below are some examples of how you'd call specific objects in Python.
+
+#### Identify
+```
+analytics.identify('userID' : '1234qwerty', {
+    'name': 'Arthur Dent',
+    'email': 'earthling1@hitchhikersguide.com',
+    'friends': 100
+})
+```
+
+#### Track
+
+'''
+analytics.track('userID' : '1234qwerty', 'Signed Up')
 ```
 
 

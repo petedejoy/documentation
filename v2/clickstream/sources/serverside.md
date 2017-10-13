@@ -24,28 +24,29 @@ We support a number of open source libraries, including:
 
 This library lets you record all analytics data from your node code. You can check out it's open source code [here] (https://github.com/segmentio/analytics-node).You can use this library in your web server controller code. It is high-performing in that it uses an internal queue to make 'identify' and 'track' calls non-blocking and fast. It also batches messages and flushes aysynchronously to our servers.
 
-###Getting Started with Node.js
+### Getting Started with Node.js
 
-####Step 1
+#### Step 1
 Install the astronomer npm module.
 'npm install --save astronomer'
 
-####Step 2
+#### Step 2
 Initialize this package with teh App ID found in the settings section within your Astronomer account.
 '''var Analytics = require('astronomer');
 var Analytics = new analytics{'ASTRONOMER_APP_ID')}'''
 
-####Step 3
+#### Step 3
 Set your event methods(identify, track, etc.) throughout your app. 
 *Note: We've standardized to analytics.js. If you've used a tool like [Segment](https://segment.com/) in the past, you will find that instrumenting events in Astronomer works in the exact same way.*
 
-###Calls in Node.js
+### Calls in Node.js
 
 Check out our 'Calls' section for information on when to use each call.
 
-####Identify
+#### Identify
 
-'''{
+'''
+{
   "codes": [
     {
       "code": "analytics.identify({
@@ -57,11 +58,13 @@ Check out our 'Calls' section for information on when to use each call.
       "language": "javascript"
     }
   ]
-}'''
+}
+'''
 
-####Track
+#### Track
 
-'''{
+'''
+{
   "codes": [
     {
       "code": "analytics.track({
@@ -74,36 +77,43 @@ Check out our 'Calls' section for information on when to use each call.
       "language": "javascript"
     }
   ]
-}'''
+}
+'''
 
-####Page
+#### Page
 
-'''analytics.page({
+'''
+analytics.page({
   userId: '1234qwerty',
   section: 'Blog',
   name: '10 Questions with Marvin, the clinically depressed robot',
   properties: {
     referrer: 'http://reddit.com/r/AMA'
   }
-})'''
+})
+'''
 
-####Group
+#### Group
 
-'''analytics.group({
+'''
+analytics.group({
   userId: '1234qwerty',
   groupId: '5678dvorak',
   traits: {
     name: "The Hitchhikers",
     relativePosition: "[39.1000° N, 84.5167° W]\""
   }
-})'''
+})
+'''
 
-####Alias
+#### Alias
 
-'''analytics.alias({
+'''
+analytics.alias({
   previousId: anonymous_id,
   userId: assigned_id_or_email
-});'''
+});
+'''
 
 
 

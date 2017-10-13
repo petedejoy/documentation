@@ -28,12 +28,16 @@ This library lets you record all analytics data from your node code. You can che
 
 #### Step 1
 Install the astronomer npm module.
-'npm install --save astronomer'
+'''
+npm install --save astronomer
+'''
 
 #### Step 2
 Initialize this package with teh App ID found in the settings section within your Astronomer account.
-'''var Analytics = require('astronomer');
-var Analytics = new analytics{'ASTRONOMER_APP_ID')}'''
+'''
+var Analytics = require('astronomer');
+var Analytics = new analytics{'ASTRONOMER_APP_ID')}
+'''
 
 #### Step 3
 Set your event methods(identify, track, etc.) throughout your app. 

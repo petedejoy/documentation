@@ -3,7 +3,48 @@ title: Amplitude
 sidebar: platform_sidebar
 ---
 #NOT DONE
-To get started sending events to Amplitude, all you'll need is your API Key, which can be found as soon as you create an account with them.
+
+Using Amplitude with Astronomer is simple. Follow the instructions below to get your data flowing to Amplitude.
+
+## Getting Started with Amplitude and Astronomer Clickstream
+
+To get started sending events to Amplitude, all you need is your API Key. Once you create your first app within your Amplitude account, an API Key will be generated and presented in your dashboard. Add this API Key to the Amplitude connector on the Astronomer dashboard and give your new connection a unique name. Your pipeline will be activated once you click 'Create Destination.'
+
+What happens now? DESCRIBE WHAT HAPPENS ONCE ENABLED    
+  * Point 1
+  * Point 2
+  * Point 3
+  * Point 4
+
+## Additional Functionality
+
+### Identify
+What happens when you call Identify.
+
+### Track
+What happens when you call Track.
+
+### Page & Screen
+What happens when you call Page/Screen.
+
+### Group
+What happens when you call Group.
+
+### Alias
+What happens when you call Alias.
+
+
+## Beyond the Basics
+Overview of additional features that are available on the Astronomer platform.
+
+#### Additional Feature 1
+Description of additional feature 1
+
+#### Additional Feature 2
+Description of additional feature 2
+
+
+
 
 ### Step 1:
 Create an Amplitude account via their [website](http://www.amplitude.com). After you create your account, you'll be asked to create an organization.

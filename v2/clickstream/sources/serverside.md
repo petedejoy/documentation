@@ -109,6 +109,8 @@ Post  `https://api.astronomer.io/v1/alias`
 
 ## MeteorJS
 
+
+
 ## Node.js
 
 This library lets you record all analytics data from your node code. You can check out it's open source code [here] (https://github.com/segmentio/analytics-node).You can use this library in your web server controller code. It is high-performing in that it uses an internal queue to make 'identify' and 'track' calls non-blocking and fast. It also batches messages and flushes aysynchronously to our servers.
@@ -359,7 +361,7 @@ analytics.group('user_id', 'group_id', {
 ```
 
 
-### Ruby
+### Ruby - NOT DONE
 
 This library lets you record analytics data from your Ruby code. You can use this library in your web server controller code. It is high-performing in that it uses an internal queue to make 'identify' and 'track' calls non-blocking and fast. It also batches messages and flushes aysynchronously to our servers.
 
@@ -369,9 +371,9 @@ Check out our `astronomer` [Ruby gem](https://rubygems.org/gems/astronomer/) to 
 
 Install `astronomer` either:
 * Directly into a Gemfile
-'''
+```
 gem 'astronomer', '~>2.0', '>= 2.0.14'
-'''
+```
 * Directly into environment gems
 ```
 gem install astronomer

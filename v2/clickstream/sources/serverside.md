@@ -28,18 +28,19 @@ This library lets you record all analytics data from your node code. You can che
 
 #### Step 1
 Install the astronomer npm module.
-'''
+```
 npm install --save astronomer
-'''
+```
 
 #### Step 2
 Initialize this package with teh App ID found in the settings section within your Astronomer account.
-'''
+```
 var Analytics = require('astronomer');
 var Analytics = new analytics{'ASTRONOMER_APP_ID')}
-'''
+```
 
 #### Step 3
+
 Set your event methods(identify, track, etc.) throughout your app. 
 *Note: We've standardized to analytics.js. If you've used a tool like [Segment](https://segment.com/) in the past, you will find that instrumenting events in Astronomer works in the exact same way.*
 
@@ -49,7 +50,7 @@ Check out our 'Calls' section for information on when to use each call.
 
 #### Identify
 
-'''
+```
 {
   "codes": [
     {
@@ -63,11 +64,11 @@ Check out our 'Calls' section for information on when to use each call.
     }
   ]
 }
-'''
+```
 
 #### Track
 
-'''
+```
 {
   "codes": [
     {
@@ -82,11 +83,11 @@ Check out our 'Calls' section for information on when to use each call.
     }
   ]
 }
-'''
+```
 
 #### Page
 
-'''
+```
 analytics.page({
   userId: '1234qwerty',
   section: 'Blog',
@@ -95,11 +96,11 @@ analytics.page({
     referrer: 'http://reddit.com/r/AMA'
   }
 })
-'''
+```
 
 #### Group
 
-'''
+```
 analytics.group({
   userId: '1234qwerty',
   groupId: '5678dvorak',
@@ -108,16 +109,16 @@ analytics.group({
     relativePosition: "[39.1000° N, 84.5167° W]\""
   }
 })
-'''
+```
 
 #### Alias
 
-'''
+```
 analytics.alias({
   previousId: anonymous_id,
   userId: assigned_id_or_email
 });
-'''
+```
 
 
 

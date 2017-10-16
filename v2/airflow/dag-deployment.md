@@ -16,9 +16,11 @@ This is a step-by-step guide for using the Astronomer CLI to deploy a DAG to you
 First, you will need to login with your Astronomer credentials: `astro login`
 
 Next, create a project directory, this is where your DAGs will be stored locally:
+
 >mkdir /path/to/project
 
 ...and navigate to it:
+
 >cd /path/to/project
 
 ### Quickstart DAG Deployment
@@ -35,6 +37,7 @@ nano /path/to/project/dags/sample_dag.py
 ```
 
 Copy and Paste this Sample DAG:
+
 ```python
 from datetime import datetime
 from airflow import DAG
@@ -71,6 +74,7 @@ t1.set_downstream(t2)
 t2.set_downstream(t3)
 
 ```
+
 Save the DAG, return to the shell prompt, and now, we're ready to deploy (make sure your User belongs to an organization):
 
 `astro deploy`

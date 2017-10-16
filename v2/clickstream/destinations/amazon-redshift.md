@@ -27,7 +27,7 @@ Dense Compute clusters maximize query speed and performance, but in turn have le
 #### Dense Storage Cluster
 Dense storage clusters maximize storage capacity and allow customers with hundreds of millions of events to save money on Redshift hosting costs by using disk-based storage, slower CPU's, and less RAM. A single DS2 node cluster includes 2TB of space, with a max size of 16TB.
 
-
+---
 
 ## Step 2. Provision your cluster.
 
@@ -41,6 +41,7 @@ Dense storage clusters maximize storage capacity and allow customers with hundre
 
 If you're having trouble, check out the configuration steps [here](http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-launch-sample-cluster.html).
 
+---
 
 ## Step 3. Permission Astronomer to Redshift.
 
@@ -103,31 +104,18 @@ Redshift Dashboard > Clusters > Select Your Cluster
 
 7. Make sure the "Publicly Accessible" option is set to "Yes"
 
- 
-
 
 
 ### Whitelist Astronomer's IP. 
 Make sure that you whitelist 52.86.240.182 as an incoming IP Address so we can write to your Redshift instance without you exposing the database to everyone. For more information on, please explore our [Networking Guide](/1.0/guides/network/)
 
-
-
-
-## Step 4. Select your cluster. 
-
-Click on the 'Clusters' tab from the left hand menu and into the cluster you wish to send data into from Astronomer.
-
-
-<br>
+---
 
 ## Step 3: Identify Your Host, Port, and Database Name
 
 The Host and Port are found at the top beside the label 'Endpoint,' with Host coming before the ':' and Port coming afterwards. The Database Name is found at the bottom besides a title of the same name.
 
-![connecting-redshift3](/1.0/assets/img/guides/streaming/clickstream/amazon-redshift/amazon-redshift3.png)
-
-
-#### Please either create an Inbound Rule to accept data from anywhere (0.0.0.0) or (the safer option) whitelist the following IP address: 52.86.240.182
+---
 
 ## Step 4: Activate Integration on Astronomer
 
@@ -135,7 +123,16 @@ After you've identified the <b>Username, Password, Host, Port,</b> and <b>Databa
 
 Click 'Create Destination' and your pipeline will be activated.
 
-![connecting-redshift1](/1.0/assets/img/guides/streaming/clickstream/amazon-redshift/amazon-redshift1.gif)
+That's it! You'll now be receiving a livestream of data from your app into your private Redshift account.
+
 ---
 
-That's it! Really simple, wasn't it? You'll now be receiving a livestream of data from your app into your private Redshift account.
+## Things to note. 
+
+### Reserved Words
+
+Redshift limits the number of [reserved words](http://docs.aws.amazon.com/redshift/latest/dg/r_pg_keywords.html) in schema, table, and column names. We'd also encourage you to stay away from naming traits or properties that conflict with top level Clickstream fields (i.e. userID, receivedAt, messageID) 
+
+### Query Speeds
+The speed of your queries depends on the capabilities of your hardware, the size of the dataset, and the amount of data utilization in the cluster. For instance, you might see lower query speeds if you find yourself above 75% data utilization.
+

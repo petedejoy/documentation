@@ -2,7 +2,7 @@
 title: Intercom
 sidebar: platform_sidebar
 ---
-#NOT DONE
+
 To get started sending events to Intercom, all you'll need is your App Id and API Key. These are a bit hard to get because Intercom typically blocks you from seeing your dashboard until you've sent events to them but we'll show you how to get around that since paradoxically, this is the very information you will need to send those events in the first place.
 
 **Step 1** Put your email into the central 'Enter Your Email' form on their [website](http://www.intercom.io)

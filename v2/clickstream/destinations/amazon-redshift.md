@@ -11,7 +11,9 @@ Our connector periodically runs an ETL (Exract - Transform - Load) process that 
 
 ---
 
-## Step 1: Pick a cluster that fits your needs and provision it. 
+## Step 1: Pick a cluster that fits your needs. 
+
+*Note: If you already have a Redshift cluster, go ahead to step 3*
  
  Once you've logged into your AWS account and Redshift console, it's time to pick and select your cluster. 
  
@@ -20,45 +22,100 @@ Our connector periodically runs an ETL (Exract - Transform - Load) process that 
 
  There are two kinds of Redshift clusters, Dense Compute and Dense Storage. 
 
- ### 1. Pick a cluster
-
+ 
  #### Dense Compute Cluster
 Dense Compute clusters maximize query speed and performance, but in turn have less capacity for storage. While there is no set process to size a cluster, most customers with less than 20 million monthly events start with a single DC1 cluster and add nodes as needed. A single node cluster includes 200GB of storage and a maximum side of 2.56TB. 
 
-#### 2. Dense Storage Cluster
+#### Dense Storage Cluster
 Dense storage clusters maximize storage capacity and allow customers with hundreds of millions of events to save money on Redshift hosting costs by using disk-based storage, slower CPU's, and less RAM. A single DS2 node cluster includes 2TB of space, with a max size of 16TB.
 
+---
 
-
-### 2. Provision it.
-
-(If you already have a Redshift cluster, go ahead to step 3!)
+## Step 2. Provision your cluster.
 
 1. Open the Redshift Console 
-2. CLick on "Launch Cluster"
+2. Click on "Launch Cluster"
 3. Input cluster details 
 4. Choose cluster size
 5. Set up your cluster Security Group or VPC and proceed to review
 
+If you're having trouble, check out the configuration steps [here](http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-launch-sample-cluster.html).
 
-## Step 2. Select Your Cluster
+---
 
-Click on the 'Clusters' tab from the left hand menu and into the cluster you wish to send data into from Astronomer. If you have not yet created a cluster on Redshift yet, simply click the 'Launch Cluster' button and [follow the configuration steps](http://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-launch-sample-cluster.html).
+## Step 3. Permission Astronomer to Redshift.
 
-<b>IMPORTANT:</b> <i>Your <b>Username</b> and <b>Password</b> that you put into your Astronomer account are the credentials you used when you initially created the cluster or created a specific user profile for Astronomer. In neither case should you use your master AWS credentials. If you want to switch clusters in the future, make sure you update your Username and Password as needed.</i>
+Once you provision your Redshift cluster, you'll need to configure your Redshift cluster to allow Astronomer to access it. 
 
-#### Make sure that you whitelist 52.86.240.182 as an incoming IP Address so we can write to your Redshift instance without you exposing the database to everyone. For more information on, please explore our [Networking Guide](/1.0/guides/network/)
+### Confirm and Insert Credentials
 
-<br>
+The <i>Username</i> and <i>Password</i> you used to initially create the cluster are the credentials you'll put into your Astronomer account. You should NOT use your master AWS credentials here. If you want to switch clusters in the future, make sure you update your Username and Password as needed.
+
+For Clickstream, having *distinct users* will allow you to (i) isolate queries from one another and (ii) perform audits more easily. 
+
+To create a new user, you'll need to log into the Redshift database directly. Here's the SQL command:
+
+```
+-- create a user named "segment" that Segment will use when connecting to your Redshift cluster.
+CREATE USER segment PASSWORD "<enter password here>";
+
+-- allows the "segment" user to create new schemas on the specified database. (this is the name you chose when provisioning your cluster)
+GRANT CREATE ON DATABASE "<enter database name here>" TO "segment";
+```
+
+### Configure Security Groups
+Redshift clusters can either be in a EC2 Classic subnet or VPC subnet
+
+If your cluster has a field called `Cluster Security Groups`, go ahead to EC2-Classic.
+
+If your cluster has a field called `VPC Security Groups`, go ahead to EC2 VPC. 
+
+**EC2-Classic**
+
+1. Navigate to your Redshift Cluster settings
+```
+Redshift Dashboard > Clusters > Select Your Cluster
+```
+
+2. Click on the Cluster Security Groups
+
+3. Open the Cluster Security Group
+
+4. Click on "Add Connection Type"
+
+5. Authorize Astronomer to write into your Redshift Port by inputting our IP Address: 52.86.240.182
+
+**EC2-VPC**
+
+1. Navigate to your Redshift Cluster settings
+```
+Redshift Dashboard > Clusters > Select Your Cluster
+```
+
+2. Click on the VPC Security Groups
+
+3. Select the "Inbound" tab and then "Edit"
+
+4. Authorize Astronomer to write into your Redshift Port by inputting our IP Address: 52.86.240.182
+
+5. Navigate back to your Redshift Cluster Settings
+
+6. Select the "Cluster" button and then "Modify"
+
+7. Make sure the "Publicly Accessible" option is set to "Yes"
+
+
+
+### Whitelist Astronomer's IP. 
+Make sure that you whitelist 52.86.240.182 as an incoming IP Address so we can write to your Redshift instance without you exposing the database to everyone. For more information on, please explore our [Networking Guide](/1.0/guides/network/)
+
+---
 
 ## Step 3: Identify Your Host, Port, and Database Name
 
 The Host and Port are found at the top beside the label 'Endpoint,' with Host coming before the ':' and Port coming afterwards. The Database Name is found at the bottom besides a title of the same name.
 
-![connecting-redshift3](/1.0/assets/img/guides/streaming/clickstream/amazon-redshift/amazon-redshift3.png)
-
-
-#### Please either create an Inbound Rule to accept data from anywhere (0.0.0.0) or (the safer option) whitelist the following IP address: 52.86.240.182
+---
 
 ## Step 4: Activate Integration on Astronomer
 
@@ -66,7 +123,16 @@ After you've identified the <b>Username, Password, Host, Port,</b> and <b>Databa
 
 Click 'Create Destination' and your pipeline will be activated.
 
-![connecting-redshift1](/1.0/assets/img/guides/streaming/clickstream/amazon-redshift/amazon-redshift1.gif)
+That's it! You'll now be receiving a livestream of data from your app into your private Redshift account.
+
 ---
 
-That's it! Really simple, wasn't it? You'll now be receiving a livestream of data from your app into your private Redshift account.
+## Things to note. 
+
+### Reserved Words
+
+Redshift limits the number of [reserved words](http://docs.aws.amazon.com/redshift/latest/dg/r_pg_keywords.html) in schema, table, and column names. We'd also encourage you to stay away from naming traits or properties that conflict with top level Clickstream fields (i.e. userID, receivedAt, messageID) 
+
+### Query Speeds
+The speed of your queries depends on the capabilities of your hardware, the size of the dataset, and the amount of data utilization in the cluster. For instance, you might see lower query speeds if you find yourself above 75% data utilization.
+

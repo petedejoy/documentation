@@ -13,10 +13,13 @@ To get started sending events to Keen IO, you'll need two things:
 * Write Key: This gives Astronomer permission to send data to your Keen IO dashboard
 Both of these things will be long strings of random characters. 
 
+![keen-io1](/1.0/assets/img/guides/streaming/clickstream/keen-io/keen-io1.png)
+
 Once you create a Keen IO account, copy over your Project ID and Write Key into the Astronomer dashboard. You can find your Write Key by clicking on 'Show API Keys.'
 
 Your pipeline will be activated once you click 'Create Destination.'
 
+<!-->
 What happens now? DESCRIBE WHAT HAPPENS ONCE ENABLED    
   * Point 1
   * Point 2
@@ -69,3 +72,4 @@ To get started sending events to Keen IO, you'll need a Project ID and Write Key
 <b>Step 4</b> Click around your app to send off some test events and then go back to Keen IO to see those events begin populating your project! They should appear in less than a minute!
 
 ![keen-io3](/1.0/assets/img/guides/streaming/clickstream/keen-io/keen-io3.png)
+-->

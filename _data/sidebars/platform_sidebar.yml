@@ -208,6 +208,9 @@ entries:
       url:  /v2/airflow/hooks-and-operators.html
       output: web, pdf
 
+    - title: Airflow Connectors
+      url:  /v2/airflow/connectors.html
+      output: web, pdf
     
     
         

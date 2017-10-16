@@ -68,7 +68,7 @@ args = {
 }
 ```
 
-### Instantiate a DAG
+### Instantiate the DAG
 Before we outline the tasks we want to run, we need a DAG to nest them into. First, we pass a string in for `dag_id` to serve as a unique identifier for the DAG. In this case, we kept it simple and used `sample_dag`.
 
 Next, we define a `schedule_interval` that dictates how often the DAG will run (just `@once` here).

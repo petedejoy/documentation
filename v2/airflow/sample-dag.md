@@ -43,6 +43,7 @@ t3 = DummyOperator(
 t1.set_downstream(t2)
 t2.set_downstream(t3)
 ```
+
 ### Importing Modules
 First things first, we need to import all of the necessary modules.
 
@@ -74,6 +75,7 @@ Before we outline the tasks we want to run, we need a DAG to nest them into. Fir
 Next, we define a `schedule_interval` that dictates how often the DAG will run (just `@once` here).
 
 Finally, we passed in the default argument dictionary we defined earlier for our `default_args`.
+
 ```
 dag = DAG(
     'sample_dag',

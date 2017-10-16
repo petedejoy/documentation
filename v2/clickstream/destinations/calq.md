@@ -2,6 +2,9 @@
 title: Calq
 sidebar: platform_sidebar
 ---
+
+## Getting Started with Calq and Astronomer Clickstream
+
 Astronomer Clickstream makes it easy to send your data to Calq. Once you follow the steps below, your data will be routed through our platform and pushed to Calq in the appropriate format. 
 
 Once you create an account with Calq, you'll be asked to create a new project.

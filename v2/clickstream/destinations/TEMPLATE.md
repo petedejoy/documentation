@@ -5,14 +5,16 @@ sidebar: platform_sidebar
 
 Astronomer Clickstream makes it easy to send your data to *DESTINATION*. Once you follow the steps below, your data will be routed through our platform and pushed to *DESTINATION* in the appropriate format. 
 
-## Getting Started with 'DESTINATION'
-High level overview of how to begin, including app id information.
+## What is *Destination*?
+* Point 1
+etc
 
-What happens now? DESCRIBE WHAT HAPPENS ONCE ENABLED    
-  * Point 1
-  * Point 2
-  * Point 3
-  * Point 4
+## Why send data to *DESTINATION* using Astronomer Clickstream
+
+
+## Getting Started with 'DESTINATION' and Astronomer Clickstream
+High level overview of how to begin, including app id information. How to set up.
+
 
 ## Additional Functionality
 

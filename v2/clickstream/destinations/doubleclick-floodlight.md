@@ -2,10 +2,14 @@
 title: DoubleClick Floodlight
 sidebar: platform_sidebar
 ---
-#NOT DONE
-To get started using the DoubleClick Floodlight, you'll need to identify your Advertiser ID. Because DoubleClick is a rather expensive platform, you might be going through a DoubleClick Partner, such as [Mightyhive](http://mightyhive.com), in which case you'll want to get your Advertiser ID from them.
 
-<b>Step 1 -</b> Put your seven character Advertiser ID in the "Advertiser ID" section of the Overview tab. Below that, you'll also want to put your Activity Group label (referred to as "type" within Doubleclick) as well as your Activity Tag String Value (referred to as "cat") for tracking page views.
+Astronomer Clickstream makes it easy to send your data to Doubleclick Floodlight. Once you follow the steps below, your data will be routed through our platform and pushed to Doubleclick Floodlight in the appropriate format. 
+
+##Getting Started with Doubleclick Floodlight and Astronomer Clickstream
+
+With the Doubleclick Floodlight destination, you can make calls directly to Floodlight based on your mapped events. To begin doing this, you'll need your Advertiser ID.Because DoubleClick is a rather expensive platform, you might be going through a DoubleClick Partner, such as [Mightyhive](http://mightyhive.com). If this is the case, you'll have to obtain your Advertiser ID directly from the partner.
+
+You will find this seven-digit code in the "Advertiser ID" section of the Overview tab. Below that, you'll also want to put your Activity Group label (referred to as "type" within Doubleclick) as well as your Activity Tag String Value (referred to as "cat") for tracking page views.
 
 ![doubleclick-floodlight](/1.0/assets/img/guides/streaming/clickstream/doubleclick-floodlight/doubleclick.gif)
 

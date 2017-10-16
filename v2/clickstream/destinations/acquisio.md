@@ -2,6 +2,7 @@
 title: Acquisio
 sidebar: platform_sidebar
 ---
+## Getting Started with Acquisio and Astronomer Clickstream
 
 Astronomer Clickstream makes it easy to send your data to Acquisio. Once you follow the steps below, your data will be routed through our platform and pushed to Acquisio in the appropriate format. Note that this connector supports client-side analytics.js only.
 

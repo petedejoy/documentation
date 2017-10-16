@@ -2,12 +2,22 @@
 title: Heap Analytics
 sidebar: platform_sidebar
 ---
-#NOT DONE
-To get started sending events to Heap, all you'll need is your Event Key, which can be found as soon as you create an account with them.
 
-**Step 1 -** Create a Heap Analytics account via their [website](http://www.heapanalytics.com)
+Astronomer Clickstream makes it easy to send your data to Heap. Once you follow the steps below, your data will be routed through our platform and pushed to Heap in the appropriate format. 
 
-**Step 2 -** A page will load suggesting you install Heap into your app. If you're using Astronomer for a web app, this isn't necessary as you'll be able to copy over the App ID into your Astronomer account. Your App ID will be located at the end of the javascript snippet they provide with the 'heap.load()' function.
+## What is Heap and how does it work?
+
+Heap is a mobile and web analytics tool. It automatically captures every user action in your web or mobile app and lets you analyze it retroactively. It also tracks real-time and retroactive analytics to create reports based on events like clicks, taps, swipes, and more. Designed with marketers in mind, Heap supports point-and-click web and mobile tag creation so that users can define custom events without coding. 
+
+Heap is powered by a Javascript library that you'll need to install on every page that you want to track. This library collects all actions and some basic contextual information, including CSS selectors and text on your links and buttons. If you want to go deeper than this basic information, you'll need to write custom code into your site using the Heap Javascript API. Similarly, if you want to record events that happen when users aren't actively on your site, such as when someone makes a payment or opens an email, you'll need to write code to pull that data and send it to Heap's API. 
+
+## Why send data to Heap using Astronomer Clickstream?
+
+Integrating Heap with Astronomer Clickstream allows you to collect valuable data without manually adding the Heap code snippet into your site header. Instead, you simply enable the Heap destination in your UI and Astronomer will take care of translating user traits and sending them to Heap. 
+
+## Getting Started with Heap and Astronomer Clickstream
+
+Once you create a Heap account, a page will load suggesting you install Heap into your app. If you're using Astronomer for a web app, this isn't necessary as you'll be able to copy over the App ID into your Astronomer account. Your App ID will be located at the end of the javascript snippet they provide with the 'heap.load()' function.
 
 ![heap-analytics1](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics1.png)
 
@@ -15,12 +25,12 @@ It's important to note here that Heap automatically sets you up with a Developme
 
 ![heap-analytics2](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics2.png)
 
-<b>Step 3 -</b> Add your App ID into the Heap connector on your Astronomer dashboard and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
+Add your App ID into the Heap connector on your Astronomer dashboard and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
 
 ![heap-analytics3](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics3.gif)
 
 
-<b>Step 4 -</b> When you return to your Heap account, you might get a message saying "There's no data here!" Oh no! But actually, look very closely as there might actually be data in a different environment (i.e. development instead of production.)
+When you return to your Heap account, you might get a message saying "There's no data here!" Oh no! But actually, look very closely as there might actually be data in a different environment (i.e. development instead of production.)
 
 ![heap-analytics4](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics4.png)
 

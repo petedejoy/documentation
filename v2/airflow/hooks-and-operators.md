@@ -71,7 +71,7 @@ As mentioned above, all operators are derived from `BaseOperator` and acquire mu
   
   * **run_as_user** (_str_) - unix username to impersonate while running the task
 
-  #### BaseSenseOperator
+#### BaseSenseOperator
 
   All sensors are derived from `BaseSenseOperator` and inherit `timeout` and `poke_interval` in addition to the `BaseOperator` attributes.
 
@@ -87,6 +87,6 @@ As mentioned above, all operators are derived from `BaseOperator` and acquire mu
       Apache Airflow: https://github.com/apache/incubator-airflow/tree/master/airflow/operators
       Community: https://github.com/apache/incubator-airflow/tree/master/airflow/contrib/operators
 
-  ### Hooks
+### Hooks
   
   Hooks are importers that dynamically load classes and modules from their parents. They are meant as an interface to interact with external systems.

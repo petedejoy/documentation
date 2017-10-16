@@ -199,5 +199,12 @@ entries:
     - title: Sample DAG Deployment
       url: /v2/airflow/dag-deployment.html
       output: web, pdf
+
+    - title: DAG Writing Best Practices
+      url:  /v2/airflow/best-practices.html
+      output: web, pdf
+
+    
+    
         
     

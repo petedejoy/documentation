@@ -30,7 +30,7 @@ Add your App ID into the Heap connector on your Astronomer dashboard and give yo
 ![heap-analytics3](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics3.gif)
 
 
-When you return to your Heap account, you might get a message saying "There's no data here!" Oh no! But actually, look very closely as there might actually be data in a different environment (i.e. development instead of production.)
+When you return to your Heap account, you might get a message saying "There's no data here!" Be sure to check all locations, as your data might be in a different environment (i.e. development instead of production).
 
 ![heap-analytics4](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics4.png)
 

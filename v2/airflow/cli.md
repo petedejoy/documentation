@@ -30,7 +30,7 @@ mkdir /path/to/project
 cd /path/to/project
 ```
 
-## Quickstart
+## Deploying with the Astro CLI
 
 We'll need to initialize a project:
 
@@ -111,11 +111,13 @@ redshift_sink.set_upstream(custom_transform)
 ## Astronomer CLI Commands
 
 Usage:
-  ```
+
+```
   astro [command]
 ```
 
 Available Commands:
+
 ```
   airflow       Run a local Airflow cluster
   config        Get or set Astro configs
@@ -130,11 +132,13 @@ Available Commands:
 ```
 
 Flags:
+
 ```
   -d, --debug   debug output
   -h, --Help    help for astro
   -v, --verbose verbose output
 ```
+
 Use `astro [command] --help` for more information about a command.
 
 ## Developing

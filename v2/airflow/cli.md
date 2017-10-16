@@ -108,9 +108,37 @@ redshift_sink = Activity(dag, 'astronomerio/redshift-sink', ...)
 custom_transform.set_upstream([salesforce_entity_1, salesforce_entity_2, salesforce_entity_3])
 redshift_sink.set_upstream(custom_transform)
 ```
+## Astronomer CLI Commands
 
-# Developing
+Usage:
+  ```
+  astro [command]
+```
 
-## Metadata
+Available Commands:
+```
+  airflow       Run a local Airflow cluster
+  config        Get or set Astro configs
+  deploy        Deploy to production Airflow cluster
+  help          Help about any command
+  info          List important CLI information
+  init          Create an Astronomer project
+  login         Authenticate with Astronomer servers
+  logout        Logout of current session
+  organization  Organization functions
+  status        Airflow cluster status
+```
+
+Flags:
+```
+  -d, --debug   debug output
+  -h, --Help    help for astro
+  -v, --verbose verbose output
+```
+Use `astro [command] --help` for more information about a command.
+
+## Developing
+
+### Metadata
 When running/building locally you will need to generate the metadata file.  Running `make build-meta` or a `make build`
 will build the meta data file.  Once generated, you should be able to build/run without problem.

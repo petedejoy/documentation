@@ -184,6 +184,20 @@ entries:
       url: /v2/airflow/overview.html
       output: web, pdf
 
+    - title: Core Airflow Concepts
+      url: v2/airflow/core-airflow-concepts.html
+      output: web, pdf
+
+    - title: Simple Sample DAG
+      url: /v2/airflow/sample-dag.html
+      output: web, pdf
+
     - title: CLI
       url: /v2/airflow/cli.html
       output: web, pdf
+
+    - title: Sample DAG Deployment
+      url: /v2/airflow/dag-deployment.html
+      output: web, pdf
+        
+    

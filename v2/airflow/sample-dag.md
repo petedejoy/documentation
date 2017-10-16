@@ -61,6 +61,7 @@ from airflow.operators.dummy_operator import DummyOperator
 Here, we can define a set of arguments that are then explicitly passed to each subsequent task. Setting default arguments is not mandatory but doing so can greatly reduce redundancy later in the pipeline.
 
 In this example, we use the default args to define the common `owner`, `start_date`, and a line of `random_logic` for all of the tasks.
+
 ```
 args = {
     'owner': 'airflow',

@@ -195,7 +195,7 @@ entries:
     - title: Airflow 101
         output: web, pdf
         subfolderitems:
-
+        
         - title: Core Airflow Concepts
-      url: /v2/airflow/airflow/core-airflow-concepts.html
-      output: web, pdf
+          url: /v2/airflow/airflow/core-airflow-concepts.html
+          output: web, pdf

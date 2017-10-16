@@ -2,27 +2,31 @@
 title: Woopra
 sidebar: platform_sidebar
 ---
-#NOT DONE
-To get started sending events to Woopra, you're only going to need your Domain Name.
+Astronomer Clickstream makes it easy to send your data to *Woopra*. Once you follow the steps below, your data will be routed through our platform and pushed to *Woopra* in the appropriate format. 
 
-### Step 1:
-Create a Woopra account via their [website](http://www.woopra.com).
+## Getting Started with Woopra and Astronomer Clickstream
 
-<br>
-
-### Step 2:
-After you create your account, you'll be asked to create a new project with the domain of your website or app.
-
-![woopra1](/1.0/assets/img/guides/streaming/clickstream/woopra/woopra1.png)
+### Woopra-Side
+Once you create your account on the woopra [website](https://www.woopra.com/) , add a new project with the domain of your website or app. 
 
 
-### Step 3:
-Add your domain name into the Woopra connector on your Astronomer dashboard and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
-
-![woopra2](/1.0/assets/img/guides/streaming/clickstream/woopra/woopra2.gif)
+![woopra1](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/woopra/woopra1.png)
 
 
-### Step 4:
-If you look back at your Woopra account, your events should begin to be trickling in. If you click on the 'People' icon on the left hand side of the dashboard, you'll see 1 new user. That's you! Click on that new user to see the history of events being recorded.
+### Astronomer-Side
 
-![woopra3](/1.0/assets/img/guides/streaming/clickstream/woopra/woopra3.png)
+Add your domain name into the Woopra connector on your Astronomer dashboard and give your new connection a unique name. 
+
+Click `Create Destination` and your pipeline will be activated.
+
+![woopra2](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/woopra/woopra2.gif)
+
+
+### The Pipeline.
+
+You'll now see your events trickling in on your Woopra account. If you click on the `People` icon on the left hand side of the dashboard, you'll see 1 new user. That's you!
+
+Click on that new user to see the history of events being recorded.
+
+![woopra3](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/woopra/woopra3.png)
+

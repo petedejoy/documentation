@@ -60,30 +60,51 @@ To check your version, look for `_gaq.push` in your code. If you see it, you're 
 Turn this feature on to use Google's remarketing tag (what was formely known as Doubleclick) or to identify demographic and interest data on visitors that is displayed in Demographic & Interest reports in Google Analytics.
 
 #### Cookie Domain Name
+In Google Analytics, the Cookie Domain Name setting allows you to specify the domain that the `_ga` cookie will be set on (this defaults to the top level domain: `domain.com`). 
+
+With Clickstream, the Cookie Domain Name defaults to `auto` which sets the cookie at root domain level. This will allow you to track across multiple sub-domains but will not work on `localhost` so, if you need to test on `localhost` but don't need to track between multiple sub-domains, then you can set the domain to `none`. 
+
+If you only want the cookie to live on a single sub-domain, enter that sub-domain the Cookie Domain Name field. 
 
 #### Enable Enhanced E-commerce
+This feature enables more detailed reports on e-commerce. 
 
 #### Ignored Referrers
+Use this if you want Google Analytics to ignore certain referral domains. 
+
+**Note:** This only works for Classic profiles. If you are on a Universal profile, you can edit this feature directly inside Google Analysics.
 
 #### Track Named Pages
+Enabling this will track events to Google Analytics for `page` calls that have a `name` associated with them. For example, `page('Home') will translate to **Viewed Home Page**.
+
+**Note:** We enable this automatically when you set-up Google Analytics as a Clickstream destination.
 
 #### Track Categorized Pages
+Enabling this will track events to Google Analytics for `page` calls that have a `category` associated with them. For example, `page('Blog', 'Index') will translate to Viewed Blog Page.
+
+**Note:** We enable this automatically when you set-up Google Analytics as a Clickstream destination.
 
 #### Include Querystring in Page Views
+By default, we only send the domain and path to Google Analytics. Enable this feature if you would like to pass a whole URL with query string to Google Analytics. This is helpful when you would like to track search queries. 
 
 #### Anonymize IP Addresses
+Read more about anonymizing IP addresses for client-side libraries [here](https://support.google.com/analytics/answer/2763052?hl=en).
 
 #### Enable Enhanced Link Attribution
+This feature provides more detailed reports on the links clicked on your site. Read more [here](https://support.google.com/analytics/answer/6047802?hl=en&visit_id=1-636437616467963863-2922769516&rd=1).
 
-#### Add the Non-interaction Flag to All Events
+#### Add the Non-Interaction Flag to All Events
+This feature adds a `noninteraction: true flag: to every event tracked to Google Analytics. Enable this if you're seeing unusually low bounce rates.
 
 #### Site Speed Sample Rate
+This defines the sample size for Site Speed data collection. If you have a smaller number of visitors, you might want to adjust the sampling to a larger rate for your site speed stats. 
 
 #### Use Classic Analytics for Your Serverside Tracking
+When creating your Google Analytics profile, you can choose between Classic and Universal Analytics. Profiles created after March 2013 default to Universal while earlier profiles are Classic. 
 
 #### Send User-ID to GA
 **Important** If you are passing an email, phone number, full name, or any other PII as the `ide` in identify, do not use this feature as it is against the Google Analytics Terms of Service and your account could be suspended. 
 
 #### Send Uncaught Exceptins to GA (Mobile)
-
+This feature lets you study errors and exceptions in your iOS and Android apps in Google Analytics.
 

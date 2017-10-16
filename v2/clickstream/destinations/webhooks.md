@@ -2,17 +2,30 @@
 title: Webhooks
 sidebar: platform_sidebar
 ---
-#NOT DONE
-Wanna see something really cool?
+Astronomer Clickstream makes it easy to send your data to Webhooks. Once you follow the steps below, your data will be routed through our platform and pushed to Webhooks in the appropriate format. 
 
-<b>Step 1</b> Add your destination webhook to the Astronomer webhook integration.
+## What are Webhooks?
 
-![webhooks1](/1.0/assets/img/guides/streaming/clickstream/webhooks/webhooks1.png)
+A Webhook (also called a web callback or an HTTP push API) is a simple event-notification via HTTP POST. It's a way for an app to provide other applications with real-time information, making it extremely efficient for both the provider and consumer.
 
-**There is no step 2....**
+A Webhook submits real-time user data, ties customer information to a dedicate API, records mobile and ecommerce data, and maps events to custom features within FB ads and Google Analytics.
 
-....Unless you want to add multiple webhooks, which of course you can do.
+No polling needed, just instant, real-time notifications.  
 
-![webhooks2](/1.0/assets/img/guides/streaming/clickstream/webhooks/webhooks2.png)
+## Why send data to Webhooks using Astronomer Clickstream.
 
-Give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
+If you're already set up with Astronomer Clickstream,  you have the code you need to start using Webhooks. Anything you've already collected with Astronomer can be sent to a max of 5 Webhook destinations.
+
+Read below to kickoff your integration and start gaining insights.
+
+## Getting Started with Webhooks and Astronomer Clickstream
+
+Add your domain name into the Webhook connector on your Astronomer dashboard and give your new connection a unique name. 
+
+Click `Create Destination` to activate your pipeline. 
+
+## Beyond the Basics.
+
+### Sending to Multiple Webhooks
+
+For each Webhook you'd like to enable, enter the full URL that we can send data to. You'll be able to provide up to 5 Webhooks.

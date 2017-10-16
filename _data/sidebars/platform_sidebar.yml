@@ -204,6 +204,10 @@ entries:
       url:  /v2/airflow/best-practices.html
       output: web, pdf
 
+    - title: Airflow Hooks & Operators
+      url:  /v2/airflow/hooks-and-operators.html
+      output: web, pdf
+
     
     
         

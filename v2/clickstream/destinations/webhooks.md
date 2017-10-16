@@ -10,7 +10,7 @@ A Webhook (also called a web callback or an HTTP push API) is a simple event-not
 
 A Webhook submits real-time user data, ties customer information to a dedicate API, records mobile and ecommerce data, and maps events to custom features within FB ads and Google Analytics.
 
-No polling needed, just instant, real-time notifications.  
+Get instant, real-time notifications without having to manually poll your data.  
 
 ## Why send data to Webhooks using Astronomer Clickstream.
 

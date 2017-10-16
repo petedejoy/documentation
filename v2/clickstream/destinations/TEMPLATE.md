@@ -35,7 +35,7 @@ What happens when you call Alias.
 
 
 ## Beyond the Basics
-Overview of additional features that are available on the Astronomer platform.
+Additional features that are available on the Astronomer platform.
 
 #### Additional Feature 1
 Description of additional feature 1

@@ -43,6 +43,7 @@ t3 = DummyOperator(
 t1.set_downstream(t2)
 t2.set_downstream(t3)
 ```
+
 ### Importing Modules
 First things first, we need to import all of the necessary modules.
 
@@ -60,6 +61,7 @@ from airflow.operators.dummy_operator import DummyOperator
 Here, we can define a set of arguments that are then explicitly passed to each subsequent task. Setting default arguments is not mandatory but doing so can greatly reduce redundancy later in the pipeline.
 
 In this example, we use the default args to define the common `owner`, `start_date`, and a line of `random_logic` for all of the tasks.
+
 ```
 args = {
     'owner': 'airflow',
@@ -68,12 +70,13 @@ args = {
 }
 ```
 
-### Instantiate a DAG
+### Instantiate the DAG
 Before we outline the tasks we want to run, we need a DAG to nest them into. First, we pass a string in for `dag_id` to serve as a unique identifier for the DAG. In this case, we kept it simple and used `sample_dag`.
 
 Next, we define a `schedule_interval` that dictates how often the DAG will run (just `@once` here).
 
 Finally, we passed in the default argument dictionary we defined earlier for our `default_args`.
+
 ```
 dag = DAG(
     'sample_dag',

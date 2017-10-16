@@ -58,6 +58,9 @@ Operators do not have to be assigned to DAGs immediately. DAG assignment can be 
 In addition to these core concepts, Airflow has a number of more complex features. More detail on these functionalities is available [here](http://airflow.incubator.apache.org/concepts.html#additional-functionality).
 
 Sources:
-* https://airflow.incubator.apache.org/concepts.html?highlight=core%20airflow%20concepts
-* https://databricks.com/blog/2017/07/19/integrating-apache-airflow-with-databricks.html
-* http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/
+
+  * https://airflow.incubator.apache.org/concepts.html?highlight=core%20airflow%20concepts
+
+  * https://databricks.com/blog/2017/07/19/integrating-apache-airflow-with-databricks.html
+
+  * http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/

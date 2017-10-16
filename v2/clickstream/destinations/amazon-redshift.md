@@ -12,6 +12,8 @@ Our connector periodically runs an ETL (Exract - Transform - Load) process that 
 ---
 
 ## Step 1: Pick a cluster that fits your needs. 
+
+*Note: If you already have a Redshift cluster, go ahead to step 3*
  
  Once you've logged into your AWS account and Redshift console, it's time to pick and select your cluster. 
  
@@ -31,10 +33,8 @@ Dense storage clusters maximize storage capacity and allow customers with hundre
 
 ## Step 2. Provision your cluster.
 
-(If you already have a Redshift cluster, go ahead to step 3!)
-
 1. Open the Redshift Console 
-2. CLick on "Launch Cluster"
+2. Click on "Launch Cluster"
 3. Input cluster details 
 4. Choose cluster size
 5. Set up your cluster Security Group or VPC and proceed to review

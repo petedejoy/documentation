@@ -2,7 +2,6 @@
 title: Keen IO
 sidebar: platform_sidebar
 ---
-#NOT DONE
 
 Astronomer Clickstream makes it easy to send your data to Keen IO. Once you follow the steps below, your data will be routed through our platform and pushed to Keen IO in the appropriate format. 
 

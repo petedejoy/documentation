@@ -3,7 +3,19 @@ title: DoubleClick Floodlight
 sidebar: platform_sidebar
 ---
 
-Astronomer Clickstream makes it easy to send your data to Doubleclick Floodlight. Once you follow the steps below, your data will be routed through our platform and pushed to Doubleclick Floodlight in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to Doubleclick Floodlight. Once you follow the steps below,your data will be routed through our platform and pushed to Doubleclick Floodlight in the appropriate format. 
+
+## What is DoubleClick Floodlight and how does it work?
+
+DoubleClick Floodlight is a system developed by Google used for ad tracking and reporting. It operates by creating an image pixel tag to track user action once they click on a Google Ad. By using a single set of Floodlight tags, it avoids cross-channel redundancy. It also integrates directly with AdWords and Google Analytics to track all activity accross multiple platforms.
+
+DoubleClick Floodlight requires the installation of an HTML `Floodlight tag` on every page that you want to track. When a customer clicks an ad that lands them on a page with a `Floodlight tag` embedded within the HTML, the tag sends data about the conversion back to DoubleClick. Setting this up on every page that you want to track is burdensome and requires a commitment from your dev team to write custom event tracking code and learn new tags to make the tool work for your business. That's where we come in.
+
+## Why send data to DoubleClick Floodlight using Astronomer Clickstream?
+
+By integrating DoubleClick Floodlight with Astronomer Clickstream, you can send information directly to DoubleClick without even using the `Floodlight tag`. Once you enable it as a destination in your Astronomer UI, your data will routed by Astronomer and sent to DoubleClick. By using Astronomer to enable DoubleClick, you eliminate the need for additional developer resources and custom event tracking code.
+
+
 
 ##Getting Started with Doubleclick Floodlight and Astronomer Clickstream
 

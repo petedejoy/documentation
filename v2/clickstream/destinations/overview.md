@@ -5,7 +5,7 @@ sidebar: platform_sidebar
 #NOT DONE
 ## Overview
 
-Overview of Destinations for the Clickstream module. What are Destinations? How do you request new Destinations? 
+Astronomer has a robust library of destinations consisting of data warehouses, A/B testing tools, analytics tools, marketing tools, and more. These destinations recieve data from the sources that you select in your Astronomer UI. 
 
 ## Survey of features
 

@@ -2,9 +2,18 @@
 title: Acquisio
 sidebar: platform_sidebar
 ---
-## Getting Started with Acquisio and Astronomer Clickstream
 
 Astronomer Clickstream makes it easy to send your data to Acquisio. Once you follow the steps below, your data will be routed through our platform and pushed to Acquisio in the appropriate format. Note that this connector supports client-side analytics.js only.
+
+## What is Acquisio and how does it work?
+
+Acquisio is a machine learning platform for SMB advertising. It combines self-improving bid and budget technology with automation to optimize performance across digital marketing campaigns. By tracking the efficiency of your search engine markeitng/PPC campains, Acquisio saves time and creates a higher level of marketing efficiency by supplying powerful A/B testing tools, ad-building tools, and an analytics dashboard.
+
+## Why send data to Acquisio using Astronomer Clickstream?
+
+Having your user event data incorporated into your marketing automation can be invaluable. Knowing exactly how your users are interacting with your site and mobile apps can provide more robust A/B experiemntation results, insights regarding ad effectiveness, and customer acquision data.
+
+## Getting Started with Acquisio and Astronomer Clickstream
 
 To get started sending events to Acquisio, you'll need to have signed up for [Acquisio](http://www.acquisio.com/), worked with an account manager to create your company's specific campaign, and received your Advertiser ID and any custom event names from them.  
 

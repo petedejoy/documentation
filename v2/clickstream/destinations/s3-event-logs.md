@@ -66,13 +66,13 @@ Configure a new S3 connection in your Astronomer dashboard and give your new con
 
 ### Things to Note:
 
-*AWS Region (required)*
+1. *AWS Region (required)*
 The region in which your S3 bucket resides. You can find a list of regions for [Amazon S3 under the "Region" column here](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). Enter your region exactly as it's shown (i.e. `us-east-1`).
 
-*Server Side Encryption (optional)*
+2. *Server Side Encryption (optional)*
 AWS S3 supports [server side encryption](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html). If your bucket policy requires the server side encryption header to be set, you can specify that here. Example values for this field are 'AES256' or 'aws:kms'.
 
-*Path Prefix (optional)*
+3. *Path Prefix (optional)*
 The file path at which your S3 events will be stored. 
 
 ![s3-event-logs3](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/s3-event-logs/s3-event-logs3.gif)

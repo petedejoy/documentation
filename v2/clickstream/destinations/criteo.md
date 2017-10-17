@@ -2,6 +2,18 @@
 title: Criteo
 sidebar: platform_sidebar
 ---
+
+## What is Criteo and how does it work?
+
+Criteo is a digital advertising and retargeting tool that automates, optimizes, and places Google Shopping ad campaigns in front of 1.2 billion monthly users based on custom constraints like user intent, product type, or device type. It also enables the creation and placement of native ads on retail sites using "Brand 360," an attribution feature that uses closed-loop SKU-level sales data allowing advertisters to track sales outcomes. It is capable of retargeting dynamic ads across Facebook and Instagram using machine learning to anlayze user behavior and suggest products to customers.
+
+In order to track key conversion events, Criteo requires the installation of Javascript code in your site. Implementation of criteo tags will require development effort from your mobile dev team.
+
+## Why send data to Criteo using Astronomer Clickstream?
+
+Integrating Criteo with Astronomer Clickstream simplifies data collection from mobile devices, as it eliminates the need to add any Criteo code tags to your application. Once you enable Criteo in your Astronomer UI, you will be able to automatically route all your date directly to Criteo from our servers. 
+
+
 ## Getting Started with Criteo and Astronomer Clickstream
 To get started sending events to Criteo, you'll need to have signed up for [Criteo Remarketing](http://www.criteo.com/) and working with a Criteo Account Strategist to plan your remarketing campaign.  You'll need a few technical components from your Account Strategist to move forward with enabling this connector. Note that this destination supports the client-side analytics.js source only.
 

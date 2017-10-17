@@ -56,6 +56,18 @@ All additional content is located inside of the `v2` folder.
 
 Adding pages to the sidebar can be accomplished by editing `_data/sidebars/platform_sidebar.yml`
 
+## How to embed images with relative paths
+
+We're embedding ALL images and GIFs on these new docs using relative paths rather than absolute ones. This protects us in the event of a url change; we will not need to re-upload and reference each individual image or GIF.
+
+Upload any image files with the appropriate names to https://github.com/astronomerio/documentation/tree/master/images
+
+Once you have images in there, follow the guidelines below to reference them using a relative path in markdown:
+
+Use `./` to reference the same level you are in, or `../` to go up a level. For example, let's say you are in `documentation/v2/airflow/best-practices.md`. To reference an image, you would type `../../images/{filename}.jpg`, because `images` is at the same level as `v2` . This command takes you up once to `v2`, then up again to root, then over to `/images/` then refrences the filename.
+
+
+
 ## Commiting your changes
 
 To add your changes to the site. 

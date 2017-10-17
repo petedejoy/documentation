@@ -17,7 +17,7 @@ By integrating DoubleClick Floodlight with Astronomer Clickstream, you can send 
 
 
 
-##Getting Started with Doubleclick Floodlight and Astronomer Clickstream
+## Getting Started with Doubleclick Floodlight and Astronomer Clickstream
 
 With the Doubleclick Floodlight destination, you can make calls directly to Floodlight based on your mapped events. To begin doing this, you'll need your Advertiser ID. Because DoubleClick is a rather expensive platform, you might be going through a DoubleClick Partner, such as [Mightyhive](http://mightyhive.com). If this is the case, you'll have to obtain your Advertiser ID directly from the partner.
 

@@ -24,7 +24,7 @@ Once you create an account with Calq, you'll be asked to create a new project.
 
 After you create a new project, you will be given a write key. 
 
-![calq2](../../../images/calq2)
+![calq2](../../../images/calq2.png)
 
 Copy this key and add it into your Astronomer UI to get started. Click 'Create Destination' to activate your pipeline.
 

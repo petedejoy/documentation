@@ -9,8 +9,8 @@ Astronomer Clickstream makes it easy to send your data to Mixpanel. Once you fol
 ## Getting Started with Mixpanel and Astronomer Clickstream
 To get started, create a Mixpanel account through their website. In your project settings, you will find your Token and API key.
 
-![mixpanel1](/1.0/assets/img/guides/streaming/clickstream/mixpanel/mixpanel1.png)
-![mixpanel2](/1.0/assets/img/guides/streaming/clickstream/mixpanel/mixpanel2.png)
+![mixpanel1](../../../images/mixpanel1.png)
+![mixpanel2](../../../images/mixpanel2.png)
 
 
 You'll nedd to copy these two fields into the Astronomer App configuration for Mixpanel.

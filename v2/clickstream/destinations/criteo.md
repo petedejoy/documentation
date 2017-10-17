@@ -27,4 +27,4 @@ Copy your Criteo Account ID into the "Account ID" field in your Astronomer Crite
 
 You can also map custom event names to a few of Criteo's reserved keywords in the Conversion Events section. In the example shown, `myEventName` is a custom event mapped to Criteo's `trackTransaction 
 
-![criteo1](/1.0/assets/img/guides/streaming/clickstream/criteo/criteo1.png)
+![criteo1](../../../images/criteo1.png)

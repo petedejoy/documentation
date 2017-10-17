@@ -26,18 +26,18 @@ Create a Hubspot account via their [website](http://www.hubspot.com). After you 
 
 Select the "Integrations" option and you'll be brought to a screen that looks like the one below. Next, you'll want to click the option on the left hand menu labeled "Get your HubSpot API Key."
 
-![hubspot1](/1.0/assets/img/guides/streaming/clickstream/hubspot/hubspot1.png)
+![hubspot1](../../../images/hubspot1.png)
 
 On this page you'll see a large blue button appropriately labeled 'Generate New Key.' 
 
-![hubspot2](/1.0/assets/img/guides/streaming/clickstream/hubspot/hubspot2.png)
+![hubspot2](../../../images/hubspot2.png)
 
 One handy feature of Hubspot is the full API Key History, including creation, viewing, and deactivation dates.
 
-![hubspot3](/1.0/assets/img/guides/streaming/clickstream/hubspot/hubspot3.png)
+![hubspot3](../../../images/hubspot3.png)
 
 **Set Up the Hubspot Configuration in your Astronomer App**
 
 Add both of these credentials (your Portal ID and your newly created API Key) into the Astronomer UI and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
 
-![hubspot4](/1.0/assets/img/guides/streaming/clickstream/hubspot/hubspot4.gif)
+![hubspot4](../../../images/hubspot4.gif)

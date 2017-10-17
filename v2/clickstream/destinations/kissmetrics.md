@@ -22,13 +22,13 @@ To get started sending events to Kissmetrics, you'll need your project specific 
 
 After creating a KISSmetrics account, you'll need to integrate Kissmetrics into your app. Luckily, this can be done through Astronomer; you'll just need your API Key which is a 40 character string that you'll be able to find in the javascript snippet they suggest adding to your app.
 
-![kissmetrics1](/1.0/assets/img/guides/streaming/clickstream/kissmetrics/kissmetrics1.png)
+![kissmetrics1](../../../images/kissmetrics1.png)
 
 Add your API Key into the Kissmetrics connector on your dashboard and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
 
-![kissmetrics2](/1.0/assets/img/guides/streaming/clickstream/kissmetrics/kissmetrics2.gif)
+![kissmetrics2](../../../images/kissmetrics2.gif)
 
 Click around your app to send off some test events. It might take an hour or so for events to start populating into your project. You can check to see if events are coming in by clicking on the 'Live' tab at the top of the page and looking athe 'All Activity' section.
 
-![kissmetrics3](/1.0/assets/img/guides/streaming/clickstream/kissmetrics/kissmetrics3.png)
+![kissmetrics3](../../../images/kissmetrics3.png)
 

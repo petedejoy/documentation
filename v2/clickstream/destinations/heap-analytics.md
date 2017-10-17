@@ -19,21 +19,21 @@ Integrating Heap with Astronomer Clickstream allows you to collect valuable data
 
 Once you create a Heap account, a page will load suggesting you install Heap into your app. If you're using Astronomer for a web app, this isn't necessary as you'll be able to copy over the App ID into your Astronomer account. Your App ID will be located at the end of the javascript snippet they provide with the 'heap.load()' function.
 
-![heap-analytics1](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics1.png)
+![heap-analytics1](../../../images/heap-analytics1.png)
 
 It's important to note here that Heap automatically sets you up with a Development and Production project when you create an account. Make sure you're copying over the right ID as that will affect which project within Heap your data gets sent to.
 
-![heap-analytics2](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics2.png)
+![heap-analytics2](../../../images/heap-analytics2.png)
 
 Add your App ID into the Heap connector on your Astronomer dashboard and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
 
-![heap-analytics3](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics3.gif)
+![heap-analytics3](../../../images/heap-analytics3.gif)
 
 
 When you return to your Heap account, you might get a message saying "There's no data here!" Be sure to check all locations, as your data might be in a different environment (i.e. development instead of production).
 
-![heap-analytics4](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics4.png)
+![heap-analytics4](../../../images/heap-analytics4.png)
 
 You can see what specific events are coming in by going to the 'Events' page, located in the left-hand menu bar.
 
-![heap-analytics5](/1.0/assets/img/guides/streaming/clickstream/heap-analytics/heap-analytics5.png)
+![heap-analytics5](../../../images/heap-analytics5.png)

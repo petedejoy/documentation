@@ -47,7 +47,7 @@ Sends the experiment and variation information as properties on a track call.
 #### Send `Experiment Viewed` as a non-interaction event
 Specifies the Experiment Viewed as a non-interaction event for Google Analytics
 
-![optimizely1](/1.0/assets/img/guides/streaming/clickstream/optimizely/optimizely1.png)
+![optimizely1](../../../images/optimizely1.png)
 
 
 Click 'Create Destination' and your pipeline will be activated. 

@@ -12,7 +12,7 @@ To get started sending events to Keen IO, you'll need two things:
 * Write Key: This gives Astronomer permission to send data to your Keen IO dashboard
 Both of these things will be long strings of random characters. 
 
-![keen-io1](/1.0/assets/img/guides/streaming/clickstream/keen-io/keen-io1.png)
+![keen-io1](../../../images/keen-io1.png)
 
 Once you create a Keen IO account, copy over your Project ID and Write Key into the Astronomer dashboard. You can find your Write Key by clicking on 'Show API Keys.'
 

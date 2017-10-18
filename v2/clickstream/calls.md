@@ -239,3 +239,25 @@ We have reserved some traits to be handled in special ways. These reserved trait
 
 ## Alias
 The `alias` method is used to merge two user identities, effectively connecting two sets of user data as one. Calling `alias` is slightly more advanced than `identify`, `track`, or `page` but it's required to manage user identities successfully in some of our destinations. 
+
+Here's a sample `alias`: 
+
+```
+analytics.alias("k9jlquh2ew");
+```
+
+And the resulting payload:
+
+```
+{
+    "type": "alias",
+    "previousId": "dagny@astronomer.io",
+    "userId": "k9jlquh2ew"
+}
+```
+
+### Previous ID
+The `previousId` is the existing ID that you're already referred to the user by. This could be an Anonymous ID that was assigned to the user or a User ID that you've previously identified them with in `identify`. 
+
+### User ID
+The `UserId` string will either be the user's new identity or an existing identity that you wish to merge with the `previousId`. 

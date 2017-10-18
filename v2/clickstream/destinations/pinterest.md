@@ -10,6 +10,8 @@ Pinterst Tag is an ad management platform that creates Javascript tags to track 
 
 The Pinterest Tag allows you to track user events on your website after viewing your promoted Pin. You can then use this information to gauge the effectiveness of your ad campaign and create audiences to target on Pinterest. In order to use this tag, you must implement two separate components. First, you need to add Javascript base code to every page of your website. Second, you need to add Javascript event tracking code on specific pages where you want to track conversion events. You can provide additional information about an event by attaching an object that contains event data such as `value` or `quantity`. In order to do this, you'll have to hardcode values or pass them back dynamically. 
 
+[Learn more about Pinterest](https://business.pinterest.com/en)
+
 ## Why send data to Pinterest Tag using Astronomer Clickstream?
 
 This integration can be very complicated to implement without Astronomer; the base code for each customer is unique and must be obtained from the Pinterest UI or API. If you want to track custom events, you'll need to familiarize yourself with the Pinterest API to both locate the correct base and event trackign code as well as install it correctly into your own site. It typically needs to be added by a webmaster or developer to prevent errors.
@@ -20,28 +22,40 @@ Integrating Pinterest with Astronomer cuts out any need for additional implement
 
 ## Getting Started with Pinterest Tag and Astronomer Clickstream
 
-To get started sending events to Pinterest, you'll need to have signed up for [Pinterest for Business](https://business.pinterest.com/en).
+To get started sending events to Pinterest, first sign up for [Pinterest for Business](https://business.pinterest.com/en).
 
-Note that this destination supports client-side analytics.js only.  You also need to have implemented Astronomer within your website prior to enabling this connector.
+*Note*:  that this destination supports client-side analytics.js only.  You also need to have implemented Astronomer within your website prior to enabling this connector.
 
-Begin by logging into your [Pinterest for Business](https://business.pinterest.com/en) account.  You'll need to create your conversion tracking tags.  To do so, choose from the "Ads" dropdown and select "Conversion Tracking."
+### Pinterest Side
+
+Begin by logging into your [Pinterest for Business](https://business.pinterest.com/en) account. Create your conversion tracking tags by choosing from the `Ads` dropdown and selecting `Conversion Tracking.`
 
 ![pinterest1](../../../images/pinterest1.png)
 
-On the next page, choose "Create a Pinterest tag".
+On the next page, choose `Create a Pinterest tag`.
 
 ![pinterest2](../../../images/pinterest2.png)
 
-Give your new tag a custom name, and choose "Next." The resulting page will show your Pinterest conversion tag for that custom event name.
+Give your new tag a custom name, and choose `Next.` This next page will show your Pinterest conversion tag for that custom event name.
 
 ![pinterest3](../../../images/pinterest3.png)
 
-The generated Pinterest tag contains a value shown in red in two places.  Copy this value.
+The generated Pinterest tag contains a value shown in red in two places. Copy this value.
 
 Note: we will fire `page` views for you, but you'll need to map in your custom events in order to fire those off.
 
-Inside the Astronomer UI for Pinterest Conversion Tracking, give your new Pinterest connection a name.  Then, provide your custom event name and paste the value for that event (shown in red in Step 2).  Choose "Create Destination."
+### Astronomer Side
+
+Back in the Astronomer UI, select Pinterest Conversion Tracking as a destination and give your new Pinterest pipeline a unique name.
+
+Then, provide your custom event name and paste the value for that event. 
+
+Finally, click `Create Destination` to activate your pipeline.
 
 ![pinterest4](../../../images/pinterest4.png)
 
-Generate page views and trigger your custom event inside your website with `analytics.track('your event name');`. You should see confirmation of those tags sent to Pinterest inside your Pinterest for Business dashboard, under "Conversion Tracking."
+With that, you're all set! Get ready for insights. 
+
+### Things to note. 
+
+Generate page views and trigger your custom event inside your website with `analytics.track('your event name');`. You should see confirmation of those tags sent to Pinterest inside your Pinterest for Business dashboard, under `Conversion Tracking.`

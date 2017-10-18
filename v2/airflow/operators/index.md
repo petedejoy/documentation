@@ -1,21 +1,9 @@
 ---
-title: Airflow Hooks & Operators
+title: Airflow Operators
 sidebar: platform_sidebar
 ---
-Hooks and Operators are key to extending capabilities with airflow while keeping your DAGs clean and simple.
 
-A **hook** is an object that embodies a connection to a remote server, service, or platform.
-
-An **operator** is an object that embodies an operation utilizing one or more hooks, typically to transfer data between one hook and another or to send/receive data from that
-
-### Operators
-In Airflow, operators allow for generation of certain types of tasks that become nodes in the DAG when instantiated. All operators derive from BaseOperator and inherit many attributes and methods that way. There are 3 main types of operators:
-  * **Action** - these operators perform an action or tell another system to perform an action.
-  * **Transfer** - these operators move data from one system to another.
-  * **Sensors** - this type of operator will keep running until a certain criterion is met.
-
-
-In this document, you will find descriptions of those operators, along with the logic and parameters that need to be defined each one.
+In this document, you will find descriptions of current operators, along with the logic and parameters that need to be defined each one.
 
 #### BaseOperator
 As mentioned above, all operators are derived from `BaseOperator` and acquire much of their functionality through inheritance. Being that `BaseOperator` is the [Lucy](https://en.wikipedia.org/wiki/Lucy_(Australopithecus)) of operators, we've devoted this section of documentation to understanding the parameters of it. These parameters represent building blocks that can be leveraged in your DAGs.
@@ -86,7 +74,3 @@ As mentioned above, all operators are derived from `BaseOperator` and acquire mu
   Thanks to the Apache Airflow project & community, there is a large base of operators already available for use
       Apache Airflow: https://github.com/apache/incubator-airflow/tree/master/airflow/operators
       Community: https://github.com/apache/incubator-airflow/tree/master/airflow/contrib/operators
-
-### Hooks
-  
-  Hooks are importers that dynamically load classes and modules from their parents. They are meant as an interface to interact with external systems.

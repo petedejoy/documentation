@@ -179,33 +179,57 @@ entries:
   - title: Airflow
     output: web, pdf
     folderitems:
-    
+
     - title: Overview
       url: /v2/airflow/overview.html
       output: web, pdf
 
-    - title: Core Airflow Concepts
-      url: v2/airflow/core-airflow-concepts.html
-      output: web, pdf
-
-    - title: Simple Sample DAG
-      url: /v2/airflow/sample-dag.html
-      output: web, pdf
-
-    - title: CLI
+    - title: Astro CLI
       url: /v2/airflow/cli.html
       output: web, pdf
 
-    - title: Sample DAG Deployment
-      url: /v2/airflow/dag-deployment.html
+    - title: Tutorial
+        output: web, pdf
+        subfolderitems: 
+    
+      - title: Core Airflow Concepts
+        url: /v2/airflow/tutorial/core-airflow-concepts.html
+        output: web, pdf
+
+      - title: Simple Sample DAG
+        url: /v2/airflow/tutorial/sample-dag.html
+        output: web, pdf
+
+      - title: Sample DAG Deployment
+        url: /v2/airflow/tutorial/dag-deployment.html
+        output: web, pdf
+
+      - title: DAG Writing Best Practices
+      url:  /v2/airflow/tutorial/best-practices.html
       output: web, pdf
 
-    - title: DAG Writing Best Practices
-      url:  /v2/airflow/best-practices.html
+  - title: Operators
+        output: web, pdf
+        subfolderitems:
+
+    - title: Airflow Operators Overview
+      url:  /v2/airflow/operators/overview.html
       output: web, pdf
 
-    - title: Airflow Hooks & Operators
-      url:  /v2/airflow/hooks-and-operators.html
+    - title: Airflow Operators
+      url: /v2/airflow/operators/index.html
+      output: web, pdf
+
+  - title: Hooks
+        output: web, pdf
+        subfolderitems:
+
+    - title: Airflow Hooks Overview
+      url: /v2/airflow/hooks/overview.html
+      output: web, pdf
+
+    - title: Airflow Hooks
+      url: /v2/airflow/hooks/index.html
       output: web, pdf
 
     - title: Airflow Connectors

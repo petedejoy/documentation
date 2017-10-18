@@ -4,10 +4,12 @@ sidebar: platform_sidebar
 ---
 
 ## Getting Started with Astronomer Clickstream - Android
-Using our analytics-android library, you can start sending customer data from your app to Astronomer, giving you valuable user data that yields rich, actionable insights for your business. The best part is that it only takes a few minutes to get started! Follow this step-by-step guide to se how:
+
+Using our analytics-android library, you can start sending customer data from your app to Astronomer, giving you valuable user data that yields actionable insight for your business. Follow the instructions below to get started in only a few minutes!
 
 ### Create an Android Source in the Astronomer UI
-After logging in with your Astronomer credentials, add a new Source → Android. Give your source a friendly name and copy that Source ID for the next step.
+
+After logging in with your Astronomer credentials, add a new `Source → Android`. Give your source a friendly name and copy that `Source ID` for the next step.
 
 ### Install the SDK
 
@@ -37,7 +39,7 @@ Analytics.setSingletonInstance(analytics);
 **Notes:**
 
 * Automatically tracking lifecycle events (`Application Opened`, `Application Installed`, `Application Updated`) is optional, but we highly recommending doing so to ensure you get the most out of Astronomer Clickstream!
-* This only installs the Astronomer destination - meaning all your data will be sent server side to tools.
+* This only installs the Astronomer destination, meaning all your data will be sent server side to tools.
 
 ### Add Permissions
 
@@ -88,6 +90,4 @@ Analytics.with(context).track("Viewed Product", new Properties()
   .putValue("revenue", "9.99"));
   ```
 
-Guess what? You have now successfully implemented your Android app! Now you're ready to head back to our app and start switching on some destinations.
-
-{% include links.html %}
+You have now successfully implemented your Android app! Now you're ready to head back to the Astronomer Clickstream UI and start switching on some destinations.

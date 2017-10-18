@@ -6,25 +6,23 @@ Astronomer Clickstream makes it easy to send your data to KISSmetrics. Once you 
 
 ## What is KISSmetrics and how does it work?
 
-KISSmetrics is a customer engagement automation suite that combines behavioral analytics, segmentation, and email campaign automation to deeply understand and engage your customers. 
+KISSmetrics is a customer engagement automation suite that combines behavioral analytics, segmentation, and email campaign automation to deeply understand and engage your customers. It allows you to access "out-of-the-box" behavior reports across platforms, track your key growth segments, and deliver behavior-based automated emails to keep your users engaged. 
 
-Access "out-of-the-box" behavior reports across platforms, track your key growth segments, and deliver behavior-based, automated emails to keep your users engaged. 
+KISSmetrics also gives marketers insight into custom population behavior for both active and churned populations.
 
-Even more high level, KISSmetrics gives marketers insight to custom population behavior for both active and churned populations.
-
-To install KISSmetrics itself, you ahve to : 
+To install KISSmetrics itself, you have to : 
 
 - 1. Map out the events and user traits to be collected
 - 2. Decide which libraries and SDKs you need to collect that data 
 - 3. Install them into your products. 
 
-KISSmetrics event reporting is easy to use if your events are properly planned following best practices, but the initial work does take some work and due diligence. 
-
-*Note:* If you'er planning on setting up any tool that requires event data, make sure to evaluate whether it's worth your developers' time.
+KISSmetrics event reporting is easy to use if your events are properly planned following best practices, but getting set up takes manual work and due diligence. 
 
 [Learn more about Kissmetrics](www.kissmetrics.com)
 
 ## Why send data to KISSmetrics using Astronomer Clickstream?
+
+If you want to set up multiple analytics tools in your stack, going through this installation process individually for each one is probably not worth you're developers' time.
 
 Using Astronomer to send data to KISSmetrics ensures that your developers only need to implement one platform and learn two simple calls: `identify` and `track`. With Astronomer, your customer data will not only be sent to KISSmetrics directly, but also to internal tools like email and chat. 
 
@@ -53,8 +51,6 @@ Now that you have your API Key, go ahead and enter it into the Kissmetrics conne
 Once that's done, click on `Create Destination` to activate your pipeline.
 
 ![kissmetrics2](../../../images/kissmetrics2.gif)
-
-### Final Step.
 
 Click around your app to send off some test events. It might take an hour or so for events to start populating into your project. You can check to see if events are coming in by clicking on the `Live` tab at the top of the page and looking at the `All Activity` section.
 

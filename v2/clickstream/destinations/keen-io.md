@@ -6,7 +6,7 @@ Astronomer Clickstream makes it easy to send your data to Keen.io. Once you foll
 
 ## What is Keen.io and how does it work?
 
-built for developers, Keen.io is an event data platform for real-time, intelligent data applications. The platform allows you to collect and send event data wherever you need, directly build powerful analytics features into your tools and products, and programatically provision role-based data access for your users and customers.
+Built for developers, Keen.io is an event data platform for real-time, intelligent data application. The platform allows you to collect and send event data wherever you need, directly build powerful analytics features into your tools and products, and programatically provision role-based data access for your users and customers.
 
 Keen.io supports customizable APIs and a charting library, which gives devs room to build and customize native analytics tools. Plus, their third-party integrations will allow your team to pin point key behavior metrics and pull customer data accordingly. 
 
@@ -14,15 +14,16 @@ Keen.io supports customizable APIs and a charting library, which gives devs room
 
 ## Why send data to Keen.io using Astronomer Clickstream?
 
-Instead of having to manually adapt your code, Astronomer Clickstream's integration automatically collects and transforms data for Keen.io directly from web application, mobile applications, and server-side implementations. 
+Instead of having to manually adapt your code, Astronomer Clickstream's integration automatically collects and transforms data for Keen.io directly from web applications, mobile applications, and server-side implementations. 
 
-Plus, no need to manually install the Keen.io SDK in your web application - we'll take care of it. 
+Plus, with Astronomer, there is no need to manually install the Keen.io SDK in your web application.
 
 ## Getting Started with Keen IO and Astronomer Clickstream
 
 ### Keen.io Side 
 
 To get started sending events to Keen IO, you'll need two things:
+
 * `Project ID:` This tells Astronomer which project within Keen IO is yours
 * `Write Key:` This gives Astronomer permission to send data to your Keen IO dashboard
 Both of these things will be long strings of random characters. 

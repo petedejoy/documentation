@@ -55,10 +55,7 @@ Now, just click `Create Destination` to activate your pipeline.
 
 ![lytics3](../../../images/lytics3.gif)
 
-
-### Final Step. 
-
- Lytics updates their incoming data stream every two minutes, so give it a couple of minutes for your events to show up.
+Lytics updates their incoming data stream every two minutes, so give it a couple of minutes for your events to show up.
  
 See the image below - you can check back in on the status of your project by going to the `Data` tab at the top.
 

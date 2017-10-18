@@ -5,7 +5,7 @@ sidebar: platform_sidebar
 
 ## Getting Started with Astronomer Clickstream - Android
 
-Using our analytics-android library, you can start sending customer data from your app to Astronomer, giving you valuable user data that yields actionable insight for your business. Follow the instructions below to get started in only a few minutes!
+Using our analytics-android library, you can start sending customer data from your app to Astronomer, giving you valuable user data that yields actionable insights for your business. Follow the instructions below to get started in only a few minutes!
 
 ### Create an Android Source in the Astronomer UI
 

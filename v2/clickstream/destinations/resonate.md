@@ -7,9 +7,9 @@ Astronomer Clickstream makes it easy to send your data to Resonate. Once you fol
 
 ## What is Resonate and how does it work?
 
-Resonate is a real-time customer intelligence tool that connects traditional market research, big data,data science, advanced analytics, and digital media activation in a single platform. 
+Resonate is a customer intelligence tool that combines traditional market research, big data, data science, advanced analytics, and digital media activation all on a single platform.
 
-Moving past traditional demographic and behavioral segments, Resonate conducts in-depth census-scale surveys of individual motivations and values. Plus, you can customize insights by placing tags on your site, onboarding your existing CRM data, and adding your own queries. 
+Moving past traditional demographic and behavioral segments, Resonate conducts in-depth census-scale surveys of individual motivations and values. It also promotes customization by placing tags on your site, onboarding your existing CRM data, and allowing you to add your own queries. 
 
 Resonate's professional services offerings, data management platform integrations, and email marketing subscription service adds to their value-add in the customer intelligence space.
 
@@ -17,9 +17,11 @@ Resonate's professional services offerings, data management platform integration
 
 ## Why send data to Resonate using Astronomer Clickstream?
 
-Integrating Astronomer Clickstream with Resonate will save you the work that comes with a manual integration. More importantly, it will enhance Resonate's platform and equip your team to better understand your customer base, effectively measure your marketing performance, and create engaging, front-end content. 
+Integrating Astronomer Clickstream with Resonate will circumvent the need for manual implementation. More importantly, it will enrich the data you see in your Resonate dashboard and equip your team to better understand your customer base. Once your team has a better grasp of your customer base, it can effectively measure marketing performance and create engaging content. 
 
 ## Getting Started with Resonate and Astronomer Clickstream
+
+*Note that this connector supports client-side analytics.js only.  You also need to have implemented Astronomer [inside your website](../sources/analyticsjs.md) prior to enabling this connector.*
 
 ### Resonate Side
 
@@ -30,7 +32,7 @@ Once you sign up on [Resonate](https://www.resonate.com/), work with a Resonate 
 
 On that last note: Make sure you can identify which tags are page impression tags, and which are custom or conversion tags. 
 
-The tags will contain important parameters that you'll need from step two.  The following parameters are the same for every tag: `advkey`, `opptykey`.  The `event key` is unique to each tag, and is shown as `my_event_key` below.  We take care of the `cache_buster`.
+The tags will contain important parameters that you'll need.  The following parameters are the same for every tag: `advkey`, `opptykey`.  The `event key` is unique to each tag, and is shown as `my_event_key` below.  We take care of the `cache_buster`.
 
 ``` javascript
 <IMG SRC="https://ds.reson8.com/insights.gif?rand=[cache_buster]&t=0&pixt=resonate&advkey=my_advkey&opptykey=my_opptykey&evkey=my_event_key&evtype=custom" WIDTH=1 HEIGHT=1 BORDER=0>
@@ -42,8 +44,6 @@ The identify tag is a bit different, and you can extract your `User Tracking Key
 <img src="https://ds.reson8.com/insights.gif?rand={{ cacheBuster }}&t=0&pixt=resonate&advkey={{ my_advkey }}&opptykey={{ my_opptykey }}&evkey={{ evkey }}&evtype={{ evtype }}&resnc1=esp&resnc2=open&resnc3={{ user_tracking_key }}">
 
 ```
-
-*Note:* This connector supports client-side analytics.js only.  You also need to have instrumented Astronomer [inside your website](../sources/analyticsjs.md) prior to enabling this connector.
 
 ### Astronomer Side
 
@@ -59,4 +59,3 @@ Give your new Resonate connection a name, and choose `Create Destination.`
 
 Confirm with your Resonate professional services director that the `<img>` tags for your specific campaign are being received as expected.
 
-With that, you're set and ready for insights. 

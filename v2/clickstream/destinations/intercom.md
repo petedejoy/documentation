@@ -13,27 +13,27 @@ To activate your pipeline and start sending events to Intercom, you'll need to (
 
 Once you're on the [Get started with Intercom](http://www.intercom.io) page, you'll be asked if you want to either (i) integrate one of their libraries or (ii) import users from another service/csv.
 
-![intercom1](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/intercom/intercom1.png)
+![intercom1](../../../images/intercom1.png)
 
 Click on `Integrate` and then `Segment` (You're still setting up Astronomer, don't worry).
 
-![intercom2](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/intercom/intercom2.png)
+![intercom2](../../../images/intercom2.png)
 
  Go ahead and click `Next` to continue the setup.
 
-![intercom3](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/intercom/intercom3.png)
+![intercom3](../../../images/intercom3.png)
 
 This is where you'll actually create your account and get started using Intercom.
 
-![intercom4](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/intercom/intercom4.png)
+![intercom4](../../../images/intercom4.png)
 
 Skip the `Set up Intercom & Segment` prompt and click on the gear wheel icon on the top right and then into the `Integrations` option in the dropdown.
 
-![intercom5](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/intercom/intercom5.png)
+![intercom5](../../../images/intercom5.png)
 
 From here, click on the `API Keys` on the left hand panel to access your App Id and API Key. Your App ID will look something like: `9iefb489`
 
-![intercom6](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/intercom/intercom6.png)
+![intercom6](../../../images/intercom6.png)
 
 ### Astronomer Platform Set-Up. 
 
@@ -43,15 +43,15 @@ Give your new connection a unique name.
 
 Click `Create Destination` to activate your pipeline. 
 
-![intercom7](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/intercom/intercom7.gif)
+![intercom7](../../../images/intercom7.gif)
 
 At this point, you'll see events coming in to your Intercom account. If you click on the `People` icon on the top of your dashboard, you'll see 1 new user. That's you!
 
-![intercom8](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/intercom/intercom8.png)
+![intercom8](../../../images/intercom8.png)
 
 Click on that new user to see the history of events being recorded.
 
-![intercom9](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/intercom/intercom9.png)
+![intercom9](../../../images/intercom9.png)
 
 ## Additional Functionality
 

@@ -3,26 +3,45 @@ title: Google Analytics
 sidebar: platform_sidebar
 ---
 
-Astronomer makes is super simple to send your data to Google Analytics. Once you've set up your source to start tracking data, we'll translate and route that data to Google Analytics. Keep reading to learn how to use Google Analytics with Astronomer.
+Astronomer makes is easy to send your data to Google Analytics. Once you've set up your source to start tracking data, we'll translate and route that data to Google Analytics.
 
-## Getting Started with Google Analytics x Astronomer
-It only takes a few simple steps to set up Google Analytics in Astronomer. 
+## What is Google Analytics and how does it work?
 
-Before you begin, make sure you have a Google Analytics account and your unique Tracking ID on hand. The Tracking ID can be found in the Admin panel and should look like  'UA-XXXXXXXX-X'. Also, you will need to remove Google Analytics' snippet from your page if you were using it outside of Astronomer.
+Google Analytics is a web analytics tool that pools real-time site information for a comprehensive view into user acquisition, audience demographics, and conversion goals. It supports targeted audience and integrates seamlessly with Google AdWords and all DoubleClick products.
 
-Next, head to app.astronomer.io and add a new destination for the source you want to track. Select Google Analytics and you will be brough to a Configure your destination panel. 
+Google Analytics requires that you add their snippet to your site. Doing this will give you basic information such as page views, traffic sources, and user location.  If you want to get more detailed user information, you'll need to write custom code in your site. In order to do this, you'll need to have a developer study the Google Analytics API to learn how to implement methods and format data correctly. 
+
+## Why send data to Google Analytics using Astronomer Clickstream?
+
+Integrating Google Analytics with Astronomer Clickstream means that you do not need to install any Google Analytics code into your site or mobile app. It also greatly eases the processes of tracking more detailed information like what users are doing on a page, ecommerce data, and user attributes. Furthermore, many custom events can be configured directly in the Astronomer UI, making it easy to track the data that you need.
+
+## Getting Started with Google Analytics and Astronomer Clickstream
+
+*Before you get started, note that you will need to remove Google Analytics snippet from your page if you were using it outside of Astronomer.*
+
+### Google Analytics Side
+
+To start, you'll need your Google Analytics `Tracking ID`. This can be found in the Admin panel and should abide by the following structure: `UA-XXXXXXXX-X`. 
+
+![google-analytics1](../../../images/google-analytics1.png)
+
+### Astronomer Side
+
+Next, head to app.astronomer.io and add a new destination for the source you want to track. Select Google Analytics and you will be brought to a Configure your destination panel. 
 
 Here, you'll need to create a Friendly Name and enter your Google Analytics Tracking ID for the app. With just these two pieces of information, you can click `Create Destination` and Astronomer will start sending your Clickstream data to Google Analytics. 
 
+![google-analytics1](../../../images/google-analytics2.gif)
+
 _Note_, unless you specify otherwise, Astronomer will automatically enable `Track Named Pages` and `Track Categorized Pages`. 
 
-What happens now? Well, once you enable Google Analytics in Astronomer, a couple of different things happen: 
+Enabling Google Analytics in your Astronomer UI causes a few things to happen: 
 
-  * Within a couple of minutes, our CDN is updated and our snippet will start loading Google Analytics javascript library onto your web pages. 
+  * Within a couple of minutes, our CDN is updated and our snippet will start loading Google Analytics javascript library onto your web pages. Note that it typically takes 12-24 hours for events to begin populating your GA dashboard, but then events should populate in real-time.
 
   * Your Google Analytics real-time dashboard will start showing live visitors.
 
-  * Any iOS or Android apps running our mobile libraries will start sending data to Google Analytics. New setting will take up to an hour to propagate to all of your existing users. If you added the iOS or Android library to your app code, it will be instanteous. 
+  * Any iOS or Android apps running our mobile libraries will start sending data to Google Analytics. New setting will take up to an hour to propagate to all of your existing users. If you added the iOS or Android library to your app code, it should take 12-24 hours for events to begin populating your dashboard.
 
   * Google Analytics will start automatically collecting data on your site or mobile app. It takes Google a couple of hours to process this data and add it to your reports, but you should still see events showing up in the real-time events dashboard. 
 
@@ -35,10 +54,10 @@ Note that when sending `page` views from a server-side library, a `url` property
 
 Also note that when calling `screen` in a mobile app, we'll send a screen view to Google Analytics but when calling `screen` server-side, you must pass in an application name through the `context.app.name` object for Google Analytics to accept your event.
 
-Ive you've set an application name in your Android or iOS project, Segment will grab the name and pass `context.app.name` automatically. For iOS, we collect your project's `infoDictionary` and use whatever name you've set there. 
+If you've set an application name in your Android or iOS project, Astronomer will grab the name and pass `context.app.name` automatically. For iOS, we collect your project's `infoDictionary` and use whatever name you've set there. 
 
 ### Identify
-Since it's against Google's Terms of Service to send Personally Identifiable Information (PII) to your Analytics reporting interface, we will never pass anything from an `identify` to Google unless you specifically tell us to. 
+Since it's against Google's [Terms of Service](https://www.google.com/policies/terms/) to send Personally Identifiable Information (PII) to your Analytics reporting interface, we will never pass anything from an `identify` to Google unless you specifically tell us to. 
 
 #### User ID
 Google Analytics allows you to set a User-ID for your identified visitors. [Read more about their universal tracking method here.](https://support.google.com/analytics/answer/3123663)

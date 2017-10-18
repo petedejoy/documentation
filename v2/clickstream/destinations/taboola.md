@@ -4,11 +4,11 @@ sidebar: platform_sidebar
 ---
 Astronomer Clickstream makes it easy to send your data to Taboola. Once you follow the steps below, your data will be routed through our platform and pushed to Taboola in the appropriate format. 
 
-## What is *Taboola*?
+## What is Taboola?
 
 Taboola develops and markets a service for online content publishers and advertisers that recommends digital content to website users. 
 
-## Why send data to *Taboola* using Astronomer Clickstream?
+## Why send data to Taboola using Astronomer Clickstream?
 
 Astronomer Clickstream data will inform your Taboola platform, empowering you to better understand your users and more effectively provide your users with engaging digital content. 
 
@@ -37,4 +37,4 @@ Give your new connection a unique name and click `Create Destination` to activat
 ![taboola1](../../../images/taboola1.png)
 
 
-With that, you're all set. Get ready for insights. 
+With that, you're ready to start pushing data to Taboola!

@@ -6,34 +6,61 @@ Astronomer Clickstream makes it easy to send your data to Lytics. Once you follo
 
 ## What is Lytics and how does it work?
 
-Lytics is a marketing analytics platform that crawls website text and images. In doing that, it automates digital catalogue and scoring of web content so that marketers can monitor and identify the most popular content, intensity of user engagement, and likelihood of user return. It also enables drag-and-drop segmentation, allowing teams to target customers based on channel, revenue, growth, or at-risk status.Lytics independently integrates with more than 65 popular platforms like Twitter, AdRoll, and Google Ads. It also allows marketers to provide a personalized help desk and in-app messages.
+Lytics is a customer data platform that helps brands orchestrate relevant marketing with built-in data science. Their customer platform makes it easy to build user profiles, build cross-channel campaigns, and predict behaviors with built-in machine learning. 
 
-Lytics collects its data from a Javascript library that you'll need to load on all pages of your site. The most important data it uses has to do with user information like name and email, which is used to both power the mesaging features and ensure you're not asking already-known users to opt in. All data is collected using the Lytics API, which will require a developer to learn and implement its methods and data structure.
+Lytics crawls website text and images, automating digital catalogue and scoring of web content so that marketers can monitor and identify the most popular content and measure the likelihood of user return. 
+
+Lytics also enables drag-and-drop segmentation, which allows teams to target customers based on channel, revenue, growth, or at-risk status. Plus, Lytics independently integrates with more than 65 popular platforms like Twitter, AdRoll, and Google Ads. 
+
+*Notes:* 
+
+- Lytics collects its user data (name, email address) from a Javascript library that you'd need to load on all pages of your site. This will power an in-app mesaging featur and ensure you're not asking already-known users to opt in. 
+
+- All data is collected using the Lytics API, which will require a developer to learn and implement its methods and data structure.
+
+[Learn more about Lytics](https://www.getlytics.com/)
 
 ## Why send data to Lytics using Astronomer Clickstream?
 
 Integrating Lytics with Astronomer Clickstream means that you won't have to write any custom code on top of your standard Astronomer integration. Enabling Lytics in your Astronomer UI automatically loads the Javascript library onto your site without making code changes.
 
-Astronomer Clickstream automatically maps `page`, `identify`, and `track` calls directly to Lytics in the format it understands. Lytics can then use that customer data to power its implementations. You are also able to easily  push data from mobile apps or servers to Lytics using Astronomer Clickstream.
+Astronomer Clickstream automatically maps `page`, `identify`, and `track` calls directly to Lytics, which then uses that customer data to power its implementations. 
+
+*Note*: With Astronomer Clickstream you can also easily push data from mobile apps or servers to Lytics.
 
 ## Getting Started with Lytics and Astronomer Clickstream
 
-To get started sending events to Lytics, you're only going to need your Data API Key and Account ID.
+### Lytics Side
 
-After you create your Lytics account, you'll be dropped into a welcome page asking you connect up some integrations.
+To get started sending events to Lytics, you'll need your: 
+
+- Data API Key
+- Account ID.
+
+Once you have a Lytics account, you'll be dropped into a welcome page asking you connect a few integrations.
 
 ![lytics1](../../../images/lytics1.png)
 
-We're not on that page yet (if you work at Lytics, we'd love to join the ranks!) but here's how you connect us up. Click on your email address at the top right, and click on the 'Manage Accounts' option. There you'll see your ID on the left hand side of your account and your Data API on the right.
+Astronomer won't show up on that page, but go ahead and click on your email address at the top right, and into the `Manage Accounts` option. 
+
+Once there, you'll see your ID on the left hand side of your account and your Data API Key on the right.
 
 ![lytics2](../../../images/lytics2.png)
 
-Add your Account ID and Data API into the Lytics connector on your Astronomer dashboard and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
+### Astronomer Side 
+
+Add your Account ID and Data API Key into the Lytics connector on your Astronomer dashboard and give your new connection a unique name. 
+
+Now, just click `Create Destination` to activate your pipeline.
 
 ![lytics3](../../../images/lytics3.gif)
 
 
- Lytics updates their incoming data stream every two minutes so your events won't show up immediately, but give it a couple of minutes. You can check back in on the status of your project by going to the 'Data' tab at the top.
+### Final Step. 
+
+ Lytics updates their incoming data stream every two minutes, so give it a couple of minutes for your events to show up.
+ 
+See the image below - you can check back in on the status of your project by going to the `Data` tab at the top.
 
 ![lytics4](../../../images/lytics4.png)
 

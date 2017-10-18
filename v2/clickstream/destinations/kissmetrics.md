@@ -22,6 +22,8 @@ KISSmetrics event reporting is easy to use if your events are properly planned f
 
 *Note:* If you'er planning on setting up any tool that requires event data, make sure to evaluate whether it's worth your developers' time.
 
+[Learn more about Kissmetrics](www.kissmetrics.com)
+
 ## Why send data to KISSmetrics using Astronomer Clickstream?
 
 Using Astronomer to send data to KISSmetrics ensures that your developers only need to implement one platform and learn two simple calls: `identify` and `track`. With Astronomer, your customer data will not only be sent to KISSmetrics directly, but also to internal tools like email and chat. 

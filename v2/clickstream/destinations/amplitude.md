@@ -37,9 +37,9 @@ After this app is created, an API Key will be generated and presented in your da
 
 ### Astronomer Side
 
-Add this API Key to the Amplitude connector on the Astronomer dashboard and give your new connection a unique name. Your pipeline will be activated once you click 'Create Destination.'
+Add this API Key to the Amplitude connector on the Astronomer dashboard and give your new connection a unique name. Your pipeline will be activated once you click `Create Destination`.
 
-You can now go back into your amplitude account and see your user activity! To see exactly what events are being sent over, you can click around the 'Events' and 'User Activity' tabs.
+You can now go back into your amplitude account and see your user activity! To see exactly what events are being sent over, you can click around the `Events` and `User Activity` tabs.
 
 
 

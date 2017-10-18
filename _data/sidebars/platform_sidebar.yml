@@ -205,7 +205,7 @@ entries:
         output: web, pdf
 
       - title: DAG Writing Best Practices
-      url:  /v2/airflow/best-practices.html
+      url:  /v2/airflow/tutorial/best-practices.html
       output: web, pdf
 
   - title: Operators

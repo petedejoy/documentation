@@ -18,6 +18,7 @@ Combining Woopra's data with the data you receive from other third-party tools o
 ## Getting Started with Woopra and Astronomer Clickstream
 
 ### **Woopra-Side**
+
 Once you create your account on the woopra [website](https://www.woopra.com/), add a new project with the domain of your website or app. 
 
 

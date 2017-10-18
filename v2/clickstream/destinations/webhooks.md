@@ -4,7 +4,7 @@ sidebar: platform_sidebar
 ---
 Astronomer Clickstream makes it easy to send your data to Webhooks. Once you follow the steps below, your data will be routed through our platform and pushed to Webhooks in the appropriate format. 
 
-## What are Webhooks?
+## What are Webhooks and how do they work?
 
 A Webhook (also called a web callback or an HTTP push API) is a simple event-notification via HTTP POST. It's a way for an app to provide other applications with real-time information, making it extremely efficient for both the provider and consumer.
 
@@ -12,7 +12,7 @@ A Webhook submits real-time user data, ties customer information to a dedicate A
 
 Get instant, real-time notifications without having to manually poll your data.  
 
-## Why send data to Webhooks using Astronomer Clickstream.
+## Why send data to Webhooks using Astronomer Clickstream?
 
 If you're already set up with Astronomer Clickstream,  you have the code you need to start using Webhooks. Anything you've already collected with Astronomer can be sent to a max of 5 Webhook destinations.
 

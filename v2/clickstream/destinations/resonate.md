@@ -3,7 +3,7 @@ title: Resonate
 sidebar: platform_sidebar
 ---
 
-Astronomer Clickstream makes it easy to send your data to *DESTINATION*. Once you follow the steps below, your data will be routed through our platform and pushed to *DESTINATION* in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to Resonate. Once you follow the steps below, your data will be routed through our platform and pushed to Resonate in the appropriate format. 
 
 ## What is Resonate and how does it work?
 
@@ -17,6 +17,7 @@ Resonate's professional services offerings, data management platform integration
 
 ## Why send data to Resonate using Astronomer Clickstream?
 
+Integrating Astronomer Clickstream with Resonate will save you the work that comes with a manual integration. More importantly, it will enhance Resonate's platform and equip your team to better understand your customer base, effectively measure your marketing performance, and create engaging, front-end content. 
 
 ## Getting Started with Resonate and Astronomer Clickstream
 
@@ -42,16 +43,20 @@ The identify tag is a bit different, and you can extract your `User Tracking Key
 
 ```
 
-*Note:* This connector supports client-side analytics.js only.  You also need to have instrumented Astronomer [inside your website](https://docs.astronomer.io/docs/1.0/streaming/clickstream/collectors/analyticsjs/) prior to enabling this connector.
+*Note:* This connector supports client-side analytics.js only.  You also need to have instrumented Astronomer [inside your website](../sources/analyticsjs.md) prior to enabling this connector.
 
-### Step 2:
+### Astronomer Side
 
 Copy your common tag parameters (`advkey`, `opptykey`), as well as your `User Tracking Key` from the identify tag,  and paste them into your Astronomer Resonate configuration.  
 
-Next, you'll need to provide your page impression tag event key, as well as any custom events and their respective event keys (shown as `evkey` in the snippet above).  Give your new Resonate connection a name, and choose "Create Destination."
+Next, you'll need to provide your page impression tag event key, as well as any custom events and their respective event keys (shown as `evkey` in the snippet above).  
 
-![resonate1](/1.0/assets/img/guides/streaming/clickstream/resonate/resonate1.png)
+Give your new Resonate connection a name, and choose `Create Destination.`
 
-### Step 3:
+![resonate1](../../../images/resonate1.png)
 
-Confirm with your Resonate professional services director that the `<img>` tags for your specific campaign are being received by them as expected.
+### Final Step. 
+
+Confirm with your Resonate professional services director that the `<img>` tags for your specific campaign are being received as expected.
+
+With that, you're set and ready for insights. 

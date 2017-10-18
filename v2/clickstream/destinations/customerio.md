@@ -3,19 +3,23 @@ title: Customer.io
 sidebar: platform_sidebar
 ---
 
+Astronomer Clickstream makes it easy to send your data to Customer.io. Once you follow the steps below, your data will be routed through our platform and pushed to Customer.io in the appropriate format. 
+
 ## What is Customer.io and how does it work?
 
-Customer.io is an automated email based on customer behavioral data. It maps this data, including any event names or properties, so that you can create any user segmentation. It also uses Shopify's open-source Liquid logic for powerful and robust email template and personalization options. 
+Customer.io is an automated email based on customer behavioral data. It allows you to create user segmentation by mapping this behavioral data. It also uses Shopify's open-source Liquid logic for powerful and robust email template and personalization options. 
 
-There are a few ways that Customer.io works. The first is by integrating with a clickstream tool like Astronomer. The other ways involve copy and pasting your customer.io javascript snippet into the footer of your website and using client libraries. 
+Using Customer.io involves placing their Javascript snippet in the footer of your website and using their client libraries. 
 
 ## Why send data to Customer.io using Astronomer Clickstream?
 
 If you elect to use the Customer.io Javascript snippet, you'll need to manually identify logged in users and any information you know about them. After manually identifying these users, you will be able to email everyone who logs into your site. Customer.io also lacks a libraries for Java, iOS, Android, and OS X.
 
-Integrating Customer.io with Astronomer Clickstream allows the customer data coming in from websites, servers, and mobile apps to be sent directly to Customer.io without any additional installation. We eliminate the need for you to manually identify all logged in users to use the tool.
+Integrating Customer.io with Astronomer Clickstream allows the customer data coming in from websites, servers, and mobile apps to be sent directly to Customer.io without any additional installation. We eliminate the need for you to manually identify logged-in users.
 
 ## Getting Started with Customer.io and Astronomer Clickstream
+
+### Customer.io Side
 
 To get started sending events to Customer.io, you're going to need your Site ID and your API Key.
 
@@ -26,6 +30,8 @@ Once you create a [Customer.io](customer.io) account, you'll be asked to create 
 You will find both your Site ID and API Key clearly presented and labeled once you click on the 'Integration' tab within the 'Configuration' section of the left hand menu.
 
 ![customerio2](../../../images/customerio2.png)
+
+### Astronomer Side
 
 Add your App ID into the Customer.io connector on your Astronomer dashboard and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
 

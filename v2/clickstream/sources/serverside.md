@@ -27,7 +27,7 @@ You'll need to supply your app_ID with each request using HTTP Basic Auth.
 
 Basic Auth base64 encodes a 'username:password' and prepends it with the string 'Basic'. The native libraries should handle this for you, but if they do not you'll need to base64 encode a string in which the username is the app_ID and the password is empty.
 
-For example, if your app_ID is `bXlhcHA6`, you'll need to encode `bXlhcHA6:`. The resut of this will be `Basic YlhsaGNIQTY6`. The complete authorization header would then be `Authorization: Basic YlhsaGNIQTY6`.
+For example, if your Source ID is `bXlhcHA6`, you'll need to encode `bXlhcHA6:`. The resut of this will be `Basic YlhsaGNIQTY6`. The complete authorization header would then be `Authorization: Basic YlhsaGNIQTY6`.
 
 #### Content-Type
 
@@ -124,20 +124,20 @@ npm install --save astronomer
 ```
 
 #### Step 2
-Initialize this package with teh App ID found in the settings section of your Astronomer account.
+Initialize this package with the Source ID found in the settings section of your Astronomer account.
 ```
-var Analytics = require('astronomer');
+var Analytics = import('astronomer');
 var Analytics = new analytics{'ASTRONOMER_APP_ID')}
 ```
 
 #### Step 3
 
-Set your event methods(identify, track, etc.) throughout your app. 
+Set your event methods (identify, track, etc.) throughout your app. 
 *Note: We've standardized to analytics.js. If you've used a tool like [Segment](https://segment.com/) in the past, you will find that instrumenting events in Astronomer works in the exact same way.*
 
 ### Calls in Node.js
 
-Check out our 'Calls' section for information on when you should use each call. Below are some examples of how you'd call specific objects in node.js.
+Check out our [Calls](../calls.md) section for information on when you should use each call. Below are some examples of how you'd call specific objects in node.js.
 
 #### Identify
 
@@ -233,7 +233,7 @@ require_once(\"/path/to/analytics-php/lib/Segment.php\");
 
 #### Step 3
 
-Initialize the module with the App ID found in the setting sections of your Astronomer account. Note that you are only required to do this intitialization once.
+Initialize the module with the Source ID found in the setting sections of your Astronomer account. Note that you are only required to do this intitialization once.
 ```
 class_alias('Segment', 'analytics');
 analytics::init("ASTRONOMER_APP_ID");
@@ -244,7 +244,7 @@ After this initialization, you have a ready-to-use instance with all calls built
 
 ### Calls in PHP
 
-Check out our 'Calls' section for information on when you should use each call. Below are some examples of how you'd call specific objects in PHP.
+Check out our [Calls](../calls.md) section for information on when you should use each call. Below are some examples of how you'd call specific objects in PHP.
 
 #### Identify
 ```
@@ -320,7 +320,7 @@ pip install astronomer-analytics
 
 #### Step 2
 
-Inside your python app, set you app_id inside an instance of the Analytics object.
+Inside your python app, set you Source ID inside an instance of the Analytics object.
 ```
 import analytics
 analytics.app_id = ‘astronomer_app_id’
@@ -329,7 +329,7 @@ analytics.app_id = ‘astronomer_app_id’
 
 ### Calls in Python - NOT DONE
 
-Check out our 'Calls' section for information on when you should use each call. Below are some examples of how you'd call specific objects in Python.
+Check out our [Calls](../calls.md) section for information on when you should use each call. Below are some examples of how you'd call specific objects in Python.
 
 #### Identify
 ```
@@ -381,7 +381,7 @@ gem install astronomer
 
 #### Step 2
 
-Inside your Ruby application, you'll want to set your app_id inside an instance of the Analytics object:
+Inside your Ruby application, you'll want to set your Source ID inside an instance of the Analytics object:
 ```
 analytics = Segment::Analytics.new({
   app_id: 'YOUR_APP_ID'

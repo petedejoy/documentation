@@ -75,9 +75,9 @@ Analytics analytics = new Analytics.Builder(context, appID)
   .build();
 ```
 
- In addition to these, you will likely want to track some events that are success indicators for your app - like Viewed Product, Email Sign Up, Item Purchased, etc. You can always add more of these later!
+In addition to these, you will likely want to track some events that are success indicators for your app - like Viewed Product, Email Sign Up, Item Purchased, etc. You can always add more of these later!
 
- For example, here's a sample `track` call that records when a user signs up:
+For example, here's a sample `track` call that records when a user signs up:
 ```
  Analytics.with(context).track("Signed up", new Properties().putValue("plan", "Enterprise"));
 ```

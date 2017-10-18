@@ -22,7 +22,7 @@ Integrating Calq with Astronomer Clickstream means that you will not need to ins
 
 ## Getting Started with Calq and Astronomer Clickstream
 
-Astronomer Clickstream makes it easy to send your data to Calq. Once you follow the steps below, your data will be routed through our platform and pushed to Calq in the appropriate format. 
+### Calq Side
 
 Once you create an account with Calq, you'll be asked to create a new project.
 
@@ -31,6 +31,8 @@ Once you create an account with Calq, you'll be asked to create a new project.
 After you create a new project, you will be given a write key. 
 
 ![calq2](../../../images/calq2.png)
+
+### Astronomer Side
 
 Copy this key and add it into your Astronomer UI to get started. Click 'Create Destination' to activate your pipeline.
 

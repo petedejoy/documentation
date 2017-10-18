@@ -98,6 +98,7 @@ Alternatively, you can `flush` the queue manually:
 ### Submitting to the App Store
 
 When submitting to the App Store, beware that Astronomer collects the IDFA for use in doing mobile install attribution with destinations like Mobile App Tracking. Even if you’re not currently doing mobile install attribution, if you get asked, “Does this app use the Advertising Identifier (IDFA)?” on this page, you’ll want to check the following three boxes:
+
   1. Attribute this app to a previously sent advertisement
   2. “Attribute an action taken within this app to a previously served advertisement”
   3. “I, YOUR_NAME, confirm that this app, and any third party…”

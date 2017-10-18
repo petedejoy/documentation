@@ -46,9 +46,9 @@ And the resulting payload:
 
 As you can see, an `identify` call has 2 components beyond the common fields:
 
-| Field               | Type   | Description                                                                                                      |
-| ------------------- | ------ | ---------------------------------------------------------------------------------------------------------------- |
-| `traits` (optional) | Object | Dictionary of user traits like `name` or `email`                                                                 |
+| Field               | Type   | Description |
+| ------------------- | ------ | ----------- |
+| `traits` (optional) | Object | Dictionary of user traits like `name` or `email` |
 | `userID` (required) | String | Unique identifier for the user in your database. Either a `userID` or an `anonymousID` is required for this call |
 
 ### Anonymous and User ID's
@@ -64,6 +64,29 @@ Also, we recommend using something like a database ID over something like an ema
 
 ### Traits
 In an `identify` call, traits are pieces of information that you know about a user. Traits can really be anything - from email addresses to age to A/B test variations. The world is your oyster!
+
+We have reserved some traits to be handled in special ways. These reserved traits should only be used for their intended meanings. 
+
+| Trait         | Type   | Description |
+| ------------- | ------ | ----------- |
+| `address `    | Object | Dictionary of user traits like `name` or `email` |
+| `age`         | Number | Age of a user |
+| `avatar`      | String | URL to an avatar image for a user |
+| `birthday`    | Date   | User's birthday |
+| `company`     | Object | The company a user represents |
+| `createdAt`   | Date   | Date the user's account was first created. We recommend ISO-8601 date strings |
+| `description` | String | Description of a user |
+| `email`       | String | Email address of a user |
+| `firstName`   | String | First name of a user |
+| `gender`      | String | Gender of a user |
+| `id`          | String | Unique ID (from your database) for a user |
+| `lastName`    | String | Last name of a user |
+| `name`        | String | Full name of a user - we will fill this in if you pass a first and last name |
+| `phone`       | String | Phone number of a user |
+| `title`       | String | Title of a user |
+| `username`    | String | User's username | 
+| `website`     | String | Website of a user |
+
 
 ## Track 
 To record any actions your users perform, along with properties that describe the action, you will want to use a `track` call. Each of these actions is known as an event, and each of these events has a name. Calling `track` is one of the first steps to getting the most out of Astronomer Clickstream, keep reading to see how to do it...
@@ -92,13 +115,21 @@ That sample call would yield the following payload:
 ```
 As you can see, a `track` call has 2 components beyond the common fields: 
 
-| Field                   | Type   | Description                                                           |
-| ----------------------- | ------ | --------------------------------------------------------------------- |
-| `event` (required)      | String | Name of the action that a user has performed                          |
+| Field                   | Type   | Description |
+| ----------------------- | ------ | ----------- |
+| `event` (required)      | String | Name of the action that a user has performed |
 | `properties` (optional) | String | Dictionary of properties of the event, like `model_number` or `price` |
 
 ### Properties
 Properties are extra bits of information that you can tie to the events you track and can really be anything. We recommend sending properties as often as possible to give you a more complete picture of what your users are doing!
+
+We have reserved some properties that have semantic meanings and are handled in special ways. These reserved properties should only be used for their intended meanings.
+
+| Property   | Type   | Description |
+| ---------- | ------ | ----------- |
+| `revenue`  | Number | The amount of revenue an event resulted in. This should be a decimal value. | 
+| `currency` | Number | Currency of the revenue an event resulted in (in ISO 4127 format). We will assume USD if this is not set |
+| `value`    | Number | An abstract "value" to associate with an event | 
 
 ## Page
 The `page` call allows you to record whenever a user sees a page of your webiste, along with any optional properties you want to include about the page. Calling `page` or `screen` is one of the first steps to getting the most out of Astronomer Clickstream, keep reading to see how to do it...
@@ -132,6 +163,17 @@ As you can see, a `page` call has 2 components beyond the common fields:
 
 ### Properties
 Properties are extra bits of information that you can tie to the pages you track and can really be anything. We recommend sending properties as often as possible to give you a more complete picture of what your users are doing!
+
+We have reserved some properties that have semantic meanings and are handled in special ways. These reserved properties should only be used for their intended meanings.
+
+| Property   | Type   | Description |
+| ---------- | ------ | ----------- |
+| `name`     | String | Name of the page |
+| `path`     | String | Path portin of the URL of the page | 
+| `referrer` | String | Full URL of the previous page | 
+| `search`   | String | Query string portion of the URL of the page | 
+| `title`    | String | Title of the page |
+| `url`      | String | Full URL of the page |
 
 **Note** In analytics.js, we automatically send the following properties: `title`, `path`, `url`, `referrer`, and `search`.
 
@@ -167,9 +209,9 @@ And, the corresponding payload:
 ```
 As you can see, a `group` call has 2 components beyond the common fields: 
 
-| Field               | Type   | Description                                                       |
-| ------------------- | ------ | ----------------------------------------------------------------- |
-| `groupID` (required)| String | Name of the page                                                  |
+| Field               | Type   | Description |
+| ------------------- | ------ | ----------- |
+| `groupID` (required)| String | Name of the page |
 | `traits` (optional) | String | Dictionary of traits of the group, like `industry` or `employees` |
 
 ### Group ID
@@ -177,6 +219,23 @@ A Group ID is the unique identifier by which you recognize a group in your datab
 
 ### Traits
 Traits are extra bits of information that you can tie to the pages you track and can really be anything.
+
+We have reserved some traits to be handled in special ways. These reserved traits should only be used for their intended meanings. 
+
+| Trait         | Type   | Description |
+| ------------- | ------ | ----------- |
+| `address `    | Object | Street address of a group. This should be a dictionary containing optional `city`, `country`, `postalCode`, `state`, or `street` |
+| `avatar`      | String | URL to an avatar image for a user |
+| `createdAt`   | Date   | Date the group's account was first created. We recommend ISO-8601 date strings |
+| `description` | String | Description of a group |
+| `email`       | String | Email address of a group |
+| `employees`   | String | Number of employees of a group |
+| `id`          | String | Unique ID (from your database) for a group |
+| `industry`    | String | Industry a user works in, or a group is part of | 
+| `name`        | String | Name of a group |
+| `plan`        | String | Plan that a group is in | 
+| `phone`       | String | Phone number of a group |
+| `website`     | String | Website of a group |
 
 ## Alias
 The `alias` method is used to merge two user identities, effectively connecting two sets of user data as one. Calling `alias` is slightly more advanced than `identify`, `track`, or `page` but it's required to manage user identities successfully in some of our destinations. 

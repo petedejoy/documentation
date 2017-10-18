@@ -30,6 +30,8 @@ Once you find your seven-digit Advertiser ID, enter it into the corresponding fi
 
 If you want to pass in specific track events to Doubleclick, you can do so within the Events section in the Advanced tab. Simply specify the name of the event exactly as it is sent to Astronomer and the corresponding Type and CAT values for the Activity Group in DoubleClick.
 
+In the past, we've seen Floodlight tags that look something like this:
+
 ```
 Start of DoubleClick Floodlight Tag: Please do not remove
 
@@ -53,6 +55,8 @@ Insert the Floodlight tags between the <body> and </body> tags, as close to the 
 
 Add Comment Collapse
 ```
+
+In this example, `mytype00` is your `type` and `mycat0` is your `cat` in the Astronomer UI.
 
 Custom properties can be added to the events sent to Doubleclick by specifying the specific property and mapping to the corresponding property label in Doubleclick (e.g. u1, u2, etc.)
 

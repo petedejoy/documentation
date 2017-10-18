@@ -3,12 +3,31 @@ title: Resonate
 sidebar: platform_sidebar
 ---
 
-To get started sending events to Resonate, you'll need to have signed up for [Resonate](https://www.resonate.com/), worked with a Resonate professional services director to create your company's specific campaign, and received your page impression, identify, and tracking `<img>` tags from them.  
+Astronomer Clickstream makes it easy to send your data to *DESTINATION*. Once you follow the steps below, your data will be routed through our platform and pushed to *DESTINATION* in the appropriate format. 
 
-### This connector supports client-side analytics.js only.  You also need to have instrumented Astronomer [inside your website](https://docs.astronomer.io/docs/1.0/streaming/clickstream/collectors/analyticsjs/) prior to enabling this connector.
+## What is Resonate and how does it work?
 
-### Step 1:
-Retrieve your Resonate page impression and tracking tags from your professional services director. Ensure that you can identify which tags are page impression tags, and which are custom or conversion tags.
+Resonate is a real-time customer intelligence tool that connects traditional market research, big data,data science, advanced analytics, and digital media activation in a single platform. 
+
+Moving past traditional demographic and behavioral segments, Resonate conducts in-depth census-scale surveys of individual motivations and values. Plus, you can customize insights by placing tags on your site, onboarding your existing CRM data, and adding your own queries. 
+
+Resonate's professional services offerings, data management platform integrations, and email marketing subscription service adds to their value-add in the customer intelligence space.
+
+[Learn more about Resonate](https://www.resonate.com/)
+
+## Why send data to Resonate using Astronomer Clickstream?
+
+
+## Getting Started with Resonate and Astronomer Clickstream
+
+### Resonate Side
+
+Once you sign up on [Resonate](https://www.resonate.com/), work with a Resonate professional services director to:
+
+- Create your company's specific campaign
+- Receive your page impression, identify, and tracking `<img>` tags.
+
+On that last note: Make sure you can identify which tags are page impression tags, and which are custom or conversion tags. 
 
 The tags will contain important parameters that you'll need from step two.  The following parameters are the same for every tag: `advkey`, `opptykey`.  The `event key` is unique to each tag, and is shown as `my_event_key` below.  We take care of the `cache_buster`.
 
@@ -20,7 +39,10 @@ The identify tag is a bit different, and you can extract your `User Tracking Key
 
 ``` javascript
 <img src="https://ds.reson8.com/insights.gif?rand={{ cacheBuster }}&t=0&pixt=resonate&advkey={{ my_advkey }}&opptykey={{ my_opptykey }}&evkey={{ evkey }}&evtype={{ evtype }}&resnc1=esp&resnc2=open&resnc3={{ user_tracking_key }}">
+
 ```
+
+*Note:* This connector supports client-side analytics.js only.  You also need to have instrumented Astronomer [inside your website](https://docs.astronomer.io/docs/1.0/streaming/clickstream/collectors/analyticsjs/) prior to enabling this connector.
 
 ### Step 2:
 

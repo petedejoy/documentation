@@ -5,14 +5,12 @@ sidebar: platform_sidebar
 
 ## Overview
 
-Overview of sources for Clickstream module. What's a source? How do we request new sources?  
+Astronomer lets you pull data from a variety of sources. We then route that inbound data and translate it into a format that your destination of choice understands. Below are a list of the sources that we support.
 
-## Survey of features
+[Analytics.js](../analyticsjs.md)
+[Android](../android.md)
+[iOS](../ios.md)
+[Server-Side](../serverside.md)
 
-Stuff we can do with Clickstream:
-
-* [Analytics.js](/documentation/v2/clickstream/sources/analyticsjs.md)
-* [iOS](/documentation/v2/clickstream/sources/ios.md)
-* [Android](documentation/v2/clickstream/sources/android.md)
 
 

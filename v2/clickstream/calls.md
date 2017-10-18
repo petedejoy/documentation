@@ -12,7 +12,8 @@ Astronomer utilizes 6 different types of API calls to track users. Each call rep
 * Alias
 
 ## Identify
-The `identify` method is used to associate behavior and to record traits about your users. The call includes a unique User ID and any option traits you know about them (email, name, role, etc.) Implementing `identify` is one of the first steps to getting the most out of Astronomer Clickstream, keep reading to see how to do it...
+
+The `identify` method is used to associate behavior and to record traits about your users. The call includes a unique User ID and any option traits you know about them (email, name, role, etc.) Implementing `identify` is one of the first steps you should take in order to getthe most out of Astronomer Clickstream.
 
 We recommend calling `identify` at a couple of points:
   * After a user registers

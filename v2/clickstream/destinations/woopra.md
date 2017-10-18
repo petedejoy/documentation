@@ -2,7 +2,18 @@
 title: Woopra
 sidebar: platform_sidebar
 ---
-Astronomer Clickstream makes it easy to send your data to *Woopra*. Follow the steps below to route your data through our platform and push it to *Woopra* in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to Woopra. Once you follow the steps below, your data will be routed through our platform and pushed to Woopra in the appropriate format. 
+
+## What is Woopra?
+
+Woopra is a real-time customer analytics platform that tracks your customers' web and mobile activity,forms, emails, and support tickets. The platform allows you to build audience profiles and automatically sync that data to your system as customer behavior changes in real-time. Plus, Woopra can seamlessly integrate with third-party apps - automating prioritization based on support requests as well as targeted, custom content. 
+
+## Why send data to Woopra using Astronomer Clickstream
+
+Astronomer's integration can collect and transform data you receive from Woopra directly from your existing mobile and server-side integrations on Astronomer Clickstream. That way, there's no need to include any Woopra SDK's in any of your applications. 
+
+Combining Woopra's data with the data you receive from other third-party tools on Astronomer Clickstream will empower your team to better understand customer behavior and more effectively target content.
+
 
 ## Getting Started with Woopra and Astronomer Clickstream
 
@@ -10,7 +21,7 @@ Astronomer Clickstream makes it easy to send your data to *Woopra*. Follow the s
 Once you create your account on the woopra [website](https://www.woopra.com/), add a new project with the domain of your website or app. 
 
 
-![woopra1](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/woopra/woopra1.png)
+![woopra1](../../../images/woopra1.png)
 
 
 ### **Astronomer-Side**
@@ -19,7 +30,7 @@ Add your domain name into the Woopra connector on your Astronomer dashboard and 
 
 Click `Create Destination` and your pipeline will be activated.
 
-![woopra2](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/woopra/woopra2.gif)
+![woopra2](../../../images/woopra2.png)
 
 
 ### **The Pipeline.**
@@ -28,7 +39,7 @@ You'll now see your events trickling in on your Woopra account. If you click on 
 
 Click on that new user to see the history of events being recorded.
 
-![woopra3](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/woopra/woopra3.png)
+![woopra3](../../../images/woopra3.png)
 
 ## Beyond the Basics
 

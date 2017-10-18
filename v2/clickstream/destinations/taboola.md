@@ -34,7 +34,7 @@ Give your new connection a unique name and click `Create Destination` to activat
 
 *Note:* You can specify custom event names in the Conversion Events section, shown as `my_custom_event` in the example below.
 
-![taboola1](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/taboola/taboola1.png)
+![taboola1](../../../images/taboola1.png)
 
 
 With that, you're all set. Get ready for insights. 

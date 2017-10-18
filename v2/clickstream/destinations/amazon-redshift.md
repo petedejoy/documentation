@@ -2,16 +2,22 @@
 title: Amazon Redshift
 sidebar: platform_sidebar
 ---
-# Getting started with Amazon Redshift. 
+Astronomer Clickstream makes it easy to send your data to Amazon Redshift. Once you follow the steps below, your data will be routed through our platform and pushed to *DESTINATION* in the appropriate format. 
+
+## What is Amazon Redshift?
+
 Redshift is Amazon Web Services' custom take on a traditional Postgres database. As they put it, "[A fully managed petabyte-scale data warehouse service in the cloud.](http://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)" It's cost-effective at nearly any level, capable of scaling from gigabytes to petabytes without a loss in performance, and uses [columnar storage](http://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html) (among other optimizations) for incredibly fast querying speeds.
+
+## Why send data to Amazon Redshift using Astronomer Clickstream?
 
 This guide will explain how to integrate Redshift into Astronomer's clickstream platform as a destination, allowing you to leverage Amazon's technology to access, store, and query your customer data.
 
-Our connector periodically runs an ETL (Exract - Transform - Load) process that pulls raw event data in S3, processes and transforms those raw events into a structured format, and then inserts structured event data from our bucket into your Redshift cluster. 
+Our connector periodically runs an ETL (Extract - Transform - Load) process that pulls raw event data in S3, processes and transforms those raw events into a structured format, and then inserts structured event data from our bucket into your Redshift cluster. 
 
----
 
-## Step 1: Pick a cluster that fits your needs. 
+# Getting started with Amazon Redshift. 
+
+## Step 1. Pick a cluster that fits your needs. 
 
 *Note: If you already have a Redshift cluster, go ahead to step 3*
  

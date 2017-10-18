@@ -8,6 +8,8 @@ Astronomer Clickstream makes it easy to send your data to Rubicon. Once you foll
 
 Rubicon is an adtech company used by publishers to perform transactions with top brands around the globe. It offers a unified platform, dynamic campaigns, brand protection, and a global marketplace for anyone who wants to buy or sell advertisements.
 
+[Learn more about Rubicon](http://rubiconproject.com/)
+
 ## Why send data to Rubicon using Astronomer Clickstream
 
 Using Astronomer data to power or complement your Rubicon platform will allow you to more insightfully gauge the way your customers engage with your ads. Automating this pipeline with Astronomer will not only save you a headache, but also will allow you to make more informed business decisions.  

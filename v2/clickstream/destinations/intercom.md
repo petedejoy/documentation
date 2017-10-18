@@ -5,13 +5,21 @@ sidebar: platform_sidebar
 
 Astronomer Clickstream makes it easy to send your data to Intercom. Once you follow the steps below, your data will be routed through our platform and pushed to Intercom in the appropriate format. 
 
+## What is Intercom and how does it work?
+
+Intercom is a customer messaging platform, providing in-app messaging for onboarding and support. It targets chat, email, and in-app messages based on user behavior.
+
+Intercom requires that a Javascript snippet be added to your site or that you use the appropriate SDK for iOS and Android. If you want to send data directly into Intercom, you'll need to implement custom event tracking in your site.
+
+## Why send data to Intercom using Astronomer Clickstream?
+
+Integrating Intercom with Astronomer allows you to immediately begin messaging customers based on their behavior. We also eliminate the need to home-brew a solution that tracks user events to Intercom.
+
 ## Getting Started with Intercom and Astronomer Clickstream
 
-To activate your pipeline and start sending events to Intercom, you'll need to (i) identify your App Id and API Key from Intercom and (ii) input your credentials the Astronomer's platform. 
+### Intercom Side
 
-### Identifying your App ID and API Key on Intercom.
-
-Once you're on the [Get started with Intercom](http://www.intercom.io) page, you'll be asked if you want to either (i) integrate one of their libraries or (ii) import users from another service/csv.
+Once you're on the [Get started with Intercom](http://www.intercom.io) page, you'll be asked if you want to either ntegrate one of their libraries or import users from another service/csv.
 
 ![intercom1](../../../images/intercom1.png)
 
@@ -31,11 +39,11 @@ Skip the `Set up Intercom & Segment` prompt and click on the gear wheel icon on 
 
 ![intercom5](../../../images/intercom5.png)
 
-From here, click on the `API Keys` on the left hand panel to access your App Id and API Key. Your App ID will look something like: `9iefb489`
+From here, click on the `API Keys` on the left hand panel to access your App Id and API Key. Your App ID will look something like this: `9iefb489`
 
 ![intercom6](../../../images/intercom6.png)
 
-### Astronomer Platform Set-Up. 
+### Astronomer Side
 
 Enter your App ID and API Key into the Intercom connector on your Astronomer dashboard. 
 
@@ -52,25 +60,6 @@ At this point, you'll see events coming in to your Intercom account. If you clic
 Click on that new user to see the history of events being recorded.
 
 ![intercom9](../../../images/intercom9.png)
-
-## Additional Functionality
-
-### Identify
-What happens when you call Identify.
-
-### Track
-What happens when you call Track.
-
-### Page
-What happens when you call Page.
-
-### Group
-What happens when you call Group.
-
-### Alias
-What happens when you call Alias.
-
-## Beyond the Basics and Things to Note
 
 ### Disassociating Users from a Company (server-side only)
 
@@ -111,5 +100,5 @@ analytics.identify({
   }
 });
 ```
-*Note: This will only work from server side libraries and mobile, NOT work for analytics.js*
+*Note: This will only work from server side libraries and mobile, NOT for analytics.js*
 

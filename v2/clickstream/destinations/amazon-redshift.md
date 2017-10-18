@@ -123,17 +123,22 @@ Make sure that you whitelist 52.86.240.182 as an incoming IP Address so we can w
 
 The Host and Port are found at the top beside the label 'Endpoint,' with Host coming before the ':' and Port coming afterwards. The Database Name is found at the bottom besides a title of the same name.
 
+![amazon-redshift3](../../../images/amazon-redshift3.png)
+
 ---
 
 ## Step 4: Activate Integration on Astronomer
 
-After you've identified the <b>Username, Password, Host, Port,</b> and <b>Database Name</b>, put all of these credentials into your Astronomer account and give your new connection a unique name. Note that your *Database* and *Schema* are kept separate from your other connection credentials. *Schema* is required but it is up to personal preference on what value to input as it can be thought as a folder to store your clickstream in. Example values include "analytics_ios", "clickstream_web", etc.
+After you've identified the <b>Username, Password, Host, Port,</b> and <b>Database Name</b>, put all of these credentials into your Astronomer account and give your new connection a unique name. 
 
-Click 'Create Destination' and your pipeline will be activated.
+Note that your *Database* and *Schema* are kept separate from your other connection credentials. *Schema* is required, but it's up to you to decide what value to input - think of it as a folder to store your clickstream in. Example values include `analytics_ios`, `clickstream_web`, etc.
+
+Click `Create Destination` and your pipeline will be activated.
 
 That's it! You'll now be receiving a livestream of data from your app into your private Redshift account.
 
----
+![amazon-redshift1](../../../images/amazon-redshift1.gif)
+
 
 ## Things to note. 
 

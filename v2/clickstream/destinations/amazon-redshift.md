@@ -2,11 +2,11 @@
 title: Amazon Redshift
 sidebar: platform_sidebar
 ---
-Astronomer Clickstream makes it easy to send your data to Amazon Redshift. Once you follow the steps below, your data will be routed through our platform and pushed to *DESTINATION* in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to Amazon Redshift. Once you follow the steps below, your data will be routed through our platform and pushed to Redshift in the appropriate format. 
 
 ## What is Amazon Redshift?
 
-Redshift is Amazon Web Services' custom take on a traditional Postgres database. As they put it, "[A fully managed petabyte-scale data warehouse service in the cloud.](http://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)" It's cost-effective at nearly any level, capable of scaling from gigabytes to petabytes without a loss in performance, and uses [columnar storage](http://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html) (among other optimizations) for incredibly fast querying speeds.
+Redshift is Amazon Web Services' custom take on a traditional Postgres database. In Amazon's words, it is "[A fully managed petabyte-scale data warehouse service in the cloud.](http://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)" It's cost-effective at nearly any level, capable of scaling from gigabytes to petabytes without a loss in performance, and uses [columnar storage](http://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html) (among other optimizations) for incredibly fast querying speeds.
 
 ## Why send data to Amazon Redshift using Astronomer Clickstream?
 
@@ -15,29 +15,31 @@ This guide will explain how to integrate Redshift into Astronomer's clickstream 
 Our connector periodically runs an ETL (Extract - Transform - Load) process that pulls raw event data in S3, processes and transforms those raw events into a structured format, and then inserts structured event data from our bucket into your Redshift cluster. 
 
 
-# Getting started with Amazon Redshift. 
+# Getting started with Amazon Redshift
 
-## Step 1. Pick a cluster that fits your needs. 
+## Step 1. Pick a cluster that fits your needs 
 
-*Note: If you already have a Redshift cluster, go ahead to step 3*
+*Note: If you already have a Redshift cluster, go ahead to [step 3](Step 3. Permission Astronomer to Redshift)*
  
  Once you've logged into your AWS account and Redshift console, it's time to pick and select your cluster. 
  
  As you do this, remember that the capacity you'll need and utilize depends primarily on the number of unique tables and columns created in the cluster, not the number of events (database records).
- Each unique `.track(_)` event creates a new table, and each property sent creates a new column in that table. For this reason, think about creating a detailed tracking plan to make sure that all events being passed to Astronomer are necessary and consistent.
+ Each unique `track` event creates a new table, and each property sent creates a new column in that table. For this reason, think about creating a detailed tracking plan to make sure that all events being passed to Astronomer are necessary and consistent.
 
  There are two kinds of Redshift clusters, Dense Compute and Dense Storage. 
 
  
  #### Dense Compute Cluster
+
 Dense Compute clusters maximize query speed and performance, but in turn have less capacity for storage. While there is no set process to size a cluster, most customers with less than 20 million monthly events start with a single DC1 cluster and add nodes as needed. A single node cluster includes 200GB of storage and a maximum side of 2.56TB. 
 
 #### Dense Storage Cluster
+
 Dense storage clusters maximize storage capacity and allow customers with hundreds of millions of events to save money on Redshift hosting costs by using disk-based storage, slower CPU's, and less RAM. A single DS2 node cluster includes 2TB of space, with a max size of 16TB.
 
 ---
 
-## Step 2. Provision your cluster.
+## Step 2. Provision your cluster
 
 1. Open the Redshift Console 
 2. Click on "Launch Cluster"
@@ -49,7 +51,7 @@ If you're having trouble, check out the configuration steps [here](http://docs.a
 
 ---
 
-## Step 3. Permission Astronomer to Redshift.
+## Step 3. Permission Astronomer to Redshift
 
 Once you provision your Redshift cluster, you'll need to configure your Redshift cluster to allow Astronomer to access it. 
 
@@ -62,11 +64,11 @@ For Clickstream, having *distinct users* will allow you to (i) isolate queries f
 To create a new user, you'll need to log into the Redshift database directly. Here's the SQL command:
 
 ```
--- create a user named "segment" that Segment will use when connecting to your Redshift cluster.
-CREATE USER segment PASSWORD "<enter password here>";
+-- create a user named "astronomer" that Astronomer will use when connecting to your Redshift cluster.
+CREATE USER astronomer PASSWORD "<enter password here>";
 
--- allows the "segment" user to create new schemas on the specified database. (this is the name you chose when provisioning your cluster)
-GRANT CREATE ON DATABASE "<enter database name here>" TO "segment";
+-- allows the "astronomer" user to create new schemas on the specified database. (this is the name you chose when provisioning your cluster)
+GRANT CREATE ON DATABASE "<enter database name here>" TO "astronomer";
 ```
 
 ### Configure Security Groups

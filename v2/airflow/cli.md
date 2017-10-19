@@ -2,13 +2,11 @@
 title: Astro CLI
 sidebar: platform_sidebar
 ---
-The astronomer CLI helps users create and test activities and execute those activities and astronomer/community pre-built activities in actual DAGs. Once DAGs have been tested locally, users can deploy them to our public cloud or their private installation.
-
-Here's the rundown of the CLI usage
+The Astro CLI helps users create and test activities and deploy those activities and Astronomer/community pre-built activities in actual DAGs. Once DAGs have been tested locally, users can deploy them to our public cloud or their private installation.
 
 ## Prerequisites
 
-If you want to run Airflow locally through the CLI you will need docker installed
+If you want to run Airflow locally through the CLI you will need docker installed.
 
 See [docker download](https://www.docker.com/community-edition#/download)to download docker for your specific operating system
 
@@ -20,10 +18,10 @@ curl -o- http://cli.astronomer.io/install.sh | bash
 
 ## Usage
 
-Now we need to login:
+Login:
 `astro login`
 
-Now lets create a project directory and navigate to it:
+Create a project directory and navigate to it:
 
 ```
 mkdir /path/to/project
@@ -32,18 +30,18 @@ cd /path/to/project
 
 ## Deploying with the Astro CLI
 
-We'll need to initialize a project:
+Initialize a project:
 
 `astro init`
 
-Now we need a dag:
+Create a DAG:
 
 ```
 nano /path/to/project/dags/hello_world.py
 vi /path/to/project/dags/hello_word.py
 ```
 
-Copy and paste
+Copy and paste:
 
 ```python
 from datetime import datetime
@@ -77,7 +75,7 @@ astro deploy
 This will prompt you to select the organization, and confirms you are sure you want to deploy.
 Once you do that, it will bundle all but a few blacklisted files and push to the API, and then to S3
 
-If you want to log out of your account, simply enter:
+If you want to log out of your account:
 
 ```
 astro logout
@@ -94,6 +92,7 @@ Once finished you can run `astro airflow down` to stop the cluster
 ---
 
 ## Practical Example DAG
+
 ```python
 from airflow import DAG
 from astronomer import Activity
@@ -108,7 +107,7 @@ redshift_sink = Activity(dag, 'astronomerio/redshift-sink', ...)
 custom_transform.set_upstream([salesforce_entity_1, salesforce_entity_2, salesforce_entity_3])
 redshift_sink.set_upstream(custom_transform)
 ```
-## Astronomer CLI Commands
+## Commands
 
 Usage:
 

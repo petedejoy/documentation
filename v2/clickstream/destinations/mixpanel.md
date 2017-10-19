@@ -36,7 +36,7 @@ You'll need to copy these two fields into the Astronomer App configuration for M
 
 ### Astronomer Side
 
-NOw, head over to your Astronomer dashboard and insert both your Token and API key into the Mixpanel destination. 
+Now, head over to your Astronomer dashboard and insert both your Token and API key into the Mixpanel destination. 
 
 Give your pipeline a unique name, and click `Create Destination` to officially activate it. 
 

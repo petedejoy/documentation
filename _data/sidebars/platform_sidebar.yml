@@ -56,9 +56,35 @@ entries:
           url: /v2/clickstream/sources/ios.html
           output: web, pdf
 
-        - title: Server Side
+        - title: HTTP API
           url: /v2/clickstream/sources/serverside.html
           output: web, pdf
+
+        - title: MeteorJS
+          url: /v2/clickstream/sources/meteorjs.html
+          output: web, pdf  
+
+        - title: .NET
+          url: /v2/clickstream/sources/net.html
+          output: web, pdf
+
+        - title: Node.js
+          url: /v2/clickstream/sources/nodejs.html
+          output: web, pdf
+          
+        - title: PHP
+          url: /v2/clickstream/php.html
+          output: web, pdf
+
+        - title: Python
+          url: /v2/clickstream/sources/python.html
+          output: web, pdf
+
+        - title: Ruby
+          url: /v2/clickstream/sources/ruby.html
+          output: web, pdf
+
+        
 
       - title: Destinations
         output: web, pdf

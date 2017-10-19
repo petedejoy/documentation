@@ -7,7 +7,9 @@ Astronomer Clickstream makes it easy to send your data to Acquisio. Once you fol
 
 ## What is Acquisio and how does it work?
 
-Acquisio is a machine learning platform for SMB advertising. It combines self-improving bid and budget technology with automation to optimize performance across digital marketing campaigns. By tracking the efficiency of your search engine markeitng/PPC campains, Acquisio saves time and creates a higher level of marketing efficiency by supplying powerful A/B testing tools, ad-building tools, and an analytics dashboard.
+Acquisio is a machine learning platform for SMB advertising. It combines self-improving bid and budget technology with automation to optimize performance across digital marketing campaigns. 
+
+By tracking the efficiency of your search engine markeitng/PPC campains, Acquisio saves time and creates a higher level of marketing efficiency by supplying powerful A/B testing tools, ad-building tools, and an analytics dashboard.
 
 [Learn more about Acquisio](https://www.acquisio.com/)
 

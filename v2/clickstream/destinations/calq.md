@@ -12,7 +12,7 @@ Calq is a custom analytics tool for mobile and web apps. It supports custom funn
 
 Sending data to Calq requires the use of the Calq API, which is done via implementation of their SDKs. Implementing these collection methods requires manual additions to your application client or server code.
 
-[Learn more about Calq](www.calq.com)
+[Learn more about Calq](https://calq.io/)
 
 ## Why send data to Calq using Astronomer Clickstream?
 
@@ -37,6 +37,6 @@ After you create a new project, you will be given a write key.
 Copy this key and add it into your Astronomer UI to get started. Click 'Create Destination' to activate your pipeline.
 
 
-If you look back at your Calq account, you should see a message confirming that events have been recieved.
+If you look back at your Calq account, you should see a message confirming that events have been received.
 
 ![calq4](../../../images/calq4.png)

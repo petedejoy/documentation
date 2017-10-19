@@ -11,7 +11,7 @@ Criteo is a digital advertising and retargeting tool that automates, optimizes, 
 
 In order to track key conversion events, Criteo requires the installation of their Javascript library into your site. Implementation of criteo tags will require development effort from your mobile dev team.
 
-[Learn more about Criteo](www.criteo.com)
+[Learn more about Criteo](https://www.criteo.com/)
 
 ## Why send data to Criteo using Astronomer Clickstream?
 

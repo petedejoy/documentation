@@ -11,9 +11,11 @@ Customer.io is an automated email based on customer behavioral data. It allows y
 
 Using Customer.io involves placing their Javascript snippet in the footer of your website and using their client libraries. 
 
+[Learn more about customer.io.](https://customer.io/)
+
 ## Why send data to Customer.io using Astronomer Clickstream?
 
-If you elect to use the Customer.io Javascript snippet, you'll need to manually identify logged in users and any information you know about them. After manually identifying these users, you will be able to email everyone who logs into your site. Customer.io also lacks a libraries for Java, iOS, Android, and OS X.
+If you elect to use the Customer.io Javascript snippet, you'll need to manually identify logged in users and any information you know about them. After manually identifying these users, you will be able to email everyone who logs into your site. Customer.io also lacks libraries for Java, iOS, Android, and OS X.
 
 Integrating Customer.io with Astronomer Clickstream allows the customer data coming in from websites, servers, and mobile apps to be sent directly to Customer.io without any additional installation. We eliminate the need for you to manually identify logged-in users.
 

@@ -17,7 +17,7 @@ Implementing Amplitude natively in your stack requires a good amount of develope
 
 If you want to try out any other analytics application, implementing native event tracking for Amplitude is a waste of time. Going through the processes of selecting and installing libraries and SDKs just for one tool will take your engineers a lot of time. Furthermore, if you plan to add more tools to your stack, the event tracking and custom coding work is going to be redundant and frustrating.
 
-Integrating Amplitude with Astronomer Clickstream means that you will just need to install Astronomer and enable Amplitude in your Astronomer UI. You will only need to set up one event tracking libarary (Astronomer's), and then you will be able to route and send data to Amplitude and any other destination of your choice without writing custom code for each one.
+Integrating Amplitude with Astronomer Clickstream means that you will just need to install Astronomer and enable Amplitude in your Astronomer UI. You will only need to set up one event tracking library (Astronomer's), and then you will be able to route and send data to Amplitude and any other destination of your choice without writing custom code for each one.
 
 ## Getting Started with Amplitude and Astronomer Clickstream
 

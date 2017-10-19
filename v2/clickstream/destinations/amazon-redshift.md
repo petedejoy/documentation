@@ -29,7 +29,7 @@ Our connector periodically runs an ETL (Extract - Transform - Load) process that
  There are two kinds of Redshift clusters, Dense Compute and Dense Storage. 
 
  
- #### Dense Compute Cluster
+#### Dense Compute Cluster
 
 Dense Compute clusters maximize query speed and performance, but in turn have less capacity for storage. While there is no set process to size a cluster, most customers with less than 20 million monthly events start with a single DC1 cluster and add nodes as needed. A single node cluster includes 200GB of storage and a maximum side of 2.56TB. 
 

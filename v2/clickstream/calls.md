@@ -1,5 +1,5 @@
 ---
-title: Calls
+title: API Calls
 sidebar: platform_sidebar
 ---
 

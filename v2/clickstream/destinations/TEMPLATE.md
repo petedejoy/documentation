@@ -1,6 +1,7 @@
 ---
 title: Title
 sidebar: platform_sidebar
+search: exclude
 ---
 
 Astronomer Clickstream makes it easy to send your data to *DESTINATION*. Once you follow the steps below, your data will be routed through our platform and pushed to *DESTINATION* in the appropriate format. 

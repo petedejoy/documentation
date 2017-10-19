@@ -1,6 +1,7 @@
 ---
-title: Server Side Sources
+title: Server Side Sources backup
 sidebar: platform_sidebar
+search: exclude
 ---
 
 # Getting Started with Server-Side Sources

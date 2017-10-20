@@ -27,7 +27,7 @@ dependencies {
 We recommend initializing the client in your `Application` subclass.
 ```
 // Create an analytics client with the given context and Astronomer Source ID.
-Analytics analytics = new Analytics.Builder(context, YOUR_APP_ID)
+Analytics analytics = new Analytics.Builder(context, YOUR_SOURCE_ID)
   .trackApplicationLifecycleEvents() // Enable this to record certain application events automatically!
   .recordScreenViews() // Enable this to record screen views automatically!
   .build();

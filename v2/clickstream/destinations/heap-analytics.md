@@ -23,7 +23,7 @@ Integrating Heap with Astronomer Clickstream allows you to collect valuable data
 
 ### Heap Side
 
-Once you create a Heap account, a page will load suggesting that you install Heap into your app. If you're using Astronomer for a web app, this isn't necessary as you'll be able to copy over the App ID into your Astronomer account. Your App ID will be located at the end of the javascript snippet they provide with the `heap.load()` function.
+Once you create a Heap account, a page will load suggesting that you install Heap into your app. If you're using Astronomer for a web app, this isn't necessary as you'll be able to copy over the Source ID into your Astronomer account. Your Source ID will be located at the end of the javascript snippet they provide with the `heap.load()` function.
 
 ![heap-analytics1](../../../images/heap-analytics1.png)
 
@@ -33,7 +33,7 @@ It's important to note here that Heap automatically sets you up with a Developme
 
 ### Astronomer Side
 
-Add your App ID into the Heap connector on your Astronomer dashboard and give your new connection a unique name. Click `Create Destination` and your pipeline will be activated.
+Add your Source ID into the Heap connector on your Astronomer dashboard and give your new connection a unique name. Click `Create Destination` and your pipeline will be activated.
 
 ![heap-analytics3](../../../images/heap-analytics3.gif)
 

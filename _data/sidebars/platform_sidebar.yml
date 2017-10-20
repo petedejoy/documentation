@@ -31,7 +31,7 @@ entries:
       url: /v2/clickstream/getting-started.html
       output: web, pdf
 
-    - title: Calls
+    - title: API Calls
       url: /v2/clickstream/calls.html
       output: web, pdf
       subfolders:

@@ -19,7 +19,7 @@ Integrating Intercom with Astronomer allows you to immediately begin messaging c
 
 ### Intercom Side
 
-Once you're on the [Get started with Intercom](http://www.intercom.io) page, you'll be asked if you want to either ntegrate one of their libraries or import users from another service/csv.
+Once you're on the [Get started with Intercom](http://www.intercom.io) page, you'll be asked if you want to either integrate one of their libraries or import users from another service/csv.
 
 ![intercom1](../../../images/intercom1.png)
 

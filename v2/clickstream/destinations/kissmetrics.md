@@ -18,7 +18,7 @@ To install KISSmetrics itself, you have to :
 
 KISSmetrics event reporting is easy to use if your events are properly planned following best practices, but getting set up takes manual work and due diligence. 
 
-[Learn more about Kissmetrics](www.kissmetrics.com)
+[Learn more about KISSmetrics](https://www.kissmetrics.com/)
 
 ## Why send data to KISSmetrics using Astronomer Clickstream?
 
@@ -28,17 +28,17 @@ Using Astronomer to send data to KISSmetrics ensures that your developers only n
 
 With Astronomer, skip the need for custom code and benefit from additional customer data. 
 
-## Getting Started with KISS metrics and Astronomer Clickstream
+## Getting Started with KISSmetrics and Astronomer Clickstream
 
 ### KISSmetrics Side
 
-Once you have a Kissmetrics account, get started sending events to Kissmetrics. You'll need your:
+Once you have a KISSmetrics account, get started sending events to KISSmetrics. You'll need your:
 
 - Project ID
 - Your Write Key
 - API Key 
 
-The Project ID is what tells Astronomer which project within Kissmetrics are yours and the Write Key gives Astronomer permission to send data into it. Both will be long strings of random characters (the ID will be 24 characters and the Write Key will be 224.)
+The Project ID is what tells Astronomer which project within KISSmetrics are yours and the Write Key gives Astronomer permission to send data into it. Both will be long strings of random characters (the ID will be 24 characters and the Write Key will be 224.)
 
 See the below for more details on how to find your API key. This will be a 40 character string found in the javascript snippet that they suggest adding to your app. 
 
@@ -46,7 +46,7 @@ See the below for more details on how to find your API key. This will be a 40 ch
 
 ### Astronomer Side 
 
-Now that you have your API Key, go ahead and enter it into the Kissmetrics connector on your Astronomer dashboard and give your new connection a unique name. 
+Now that you have your API Key, go ahead and enter it into the KISSmetrics connector on your Astronomer dashboard and give your new connection a unique name. 
 
 Once that's done, click on `Create Destination` to activate your pipeline.
 

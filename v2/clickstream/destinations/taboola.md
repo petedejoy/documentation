@@ -12,7 +12,7 @@ Taboola develops and markets a service for online content publishers and adverti
 
 Astronomer Clickstream data will inform your Taboola platform, empowering you to better understand your users and more effectively provide your users with engaging digital content. 
 
-[Learn more about taboola](taboola.com)
+[Learn more about taboola](https://www.taboola.com/)
 
 ## Getting Started with Taboola and Astronomer Clickstream
 

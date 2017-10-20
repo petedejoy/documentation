@@ -33,11 +33,11 @@ Note: *This connector supports client-side analytics.js only.  You also need to 
 
 Once you have a [Twitter Ads account](https://ads.twitter.com/),  choose `Conversion Tracking` from the `Tools` drop down menu. 
 
-![twitterads1](../../../images.twitterads1.png)
+![twitterads1](../../../images/twitterads1.png)
 
 A page will load asking you to accept Twitter Ads' conversion tracking policy. If you agree, check that box and choose `Generate website tag for conversion tracking.`
 
-![twitterads2](../../../images.twitterads2.png)
+![twitterads2](../../../images/twitterads2.png)
 
 You'll be taken to a page with instructions on how to set up your universal website tag, along with a code snippet. 
 
@@ -45,13 +45,13 @@ You'll be taken to a page with instructions on how to set up your universal webs
 
 If you want to use the universal tag, simply copy your Twitter Pixel ID from the code snippet (identified below).
 
-![twitterads3](../../../images.twitterads3.png)
+![twitterads3](../../../images/twitterads3.png)
 
 *Reminder:* Twitter doesn't recognize custom events, just pixel IDs. Anytime that you `analytics.track(event, properties)` an event that represents a Twitter conversion, you need to map the event name on the left to its corresponding Twitter Pixel ID on the right.  
 
 **Single Event Website Tags**
 
-If you want to use Single Event Website Tags, you'll have to map the Segment events to your tags' respective conversion pixel IDs. 
+If you want to use Single Event Website Tags, you'll have to map the Astronomer events to your tags' respective conversion pixel IDs. 
 
 If your events don't match the event names you're receiving from Astronomer that have the Universal Website Tag, you'll want to use the *Single Event Website Tags*.
 
@@ -61,11 +61,11 @@ If your events don't match the event names you're receiving from Astronomer that
 
 Paste your Twitter Pixel ID into the `Page Pixel` field in your Astronomer Twitter Ads configuration, and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated. 
 
-![twitterads4](../../../images.twitterads4.png)
+![twitterads4](../../../images/twitterads4.png)
 
 If you’d like to use the Single Event Website Tags, you must map the event names to your Single Event Website Tags’ respective conversion pixel IDs. 
 
-![twitterads5](../../../images.twitterads5.png)
+![twitterads5](../../../images/twitterads5.png)
 
 ### Final Step. 
 You should now be able to refresh your website and see the Twitter Ads pixel firing for page views.

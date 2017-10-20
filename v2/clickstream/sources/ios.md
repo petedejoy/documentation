@@ -13,7 +13,7 @@ After logging in with your Astronomer credentials, add a new `Source → iOS`. G
 
 ### Install the SDK
 We recommend installing Analy
-tics-iOS via [Cocoapods](https://cocoapods.org/) as it allows you to create a build with specific destinations and makes it simple to install and upgrade.
+tics-iOS via [Cocoapods](https://cocoapods.org/pods/AstronomerAnalytics) as it allows you to create a build with specific destinations and makes it simple to install and upgrade.
 
 Just add the Analytics dependency to your Podfile with:
 

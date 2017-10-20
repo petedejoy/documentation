@@ -41,7 +41,7 @@ The tags will contain important parameters that you'll need.  The following para
 The identify tag is a bit different, and you can extract your `User Tracking Key` from here, shown as `user_tracking_key` below.
 
 ``` javascript
-<img src="https://ds.reson8.com/insights.gif?rand={{ cacheBuster }}&t=0&pixt=resonate&advkey={{ my_advkey }}&opptykey={{ my_opptykey }}&evkey={{ evkey }}&evtype={{ evtype }}&resnc1=esp&resnc2=open&resnc3={{ user_tracking_key }}">
+<IMG SRC="https://ds.reson8.com/insights.gif?rand=[cache_buster]&t=0&pixt=resonate&advkey=my_advkey&opptykey=my_opptykey&evkey=my_event_key&evtype=custom&resnc1=esp&resnc2=open&resnc3=%%user_tracking_key%%" WIDTH=1 HEIGHT=1 BORDER=0>
 
 ```
 

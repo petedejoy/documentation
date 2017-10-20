@@ -34,5 +34,5 @@ Astronomer Enterprise allows highly customized installation options.
 
 ### Modules
 
-* [Clickstream](v2/clickstream/introduction.html) 
-* [Airflow](v2/airflow/introduction.html)
+* [Clickstream](v2/clickstream/overview.html) 
+* [Airflow](v2/airflow/tutorial/core-airflow-concepts.html)

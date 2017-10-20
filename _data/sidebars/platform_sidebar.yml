@@ -252,7 +252,7 @@ entries:
           output: web, pdf
 
         - title: Airflow Operators
-          url: /v2/airflow/operators/index.html
+          url: /v2/airflow/operators/operators.html
           output: web, pdf
 
       - title: Hooks

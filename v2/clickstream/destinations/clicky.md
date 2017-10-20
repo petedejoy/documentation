@@ -11,7 +11,7 @@ Clicky is a real-time web analytics tool that supports user segmentation, allowi
 
 Clicky is used for optimizing traffic sources, engaging users with content, and increasing conversion rate. It allows you to enrich your visitor data with personal user data like names and email addresses. To use Clicky natively, you must add their Javascript snippet to every page on your web app. Setting up custom goals and identifying users is more complex and requires custom code and an understanding of the Clicky API.
 
-[Learn more about Clicky](www.clicky.com)
+[Learn more about Clicky](https://clicky.com/)
 
 ## Why send data to Clicky using Astronomer Clickstream?
 

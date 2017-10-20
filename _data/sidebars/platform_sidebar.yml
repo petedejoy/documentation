@@ -15,9 +15,9 @@ entries:
       url: /
       output: web, pdf
 
-    - title: Getting Started
+    - [//]: "title: Getting Started
       url: /v2/platform/getting_started.html
-      output: web, pdf
+      output: web, pdf"
 
   - title: Clickstream
     output: web, pdf
@@ -210,9 +210,9 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Overview
+    - [//]: "title: Overview
       url: /v2/airflow/overview.html
-      output: web, pdf
+      output: web, pdf"
 
     - title: Astro CLI
       url: /v2/airflow/cli.html
@@ -263,9 +263,9 @@ entries:
           url: /v2/airflow/hooks/overview.html
           output: web, pdf
 
-        - title: Airflow Hooks
+        - [//]: "title: Airflow Hooks
           url: /v2/airflow/hooks/index.html
-          output: web, pdf
+          output: web, pdf"
 
     
     

@@ -1,5 +1,5 @@
 ---
-title: Apache Airflow on Astronomer Overview
+title: Apache Airflow on Astronomer
 sidebar: platform_sidebar
 ---
 

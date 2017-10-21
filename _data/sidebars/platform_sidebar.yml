@@ -210,9 +210,9 @@ entries:
     output: web, pdf
     folderitems:
 
-    - [//]: "title: Overview
+    - title: Overview
       url: /v2/airflow/overview.html
-      output: web, pdf"
+      output: web, pdf
 
     - title: Astro CLI
       url: /v2/airflow/cli.html

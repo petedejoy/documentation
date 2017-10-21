@@ -9,15 +9,15 @@
 html,
 body {
     height: 100%;
-    font-family:"Sofia Regular", sofia-regular, sans-serif;
+    font-family:"Sofia Light", sofia-light, sans-serif;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, p, div, i, b, a {
-    font-family:"Sofia Regular", sofia-regular, sans-serif;
+    font-family:"Sofia Light", sofia-light, sans-serif;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family:"Sofia Medium", "Sofia Regular", sans-serif;
+    font-family:"Sophia Semi Bold", "Sofia Regular", sans-serif;
 }
 
 .img-portfolio {

@@ -3,18 +3,17 @@ title: Apache Airflow on Astronomer
 sidebar: platform_sidebar
 ---
 
-With Apache Airflow on Astronomer, you can define workflows in Python code which leads to superior maintenance, versioning, portability, extensibility and collaboration.
+As data gets bigger and faster, many organizations struggle to centralize and prepare unwieldy data sets for analytics. Data scientists and data engineers have turned to drag-and-drop ETL tools or expensive point-and-click solutions, which are challenging to scale and result in clunky workarounds and recurring bottlenecks.
 
-Apache Airflow on Astronomer provides:
+Apache Airflow is a data work ow management system that allows engineers to schedule, deploy and monitor their own data pipes as DAGs (directed acyclic graphs). Built by devs, for devs, it’s based on the principle that ETL is best expressed in code (which is even better when open sourced).
 
-* One-click deployment and monitoring.
-* Run workflows as directed acyclic graphs (DAGS).
-* Create new sources and destinations.
-* Schedule tasks on an array of workers.
-* Set Service Level Agreements (SLAs) for every DAG.
-* Process large batches of data by micro-batching.
-* Modify any DAG, anytime.
-* Access in-depth walkthroughs, docs and support.
+By running Apache Airflow on Astronomer, you get:
+
+* One-click deployment through the [Astro CLI]((https://docs.astronomer.io/v2/airflow/cli.html))
+* Access to our [Airflow contributions](https://github.com/astronomerio/example-pipelines) which includes new hooks and operators
+* Serverless Airflow worker scalability through our SaaS platform
+* Access to our support documentation and team
+* Access to our Airflow development services team
 
 ## Airflow 101
 

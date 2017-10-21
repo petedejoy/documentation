@@ -1,7 +1,20 @@
 ---
-title: Airflow Introduction
+title: Apache Airflow on Astronomer Overview
 sidebar: platform_sidebar
 ---
+
+With Apache Airflow on Astronomer, you can define workflows in Python code which leads to superior maintenance, versioning, portability, extensibility and collaboration.
+
+Apache Airflow on Astronomer provides:
+
+* One-click deployment and monitoring.
+* Run workflows as directed acyclic graphs (DAGS).
+* Create new sources and destinations.
+* Schedule tasks on an array of workers.
+* Set Service Level Agreements (SLAs) for every DAG.
+* Process large batches of data by micro-batching.
+* Modify any DAG, anytime.
+* Access in-depth walkthroughs, docs and support.
 
 ## Airflow 101
 

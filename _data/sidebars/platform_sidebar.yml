@@ -88,8 +88,6 @@ entries:
           url: /v2/clickstream/sources/ruby.html
           output: web, pdf
 
-        
-
       - title: Destinations
         output: web, pdf
         subfolderitems:
@@ -210,9 +208,9 @@ entries:
     output: web, pdf
     folderitems:
 
-    - [//]: "title: Overview
+    - title: Overview
       url: /v2/airflow/overview.html
-      output: web, pdf"
+      output: web, pdf
 
     - title: Astro CLI
       url: /v2/airflow/cli.html
@@ -239,6 +237,10 @@ entries:
           url:  /v2/airflow/tutorial/best-practices.html
           output: web, pdf
 
+        - title: Monitoring
+          url:  /v2/airflow/tutorial/monitoring.html
+          output: web, pdf
+          
         - title: Airflow Connections
           url:  /v2/airflow/tutorial/connections.html
           output: web, pdf

@@ -7,7 +7,7 @@ summary: These guides help you get up and running with the Astronomer platform.
 
 ## Overview
 
-Astronomer is a data engineering platform that connects and routes your data, so you can get straight to analytics, data science and—most importantly—insights. Astronomer is built on industry proven open-source technologies and provides a foundation for handling Clickstream event ingestion and building complex data workflows with Apache Airflow. Check out the [Getting Started]({{ "/v2/platform/getting_started.html" | relative_url }}) guide to start building your next data pipeline. 
+Astronomer is a data engineering platform that collects, processes, and routes your data so you can get straight to analytics, data science and—most importantly—insights. Astronomer is built on industry proven open-source technologies and provides a foundation for handling Clickstream event ingestion and building complex data workflows with Apache Airflow.
 
 ## SaaS
 

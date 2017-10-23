@@ -24,4 +24,22 @@ Furthermore, you do not need to learn the AdWords SDK methods if you want to sen
 
 ## Getting Started with Google AdWords and Astronomer Clickstream
 
+### Adwords Side
 
+Once you create an Adwords account, you'll need to find your Conversion ID. To do this, you'll need to navigate through `Tools-->Conversions` and have to click the red `+ Conversion` button.
+
+![Adwords-1](../../../images/adwords1.png)
+
+Copy the Conversion ID to your clipboard.
+
+![AdWords-2](../../../images/adwords2.png)
+
+### Astronomer Side
+
+Once you've obtained your Conversion ID, copy and paste it into the corresponding field in your Astronomer UI. You can now enable the pipeline and watch your data flow into AdWords!
+
+#### Additional Features
+
+You are also now able to click a `Remarketing` checkbox. If you enable this feature, Astronomer sends an additional remarketing tag for each of your conversion labels and for every `page` API call. 
+
+Since AdWords recognizes labels rather than custom events, you'll need to map the `event name` to its corresponding `AdWords label` in the appropriate fields.

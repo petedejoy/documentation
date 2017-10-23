@@ -132,6 +132,10 @@ entries:
           url: /v2/clickstream/destinations/facebook-pixel.html
           output: web, pdf
 
+        - title: Google AdWords
+          url: /v2/clickstream/destinations/google-adwords.html
+          output: web,pdf
+
         - title: Google Analytics
           url: /v2/clickstream/destinations/google-analytics.html
           output: web, pdf

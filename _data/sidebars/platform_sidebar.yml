@@ -144,6 +144,10 @@ entries:
           url: /v2/clickstream/destinations/google-analytics.html
           output: web, pdf
 
+        - title: Google Tag Manager
+          url: /v2/clickstream/destinations/google-tagmanager.html
+          output: web, pdf
+
         - title: Heap Analytics
           url: /v2/clickstream/destinations/heap-analytics.html
           output: web, pdf

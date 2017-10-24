@@ -12,9 +12,16 @@ Because Appboy has a predictive analytics component, it functions most effective
 
 ## Why send data to AppBoy using Astronomer Clickstream?
 
-This guide will explain how to integrate Redshift into Astronomer's clickstream platform as a destination, allowing you to leverage Amazon's technology to access, store, and query your customer data.
+Integrating Appboy with Astronomer Clickstream means that you can track users accross your web, mobile, and server-side apps. Without installing additional code in the form of Appboy SDKs or API libraries, you'll be able to recieve all [`identify` and `track` calls](,,/calls.html) in the format that Appboy understands.
 
-Our connector periodically runs an ETL (Extract - Transform - Load) process that pulls raw event data in S3, processes and transforms those raw events into a structured format, and then inserts structured event data from our bucket into your Redshift cluster. 
+## Getting started with AppBoy
 
+Note that you can only integrate Appboy with server-side and mobile sources.
 
-# Getting started with AppBoy
+### Appboy Side
+
+Once you've created your Appboy account, you'll need to find your `App Group Identifier`. You can find this ID in the Appboy Dashboard under `App Settings-->Developer Console`. 
+
+### Astronomer side
+
+Paste your `App Group Identifier` into the approprate field in your Astronomer UI to get your data flowing!

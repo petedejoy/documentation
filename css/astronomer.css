@@ -171,7 +171,6 @@ li.sidebarTitle {
 
 }
 
-
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
     background-color: #302c43;
 }
@@ -182,4 +181,8 @@ li.sidebarTitle {
 
 #search-demo-container ul#results-container {
     border: 1px solid #aaa;
+}
+
+.affix {
+    position: relative;
 }

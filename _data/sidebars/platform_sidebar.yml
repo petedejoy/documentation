@@ -184,6 +184,12 @@ entries:
           url: /v2/clickstream/destinations/optimizely.html
           output: web, pdf
 
+          ---
+        - title: OutBrain
+          url: /v2/clickstream/destinations/outbrain.html
+          output: web, pdf
+
+
         - title: Pinterest
           url: /v2/clickstream/destinations/pinterest.html
           output: web, pdf

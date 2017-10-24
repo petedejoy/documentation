@@ -10,7 +10,7 @@ Taboola develops and markets a service for online content publishers and adverti
 
 ## Why send data to Taboola using Astronomer Clickstream?
 
-Astronomer Clickstream data will inform your Taboola platform, empowering you to better understand your users and more effectively provide your users with engaging digital content. 
+Astronomer Clickstream data will inform your Taboola platform, empowering you to better understand your users and more effectively provide them with engaging digital content. 
 
 [Learn more about taboola](https://www.taboola.com/)
 

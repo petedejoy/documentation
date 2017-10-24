@@ -99,6 +99,10 @@ entries:
         - title: Acquisio
           url: /v2/clickstream/destinations/acquisio.html
           output: web, pdf
+        
+        - title: Amazon Kineiss
+          url: /v2/clickstream/destinations/amazon-kinesis.html
+          output: web, pdf
 
         - title: Amazon Redshift
           url: /v2/clickstream/destinations/amazon-redshift.html

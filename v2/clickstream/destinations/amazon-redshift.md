@@ -135,7 +135,7 @@ Note that your *Database* and *Schema* are kept separate from your other connect
 
 Click `Create Destination` and your pipeline will be activated.
 
-That's it! You'll now be receiving a livestream of data from your app into your private Redshift account.
+That's it! You'll now be receiving a livestream of data from your application into your private Redshift account.
 
 ![amazon-redshift1](../../../images/amazon-redshift1.gif)
 

@@ -21,6 +21,8 @@ With Astronomer Clickstream, send page and event data to Bing Ads without having
 
 Bing Ads will record all of your pageviews and events sent via `page` and `track`, giving you access to data that you can use to create custom goals and conversions directly on Bing Ads. 
 
+*Note*: Bing Ads is available as a client-side destination only. 
+
 ### Bing Side 
 
 To set up your pipeline, you'll need to create your Bing Universal Event Tracking (UET) `Tag ID`. This tag will help you track campaign performance by counting unique conversions and letting you associate multiple conversion goals under a single account.
@@ -47,7 +49,7 @@ If you're ready with your `Tag Id` at hand, go ahead and log into your Astronome
 
 Add Bing Ads as a destination. From there, give your connection a unique name and input your `Tag Id` where prompted. 
 
-![bing-ads4](../../../images/bing-ads4.png). 
+![bing-ads4](../../../images/bing-ads4.png)
 
 Now, just click on `Create Destination` to activate your pipeline. 
 

@@ -13,7 +13,7 @@ Adding app events to your app or website helps you learn more about your audienc
 - Build Custom Audiences
 - Optimize mobile app engagement ads
 
-Facebook App Events are powered by Facebook SDK's that you'll have to separately install and configure in your iOS and Android apps. Facebook also has a Javascript library for collecting events from your site code. 
+Facebook App Events are powered by Facebook SDKs that you'll have to separately install and configure in your iOS and Android apps. Facebook also has a Javascript library for collecting events from your site code. 
 
 It's also worth noting that Facebook has a standard set of events that need to be installed for various industry verticals. Otherwise, Facebook supports custom events so that your team can add location, and event details for promotion purposes.
 
@@ -21,7 +21,7 @@ It's also worth noting that Facebook has a standard set of events that need to b
 
 ## Why send data to Facebook App Events using Astronomer Clickstream?
 
-With Astronomer Clickstream's Facebook App Events integration, you won't need to write custom code or bundle Facebook SDK's. Just integrate one of Astronomer's latest mobile SDK's into your app and we'll send all the data we collect to Facebook via our servers. Plus, you'll be able to map any of your existing Astronomer events to other Facebook App Event event names, and user traits like birthday, city, gender, etc. get passed directly through to [Facebook Pixel](facebook-pixel.md)
+With Astronomer Clickstream's Facebook App Events integration, you won't need to write custom code or bundle Facebook SDKs. Just integrate one of Astronomer's latest mobile SDKs into your app and we'll send all the data we collect to Facebook via our servers. Plus, you'll be able to map any of your existing Astronomer events to other Facebook App Event event names, and user traits like birthday, city, gender, etc. get passed directly through to [Facebook Pixel](facebook-pixel.md)
 
 In short, skip the manual headache and get straight to insights with Astronomer Clickstream. 
 

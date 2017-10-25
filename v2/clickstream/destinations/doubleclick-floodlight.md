@@ -7,7 +7,7 @@ Astronomer Clickstream makes it easy to send your data to Doubleclick Floodlight
 
 ## What is DoubleClick Floodlight and how does it work?
 
-DoubleClick Floodlight is a system developed by Google used for ad tracking and reporting. It operates by creating an image pixel tag to track user action once they click on a Google Ad. By using a single set of Floodlight tags, it avoids cross-channel redundancy. It also integrates directly with AdWords and Google Analytics to track all activity accross multiple platforms.
+DoubleClick Floodlight is a system developed by Google used for ad tracking and reporting. It operates by creating an image pixel tag to track user action once they click on a Google Ad. By using a single set of Floodlight tags, it avoids cross-channel redundancy. It also integrates directly with AdWords and Google Analytics to track all activity across multiple platforms.
 
 DoubleClick Floodlight requires the installation of an HTML `Floodlight tag` on every page that you want to track. When a customer clicks an ad that lands them on a page with a `Floodlight tag` embedded within the HTML, the tag sends data about the conversion back to DoubleClick. Setting this up on every page that you want to track is burdensome and requires a commitment from your dev team to write custom event tracking code and learn new tags to make the tool work for your business. That's where we come in.
 
@@ -60,5 +60,5 @@ In this example, `mytype00` is your `type` and `mycat0` is your `cat` in the Ast
 
 Custom properties can be added to the events sent to Doubleclick by specifying the specific property and mapping to the corresponding property label in Doubleclick (e.g. u1, u2, etc.)
 
-Once you have all of this set up, click 'Create Desination' to activate your pipeline.
+Once you have all of this set up, click 'Create Destination' to activate your pipeline.
 

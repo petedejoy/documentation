@@ -112,6 +112,10 @@ entries:
           url: /v2/clickstream/destinations/amplitude.html
           output: web, pdf
 
+        - title: Bing Ads
+          url: /v2/clickstream/destinations/bing-ads.html
+          output: web, pdf
+
         - title: Calq
           url: /v2/clickstream/destinations/calq.html
           output: web, pdf

@@ -5,7 +5,7 @@ sidebar: platform_sidebar
 
 As data gets bigger and faster, many organizations struggle to centralize and prepare unwieldy data sets for analytics.
 
-Apache Airflow is a data workflow management system that allows engineers to schedule, deploy and monitor their own data pipes as DAGs (directed acyclic graphs). Built by devs, for devs, it’s based on the principle that ETL is best expressed in code.
+Apache Airflow is a data workflow management system that allows engineers to schedule, deploy and monitor their own data pipes as DAGs (directed acyclic graphs). Built by developers, for developers, it’s based on the principle that ETL is best expressed in code.
 
 By running Apache Airflow on Astronomer, you get:
 

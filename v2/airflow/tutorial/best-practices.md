@@ -36,7 +36,7 @@ A SQL query can go a long way to cleaning up and combining data before it ever e
 
 ## Readability
 
-### Task Depedencies
+### Task Dependencies
 Task dependencies are set using the ```set_upstream()``` and ```set_upstream()``` operators. Using either will depend on your preferences, but it is best not to mix and match as the task for becomes difficult to interpret.
 
 Example.

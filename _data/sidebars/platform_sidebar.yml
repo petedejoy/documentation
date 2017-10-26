@@ -240,11 +240,11 @@ entries:
     folderitems:
 
     - title: Overview
-      url: /v2/airflow/overview.html
+      url: /v2/apache_airflow/overview.html
       output: web, pdf
 
     - title: Astro CLI
-      url: /v2/airflow/cli.html
+      url: /v2/apache_airflow/cli.html
       output: web, pdf
 
       subfolders:
@@ -253,27 +253,27 @@ entries:
         subfolderitems: 
     
         - title: Core Apache Airflow Concepts
-          url: /v2/airflow/tutorial/core-airflow-concepts.html
+          url: /v2/apache_airflow/tutorial/core-airflow-concepts.html
           output: web, pdf
 
         - title: Simple Sample DAG
-          url: /v2/airflow/tutorial/sample-dag.html
+          url: /v2/apache_airflow/tutorial/sample-dag.html
           output: web, pdf
 
         - title: Sample DAG Deployment
-          url: /v2/airflow/tutorial/dag-deployment.html
+          url: /v2/apache_airflow/tutorial/dag-deployment.html
           output: web, pdf
 
         - title: DAG Writing Best Practices
-          url:  /v2/airflow/tutorial/best-practices.html
+          url:  /v2/apache_airflow/tutorial/best-practices.html
           output: web, pdf
 
         - title: Monitoring
-          url:  /v2/airflow/tutorial/monitoring.html
+          url:  /v2/apache_airflow/tutorial/monitoring.html
           output: web, pdf
           
         - title: Airflow Connections
-          url:  /v2/airflow/tutorial/connections.html
+          url:  /v2/apache_airflow/tutorial/connections.html
           output: web, pdf
 
       - title: Operators
@@ -281,11 +281,11 @@ entries:
         subfolderitems:
 
         - title: Apache Airflow Operators Overview
-          url:  /v2/airflow/operators/overview.html
+          url:  /v2/apache_airflow/operators/overview.html
           output: web, pdf
 
         - title: Apache Airflow Operators
-          url: /v2/airflow/operators/operators.html
+          url: /v2/apache_airflow/operators/operators.html
           output: web, pdf
 
       - title: Hooks
@@ -293,11 +293,11 @@ entries:
         subfolderitems:
 
         - title: Apache Airflow Hooks Overview
-          url: /v2/airflow/hooks/overview.html
+          url: /v2/apache_airflow/hooks/overview.html
           output: web, pdf
 
         - [//]: "title: Airflow Hooks
-          url: /v2/airflow/hooks/index.html
+          url: /v2/apache_ airflow/hooks/index.html
           output: web, pdf"
 
     

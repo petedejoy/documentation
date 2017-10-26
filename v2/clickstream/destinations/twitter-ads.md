@@ -11,7 +11,7 @@ Twitter ads empower marketers to develop targeted ad campaigns on Twitter based 
 
 With Twitter Ads, you pay for performance, target keywords, retarget engaged users, and tailor your audiences based on constraints such as language, gender, age, and geography. Plus, Twitter Ads automate new follower acquisition by targeting Promoted Accounts to audiences similar to current followers. 
 
-Using Twitter Ads requires adding a Javascript code snippet to all your pages. In order to track more dynamic data like product searches, revenue, and product viewed, you'll need to add custom code on top of that snippet.
+Using Twitter Ads requires adding a JavaScript code snippet to all your pages. In order to track more dynamic data like product searches, revenue, and product viewed, you'll need to add custom code on top of that snippet.
 
 ## Why send data to Twitter Ads using Astronomer Clickstream?
 
@@ -55,7 +55,7 @@ If you want to use Single Event Website Tags, you'll have to map the Astronomer 
 
 If your events don't match the event names you're receiving from Astronomer that have the Universal Website Tag, you'll want to use the *Single Event Website Tags*.
 
-*Note:* Twitter Ads only work with our client-side javascript library `analytics.js` since it requires its script or pixel to be loaded onto your website. 
+*Note:* Twitter Ads only work with our client-side JavaScript library `analytics.js` since it requires its script or pixel to be loaded onto your website. 
 
 ### Astronomer Side. 
 

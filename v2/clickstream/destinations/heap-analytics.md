@@ -11,7 +11,7 @@ Heap is a mobile and web analytics tool that automatically captures every user a
 
 Designed with marketers in mind, Heap supports point-and-click web and mobile tag creation, offers event visualizers, clean graphics, funnel data, and retention stats. 
 
-Heap is powered by a Javascript library that you'll need to install on every page that you want to track. This library collects all actions and some basic contextual information, including CSS selectors and text on your links and buttons. If you want to go deeper than this basic information, you'll need to write custom code into your site using the Heap Javascript API. Similarly, if you want to record events that happen when users aren't actively on your site, such as when someone makes a payment or opens an email, you'll need to write code to pull that data and send it to Heap's API. 
+Heap is powered by a JavaScript library that you'll need to install on every page that you want to track. This library collects all actions and some basic contextual information, including CSS selectors and text on your links and buttons. If you want to go deeper than this basic information, you'll need to write custom code into your site using the Heap JavaScript API. Similarly, if you want to record events that happen when users aren't actively on your site, such as when someone makes a payment or opens an email, you'll need to write code to pull that data and send it to Heap's API. 
 
 [Learn more about Heap](https://heapanalytics.com/features/sql)
 
@@ -23,7 +23,7 @@ Integrating Heap with Astronomer Clickstream allows you to collect valuable data
 
 ### Heap Side
 
-Once you create a Heap account, a page will load suggesting that you install Heap into your app. If you're using Astronomer for a web app, this isn't necessary as you'll be able to copy over the Source ID into your Astronomer account. Your Source ID will be located at the end of the javascript snippet they provide with the `heap.load()` function.
+Once you create a Heap account, a page will load suggesting that you install Heap into your application. If you're using Astronomer for a web application, this isn't necessary as you'll be able to copy over the Source ID into your Astronomer account. Your Source ID will be located at the end of the JavaScript snippet they provide with the `heap.load()` function.
 
 ![heap-analytics1](../../../images/heap-analytics1.png)
 

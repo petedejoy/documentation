@@ -9,7 +9,7 @@ Astronomer Clickstream makes it easy to send your data to Intercom. Once you fol
 
 Intercom is a customer messaging platform, providing in-app messaging for onboarding and support. It targets chat, email, and in-app messages based on user behavior.
 
-Intercom requires that a Javascript snippet be added to your site or that you use the appropriate SDK for iOS and Android. If you want to send data directly into Intercom, you'll need to implement custom event tracking in your site.
+Intercom requires that a JavaScript snippet be added to your site or that you use the appropriate SDK for iOS and Android. If you want to send data directly into Intercom, you'll need to implement custom event tracking in your site.
 
 ## Why send data to Intercom using Astronomer Clickstream?
 

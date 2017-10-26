@@ -29,7 +29,7 @@ To start, you'll need your Google Analytics `Tracking ID`. This can be found in 
 
 Next, head to app.astronomer.io and add a new destination for the source you want to track. Select Google Analytics and you will be brought to a Configure your destination panel. 
 
-Here, you'll need to create a Friendly Name and enter your Google Analytics Tracking ID for the app. With just these two pieces of information, you can click `Create Destination` and Astronomer will start sending your Clickstream data to Google Analytics. 
+Here, you'll need to create a Friendly Name and enter your Google Analytics Tracking ID for the application. With just these two pieces of information, you can click `Create Destination` and Astronomer will start sending your Clickstream data to Google Analytics. 
 
 ![google-analytics1](../../../images/google-analytics2.gif)
 
@@ -41,7 +41,7 @@ Enabling Google Analytics in your Astronomer UI causes a few things to happen:
 
   * Your Google Analytics real-time dashboard will start showing live visitors.
 
-  * Any iOS or Android apps running our mobile libraries will start sending data to Google Analytics. New setting will take up to an hour to propagate to all of your existing users. If you added the iOS or Android library to your app code, it should take 12-24 hours for events to begin populating your dashboard.
+  * Any iOS or Android apps running our mobile libraries will start sending data to Google Analytics. New setting will take up to an hour to propagate to all of your existing users. If you added the iOS or Android library to your application code, it should take 12-24 hours for events to begin populating your dashboard.
 
   * Google Analytics will start automatically collecting data on your site or mobile app. It takes Google a couple of hours to process this data and add it to your reports, but you should still see events showing up in the real-time events dashboard. 
 

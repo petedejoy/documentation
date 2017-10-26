@@ -11,11 +11,11 @@ Astronomer Clickstream makes it easy to send your data to Facebook Pixel. Once y
 
 Facebook Pixel is an Ad system designed for conversion optimization and lead tracking. It allows you to manage all of your ads from one platform and uses prospecting tools to target your ads to lookalike audiences. By providing this dynamic service, Facebook Pixel allows marketers to optimize cross-platform ads for custom conversions and see when users view content, search for a product, interact with their wishlist, or add payment info.
 
-Facebook Pixel uses a Javascript Tag API to track audiences and custom user events like page visibility and page length. In order to be used, this Javascript library must be added to every page of your site. It has a standard set of natively-integrated events such as product views, adds to cart, and purchases. While extremely extensible, tracking dynamic data like sku, name, and price from your database will require that custom code be added to your site.
+Facebook Pixel uses a JavaScript Tag API to track audiences and custom user events like page visibility and page length. In order to be used, this JavaScript library must be added to every page of your site. It has a standard set of natively-integrated events such as product views, adds to cart, and purchases. While extremely extensible, tracking dynamic data like sku, name, and price from your database will require that custom code be added to your site.
 
 ## Why send data to Facebook Pixel using Astronomer Clickstream?
 
-With Astronomer Clickstream, you can use Facebook Pixel without having to install their Javascript library on every page of your site. We also eliminate the need to write custom code to track user event data. Once your Facebook Pixel is routed through Astronomer, our platform translates page views and events into corresponding Facebook Pixel events.
+With Astronomer Clickstream, you can use Facebook Pixel without having to install their JavaScript library on every page of your site. We also eliminate the need to write custom code to track user event data. Once your Facebook Pixel is routed through Astronomer, our platform translates page views and events into corresponding Facebook Pixel events.
 
 ## Getting Started with Facebook Pixel and Astronomer Clickstream
 

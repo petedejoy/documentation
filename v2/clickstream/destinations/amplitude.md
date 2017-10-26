@@ -27,11 +27,11 @@ To get started sending events to Amplitude, all you need is your API Key. After 
 
 ![amplitude1](../../../images/amplitude1.png)
 
-You will then be prompted to create your first app. This app will function as your project to recieve events from Astronomer.
+You will then be prompted to create your first appplication. This application will function as your project to recieve events from Astronomer.
 
 ![amplitude2](../../../images/amplitude2.png)
 
-After this app is created, an API Key will be generated and presented in your dashboard. 
+After this application is created, an API Key will be generated and presented in your dashboard. 
 
 ![amplitude3](../../../images/amplitude3.png)
 

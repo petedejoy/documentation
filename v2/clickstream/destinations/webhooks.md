@@ -6,7 +6,7 @@ Astronomer Clickstream makes it easy to send your data to Webhooks. Once you fol
 
 ## What are Webhooks and how do they work?
 
-A Webhook (also called a web callback or an HTTP push API) is a simple event-notification via HTTP POST. It's a way for an app to provide other applications with real-time information, making it extremely efficient for both the provider and consumer.
+A Webhook (also called a web callback or an HTTP push API) is a simple event-notification via HTTP POST. It's a way for an application to provide others with real-time information, making it extremely efficient for both the provider and consumer.
 
 A Webhook submits real-time user data, ties customer information to a dedicate API, records mobile and ecommerce data, and maps events to custom features within FB ads and Google Analytics.
 

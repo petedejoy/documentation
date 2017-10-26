@@ -14,7 +14,7 @@ Lytics also enables drag-and-drop segmentation, which allows teams to target cus
 
 *Notes:* 
 
-- Lytics collects its user data (name, email address) from a Javascript library that you'd need to load on all pages of your site. This will power an in-app mesaging featur and ensure you're not asking already-known users to opt in. 
+- Lytics collects its user data (name, email address) from a JavaScript library that you'd need to load on all pages of your site. This will power an in-app mesaging featur and ensure you're not asking already-known users to opt in. 
 
 - All data is collected using the Lytics API, which will require a developer to learn and implement its methods and data structure.
 
@@ -22,7 +22,7 @@ Lytics also enables drag-and-drop segmentation, which allows teams to target cus
 
 ## Why send data to Lytics using Astronomer Clickstream?
 
-Integrating Lytics with Astronomer Clickstream means that you won't have to write any custom code on top of your standard Astronomer integration. Enabling Lytics in your Astronomer UI automatically loads the Javascript library onto your site without making code changes.
+Integrating Lytics with Astronomer Clickstream means that you won't have to write any custom code on top of your standard Astronomer integration. Enabling Lytics in your Astronomer UI automatically loads the JavaScript library onto your site without making code changes.
 
 Astronomer Clickstream automatically maps `page`, `identify`, and `track` calls directly to Lytics, which then uses that customer data to power its implementations. 
 

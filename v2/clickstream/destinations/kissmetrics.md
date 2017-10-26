@@ -40,7 +40,7 @@ Once you have a KISSmetrics account, get started sending events to KISSmetrics. 
 
 The Project ID is what tells Astronomer which project within KISSmetrics are yours and the Write Key gives Astronomer permission to send data into it. Both will be long strings of random characters (the ID will be 24 characters and the Write Key will be 224.)
 
-See the below for more details on how to find your API key. This will be a 40 character string found in the javascript snippet that they suggest adding to your app. 
+See the below for more details on how to find your API key. This will be a 40 character string found in the JavaScript snippet that they suggest adding to your application. 
 
 ![kissmetrics1](../../../images/kissmetrics1.png)
 
@@ -52,7 +52,7 @@ Once that's done, click on `Create Destination` to activate your pipeline.
 
 ![kissmetrics2](../../../images/kissmetrics2.gif)
 
-Click around your app to send off some test events. It might take an hour or so for events to start populating into your project. You can check to see if events are coming in by clicking on the `Live` tab at the top of the page and looking at the `All Activity` section.
+Click around your application to send off some test events. It might take an hour or so for events to start populating into your project. You can check to see if events are coming in by clicking on the `Live` tab at the top of the page and looking at the `All Activity` section.
 
 ![kissmetrics3](../../../images/kissmetrics3.png)
 

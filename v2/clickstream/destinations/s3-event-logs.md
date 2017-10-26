@@ -24,7 +24,7 @@ Astronomer spares you the headache of writing custom ETL pipeliens to get your d
 
 ## Getting Started with Amazon S3 and Astronomer Clickstream
 
-Astronomer makes it easy to copy broadcasted events to an [Amazon Simple Storage Service (S3) bucket](https://aws.amazon.com/s3/).  You'll only need to configure the S3 Event Logs connector within your [Astronomer App](https://app.astronomer.io/), and include our bucket policy.
+Astronomer makes it easy to copy broadcasted events to an [Amazon Simple Storage Service (S3) bucket](https://aws.amazon.com/s3/).  You'll only need to configure the S3 Event Logs connector within your [Astronomer dashboard](https://app.astronomer.io/), and include our bucket policy.
 
 ### Amazon S3 Side
 

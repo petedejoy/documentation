@@ -3,7 +3,7 @@ title: Simple Sample DAG
 sidebar: platform_sidebar
 ---
 
-This tutorial walks through some of the [core Airflow concepts](https://github.com/astronomerio/pro-beta/wiki/Core-Airflow-Concepts) and how they fit into a simple, sample Airflow DAG.
+This tutorial walks through some of the [core Apache Airflow concepts](https://github.com/astronomerio/pro-beta/wiki/Core-Airflow-Concepts) and how they fit into a simple, sample Airflow DAG.
 
 ### Sample Pipeline Definition
 Here is an example of a basic pipeline definition. Below it, you'll find a line by line explanation of the various pipeline components.

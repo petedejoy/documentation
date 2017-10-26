@@ -1,5 +1,5 @@
 ---
-title: Airflow Operators
+title: Apache Airflow Operators
 sidebar: platform_sidebar
 ---
 

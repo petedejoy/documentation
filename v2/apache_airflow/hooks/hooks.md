@@ -1,5 +1,5 @@
 ---
-title: Airflow Hooks
+title: Apache Airflow Hooks
 sidebar: platform_sidebar
 ---
 

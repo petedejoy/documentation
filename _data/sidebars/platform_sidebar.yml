@@ -206,7 +206,7 @@ entries:
           url: /v2/clickstream/destinations/woopra.html
           output: web, pdf
 
-  - title: Airflow
+  - title: Apache Airflow
     output: web, pdf
     folderitems:
 
@@ -223,7 +223,7 @@ entries:
         output: web, pdf
         subfolderitems: 
     
-        - title: Core Airflow Concepts
+        - title: Core Apache Airflow Concepts
           url: /v2/airflow/tutorial/core-airflow-concepts.html
           output: web, pdf
 
@@ -239,7 +239,7 @@ entries:
           url:  /v2/airflow/tutorial/best-practices.html
           output: web, pdf
 
-        - title: Airflow Connections
+        - title: Apache Airflow Connections
           url:  /v2/airflow/tutorial/connections.html
           output: web, pdf
 
@@ -247,11 +247,11 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Airflow Operators Overview
+        - title: Apache Airflow Operators Overview
           url:  /v2/airflow/operators/overview.html
           output: web, pdf
 
-        - title: Airflow Operators
+        - title: Apache Airflow Operators
           url: /v2/airflow/operators/operators.html
           output: web, pdf
 
@@ -259,11 +259,11 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Airflow Hooks Overview
+        - title: Apache Airflow Hooks Overview
           url: /v2/airflow/hooks/overview.html
           output: web, pdf
 
-        - title: Airflow Hooks
+        - title: Apache Airflow Hooks
           url: /v2/airflow/hooks/hooks.html
           output: web, pdf
 

@@ -1,5 +1,5 @@
 ---
-title: Airflow Connections
+title: Apache Airflow Connections
 sidebar: platform_sidebar
 ---
 

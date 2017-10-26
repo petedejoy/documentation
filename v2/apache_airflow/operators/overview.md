@@ -1,9 +1,9 @@
 ---
-title: Airflow Operators Overview
+title: Apache Airflow Operators Overview
 sidebar: platform_sidebar
 ---
 
-Along with Hooks, Operators are key to extending capabilities with airflow while keeping your DAGs clean and simple.
+Along with Hooks, Operators are key to extending capabilities with Airflow while keeping your DAGs clean and simple.
 
 An **operator** is an object that embodies an operation utilizing one or more hooks, typically to transfer data between one hook and another or to send/receive data from that
 

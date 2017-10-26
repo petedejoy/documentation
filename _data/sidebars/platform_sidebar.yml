@@ -27,7 +27,7 @@ entries:
       url: /v2/clickstream/overview.html
       output: web, pdf
 
-    - title: 2048 A Basic Example
+    - title: Basic Clickstream Example
       url: /v2/clickstream/2048.html
       output: web, pdf
 

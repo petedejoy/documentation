@@ -268,15 +268,11 @@ entries:
           url:  /v2/airflow/tutorial/best-practices.html
           output: web, pdf
 
-<<<<<<< HEAD
-        - title: Apache Airflow Connections
-=======
         - title: Monitoring
           url:  /v2/airflow/tutorial/monitoring.html
           output: web, pdf
           
         - title: Airflow Connections
->>>>>>> 327f8990061d87105f235048407581da29d4bcfb
           url:  /v2/airflow/tutorial/connections.html
           output: web, pdf
 
@@ -300,15 +296,9 @@ entries:
           url: /v2/airflow/hooks/overview.html
           output: web, pdf
 
-<<<<<<< HEAD
-        - title: Apache Airflow Hooks
-          url: /v2/airflow/hooks/hooks.html
-          output: web, pdf
-=======
         - [//]: "title: Airflow Hooks
           url: /v2/airflow/hooks/index.html
           output: web, pdf"
->>>>>>> 327f8990061d87105f235048407581da29d4bcfb
 
     
     

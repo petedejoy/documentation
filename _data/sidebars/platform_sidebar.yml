@@ -297,7 +297,7 @@ entries:
           output: web, pdf
 
         - [//]: "title: Airflow Hooks
-          url: /v2/apache_ airflow/hooks/index.html
+          url: /v2/apache_airflow/hooks/index.html
           output: web, pdf"
 
     

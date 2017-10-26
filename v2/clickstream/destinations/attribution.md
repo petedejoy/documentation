@@ -37,7 +37,7 @@ Once you're on our UI, add Attribution as a destination on your client-side or s
 
 Finally, click `Create Destination` to activate your pipeline. 
 
-![attribution2](../../../images/attribution2.png). 
+![attribution2](../../../images/attribution2.png).  
 
 And that's it! You're ready for insights. 
 

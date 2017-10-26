@@ -119,6 +119,10 @@ entries:
         - title: Appboy
           url: /v2/clickstream/destinations/appboy.html
 
+        - title: Attribution
+          url: /v2/clickstream/destinations/attribution.html
+          output: web, pdf
+
         - title: Bing Ads
           url: /v2/clickstream/destinations/bing-ads.html
           output: web, pdf

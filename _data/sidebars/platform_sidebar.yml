@@ -111,6 +111,9 @@ entries:
         - title: Amplitude
           url: /v2/clickstream/destinations/amplitude.html
           output: web, pdf
+        
+        - title: Appboy
+          url: /v2/clickstream/destinations/appboy.html
 
         - title: Calq
           url: /v2/clickstream/destinations/calq.html

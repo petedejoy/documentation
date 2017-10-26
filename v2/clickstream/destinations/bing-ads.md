@@ -37,7 +37,7 @@ Now, go ahead and create a UET Tag by choosing a name and description.
 
 ![bing-ads2](../../../images/bing-ads2.png). 
 
-If you click on `View Tag`, you'll be able to see both the code and the ID. With that.
+If you click on `View Tag`, you'll be able to see both the JavaScript code and the 7-digit `Tag Id`. With that, jump over to your Astronomer dashboard to activate your pipeline directly from our UI. 
 
 ![bing-ads3](../../../images/bing-ads3.png). 
 

@@ -9,7 +9,7 @@ Astronomer Clickstream makes it easy to send your data to Intercom. Once you fol
 
 Intercom is a customer messaging platform, providing in-app messaging for onboarding and support. It targets chat, email, and in-app messages based on user behavior.
 
-Intercom requires that a Javascript snippet be added to your site or that you use the appropriate SDK for iOS and Android. If you want to send data directly into Intercom, you'll need to implement custom event tracking in your site.
+Intercom requires that a JavaScript snippet be added to your site or that you use the appropriate SDK for iOS and Android. If you want to send data directly into Intercom, you'll need to implement custom event tracking in your site.
 
 ## Why send data to Intercom using Astronomer Clickstream?
 
@@ -19,7 +19,7 @@ Integrating Intercom with Astronomer allows you to immediately begin messaging c
 
 ### Intercom Side
 
-Once you're on the [Get started with Intercom](http://www.intercom.io) page, you'll be asked if you want to either ntegrate one of their libraries or import users from another service/csv.
+Once you're on the [Get started with Intercom](http://www.intercom.io) page, you'll be asked if you want to either integrate one of their libraries or import users from another service/csv.
 
 ![intercom1](../../../images/intercom1.png)
 
@@ -39,13 +39,13 @@ Skip the `Set up Intercom & Segment` prompt and click on the gear wheel icon on 
 
 ![intercom5](../../../images/intercom5.png)
 
-From here, click on the `API Keys` on the left hand panel to access your App Id and API Key. Your App ID will look something like this: `9iefb489`
+From here, click on the `API Keys` on the left hand panel to access your Source ID and API Key. Your Source ID will look something like this: `9iefb489`
 
 ![intercom6](../../../images/intercom6.png)
 
 ### Astronomer Side
 
-Enter your App ID and API Key into the Intercom connector on your Astronomer dashboard. 
+Enter your Source ID and API Key into the Intercom connector on your Astronomer dashboard. 
 
 Give your new connection a unique name. 
 

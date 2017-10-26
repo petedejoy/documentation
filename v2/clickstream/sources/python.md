@@ -23,9 +23,9 @@ pip install astronomer-analytics
 Inside your python app, set you Source ID inside an instance of the Analytics object.
 ```
 import analytics
-analytics.app_id = ‘astronomer_app_id’
+analytics.source_id = ‘astronomer_source_id’
 ```
-*Note that you can find your app_id in the settings section of your Astronomer App.*
+*Note that you can find your source_id in the settings section of your Astronomer App.*
 
 ### Calls in Python
 

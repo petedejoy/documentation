@@ -1,29 +1,32 @@
 ---
-title: Airflow Introduction
+title: Apache Airflow on Astronomer
 sidebar: platform_sidebar
 ---
 
-## Overview
+As data gets bigger and faster, many organizations struggle to centralize and prepare unwieldy data sets for analytics.
 
-This site provides documentation, training, and other notes for the Jekyll Documentation theme. There's a lot of information about how to do a variety of things here, and it's not all unique to this theme. But by and large, understanding how to do things in Jekyll depends on how your theme is coded. As a result, these additional details are provided.
+Apache Airflow is a data workflow management system that allows engineers to schedule, deploy and monitor their own data pipes as DAGs (directed acyclic graphs). Built by developers, for developers, it’s based on the principle that ETL is best expressed in code.
 
-The instructions here are geared towards technical writers working on documentation. You may have a team of one or more technical writers working on documentation for multiple projects. You can use this same theme to author all of your documentation for each of your products. The theme is built to accommodate documentation for multiple products on the same site.
+By running Apache Airflow on Astronomer, you get:
 
-## Survey of features
+* One-click deployment through the [Astro CLI]((https://docs.astronomer.io/v2/airflow/cli.html))
+* Access to our [Airflow contributions](https://github.com/astronomerio/example-pipelines) which includes new hooks and operators
+* Serverless Airflow worker scalability through our SaaS platform
+* Access to our support documentation and team
+* Access to our Airflow development services team
 
-Some of the more prominent features of this theme include the following:
+## Airflow 101
 
-* Bootstrap framework
-* [Navgoco multi-level sidebar](http://www.komposta.net/article/navgoco) for table of contents
-* Ability to specify different sidebars for different products
-* Top navigation bar with drop-down menus
-* Notes, tips, and warning information notes
-* Tags for alternative navigation
-* Advanced landing page layouts from the [Modern Business theme](http://startbootstrap.com/template-overviews/modern-business/).
+* [Core Airflow Concepts](https://docs.astronomer.io/v2/airflow/tutorial/core-airflow-concepts.html)
+* [Simple Sample DAG](https://docs.astronomer.io/v2/airflow/tutorial/sample-dag.html)
+* [DAG Best Practices](https://docs.astronomer.io/v2/airflow/tutorial/best-practices.html)
 
-## Getting started
+## Getting Started with Apache Airflow on Astronomer
 
-To get started, see [Getting Started][index].
+* [Astronomer CLI Setup](https://docs.astronomer.io/v2/airflow/cli.html)
+* [Sample DAG Deployment Tutorial](https://docs.astronomer.io/v2/airflow/tutorial/dag-deployment.html)
 
-{% include links.html %}
+## Other Resources
 
+* [Airflow Operators](https://docs.astronomer.io/v2/airflow/operators/overview.html)
+* [Airflow Hooks](https://docs.astronomer.io/v2/airflow/hooks/overview.html)

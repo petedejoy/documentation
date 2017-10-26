@@ -17,13 +17,13 @@ Next, you’ll need to copy and paste the snippet below into the <head> of your 
 ```javascript
 <script type="text/javascript">
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Astronomer snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.astronomer.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
-  analytics.load("YOUR_APP_ID");
+  analytics.load("YOUR_SOURCE_ID");
   analytics.page()
   }}();
 </script>
 ```
 
-When you paste the snippet, replace ``"YOUR_APP_ID"`` with the `Source ID` for this particular project.
+When you paste the snippet, replace ``"YOUR_SOURCE_ID"`` with the `Source ID` for this particular project.
 
 As soon as this snippet is running on your site, you can begin experimenting with destinations. Click back to Astronomer Clickstream UI and start adding destinations to the source you just configured.
 

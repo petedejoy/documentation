@@ -2,31 +2,31 @@
 title: Hubspot
 sidebar: platform_sidebar
 ---
-Astronomer Clickstream makes it easy to send your data to Hubspot. Once you follow the steps below, your data will be routed through our platform and pushed to Hubspot in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to HubSpot. Once you follow the steps below, your data will be routed through our platform and pushed to HubSpot in the appropriate format. 
 
-## What is Hubspot and how does it work?
+## What is HubSpot and how does it work?
 
-Hubspot is an inbound marketing and sales software that helps companies attract visitors, convert leads, and close customers. 
+HubSpot is an inbound marketing and sales software that helps companies attract visitors, convert leads, and close customers. 
 
 The marketing automation platform includes everything from a landing page builder to SEO tools as well as a repository for managing specific campaign leads.
 
-Hubspot also monitors social media engagement and tracks the ROI of advertising on major social media platforms, equipping your team with the data you need to make strategic marketing decisions and investments. 
+HubSpot also monitors social media engagement and tracks the ROI of advertising on major social media platforms, equipping your team with the data you need to make strategic marketing decisions and investments. 
 
-Often used in tandem with another CRM like Salesforce, Hubspot integrates multiple platforms into source of truth. 
+Often used in tandem with another CRM like Salesforce,HubSpot integrates multiple platforms into source of truth. 
 
-[Learn more about Hubspot](https://www.hubspot.com/)
+[Learn more about HubSpot](https://www.hubspot.com/)
 
-## Why send data to Hubspot using Astronomer Clickstream?
+## Why send data to HubSpot using Astronomer Clickstream?
 
-Using Hubspot with Astronomer Clickstream allows you to automatically keep all of the customer data in your HubSpot account up-to-date and accurate, rather than spending valuable time uploading lists or relying on lead forms to capture contacts. By enabling the Hubspot integration in your Astronomer UI, you can keep all customer data records synced and up-to-date accross multiple systems in real time.
+Using HubSpot with Astronomer Clickstream allows you to automatically keep all of the customer data in your HubSpot account up-to-date and accurate, rather than spending valuable time uploading lists or relying on lead forms to capture contacts. By enabling the Hubspot integration in your Astronomer UI, you can keep all customer data records synced and up-to-date accross multiple systems in real time.
 
-## Getting Started with Hubspot and Astronomer Clickstream
+## Getting Started with HubSpot and Astronomer Clickstream
 
-To get started sending events to [Hubspot](http://www.hubspot.com), all you'll need is your Portal ID and API, both of which can be found shortly after you create an account.
+To get started sending events to [HubSpot](http://www.hubspot.com), all you'll need is your Portal ID and API, both of which can be found shortly after you create an account.
 
 ### Hubspot Side
 
-Create a Hubspot account via their [website](http://www.hubspot.com). 
+Create a HubSpot account via their [website](http://www.hubspot.com). 
 
 After you go through the initial onboarding, click on your account tab on the top right of the window. Note that you might notice something called a `Hub ID` next to the account tab. That's the ID you'll need for the Atronomer integration.
 

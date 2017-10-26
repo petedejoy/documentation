@@ -27,7 +27,7 @@ dependencies {
 We recommend initializing the client in your `Application` subclass.
 ```
 // Create an analytics client with the given context and Astronomer Source ID.
-Analytics analytics = new Analytics.Builder(context, YOUR_APP_ID)
+Analytics analytics = new Analytics.Builder(context, YOUR_SOURCE_ID)
   .trackApplicationLifecycleEvents() // Enable this to record certain application events automatically!
   .recordScreenViews() // Enable this to record screen views automatically!
   .build();
@@ -53,7 +53,7 @@ Ensure that the necessary permissions are declared in your application’s `Andr
 
 The `identify` method helps you associate your users and their actions to a unique and recognizable `userID` and any optional `traits` that you know about them. We recommend calling an `identify` a single time - when the user's account is first created and only again when their traits change.
 
-It's up to you to call `identify` based on how your users are authenticated, but doing it in the `onCreate` method of your Application class is the most common (as long as you know who your user is). IF your user is still anonymous, you should skip this step and we'll attribute the subsequent events to an ``anonymousID` instead.
+It's up to you to call `identify` based on how your users are authenticated, but doing it in the `onCreate` method of your Application class is the most common (as long as you know who your user is). IF your user is still anonymous, you should skip this step and we'll attribute the subsequent events to an `anonymousID` instead.
 
 For example, a simple `identify` looks something like this:
 ```

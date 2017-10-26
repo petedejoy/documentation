@@ -6,13 +6,13 @@ Astronomer Clickstream makes it easy to send your data to Woopra. Once you follo
 
 ## What is Woopra and how does it work?
 
-Woopra is a real-time customer analytics platform that tracks your customers' web and mobile activity,forms, emails, and support tickets. The platform allows you to build audience profiles and automatically sync that data to your system as customer behavior changes in real-time. Plus, Woopra can seamlessly integrate with third-party apps - automating prioritization based on support requests as well as targeted, custom content. 
+Woopra is a real-time customer analytics platform that tracks your customers' web and mobile activity,forms, emails, and support tickets. The platform allows you to build audience profiles and automatically sync that data to your system as customer behavior changes in real-time. Plus, Woopra can seamlessly integrate with third-party applications - automating prioritization based on support requests as well as targeted, custom content. 
 
 [Learn more about Woopra](https://www.woopra.com/)
 
 ## Why send data to Woopra using Astronomer Clickstream?
 
-Astronomer's integration collects and transforms the data you receive from Woopra directly from your existing mobile and server-side integrations on Astronomer Clickstream. That way, there's no need to include any Woopra SDK's in any of your applications. 
+Astronomer's integration collects and transforms the data you receive from Woopra directly from your existing mobile and server-side integrations on Astronomer Clickstream. That way, there's no need to include any Woopra SDKs in any of your applications. 
 
 Combining Woopra's data with the data you receive from other third-party tools on Astronomer Clickstream will empower your team to better understand customer behavior and more effectively target content.
 
@@ -20,7 +20,7 @@ Combining Woopra's data with the data you receive from other third-party tools o
 
 ### Woopra-Side
 
-Once you create your account on the woopra [website](https://www.woopra.com/), add a new project with the domain of your website or app. 
+Once you create your account on the woopra [website](https://www.woopra.com/), add a new project with the domain of your website or mobile app.  
 
 
 ![woopra1](../../../images/woopra1.png)

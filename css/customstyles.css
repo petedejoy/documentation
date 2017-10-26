@@ -1,5 +1,10 @@
 body {
-    font-size:15px;
+    font-size: 16px;
+}
+
+p {
+    line-height: 33px;
+    margin-bottom: 24px;
 }
 
 .bs-callout {
@@ -59,15 +64,10 @@ body {
     color: #5bc0de;
 }
 
-
 .gi-2x{font-size: 2em;}
 .gi-3x{font-size: 3em;}
 .gi-4x{font-size: 4em;}
 .gi-5x{font-size: 5em;}
-
-
-
-
 
 .breadcrumb > .active {color: #777 !important;}
 
@@ -180,7 +180,6 @@ table tr td {
     hyphens: auto;
 }
 
-
 p.external a {
     text-align:right;
     font-size:12px;
@@ -208,7 +207,6 @@ p.post-meta {font-size: 80%; color: #777;}
     border-left: 1px solid #dedede;
 }
 
-
 ul#results-container a {
     background-color: transparent;
 }
@@ -217,10 +215,10 @@ ul#results-container a:hover {
     color: black;
 }
 
-
 #search-demo-container a:hover {
     color: black;
 }
+
 #search-input {
     padding: 6px;
     margin-left:20px;
@@ -249,13 +247,12 @@ div#toc ul {
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 5px;
-    max-width: 300px;
+    max-width: 100%;
     color: gray;
 }
 
 div#toc ul li ul {
     padding-left:8px;
-
 }
 
 div#toc ul li ul li::before {
@@ -279,11 +276,9 @@ li.dropdownActive a {
     font-weight: bold;
 }
 
-
 .post-content a.fa-rss {
     color: orange;
 }
-
 
 .navbar-inverse .navbar-nav > li > a {
     background-color: transparent;
@@ -349,7 +344,6 @@ a.accordion-toggle, a.accordion-collapsed {
     font-weight: bolder;
 }
 
-
 .nav li > a > span:after {
     content: '\25be';
 }
@@ -393,7 +387,6 @@ ul#mysidebar {
     padding-left:20px;
     background-color: whitesmoke !important;
 }
-
 
 .nav ul li a {
     background-color: #FAFAFA;
@@ -444,11 +437,9 @@ img.screenshotSmall {
     max-width: 300px;
 }
 
-
 dl dt p {
     margin-left:20px;
 }
-
 
 dl dd {
     margin-top:10px;
@@ -460,14 +451,12 @@ dl.dl-horizontal dd {
 }
 
 figcaption {
-
     padding-bottom:12px;
     padding-top:6px;
     max-width: 90%;
     margin-bottom:20px;
     font-style: italic;
     color: gray;
-
 }
 
 .testing {
@@ -477,7 +466,6 @@ figcaption {
 .preference {
     color: red;
 }
-
 
 table.dataTable thead {
     background-color: #444;
@@ -660,9 +648,12 @@ button.cursorNorm {
 }
 
 h2  {
-    font-size:24px;
-    line-height:29px;
+    font-size:32px;
+    line-height:40px;
+    margin-bottom: 16px;
+    margin-top: 50px;
 }
+
 span.otherProgrammingLanguages {
     font-style: normal;
 }

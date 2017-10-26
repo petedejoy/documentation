@@ -12,7 +12,7 @@ Amazon Simple Storage Service (S3) is a scalable web-based cloud storage service
 * Network-optimized, physical disk-based, or third-party connector methods for easy data imports and exports
 * Object tagging for easy category customization
 
-Getting data into your S3 bucket natively requires quite a bit of developer work; you'd need to use an analytics tool like [Google Analytics](../google-analytics.md) and write an ETL pipeline to bring the data from that analytics tool to S3. This is inefficient in that it utilizes your engineering resources and dumps pre-formatted data into your S3 bucket rather than raw data.
+Getting data into your S3 bucket natively requires quite a bit of developer work; you'd need to use an analytics tool like [Google Analytics](google-analytics.md) and write an ETL pipeline to bring the data from that analytics tool to S3. This is inefficient in that it utilizes your engineering resources and dumps pre-formatted data into your S3 bucket rather than raw data.
 
 ## Why send data to Amazon S3 using Astronomer Clickstream?
 
@@ -24,7 +24,7 @@ Astronomer spares you the headache of writing custom ETL pipeliens to get your d
 
 ## Getting Started with Amazon S3 and Astronomer Clickstream
 
-Astronomer makes it easy to copy broadcasted events to an [Amazon Simple Storage Service (S3) bucket](https://aws.amazon.com/s3/).  You'll only need to configure the S3 Event Logs connector within your [Astronomer App](https://app.astronomer.io/), and include our bucket policy.
+Astronomer makes it easy to copy broadcasted events to an [Amazon Simple Storage Service (S3) bucket](https://aws.amazon.com/s3/).  You'll only need to configure the S3 Event Logs connector within your [Astronomer dashboard](https://app.astronomer.io/), and include our bucket policy.
 
 ### Amazon S3 Side
 

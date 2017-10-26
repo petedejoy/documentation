@@ -6,4 +6,4 @@ topnav:
     - title: GitHub
       external_url: https://github.com/astronomerio/documentation
     - title: Help 
-      url: https://support.astronomer.io
+      external_url: https://support.astronomer.io

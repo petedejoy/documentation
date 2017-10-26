@@ -13,7 +13,7 @@ After logging in with your Astronomer credentials, add a new `Source → iOS`. G
 
 ### Install the SDK
 We recommend installing Analy
-tics-iOS via [Cocoapods](https://cocoapods.org/) as it allows you to create a build with specific destinations and makes it simple to install and upgrade.
+tics-iOS via [Cocoapods](https://cocoapods.org/pods/AstronomerAnalytics) as it allows you to create a build with specific destinations and makes it simple to install and upgrade.
 
 Just add the Analytics dependency to your Podfile with:
 
@@ -24,13 +24,13 @@ Just add the Analytics dependency to your Podfile with:
 Then, run a pod install inside your terminal, or from CocoaPods.app. Then, in your applicaton delegate's `application:didFinishLaunchingWithOptions:` method, set up the SDK like this:
 
 ```
-SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"YOUR_APP_ID"];
+SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithWriteKey:@"YOUR_SOURCE_ID"];
 configuration.trackApplicationLifecycleEvents = YES; // Enable this to record certain application events automatically
 configuration.recordScreenViews = YES; // Enable this to record screen views automatically
 [SEGAnalytics setupWithConfiguration:configuration];
 ```
 
-Here, you'll need to place "YOUR_APP_ID" with the Source ID for this particular project.
+Here, you'll need to place "YOUR_SOURCE_ID" with the Source ID for this particular project.
 
 *Note: Automatically tracking lifecycle events (Application Opened, Application Installed, Application Updated) and screen views is optional via initialization config parameters, but highly recommended to hit the ground running with core events!*
 
@@ -84,7 +84,7 @@ A lot of analytics tools support custom event mapping so, with `track` implement
 
 You can specify the number of events that should queue before flushing. Set this to 1 to send events as they come in (i.e. not batched) but note that it will use more battery. Also note that this is 20 by default.
 ```
-SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithSourceID:@"YOUR_APP_ID"];
+SEGAnalyticsConfiguration *configuration = [SEGAnalyticsConfiguration configurationWithSourceID:@"YOUR_SOURCE_ID"];
 configuration.flushAt = 1;
 [SEGAnalytics setupWithConfiguration:configuration];
 ```

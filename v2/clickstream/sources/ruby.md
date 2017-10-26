@@ -28,7 +28,7 @@ gem install astronomer
 Inside your Ruby application, you'll want to set your `Source ID` inside an instance of the Analytics object:
 ```
 analytics = Segment::Analytics.new({
-  app_id: 'YOUR_APP_ID'
+  app_id: 'YOUR_SOURCE_ID'
 })
 ```
 *Note that you can find your `Source ID` in the settings section of your Astronomer App.*

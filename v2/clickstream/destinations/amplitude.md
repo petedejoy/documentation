@@ -17,7 +17,7 @@ Implementing Amplitude natively in your stack requires a good amount of develope
 
 If you want to try out any other analytics application, implementing native event tracking for Amplitude is a waste of time. Going through the processes of selecting and installing libraries and SDKs just for one tool will take your engineers a lot of time. Furthermore, if you plan to add more tools to your stack, the event tracking and custom coding work is going to be redundant and frustrating.
 
-Integrating Amplitude with Astronomer Clickstream means that you will just need to install Astronomer and enable Amplitude in your Astronomer UI. You will only need to set up one event tracking libarary (Astronomer's), and then you will be able to route and send data to Amplitude and any other destination of your choice without writing custom code for each one.
+Integrating Amplitude with Astronomer Clickstream means that you will just need to install Astronomer and enable Amplitude in your Astronomer UI. You will only need to set up one event tracking library (Astronomer's), and then you will be able to route and send data to Amplitude and any other destination of your choice without writing custom code for each one.
 
 ## Getting Started with Amplitude and Astronomer Clickstream
 
@@ -27,11 +27,11 @@ To get started sending events to Amplitude, all you need is your API Key. After 
 
 ![amplitude1](../../../images/amplitude1.png)
 
-You will then be prompted to create your first app. This app will function as your project to recieve events from Astronomer.
+You will then be prompted to create your first appplication. This application will function as your project to recieve events from Astronomer.
 
 ![amplitude2](../../../images/amplitude2.png)
 
-After this app is created, an API Key will be generated and presented in your dashboard. 
+After this application is created, an API Key will be generated and presented in your dashboard. 
 
 ![amplitude3](../../../images/amplitude3.png)
 

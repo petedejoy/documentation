@@ -15,9 +15,9 @@ entries:
       url: /
       output: web, pdf
 
-    - title: Getting Started
+    - [//]: "title: Getting Started
       url: /v2/platform/getting_started.html
-      output: web, pdf
+      output: web, pdf"
 
   - title: Clickstream
     output: web, pdf
@@ -27,11 +27,15 @@ entries:
       url: /v2/clickstream/overview.html
       output: web, pdf
 
+    - title: Basic Clickstream Example
+      url: /v2/clickstream/2048.html
+      output: web, pdf
+
     - title: Getting Started
       url: /v2/clickstream/getting-started.html
       output: web, pdf
 
-    - title: Calls
+    - title: API Calls
       url: /v2/clickstream/calls.html
       output: web, pdf
       subfolders:
@@ -88,8 +92,6 @@ entries:
           url: /v2/clickstream/sources/ruby.html
           output: web, pdf
 
-        
-
       - title: Destinations
         output: web, pdf
         subfolderitems:
@@ -101,6 +103,10 @@ entries:
         - title: Acquisio
           url: /v2/clickstream/destinations/acquisio.html
           output: web, pdf
+        
+        - title: Amazon Kinesis
+          url: /v2/clickstream/destinations/amazon-kinesis.html
+          output: web, pdf
 
         - title: Amazon Redshift
           url: /v2/clickstream/destinations/amazon-redshift.html
@@ -108,6 +114,13 @@ entries:
 
         - title: Amplitude
           url: /v2/clickstream/destinations/amplitude.html
+          output: web, pdf
+        
+        - title: Appboy
+          url: /v2/clickstream/destinations/appboy.html
+
+        - title: Bing Ads
+          url: /v2/clickstream/destinations/bing-ads.html
           output: web, pdf
 
         - title: Calq
@@ -130,12 +143,24 @@ entries:
           url: /v2/clickstream/destinations/doubleclick-floodlight.html
           output: web, pdf
 
+        - title: Facebook App Events
+          url: /v2/clickstream/destinations/facebook-app-events.html
+          output: web, pdf
+
         - title: Facebook Pixel
           url: /v2/clickstream/destinations/facebook-pixel.html
           output: web, pdf
 
+        - title: Google AdWords
+          url: /v2/clickstream/destinations/google-adwords.html
+          output: web,pdf
+
         - title: Google Analytics
           url: /v2/clickstream/destinations/google-analytics.html
+          output: web, pdf
+
+        - title: Google Tag Manager
+          url: /v2/clickstream/destinations/google-tagmanager.html
           output: web, pdf
 
         - title: Heap Analytics
@@ -170,6 +195,10 @@ entries:
           url: /v2/clickstream/destinations/optimizely.html
           output: web, pdf
 
+        - title: OutBrain
+          url: /v2/clickstream/destinations/outbrain.html
+          output: web, pdf
+          
         - title: Pinterest
           url: /v2/clickstream/destinations/pinterest.html
           output: web, pdf
@@ -239,7 +268,15 @@ entries:
           url:  /v2/airflow/tutorial/best-practices.html
           output: web, pdf
 
+<<<<<<< HEAD
         - title: Apache Airflow Connections
+=======
+        - title: Monitoring
+          url:  /v2/airflow/tutorial/monitoring.html
+          output: web, pdf
+          
+        - title: Airflow Connections
+>>>>>>> 327f8990061d87105f235048407581da29d4bcfb
           url:  /v2/airflow/tutorial/connections.html
           output: web, pdf
 
@@ -263,9 +300,15 @@ entries:
           url: /v2/airflow/hooks/overview.html
           output: web, pdf
 
+<<<<<<< HEAD
         - title: Apache Airflow Hooks
           url: /v2/airflow/hooks/hooks.html
           output: web, pdf
+=======
+        - [//]: "title: Airflow Hooks
+          url: /v2/airflow/hooks/index.html
+          output: web, pdf"
+>>>>>>> 327f8990061d87105f235048407581da29d4bcfb
 
     
     

@@ -31,7 +31,7 @@ Within your Astronomer Rubicon connector UI, give your new connection a unique n
 
 Then, paste your Page ID into the `pid` field, and your Conversion ID into the `Conversion ID` field.  In the `Conversion Events` area, paste in any conversion event names given to you by Rubicon.  If you have more than one conversion event, choose the `+` icon to add more.
 
-![rubicon1](https://docs.astronomer.io/docs//1.0/assets/img/guides/streaming/clickstream/rubicon/rubicon1.png)
+![rubicon1](../../../images/rubicon1.png)
 
 With your configuration entered, choose `Create Destination.`
 

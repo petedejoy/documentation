@@ -13,9 +13,12 @@ This library lets you record analytics data from any website or application. You
 
 You'll need to supply your app_ID with each request using HTTP Basic Auth.
 
-Basic Auth base64 encodes a 'username:password' and prepends it with the string 'Basic'. The native libraries should handle this for you, but if they do not you'll need to base64 encode a string in which the username is the app_ID and the password is empty.
+Basic Auth base64 encodes a 'username:password' and prepends it with the string 'Basic'. The native libraries should handle this for you, but if they do not you'll need to base64 encode a string in which the username is the Source ID and the password is empty. You can base64 encode your Source Id [here](https://www.base64encode.org/)
 
-For example, if your Source ID is `bXlhcHA6`, you'll need to encode `bXlhcHA6:`. The resut of this will be `Basic YlhsaGNIQTY6`. The complete authorization header would then be `Authorization: Basic YlhsaGNIQTY6`.
+For example, if your Source ID is ILoveData123, that will be encoded to SUxvdmVEYXRhMTIz. Then, your encoded authentication line in your header will look like this:
+```
+Authentication: Basic SUxvdmVEYXRhMTIz
+```
 
 #### Content-Type
 

@@ -39,7 +39,8 @@ Post `https://api.astronomer.io/v1/identify`
     'email': 'earthling1@hitchhikersguide.com',
     'hasTowel': True,
   }
-  'timestamp': '2015-11-10T00:45:23.412Z'
+  'timestamp': '2015-11-10T00:45:23.412Z',
+  'type': identify
 }
 ```
 
@@ -56,6 +57,7 @@ Post `https://api.astronomer.io/v1/track`
     'fileType': 'PDF'
   },
   'timestamp': '2015-11-10T00:45:23.412Z'
+  'type': track
 }
 ```
 
@@ -70,6 +72,7 @@ Post `https://api.astronomer.io/v1/page`
   'properties': {
     'referrer': 'http://reddit.com/r/AMA'
   }
+  'type': page
 }
 ```
 
@@ -84,6 +87,7 @@ Post `https://api.astronomer.io/v1/group`
     'name': 'The Hitchhikers',
     'relativePosition': '[39.1000 N, 84.5167 W]'
     }
+  'type': group
 }
 ```
 
@@ -95,5 +99,6 @@ Post  `https://api.astronomer.io/v1/alias`
   "previousId": "anonymous_id",
   "userId": "assigned_id_or_email",
   "timestamp": "2015-11-10T00:45:23.412Z"
+  "type": alias
 }
 ```

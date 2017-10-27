@@ -147,6 +147,10 @@ entries:
           url: /v2/clickstream/destinations/doubleclick-floodlight.html
           output: web, pdf
 
+        - title: Drift
+          url: /v2/clickstream/destinations/drift.html
+          output: web, pdf
+
         - title: Facebook App Events
           url: /v2/clickstream/destinations/facebook-app-events.html
           output: web, pdf

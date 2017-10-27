@@ -27,7 +27,7 @@ In short, Astronomer Clickstream gives you the benefits of Attribution's platfor
 
 All you'll need from Attribution once you have an account is your `Project ID`, which you can find at the top-right of your integration settings page. Check out the image below: 
 
-![attribution1](../../../images/attribution1.png). 
+![attribution1](../../../images/Attribution1.png) 
 
 With that 8-character ID, go right ahead to your Astronomer dashboard to finish setting up the pipeline.
 

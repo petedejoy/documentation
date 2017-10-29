@@ -4,7 +4,7 @@ sidebar: platform_sidebar
 ---
 ## Getting Started with Astronomer Clickstream - Website
 
-Using our analytics.js library, you can start sending customer data directly from your website to Astronomer. Accessing this user data will yield rich, actionable insights, and it only takes a few minutes to get set up!
+Using our analytics.js library, you can start sending customer data directly from your website to Astronomer. Accessing this user data will yield rich, actionable insights, and it only takes a few minutes to get set up.
 
 ### Create a Client-Side Source in the Astronomer UI
 
@@ -29,7 +29,7 @@ As soon as this snippet is running on your site, you can begin experimenting wit
 
 To test your newly configured source, trigger some events on your website and look for them in the Monitoring Overview & Logs.
 
-*Note: You will want to remove any other native 3rd party destination code that you may already have on your website. Skipping this step could cause issues if you turn on those same destinations (e.g. Mixpanel, Google Analytics, Amplitude, etc.) through Astronomer.*
+***Note**: You will want to remove any other native 3rd party destination code that you may already have on your website. Skipping this step could cause issues if you turn on those same destinations (e.g. Mixpanel, Google Analytics, Amplitude, etc.) through Astronomer.*
 
 If you are just looking for basic clickstream functionality, you’re all done setting up! We recommend enabling a simple integration, like Google Analytics, to start analyzing your website’s data.
 
@@ -55,7 +55,7 @@ analytics.identify('123456', {
 });
 ```
 
-You’re now set up to use any basic CRM! Go ahead and switch on a CRM, like Intercom, to start seeing your user data through Astronomer.
+You’re now set up to use any basic CRM. Go ahead and switch on a CRM, like Intercom, to start seeing your user data through Astronomer.
 
 While `identify` is an extremely useful call for a lot of integrations, many other analytics tools go beyond just identifying users; they record the actions each user performs too. See below for how to get to an even more holistic event tracking analytics setup.
 
@@ -78,11 +78,10 @@ analytics.track('Viewed Product', {
 });
 ```
 
-*Note: In order to use a `track` call, you must specify a name for the event you want to track whereas properties, options, and callback are all optional fields.*
+***Note**: In order to use a `track` call, you must specify a name for the event you want to track whereas properties, options, and callback are all optional fields.*
 
 A lot of analytics tools support custom event mapping so, with `track` implemented, you’ll be able to attribute events to your users and start targeting them in a more informed and relevant way.
 
 Congratulations, you’ve now successfully installed website tracking with Astronomer Connect!
 
-Now the fun begins: head back to our app, turn on some destinations, and hit your business with insightful user data!
-
+Now the fun begins: head back to our app, turn on some destinations, and hit your business with insightful user data.

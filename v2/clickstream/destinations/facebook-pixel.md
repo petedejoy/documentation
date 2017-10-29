@@ -5,7 +5,7 @@ sidebar: platform_sidebar
 
 Astronomer Clickstream makes it easy to send your data to Facebook Pixel. Once you follow the steps below, your data will be routed through our platform and pushed to Facebook Pixel in the appropriate format.
 
-*Note:* Astronomer's Facebook Pixel destination consolidates what was previously Facebook's "Ads for Websites" suite, which consisted of both Facebook Custom Audiences and Facebook Conversion Tracking.
+*Note: Astronomer's Facebook Pixel destination consolidates what was previously Facebook's "Ads for Websites" suite, which consisted of both Facebook Custom Audiences and Facebook Conversion Tracking.*
 
 ## What is Facebook Pixel and how does it work?
 
@@ -21,7 +21,7 @@ With Astronomer Clickstream, you can use Facebook Pixel without having to instal
 
 ### Facebook Pixel Side
 
-To get started with this integration, you'll first need to create a Facebook for Business account. [Follow the instructions](https://www.facebook.com/business/a/online-sales/custom-audiences-website) for creating a Pixel. 
+To get started with this integration, you'll first need to create a Facebook for Business account. [Follow the instructions](https://www.facebook.com/business/a/online-sales/custom-audiences-website) for creating a Pixel.
 
 You'll only create one pixel for your site (typically labeled with the name of your business). This pixel will [replace all the functionality](https://www.facebook.com/business/help/1686199411616919) previously given to Facebook Audiences and Facebook Conversions (as well as allowing some additional features, such as custom conversions.)
 
@@ -33,7 +33,7 @@ Once that's set up, identify your unique `pixelId`, a 15 digit number that uniqu
 
 Put your Facebook Pixel ID into your Astronomer account and give your new connection a unique name.
 
-**Standard Events** 
+**Standard Events**
 
 Facebook has nine [Standard Events,](https://www.facebook.com/business/a/add-pixel-standard-events) which are predefined within the Facebook for Business platform.
 
@@ -48,4 +48,3 @@ If you are using the Facebook Pixel integration as a replacement for Conversion 
 ![facebook-pixel4](../../../images/facebook-pixel4.gif)
 
 With that, just click `Create Destination` to activate your pipeline.
-

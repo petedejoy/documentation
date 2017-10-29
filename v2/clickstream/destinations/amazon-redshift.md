@@ -2,7 +2,7 @@
 title: Amazon Redshift
 sidebar: platform_sidebar
 ---
-Astronomer Clickstream makes it easy to send your data to Amazon Redshift. Once you follow the steps below, your data will be routed through our platform and pushed to Redshift in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to Amazon Redshift. Once you follow the steps below, your data will be routed through our platform and pushed to Redshift in the appropriate format.
 
 ## What is Amazon Redshift?
 
@@ -12,26 +12,26 @@ Redshift is Amazon Web Services' custom take on a traditional Postgres database.
 
 This guide will explain how to integrate Redshift into Astronomer's clickstream platform as a destination, allowing you to leverage Amazon's technology to access, store, and query your customer data.
 
-Our connector periodically runs an ETL (Extract - Transform - Load) process that pulls raw event data in S3, processes and transforms those raw events into a structured format, and then inserts structured event data from our bucket into your Redshift cluster. 
+Our connector periodically runs an ETL (Extract - Transform - Load) process that pulls raw event data in S3, processes and transforms those raw events into a structured format, and then inserts structured event data from our bucket into your Redshift cluster.
 
 
 # Getting started with Amazon Redshift
 
-## Step 1. Pick a cluster that fits your needs 
+## Step 1. Pick a cluster that fits your needs
 
-*Note: If you already have a Redshift cluster, go ahead to [step 3](Step 3. Permission Astronomer to Redshift)*
- 
- Once you've logged into your AWS account and Redshift console, it's time to pick and select your cluster. 
- 
+***Note**: If you already have a Redshift cluster, go ahead to [step 3](Step 3. Permission Astronomer to Redshift)*
+
+ Once you've logged into your AWS account and Redshift console, it's time to pick and select your cluster.
+
  As you do this, remember that the capacity you'll need and utilize depends primarily on the number of unique tables and columns created in the cluster, not the number of events (database records).
  Each unique `track` event creates a new table, and each property sent creates a new column in that table. For this reason, think about creating a detailed tracking plan to make sure that all events being passed to Astronomer are necessary and consistent.
 
- There are two kinds of Redshift clusters, Dense Compute and Dense Storage. 
+ There are two kinds of Redshift clusters, Dense Compute and Dense Storage.
 
- 
+
 #### Dense Compute Cluster
 
-Dense Compute clusters maximize query speed and performance, but in turn have less capacity for storage. While there is no set process to size a cluster, most customers with less than 20 million monthly events start with a single DC1 cluster and add nodes as needed. A single node cluster includes 200GB of storage and a maximum side of 2.56TB. 
+Dense Compute clusters maximize query speed and performance, but in turn have less capacity for storage. While there is no set process to size a cluster, most customers with less than 20 million monthly events start with a single DC1 cluster and add nodes as needed. A single node cluster includes 200GB of storage and a maximum side of 2.56TB.
 
 #### Dense Storage Cluster
 
@@ -41,9 +41,9 @@ Dense storage clusters maximize storage capacity and allow customers with hundre
 
 ## Step 2. Provision your cluster
 
-1. Open the Redshift Console 
+1. Open the Redshift Console
 2. Click on "Launch Cluster"
-3. Input cluster details 
+3. Input cluster details
 4. Choose cluster size
 5. Set up your cluster Security Group or VPC and proceed to review
 
@@ -53,13 +53,13 @@ If you're having trouble, check out the configuration steps [here](http://docs.a
 
 ## Step 3. Permission Astronomer to Redshift
 
-Once you provision your Redshift cluster, you'll need to configure your Redshift cluster to allow Astronomer to access it. 
+Once you provision your Redshift cluster, you'll need to configure your Redshift cluster to allow Astronomer to access it.
 
 ### Confirm and Insert Credentials
 
 The <i>Username</i> and <i>Password</i> you used to initially create the cluster are the credentials you'll put into your Astronomer account. You should NOT use your master AWS credentials here. If you want to switch clusters in the future, make sure you update your Username and Password as needed.
 
-For Clickstream, having *distinct users* will allow you to (i) isolate queries from one another and (ii) perform audits more easily. 
+For Clickstream, having *distinct users* will allow you to (i) isolate queries from one another and (ii) perform audits more easily.
 
 To create a new user, you'll need to log into the Redshift database directly. Here's the SQL command:
 
@@ -76,7 +76,7 @@ Redshift clusters can either be in a EC2 Classic subnet or VPC subnet
 
 If your cluster has a field called `Cluster Security Groups`, go ahead to EC2-Classic.
 
-If your cluster has a field called `VPC Security Groups`, go ahead to EC2 VPC. 
+If your cluster has a field called `VPC Security Groups`, go ahead to EC2 VPC.
 
 **EC2-Classic**
 
@@ -114,8 +114,8 @@ Redshift Dashboard > Clusters > Select Your Cluster
 
 
 
-### Whitelist Astronomer's IP. 
-Make sure that you whitelist 52.86.240.182 as an incoming IP Address so we can write to your Redshift instance without you exposing the database to everyone. For more information on, please explore our [Networking Guide](/1.0/guides/network/)
+### Whitelist Astronomer's IP.
+Make sure that you whitelist 52.86.240.182 as an incoming IP Address so we can write to your Redshift instance without you exposing the database to everyone. For more information, please explore our [Networking Guide](/1.0/guides/network/)
 
 ---
 
@@ -129,7 +129,7 @@ The Host and Port are found at the top beside the label 'Endpoint,' with Host co
 
 ## Step 4: Activate Integration on Astronomer
 
-After you've identified the <b>Username, Password, Host, Port,</b> and <b>Database Name</b>, put all of these credentials into your Astronomer account and give your new connection a unique name. 
+After you've identified the <b>Username, Password, Host, Port,</b> and <b>Database Name</b>, put all of these credentials into your Astronomer account and give your new connection a unique name.
 
 Note that your *Database* and *Schema* are kept separate from your other connection credentials. *Schema* is required, but it's up to you to decide what value to input - think of it as a folder to store your clickstream in. Example values include `analytics_ios`, `clickstream_web`, etc.
 
@@ -140,12 +140,11 @@ That's it! You'll now be receiving a livestream of data from your application in
 ![amazon-redshift1](../../../images/amazon-redshift1.gif)
 
 
-## Things to note. 
+## Things to note.
 
 ### Reserved Words
 
-Redshift limits the number of [reserved words](http://docs.aws.amazon.com/redshift/latest/dg/r_pg_keywords.html) in schema, table, and column names. We'd also encourage you to stay away from naming traits or properties that conflict with top level Clickstream fields (i.e. userID, receivedAt, messageID) 
+Redshift limits the number of [reserved words](http://docs.aws.amazon.com/redshift/latest/dg/r_pg_keywords.html) in schema, table, and column names. We'd also encourage you to stay away from naming traits or properties that conflict with top level Clickstream fields (i.e. userID, receivedAt, messageID)
 
 ### Query Speeds
 The speed of your queries depends on the capabilities of your hardware, the size of the dataset, and the amount of data utilization in the cluster. For instance, you might see lower query speeds if you find yourself above 75% data utilization.
-

@@ -7,7 +7,7 @@ sidebar: platform_sidebar
 
 The key to delighting customers is understanding them. Since identifying what they do-or don't do-is crucial to understanding their actions, thousands of tools exist to help marketers and product managers analyze user engagement with a website or app. As if selecting the right tools isn't challenging enough, accessing the fast-accumulating data for internal analysis is often a struggle, and the cost of switching to a better tool down the road can result in a major loss of data.
 
-The Astronomer Clickstream module allows you to capture every user event from web, mobile, and server side sources. Once those events are ingested into our platform, we can push them to a data warehouse, CRM, or analytics tool of your choice. Implementing our Clickstream module in your current infrastrucutre allows you to better understand how exactly users are interacting with your web and mobile apps so that you can tailor marketing and product focus accordingly.
+The Astronomer Clickstream module allows you to capture every user event from web, mobile, and server side sources. Once those events are ingested into our platform, we can push them to a data warehouse, CRM, or analytics tool of your choice. Implementing our Clickstream module in your current infrastructure allows you to better understand how exactly users are interacting with your web and mobile apps so that you can tailor marketing and product focus accordingly.
 
 If you are a current Segment user, check out [this blog post](https://www.astronomer.io/blog/switch-from-segment-to-astronomer-in-four-simple-st/) to see how easy it is to switch to Astronomer!
 
@@ -50,4 +50,3 @@ If you are a current Segment user, check out [this blog post](https://www.astron
 * [Twitter Ads](/v2/clickstream/destinations/twitter-ads.html)
 * [Webhooks](/v2/clickstream/destinations/webhooks.html)
 * [Woopra](/v2/clickstream/destinations/woopra.html)
-

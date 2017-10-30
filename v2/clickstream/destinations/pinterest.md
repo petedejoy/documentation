@@ -18,17 +18,17 @@ This integration can be very complicated to implement without Astronomer; the ba
 
 Using Astronomer, you can send page views and event data directly to Pinterest without needing to manually install any extra JavaScript on your website. Just enable the Pinterest destination in your Astronomer UI, and we'll automatically take care of mapping a standard set of events to recognized Pinterest Tag events. Astronomer also allows you to define and map your own events to supported Pinterest events without any custom code. All of this data is immediately available for analysis in your Pinterest dashboard.
 
-Integrating Pinterest with Astronomer cuts out any need for additional implementation resources, saving your developer team valuable time.
+Integrating Pinterest with Astronomer cuts out any need for additional implementation resources, saving your development team valuable time.
 
 ## Getting Started with Pinterest Tag and Astronomer Clickstream
 
 To get started sending events to Pinterest, first sign up for [Pinterest for Business](https://business.pinterest.com/en).
 
-*Note*:  that this destination supports client-side analytics.js only.  You also need to have implemented Astronomer within your website prior to enabling this connector.
+***Note**: This destination supports client-side analytics.js only. You also need to have implemented Astronomer within your website prior to enabling this connector.*
 
 ### Pinterest Side
 
-Begin by logging into your [Pinterest for Business](https://business.pinterest.com/en) account. Create your conversion tracking tags by choosing from the `Ads` dropdown and selecting `Conversion Tracking.`
+Begin by logging into your [Pinterest for Business](https://business.pinterest.com/en) account. Create your conversion tracking tags by choosing from the `Ads` dropdown and selecting `Conversion Tracking`.
 
 ![pinterest1](../../../images/pinterest1.png)
 

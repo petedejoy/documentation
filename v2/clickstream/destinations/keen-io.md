@@ -8,7 +8,7 @@ Astronomer Clickstream makes it easy to send your data to Keen.io. Once you foll
 
 Built for developers, Keen.io is an event data platform for real-time, intelligent data application. The platform allows you to collect and send event data wherever you need, directly build powerful analytics features into your tools and products, and programmatically provision role-based data access for your users and customers.
 
-Keen.io supports customizable APIs and a charting library, which gives developers room to build and customize native analytics tools. Plus, their third-party integrations will allow your team to pin point key behavior metrics and pull customer data accordingly.
+Keen.io supports customizable APIs and a charting library, which gives developers room to build and customize native analytics tools. Plus, their third-party integrations will allow your team to pinpoint key behavior metrics and pull customer data accordingly.
 
 [Learn more about Keen.io](https://keen.io/)
 

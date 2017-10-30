@@ -115,7 +115,7 @@ Redshift Dashboard > Clusters > Select Your Cluster
 
 
 ### Whitelist Astronomer's IP.
-Make sure that you whitelist 52.86.240.182 as an incoming IP Address so we can write to your Redshift instance without you exposing the database to everyone. For more information, please explore our [Networking Guide](/1.0/guides/network/)
+Make sure that you whitelist 52.86.240.182 as an incoming IP Address so we can write to your Redshift instance without you exposing the database to everyone. For more information, please explore our [Networking Guide](/1.0/guides/network/).
 
 ---
 

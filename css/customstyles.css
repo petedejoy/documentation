@@ -1206,5 +1206,6 @@ h4.panel-title {
     #search-demo-container ul#results-container {
       position: relative;
       top: 0;
+      z-index: 5;
     }
 }

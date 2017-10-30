@@ -5,8 +5,7 @@ sidebar: platform_sidebar
 
 This document covers how to set up various connections in Airflow. This information is needed in order to connect to your environment.
 
-Connections can be maintained in the Airflow Interface (Menu --> Admin --> Connections)
-
+Connections can be maintained in the Airflow Interface (Menu --> Admin --> Connections).
 
 ##### Microsoft SQL Server
 * `Host`: localhost

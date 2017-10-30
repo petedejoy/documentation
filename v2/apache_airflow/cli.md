@@ -73,7 +73,7 @@ astro deploy
 ```
 
 This will prompt you to select the organization, and confirms you are sure you want to deploy.
-Once you do that, it will bundle all but a few blacklisted files and push to the API, and then to S3
+Once you do that, it will bundle all but a few blacklisted files and push to the API, and then to S3.
 
 If you want to log out of your account:
 
@@ -83,11 +83,11 @@ astro logout
 
 ## Local Airflow
 
-Run `astro airflow up` to start the local airflow cluster
+Run `astro airflow up` to start the local airflow cluster.
 
-Once started, it can be access at `http://localhost:8080`
+Once started, it can be accessed at `http://localhost:8080`.
 
-Once finished you can run `astro airflow down` to stop the cluster
+Once finished you can run `astro airflow down` to stop the cluster.
 
 ---
 
@@ -107,6 +107,7 @@ redshift_sink = Activity(dag, 'astronomerio/redshift-sink', ...)
 custom_transform.set_upstream([salesforce_entity_1, salesforce_entity_2, salesforce_entity_3])
 redshift_sink.set_upstream(custom_transform)
 ```
+
 ## Commands
 
 Usage:
@@ -144,4 +145,4 @@ Use `astro [command] --help` for more information about a command.
 
 ### Metadata
 When running/building locally you will need to generate the metadata file.  Running `make build-meta` or a `make build`
-will build the meta data file.  Once generated, you should be able to build/run without problem.
+will build the meta data file. Once generated, you should be able to build/run without problem.

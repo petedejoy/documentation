@@ -1170,6 +1170,7 @@ h4.panel-title {
     }
     .navbar-toggle {
         display: block;
+        margin-top: 16px;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -1187,12 +1188,23 @@ h4.panel-title {
     }
     .navbar-nav>li {
         float: none;
+        margin: 10px 0;
     }
     .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        //padding-top: 10px;
+        //padding-bottom: 10px;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        margin-top: 1px;
+    }
+    #search-input {
+      margin-top: 0;
     }
     .collapse.in{
         display:block !important;
+    }
+    #search-demo-container ul#results-container {
+      position: relative;
+      top: 0;
     }
 }

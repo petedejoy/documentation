@@ -2,15 +2,15 @@
 <nav class="navbar navbar-inverse navbar-static-top">
     <div class="container topnavlinks">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="{{ "/" | relative_url }}" style="margin: 15px 0 15px"><img style="padding: 10px; width: 125px"src="{{ "images/Logo_BigStarsDarkBg.svg" | relative_url }}" alt="Company logo"/></a>
+          <a href="{{ "/" | relative_url }}"><img style="padding: 10px; width: 125px" src="{{ "images/Logo_BigStarsDarkBg.svg" | relative_url }}" alt="Astronomer logo"/></a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#astronomer-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="astronomer-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <!-- entries without drop-downs appear here -->
 
@@ -60,16 +60,17 @@
                     </div>
                     <script src="{{ "js/jekyll-search.js" | relative_url }}" type="text/javascript"></script>
                     <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: '{{ "search.json" | relative_url }}',
-                                searchResultTemplate: '<li><a href="{url}" title="{{page.title | relative_url }}">{title}</a></li>',
-                    noResultsText: '{{site.data.strings.search_no_results_text}}',
-                            limit: 10,
-                            fuzzy: true,
-                    })
-                    </script>
+                    SimpleJekyllSearch.init({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  dataSource: '{{ "search.json" | relative_url }}',
+  searchResultTemplate:
+    '<li><a href="{url}" title="{{page.title | relative_url }}">{title}</a></li>',
+  noResultsText: '{{site.data.strings.search_no_results_text}}',
+  limit: 10,
+  fuzzy: true
+});
+</script>
                     <!--end search-->
                 </li>
             </ul>

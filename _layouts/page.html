@@ -9,9 +9,9 @@ layout: default
 {% if page.simple_map == true %}
 
 <script>
-    $(document).ready ( function(){
-        $('.box{{page.box_number}}').addClass('active');
-    });
+$(document).ready(function() {
+  $('.box{{page.box_number}}').addClass('active');
+});
 </script>
 
 {% include custom/{{page.map_name}}.html %}
@@ -19,9 +19,9 @@ layout: default
 {% elsif page.complex_map == true %}
 
 <script>
-    $(document).ready ( function(){
-        $('.modalButton{{page.box_number}}').addClass('active');
-    });
+$(document).ready(function() {
+  $('.modalButton{{page.box_number}}').addClass('active');
+});
 </script>
 
 {% include custom/{{page.map_name}}.html %}

@@ -42,7 +42,7 @@ Give your pipeline a unique name, and click `Create Destination` to officially a
 
 With that, you're set! Your data should start flowing almost immediately.
 
-Click on `View Your Data` back in the Mixpanel UI to start exploring!
+Click on `View Your Data` back in the Mixpanel UI to start exploring.
 
 ### Things to Note.
 
@@ -51,7 +51,7 @@ On top of our standard calls, you're free to do a few extra things with our Mixp
 - *Enable Mixpanel People*: This will enable all of your analytics.identify() calls to get sent to Mixpanel's People.
     * You can then list the events you want to see in People in the `Events to Increment in People` text field
 
-- *Track additional pages*, including
+- *Track additional pages*, including:
     * Named Pages
     * Categorized Pages
     * All Pages

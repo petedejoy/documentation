@@ -177,7 +177,7 @@ table th[class*="col-"] {
 }
 
 table tr td {
-    hyphens: auto;
+    hyphens: none;
 }
 
 p.external a {
@@ -291,6 +291,17 @@ li.dropdownActive a {
 
 footer {
     font-size: smaller;
+    text-align: center;
+}
+
+footer p {
+  line-height: 18px;
+}
+
+@media (min-width: 768px) {
+    footer {
+      text-align: left;
+    }
 }
 
 /* FAQ page */
@@ -419,10 +430,6 @@ span.projectTitle {
     font-weight: bold;
 }
 
-.footer {
-    text-align: right;
-}
-
 .footerMeta {
     background-color: whitesmoke;
     padding: 10px;
@@ -538,7 +545,7 @@ hr.faded {
 hr.shaded {
     height: 12px;
     border: 0;
-    margin-top: 70px;
+    margin-top: 30px;
     background: white;
     width: 100%;
     margin-bottom: 10px;
@@ -648,7 +655,7 @@ button.cursorNorm {
 }
 
 h2  {
-    font-size:32px;
+    font-size:28px;
     line-height:40px;
     margin-bottom: 16px;
     margin-top: 50px;
@@ -1163,6 +1170,7 @@ h4.panel-title {
     }
     .navbar-toggle {
         display: block;
+        margin-top: 16px;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -1180,12 +1188,24 @@ h4.panel-title {
     }
     .navbar-nav>li {
         float: none;
+        margin: 10px 0;
     }
     .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        //padding-top: 10px;
+        //padding-bottom: 10px;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        margin-top: 1px;
+    }
+    #search-input {
+      margin-top: 0;
     }
     .collapse.in{
         display:block !important;
+    }
+    #search-demo-container ul#results-container {
+      position: relative;
+      top: 0;
+      z-index: 5;
     }
 }

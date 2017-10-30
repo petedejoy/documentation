@@ -1,15 +1,15 @@
 <footer>
-            <div class="row">
-                <div class="col-lg-12 footer">
-                    <div class="col-lg-1">
-                    <img style="width: 75px; float: left" src="{{ "images/AWithStars.svg" | relative_url }}" alt="Company logo"/>
-                    </div>
-                    <div class="col-lg-11">
-                    <p style="padding: 20px; text-align: left">
-                        &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved.<br/>
-                        {% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}<br/>{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }}
-                    </p>
-                    </div>
-                </div>
-            </div>
+  <div class="row">
+      <div class="col-xs-12 footer">
+          <div class="col-xs-12 col-sm-2" style="text-align: center;">
+            <img style="width: 75px;" src="{{ "images/AWithStars.svg" | relative_url }}" alt="Company logo"/>
+          </div>
+          <div class="col-xs-12 col-sm-10">
+            <p style="padding: 20px;">
+              &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved.<br/>
+              {% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated}}<br/>{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }}
+            </p>
+          </div>
+      </div>
+  </div>
 </footer>

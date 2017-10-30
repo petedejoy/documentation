@@ -242,6 +242,10 @@ entries:
         - title: Woopra
           url: /v2/clickstream/destinations/woopra.html
           output: web, pdf
+        
+        - title: VWO
+          url: /v2/clickstream/destinations/vwo.html
+          output: web, pdf
 
   - title: Apache Airflow
     output: web, pdf

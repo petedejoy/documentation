@@ -144,7 +144,7 @@ That's it! You'll now be receiving a livestream of data from your application in
 
 ### Reserved Words
 
-Redshift limits the number of [reserved words](http://docs.aws.amazon.com/redshift/latest/dg/r_pg_keywords.html) in schema, table, and column names. We'd also encourage you to stay away from naming traits or properties that conflict with top level Clickstream fields (i.e. userID, receivedAt, messageID)
+Redshift limits the number of [reserved words](http://docs.aws.amazon.com/redshift/latest/dg/r_pg_keywords.html) in schema, table, and column names. We'd also encourage you to stay away from naming traits or properties that conflict with top level Clickstream fields (i.e. userID, receivedAt, messageID).
 
 ### Query Speeds
 The speed of your queries depends on the capabilities of your hardware, the size of the dataset, and the amount of data utilization in the cluster. For instance, you might see lower query speeds if you find yourself above 75% data utilization.

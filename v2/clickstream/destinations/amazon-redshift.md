@@ -140,7 +140,7 @@ That's it! You'll now be receiving a livestream of data from your application in
 ![amazon-redshift1](../../../images/amazon-redshift1.gif)
 
 
-## Things to note.
+## Things to note
 
 ### Reserved Words
 

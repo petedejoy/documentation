@@ -15,22 +15,6 @@ etc
 ## Getting Started with 'DESTINATION' and Astronomer Clickstream
 High level overview of how to begin, including app id information. How to set up.
 
-## Additional Functionality
-
-### Identify
-What happens when you call Identify.
-
-### Track
-What happens when you call Track.
-
-### Page & Screen
-What happens when you call Page/Screen.
-
-### Group
-What happens when you call Group.
-
-### Alias
-What happens when you call Alias.
 
 ## Beyond the Basics
 Additional features that are available on the Astronomer platform.

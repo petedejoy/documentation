@@ -17,7 +17,7 @@ GTM works through a snippet that you'd normally have to include in all of your p
 
 ## Why send data to Google Tag Manager using Astronomer Clickstream?
 
-With Astronomer's GTM integration, you won't have to worry about loading GTM's snippet onto every single one of your pages or installing SKDs for iOS and Android mobile apps. Instead, GTM will be automatically loaded onto any pages where your Astronomer snippet is initialized and your `analytics.js` page gets called in client-side javaScript.
+With Astronomer's GTM integration, you won't have to worry about loading GTM's snippet onto every single one of your pages or installing SDKs for iOS and Android mobile apps. Instead, GTM will be automatically loaded onto any pages where your Astronomer snippet is initialized and your `analytics.js` page gets called in client-side JavaScript.
 
 Astronomer's integration only requires the `Container ID` tied to your account. Skip the headache and get straight to insights.
 

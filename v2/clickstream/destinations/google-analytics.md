@@ -94,7 +94,7 @@ Use this if you want Google Analytics to ignore certain referral domains.
 ***Note:** This only works for Classic profiles. If you are on a Universal profile, you can edit this feature directly inside Google Analytics.*
 
 ### Track Named Pages
-Enabling this will track events to Google Analytics for `page` calls that have a `name` associated with them. For example, `page('Home') will translate to **Viewed Home Page**.
+Enabling this will track events to Google Analytics for `page` calls that have a `name` associated with them. For example, `page('Home')` will translate to **Viewed Home Page**.
 
 ***Note:** We enable this automatically when you set-up Google Analytics as a Clickstream destination.*
 
@@ -113,7 +113,7 @@ Read more about anonymizing IP addresses for client-side libraries [here](https:
 This feature provides more detailed reports on the links clicked on your site. Read more [here](https://support.google.com/analytics/answer/6047802?hl=en&visit_id=1-636437616467963863-2922769516&rd=1).
 
 ### Add the Non-Interaction Flag to All Events
-This feature adds a `noninteraction: true flag: to every event tracked to Google Analytics. Enable this if you're seeing unusually low bounce rates.
+This feature adds a `noninteraction: true` flag to every event tracked to Google Analytics. Enable this if you're seeing unusually low bounce rates.
 
 ### Site Speed Sample Rate
 This defines the sample size for Site Speed data collection. If you have a smaller number of visitors, you might want to adjust the sampling to a larger rate for your site speed stats.

@@ -3,13 +3,13 @@ title: Customer.io
 sidebar: platform_sidebar
 ---
 
-Astronomer Clickstream makes it easy to send your data to Customer.io. Once you follow the steps below, your data will be routed through our platform and pushed to Customer.io in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to Customer.io. Once you follow the steps below, your data will be routed through our platform and pushed to Customer.io in the appropriate format.
 
 ## What is Customer.io and how does it work?
 
-Customer.io is an automated email based on customer behavioral data. It allows you to create user segmentation by mapping this behavioral data. It also uses Shopify's open-source Liquid logic for powerful and robust email template and personalization options. 
+Customer.io is an automated email based on customer behavioral data. It allows you to create user segmentation by mapping this behavioral data. It also uses Shopify's open-source Liquid logic for powerful and robust email template and personalization options.
 
-Using Customer.io involves placing their JavaScript snippet in the footer of your website and using their client libraries. 
+Using Customer.io involves placing their JavaScript snippet in the footer of your website and using their client libraries.
 
 [Learn more about customer.io.](https://customer.io/)
 

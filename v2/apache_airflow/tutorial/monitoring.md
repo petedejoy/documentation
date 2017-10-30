@@ -7,8 +7,9 @@ sidebar: platform_sidebar
 This is the dashboard for all of your DAGs. From here you can get an overview for what is happening across all workflows for your organization.
 
 ## Dashboard Columns
-Some of the high-level items you can glean from a glance are
-* Is DAG Paused or Running?
+Some of the high-level items you can glean from a glance are:
+
+* Is DAG paused or running?
 * Schedule
   - How often should this DAG be running?
 * Owner
@@ -50,7 +51,7 @@ When defining a DAG, many will often choose to define a set of default arguments
 [Example Usecase](https://airflow.incubator.apache.org/tutorial.html?highlight=email)
 
 #### Custom Messaging Tasks
-Airflow allows you to define complex workflows, this includes sending messages as a part of those workflows. Thanks to community contributed operators such as the [Slack](https://airflow.incubator.apache.org/_modules/slack_operator.html) or [email](https://pythonhosted.org/airflow/_modules/email_operator.html) operator you can notify your customers of successes, failures or other custom events as they happen.
+Airflow allows you to define complex workflows, this includes sending messages as a part of those workflows. Thanks to community contributed operators such as the [Slack](https://airflow.incubator.apache.org/_modules/slack_operator.html) or [email](https://pythonhosted.org/airflow/_modules/email_operator.html) operator you can notify your customers of successes, failures, or other custom events as they happen.
 
 ##### Message on Success
 In some cases, you may want to be notified when a workflow succeeds. The easiest way to achieve this is to add a task that happens at the end of your workflow for positive notifications.

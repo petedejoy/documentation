@@ -11,17 +11,20 @@ This library lets you record analytics data from your ASP.NET, C#, F#, and Visua
 
 #### Step 1
 
-To start, you must install our client-side library, analytics.js, to your ASP.NET master page. Follow the steps outlined in our [analytics.js doc](../analyticsjs.md) and place your snippet directly in your ASP.NET Site.master. This will allow you to use `page ` calls.
+To start, you must install our client-side library, analytics.js, to your ASP.NET master page. Follow the steps outlined in our [analytics.js doc](../analyticsjs.md) and place your snippet directly in your ASP.NET Site.master. This will allow you to use `page` calls.
 
 #### Step 2
 
-Next, you'll want to instally our .net library to start using the `identify` and `track` calls. We reccomend using [NuGet](https://docs.microsoft.com/en-us/nuget/tools/package-manager-console) to do this. 
+Next, you'll want to install our .net library to start using the `identify` and `track` calls. We recommend using [NuGet](https://docs.microsoft.com/en-us/nuget/tools/package-manager-console) to do this.
+
 ```
 Install-Package Analytics
 ```
+
 You can also doing this by navigating through Visual Studio: `Toola-->Library Package Manager-->Package Manager Console'
 
-Now you need to iniitialize the .NET library so that it knows where to send data. Do this with your `Source ID`, which can be found in your Astronomer UI once you've created a server-side source. Then you can use the `Analytics` singleton in any controller you want:
+Now you need to initialize the .NET library so that it knows where to send data. Do this with your `Source ID`, which can be found in your Astronomer UI once you've created a server-side source. Then you can use the `Analytics` singleton in any controller you want:
+
 ```
 <%@ Application Language="C#" %>
 <%@ Import Namespace="ASP.NET_Example" %>
@@ -41,10 +44,13 @@ Now you need to iniitialize the .NET library so that it knows where to send data
 
 </script>
 ```
+
 Now, initialize the project:
+
 ```
 Analytics.Initialize("YOUR_SOURCE_ID");
 ```
+
 You will only need to perform this initialization once.
 
 ### Calls in .NET
@@ -52,6 +58,7 @@ You will only need to perform this initialization once.
 Check out our [Calls](../calls.md) section for information on when you should use each call. Below are some examples of how you'd call specific objects in .NET.
 
 #### Identify
+
 ```
 Analytics.Client.Identify("1234qwerty", new Traits() {
     { "name", "#{ user.name }" },
@@ -61,6 +68,7 @@ Analytics.Client.Identify("1234qwerty", new Traits() {
 ```
 
 #### Track
+
 ```
 Analytics.Client.Track("1234qwerty", "Add to Cart", new Properties() {
     { "price", 50.00 },
@@ -69,6 +77,7 @@ Analytics.Client.Track("1234qwerty", "Add to Cart", new Properties() {
 ```
 
 #### Page
+
 ```
 Analytics.Client.Page("1234qwerty", "Login", new Properties() {
     { "path", "/login" },
@@ -77,6 +86,7 @@ Analytics.Client.Page("1234qwerty", "Login", new Properties() {
 ```
 
 #### Group
+
 ```
 Analytics.Client.Group("userId", "groupId", new Traits() {
     { "name", "Astronomer },
@@ -85,6 +95,7 @@ Analytics.Client.Group("userId", "groupId", new Traits() {
 ```
 
 #### Alias
+
 ```
 Analytics.Client.Alias("previousId", "userId")
 ```

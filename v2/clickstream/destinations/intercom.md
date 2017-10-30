@@ -3,7 +3,7 @@ title: Intercom
 sidebar: platform_sidebar
 ---
 
-Astronomer Clickstream makes it easy to send your data to Intercom. Once you follow the steps below, your data will be routed through our platform and pushed to Intercom in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to Intercom. Once you follow the steps below, your data will be routed through our platform and pushed to Intercom in the appropriate format.
 
 ## What is Intercom and how does it work?
 
@@ -45,11 +45,11 @@ From here, click on the `API Keys` on the left hand panel to access your Source 
 
 ### Astronomer Side
 
-Enter your Source ID and API Key into the Intercom connector on your Astronomer dashboard. 
+Enter your Source ID and API Key into the Intercom connector on your Astronomer dashboard.
 
-Give your new connection a unique name. 
+Give your new connection a unique name.
 
-Click `Create Destination` to activate your pipeline. 
+Click `Create Destination` to activate your pipeline.
 
 ![intercom7](../../../images/intercom7.gif)
 
@@ -65,9 +65,9 @@ Click on that new user to see the history of events being recorded.
 
 You can disassociate a user from a company by passing in a field inside the `company` trait with `remove: true` in your `identify` calls.
 
-### Identity verification plus filtering via Destinations Object 
+### Identity verification plus filtering via Destinations Object
 
-If you're using Intercom identity verification AND the `selective destinations functionality`, the context object will look like this: 
+If you're using Intercom identity verification AND the `selective destinations functionality`, the context object will look like this:
 
 ```
 {
@@ -82,9 +82,9 @@ If you're using Intercom identity verification AND the `selective destinations f
 
 ### Unsubscribe Users
 
-With Astronomer Clickstream, you can unsubscribe users from email by setting a flag from `server side` libraries `unsubscribedFromEmails`, inside `context` object. 
+With Astronomer Clickstream, you can unsubscribe users from email by setting a flag from `server side` libraries `unsubscribedFromEmails`, inside `context` object.
 
-`node.js` example: 
+`node.js` example:
 
 ```
 analytics.identify({
@@ -100,5 +100,4 @@ analytics.identify({
   }
 });
 ```
-*Note: This will only work from server side libraries and mobile, NOT for analytics.js*
-
+***Note:** This will only work from server side libraries and mobile, NOT for analytics.js.*

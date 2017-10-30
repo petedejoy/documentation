@@ -3,12 +3,13 @@ title: S3 Event Logs
 sidebar: platform_sidebar
 ---
 
-Astronomer Clickstream makes it easy to send your data to an Amazon S3 bucket. Once you follow the steps below, your data will be routed through our platform and pushed to Amazon S3 in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to an Amazon S3 bucket. Once you follow the steps below, your data will be routed through our platform and pushed to Amazon S3 in the appropriate format.
 
 ## What is Amazon S3 and how does it work?
 
 Amazon Simple Storage Service (S3) is a scalable web-based cloud storage service that allows you to store and retrieve data from anywhere at anytime. It offers an extremely flexible set of storage management and administration capabilities, supporting:
-* SSL transfers and automatic encryptions for guaranteed data security 
+
+* SSL transfers and automatic encryptions for guaranteed data security
 * Network-optimized, physical disk-based, or third-party connector methods for easy data imports and exports
 * Object tagging for easy category customization
 
@@ -16,11 +17,11 @@ Getting data into your S3 bucket natively requires quite a bit of developer work
 
 ## Why send data to Amazon S3 using Astronomer Clickstream?
 
-Getting data to Amazon S3 ultimately leaves you with data that was designed to power reports within an analytics tool, not the raw data you need for custom analysis. 
+Getting data to Amazon S3 ultimately leaves you with data that was designed to power reports within an analytics tool, not the raw data you need for custom analysis.
 
-When you enable the Amazon S3 integration, raw data from Astronomer Clickstream automatically gets copied into your Amazon S3 bucket. Everything is stored as line-separated JSON objects, which each contains data from a single API called made to our platform. 
+When you enable the Amazon S3 integration, raw data from Astronomer Clickstream automatically gets copied into your Amazon S3 bucket. Everything is stored as line-separated JSON objects, which each contains data from a single API called made to our platform.
 
-Astronomer spares you the headache of writing custom ETL pipeliens to get your data into an S3 bucket.
+Astronomer spares you the headache of writing custom ETL pipelines to get your data into an S3 bucket.
 
 ## Getting Started with Amazon S3 and Astronomer Clickstream
 
@@ -28,11 +29,11 @@ Astronomer makes it easy to copy broadcasted events to an [Amazon Simple Storage
 
 ### Amazon S3 Side
 
-#### Create an [Amazon S3 bucket](https://aws.amazon.com/s3/) within your AWS account. 
+#### Create an [Amazon S3 bucket](https://aws.amazon.com/s3/) within your AWS account.
 
 ![s3-event-logs1](../../../images/s3-event-logs1.png)
 
-*Note:* See below to confirm your region. 
+***Note:** See below to confirm your region.*
 
 Once you create the bucket, create a folder labeled `Astronomer-logs` inside of it.  
 
@@ -61,7 +62,7 @@ Add the following S3 bucket policy, which will grant Astronomer permission to co
 ![s3-event-logs1](../../../images/s3-event-logs2.gif)
 
 
-### Astronomer Side 
+### Astronomer Side
 
 Configure a new S3 connection in your Astronomer dashboard and give your new connection a unique name. Click `Create Destination` to activate your pipeline.
 
@@ -74,9 +75,6 @@ The region in which your S3 bucket resides. You can find a list of regions for [
 AWS S3 supports [server side encryption](http://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html). If your bucket policy requires the server side encryption header to be set, you can specify that here. Example values for this field are 'AES256' or 'aws:kms'.
 
 3. *Path Prefix (optional)*
-The file path at which your S3 events will be stored. 
+The file path at which your S3 events will be stored.
 
 ![s3-event-logs1](../../../images/s3-event-logs3.gif)
-
-
-

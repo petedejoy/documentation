@@ -2,17 +2,17 @@
 title: Woopra
 sidebar: platform_sidebar
 ---
-Astronomer Clickstream makes it easy to send your data to Woopra. Once you follow the steps below, your data will be routed through our platform and pushed to Woopra in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to Woopra. Once you follow the steps below, your data will be routed through our platform and pushed to Woopra in the appropriate format.
 
 ## What is Woopra and how does it work?
 
-Woopra is a real-time customer analytics platform that tracks your customers' web and mobile activity,forms, emails, and support tickets. The platform allows you to build audience profiles and automatically sync that data to your system as customer behavior changes in real-time. Plus, Woopra can seamlessly integrate with third-party applications - automating prioritization based on support requests as well as targeted, custom content. 
+Woopra is a real-time customer analytics platform that tracks your customer's web and mobile activity, forms, emails, and support tickets. The platform allows you to build audience profiles and automatically sync that data to your system as customer behavior changes in real-time. Plus, Woopra can seamlessly integrate with third-party applications - automating prioritization based on support requests as well as targeted, custom content.
 
 [Learn more about Woopra](https://www.woopra.com/)
 
 ## Why send data to Woopra using Astronomer Clickstream?
 
-Astronomer's integration collects and transforms the data you receive from Woopra directly from your existing mobile and server-side integrations on Astronomer Clickstream. That way, there's no need to include any Woopra SDKs in any of your applications. 
+Astronomer's integration collects and transforms the data you receive from Woopra directly from your existing mobile and server-side integrations on Astronomer Clickstream. That way, there's no need to include any Woopra SDKs in any of your applications.
 
 Combining Woopra's data with the data you receive from other third-party tools on Astronomer Clickstream will empower your team to better understand customer behavior and more effectively target content.
 
@@ -20,7 +20,7 @@ Combining Woopra's data with the data you receive from other third-party tools o
 
 ### Woopra-Side
 
-Once you create your account on the woopra [website](https://www.woopra.com/), add a new project with the domain of your website or mobile app.  
+Once you create your account on the Woopra [website](https://www.woopra.com/), add a new project with the domain of your website or mobile app.  
 
 
 ![woopra1](../../../images/woopra1.png)
@@ -28,7 +28,7 @@ Once you create your account on the woopra [website](https://www.woopra.com/), a
 
 ### Astronomer-Side
 
-Now, add your domain name into the Woopra connector on your Astronomer dashboard and give your new connection a unique name. 
+Now, add your domain name into the Woopra connector on your Astronomer dashboard and give your new connection a unique name.
 
 Click `Create Destination` to activate your pipeline.
 
@@ -47,9 +47,9 @@ Click on that new user to see the history of events being recorded.
 
 ### Tying server side events to client side sessions
 
-Pass us the `wooTracker` value inside your cookie if you want your server side events to be seen as part of the same "source" or session as your client side events. 
+Pass us the `wooTracker` value inside your cookie if you want your server side events to be seen as part of the same "source" or session as your client side events.
 
-To retrieve this value, input the following command: 
+To retrieve this value, input the following command:
 
 ```
 analytics.ready(function(){
@@ -59,7 +59,7 @@ analytics.ready(function(){
 });
 ```
 
-From the server side, you can attach it to the `integrations.Woopra.cookie` property. Here's a Ruby example that will let Woopra know that this server side event is part of the same session as the client. 
+From the server side, you can attach it to the `integrations.Woopra.cookie` property. Here's a Ruby example that will let Woopra know that this server side event is part of the same session as the client.
 
 ```
 Analytics.track(
@@ -72,5 +72,3 @@ Analytics.track(
       }
     })
 ```
-
-

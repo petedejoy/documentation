@@ -7,7 +7,7 @@ Astronomer Clickstream makes it easy to send your data to Twitter Ads. Once you 
 
 ## What are Twitter Ads and how do they work?
 
-Twitter ads empower marketers to develop targeted ad campaigns on Twitter based on web visits, followers, engagement, and awareness.
+Twitter Ads empower marketers to develop targeted ad campaigns on Twitter based on web visits, followers, engagement, and awareness.
 
 With Twitter Ads, you pay for performance, target keywords, retarget engaged users, and tailor your audiences based on constraints such as language, gender, age, and geography. Plus, Twitter Ads automate new follower acquisition by targeting Promoted Accounts to audiences similar to current followers.
 
@@ -19,13 +19,13 @@ Sending Clickstream data to Twitter Ads will enrich the knowledge base that empo
 
 As soon as you activate the integration, Astronomer can load the Twitter ads script code to start recording page views. If you're already using our platform, you can map Twitter ad conversion IDs to those same event names to track them in Twitter Ads as well.
 
-For ecommerce sites, you won't need to worry about creating custom code to track product browsing and checkout events - those events will be routed through Astronomer and sent directly to Twitter Ads.
+For e-commerce sites, you won't need to worry about creating custom code to track product browsing and checkout events - those events will be routed through Astronomer and sent directly to Twitter Ads.
 
 ## Getting Started with Twitter Ads and Astronomer Clickstream
 
 To get started, all you need is your Twitter Pixel ID, which you can retrieve by creating a Twitter Ads conversion tracking website tag.
 
-*Note: This connector supports client-side analytics.js only.  You also need to have instrumented Astronomer [inside your website](../sources/analyticsjs.md) prior to enabling this connector.*
+***Note:** This connector supports client-side analytics.js only.  You also need to have instrumented Astronomer [inside your website](../sources/analyticsjs.md) prior to enabling this connector.*
 
 ### Twitter Side
 
@@ -47,7 +47,7 @@ If you want to use the universal tag, simply copy your Twitter Pixel ID from the
 
 ![twitterads3](../../../images/twitterads3.png)
 
-*Reminder:* Twitter doesn't recognize custom events, just pixel IDs. Anytime that you `analytics.track(event, properties)` an event that represents a Twitter conversion, you need to map the event name on the left to its corresponding Twitter Pixel ID on the right.  
+***Reminder:** Twitter doesn't recognize custom events, just pixel IDs. Anytime that you `analytics.track(event, properties)` an event that represents a Twitter conversion, you need to map the event name on the left to its corresponding Twitter Pixel ID on the right.*  
 
 **Single Event Website Tags**
 
@@ -55,7 +55,7 @@ If you want to use Single Event Website Tags, you'll have to map the Astronomer 
 
 If your events don't match the event names you're receiving from Astronomer that have the Universal Website Tag, you'll want to use the *Single Event Website Tags*.
 
-*Note:* Twitter Ads only work with our client-side JavaScript library `analytics.js` since it requires its script or pixel to be loaded onto your website.
+***Note:** Twitter Ads only work with our client-side JavaScript library `analytics.js` since it requires its script or pixel to be loaded onto your website.*
 
 ### Astronomer Side.
 
@@ -72,4 +72,4 @@ You should now be able to refresh your website and see the Twitter Ads pixel fir
 
 If you're using Single Event Website Tags and have those mapped in, you should see specific pixels fire when triggering your respective events.
 
- For example, `analytics.track("Custom Event 1");`, based on the input above, would fire the Twitter Ads pixel `pixel1`, on so on.
+For example, `analytics.track("Custom Event 1");`, based on the input above, would fire the Twitter Ads pixel `pixel1`, on so on.

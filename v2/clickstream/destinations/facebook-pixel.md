@@ -5,7 +5,7 @@ sidebar: platform_sidebar
 
 Astronomer Clickstream makes it easy to send your data to Facebook Pixel. Once you follow the steps below, your data will be routed through our platform and pushed to Facebook Pixel in the appropriate format.
 
-*Note: Astronomer's Facebook Pixel destination consolidates what was previously Facebook's "Ads for Websites" suite, which consisted of both Facebook Custom Audiences and Facebook Conversion Tracking.*
+***Note:** Astronomer's Facebook Pixel destination consolidates what was previously Facebook's "Ads for Websites" suite, which consisted of both Facebook Custom Audiences and Facebook Conversion Tracking.*
 
 ## What is Facebook Pixel and how does it work?
 

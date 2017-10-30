@@ -2,11 +2,11 @@
 title: Rubicon
 sidebar: platform_sidebar
 ---
-Astronomer Clickstream makes it easy to send your data to Rubicon. Once you follow the steps below, your data will be routed through our platform and pushed to Rubicon in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to Rubicon. Once you follow the steps below, your data will be routed through our platform and pushed to Rubicon in the appropriate format.
 
 ## What is Rubicon?
 
-Rubicon is an adtech company used by publishers to perform transactions with top brands around the globe. It offers a unified platform, dynamic campaigns, brand protection, and a global marketplace for anyone who wants to buy or sell advertisements.
+Rubicon is an ad tech company used by publishers to perform transactions with top brands around the globe. It offers a unified platform, dynamic campaigns, brand protection, and a global marketplace for anyone who wants to buy or sell advertisements.
 
 [Learn more about Rubicon](http://rubiconproject.com/)
 
@@ -16,13 +16,14 @@ Using Astronomer data to power or complement your Rubicon platform will allow yo
 
 ## Getting Started with Rubicon and Astronomer Clickstream
 
-### Rubicon Side 
+### Rubicon Side
 
 Once you're signed up on [Rubicon Project](http://rubiconproject.com/), work with your account manager to:
+
 - Create your company's specific campaign
 - Retrieve your your Page ID, Conversion ID, and any conversion event names from them.  
 
-*Note:* This connector supports client-side analytics.js only. You need to have implemented Astronomer [inside your website](../sources/analyticsjs.md) prior to enabling this connector.
+***Note:** This connector supports client-side analytics.js only. You need to have implemented Astronomer [inside your website](../sources/analyticsjs.md) prior to enabling this connector.*
 
 
 ### Astronomer Side
@@ -33,6 +34,6 @@ Then, paste your Page ID into the `pid` field, and your Conversion ID into the `
 
 ![rubicon1](../../../images/rubicon1.png)
 
-With your configuration entered, choose `Create Destination.`
+With your configuration entered, choose `Create Destination`.
 
 Generate page views and events on your website by triggering `analytics.track('your conversion event name');`.  Confirm with your Rubicon account manager that conversion events for your specific campaigns are being received as expected.

@@ -7,7 +7,7 @@ sidebar: platform_sidebar
 Airflow is a generic workflow scheduler with dependency management. Not only does it schedule periodic jobs, it also allows you to define explicit dependencies between different stages in your data pipeline.
 
 ## DAGs
-The main concept of Airflow is a `DAG`  - or Directed Acyclic Graph.
+The main concept of Airflow is a `DAG` - or Directed Acyclic Graph.
 A `DAG` is a collection of all the tasks you want to run, organized in a way that reflects their relationships and dependencies.
 
 For example, a simple DAG could consist of 3 tasks: A, B, and C. It could say that A has to run successfully before B can run, but C can run anytime. It could also say that A times out after 5 minutes and that B can be restarted up to 5 times in case it fails. More broadly, it might also say that the workflow will run every night at 10pm but shouldn't start until a certain date.
@@ -26,6 +26,7 @@ Operators describe single tasks in a workflow and can usually stand on their own
 Note: in general, if two operators need to share information (e.g. a filename or a small amount of data), you should consider combining them into a single operator.
 
 Here are some common operators and the tasks they accomplish:
+
 * `BashOperator` - executes a bash command
 * `EmailOperator` - sends an email
 * `PythonOperator` - uses python to run a task
@@ -52,7 +53,7 @@ If a dictionary of `default_args` is passed to a DAG, it will apply them to any 
 DAGs can be used as context managers to automatically assign new operators to that DAG.
 
 ### DAG Assignment
-Operators do not have to be assigned to DAGs immediately. DAG assignment can be done explicitly when the operator is created, through deferred assignment, or even inferred from other operators. 
+Operators do not have to be assigned to DAGs immediately. DAG assignment can be done explicitly when the operator is created, through deferred assignment, or even inferred from other operators.
 
 ### Additional Functionality
 In addition to these core concepts, Airflow has a number of more complex features. More detail on these functionalities is available [here](http://airflow.incubator.apache.org/concepts.html#additional-functionality).
@@ -60,7 +61,5 @@ In addition to these core concepts, Airflow has a number of more complex feature
 Sources:
 
   * https://airflow.incubator.apache.org/concepts.html?highlight=core%20airflow%20concepts
-
   * https://databricks.com/blog/2017/07/19/integrating-apache-airflow-with-databricks.html
-
   * http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/

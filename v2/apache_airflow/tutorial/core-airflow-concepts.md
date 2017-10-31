@@ -60,6 +60,6 @@ In addition to these core concepts, Airflow has a number of more complex feature
 
 Sources:
 
-  * https://airflow.incubator.apache.org/concepts.html?highlight=core%20airflow%20concepts
-  * https://databricks.com/blog/2017/07/19/integrating-apache-airflow-with-databricks.html
-  * http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/
+  * [Airflow Concepts](https://airflow.incubator.apache.org/concepts.html?highlight=core%20airflow%20concepts)
+  * [Integrating Apache Airflow with Databricks](https://databricks.com/blog/2017/07/19/integrating-apache-airflow-with-databricks.html)
+  * [Get started developing workflows with Apache Airflow](http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/)

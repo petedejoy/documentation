@@ -9,6 +9,6 @@ An **operator** is an object that embodies an operation utilizing one or more ho
 
 In Airflow, operators allow for generation of certain types of tasks that become nodes in the DAG when instantiated. All operators derive from BaseOperator and inherit many attributes and methods that way. There are 3 main types of operators:
 
-  * **Action** - these operators perform an action or tell another system to perform an action.
-  * **Transfer** - these operators move data from one system to another.
-  * **Sensors** - this type of operator will keep running until a certain criterion is met.
+  * **Action** - These operators perform an action or tell another system to perform an action.
+  * **Transfer** - These operators move data from one system to another.
+  * **Sensors** - This type of operator will keep running until a certain criterion is met.

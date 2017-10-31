@@ -30,10 +30,10 @@ Once your loader `.js` file is deployed on your page, you'll be ready to configu
 
 ### Astronomer Side
 
-Copy your Criteo Account ID into the "Account ID" field in your Astronomer Criteo configuration, and give your new connection a unique name. Your pipeline will be activated once you click 'Create Destination.'
+Copy your Criteo Account ID into the "Account ID" field in your Astronomer Criteo configuration, and give your new connection a unique name. Your pipeline will be activated once you click 'Create Destination'.
 
 ## Beyond the Basics
 
-You can also map custom event names to a few of Criteo's reserved keywords in the Conversion Events section. In the example shown, `myEventName` is a custom event mapped to Criteo's `trackTransaction`
+You can also map custom event names to a few of Criteo's reserved keywords in the Conversion Events section. In the example shown, `myEventName` is a custom event mapped to Criteo's `trackTransaction`.
 
 ![criteo1](../../../images/criteo1.png)

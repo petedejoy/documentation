@@ -35,7 +35,7 @@ Once you have a [Twitter Ads account](https://ads.twitter.com/),  choose `Conver
 
 ![twitterads1](../../../images/twitterads1.png)
 
-A page will load asking you to accept Twitter Ads' conversion tracking policy. If you agree, check that box and choose `Generate website tag for conversion tracking.`
+A page will load asking you to accept Twitter Ads' conversion tracking policy. If you agree, check that box and choose `Generate website tag for conversion tracking`.
 
 ![twitterads2](../../../images/twitterads2.png)
 
@@ -57,7 +57,7 @@ If your events don't match the event names you're receiving from Astronomer that
 
 ***Note:** Twitter Ads only work with our client-side JavaScript library `analytics.js` since it requires its script or pixel to be loaded onto your website.*
 
-### Astronomer Side.
+### Astronomer Side
 
 Paste your Twitter Pixel ID into the `Page Pixel` field in your Astronomer Twitter Ads configuration, and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
 
@@ -67,9 +67,9 @@ If you’d like to use the Single Event Website Tags, you must map the event nam
 
 ![twitterads5](../../../images/twitterads5.png)
 
-### Final Step.
+### Final Step
 You should now be able to refresh your website and see the Twitter Ads pixel firing for page views.
 
 If you're using Single Event Website Tags and have those mapped in, you should see specific pixels fire when triggering your respective events.
 
-For example, `analytics.track("Custom Event 1");`, based on the input above, would fire the Twitter Ads pixel `pixel1`, on so on.
+For example, `analytics.track("Custom Event 1");`, based on the input above, would fire the Twitter Ads pixel `pixel1`, and so on.

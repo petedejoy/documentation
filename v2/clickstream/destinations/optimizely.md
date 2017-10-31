@@ -42,10 +42,10 @@ This will track events to Optimizely for page method calls that have a name asso
 This tracks events to Optimizely for page calls that have a category associated with them.
 
 #### Send experiment data to other tools (as a track call)
-Sends the experiment and variation information as properties on a track call
+Sends the experiment and variation information as properties on a track call.
 
 #### Send `Experiment Viewed` as a non-interaction event
-Specifies the Experiment Viewed as a non-interaction event for Google Analytics
+Specifies the Experiment Viewed as a non-interaction event for Google Analytics.
 
 ![optimizely1](../../../images/optimizely1.png)
 

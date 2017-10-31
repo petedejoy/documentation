@@ -9,7 +9,7 @@ Apache Airflow is a data workflow management system that allows engineers to sch
 
 By running Apache Airflow on Astronomer, you get:
 
-* One-click deployment through the [Astro CLI]((https://docs.astronomer.io/v2/airflow/cli.html))
+* One-click deployment through the [Astro CLI](/v2/apache_airflow/cli.html)
 * Access to our [Airflow contributions](https://github.com/astronomerio/example-pipelines) which includes new hooks and operators
 * Serverless Airflow worker scalability through our SaaS platform
 * Access to our support documentation and team
@@ -17,16 +17,16 @@ By running Apache Airflow on Astronomer, you get:
 
 ## Airflow 101
 
-* [Core Airflow Concepts](https://docs.astronomer.io/v2/airflow/tutorial/core-airflow-concepts.html)
-* [Simple Sample DAG](https://docs.astronomer.io/v2/airflow/tutorial/sample-dag.html)
-* [DAG Best Practices](https://docs.astronomer.io/v2/airflow/tutorial/best-practices.html)
+* [Core Airflow Concepts](/v2/apache_airflow/tutorial/core-airflow-concepts.html)
+* [Simple Sample DAG](/v2/apache_airflow/tutorial/sample-dag.html)
+* [DAG Best Practices](/v2/apache_airflow/tutorial/best-practices.html)
 
 ## Getting Started with Apache Airflow on Astronomer
 
-* [Astronomer CLI Setup](https://docs.astronomer.io/v2/airflow/cli.html)
-* [Sample DAG Deployment Tutorial](https://docs.astronomer.io/v2/airflow/tutorial/dag-deployment.html)
+* [Astronomer CLI Setup](/v2/apache_airflow/cli.html)
+* [Sample DAG Deployment Tutorial](/v2/apache_airflow/tutorial/dag-deployment.html)
 
 ## Other Resources
 
-* [Airflow Operators](https://docs.astronomer.io/v2/airflow/operators/overview.html)
-* [Airflow Hooks](https://docs.astronomer.io/v2/airflow/hooks/overview.html)
+* [Airflow Operators](/v2/apache_airflow/operators/overview.html)
+* [Airflow Hooks](/v2/apache_airflow/hooks/overview.html)

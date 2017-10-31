@@ -43,9 +43,9 @@ As mentioned above, all operators are derived from `BaseOperator` and acquire mu
 
   **Parameters**
 
-  * **soft_fail** (_bool_) - set to True to mark the task as SKIPPED on failure
-  * **poke_interval** (_int_) - time in seconds that the job should wait in between each try
-  * **timeout** (_int_) - time in seconds before the task times out and fails
+  * **soft_fail** (_bool_) - Set to `True` to mark the task as SKIPPED on failure.
+  * **poke_interval** (_int_) - Time in seconds that the job should wait in between each try.
+  * **timeout** (_int_) - Time in seconds before the task times out and fails.
 
   Thanks to the Apache Airflow project & community, there is a large base of operators already available for use.
 

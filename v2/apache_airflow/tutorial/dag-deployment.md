@@ -7,9 +7,9 @@ This is a step-by-step guide for using the Astronomer CLI to deploy a DAG to you
 
 ### Prerequisites
 
-* Before you can deploy a DAG, you will need to have both docker and the Astronomer CLI installed. Head to [Astronomer CLI Setup](https://github.com/astronomerio/pro-beta/wiki/Astronomer-CLI) for more instructions.
+* Before you can deploy a DAG, you will need to have both docker and the Astronomer CLI installed. Head to [Astronomer CLI Setup](/v2/apache_airflow/cli) for more instructions.
 
-* You will also need to have a provisioned Airflow instance for your organization. Check this by going to your [Astronomer Pro App](pro.astronomer.io). Your PRO tab should show Web Server and Scheduler as "Ready".
+* You will also need to have a provisioned Airflow instance for your organization. Check this by going to your [Astronomer Pro App](https://pro.astronomer.io/login). Your PRO tab should show Web Server and Scheduler as "Ready".
 
 ### Project Setup
 First, you will need to login with your Astronomer credentials: `astro login`.

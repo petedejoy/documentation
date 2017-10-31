@@ -4,7 +4,7 @@ nav_title: Houston API
 search: exclude
 ---
 
-# Astronomer's Public API: Houston
+# [Astronomer's Public API: Houston](https://houston-explorer.astronomer.io/)
 
 Houston is a GraphQL API (utilizing Apollo) that allows interaction with the Astronomer Data Engineering Platform. Named after NASA’s Johnson Space Center in Houston, it provides direct communication and orchestration over our platform services.
 
@@ -13,6 +13,8 @@ We are currently in the Alpha stage of this project, so please expect changes to
 We recommend using these projects while connecting to GraphQL:
 * Client-side: [Apollo GraphQL](http://dev.apollodata.com/) 
 * Node.js: [graphql-request](https://github.com/graphcool/graphql-request)
+
+[Check out the API here!](https://houston-explorer.astronomer.io/)
 
 ## Authentication
 

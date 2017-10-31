@@ -28,11 +28,11 @@ Furthermore, you do not need to learn the AdWords SDK methods if you want to sen
 
 Once you create an Adwords account, you'll need to find your Conversion ID. To do this, you'll need to navigate through `Tools-->Conversions` and have to click the red `+ Conversion` button.
 
-![Adwords-1](../../../images/adwords1.png)
+![Adwords-1](../../../images/AdWords1.png)
 
 Copy the Conversion ID to your clipboard.
 
-![AdWords-2](../../../images/adwords2.png)
+![AdWords-2](../../../images/AdWords2.png)
 
 ### Astronomer Side
 

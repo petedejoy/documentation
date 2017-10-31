@@ -61,9 +61,9 @@ Jinja is a template engine for Python and Apache Airflow uses it to provide auth
  * **tags** - these control the logic of the template. 
 
 In Jinja, the default delimiters are configured as follows:
- * `{% ... %}` for Statements
+ * `{{% ... %}}` for Statements 
  * `{{ ... }}` for Expressions
- * `{# ... #}` for Comments
+ * `{{# ... #}}` for Comments
  * `# ... ##` for Line Statements
 
 Head [here](http://jinja.pocoo.org/docs/2.9/) for more information about installing and using Jinja.
@@ -87,7 +87,6 @@ t = BashOperator(
 In the example above, `{{ ds }}` is a macro and because the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in your Bash script. 
 
 **Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both. 
-
 
 ### Additional Functionality
 In addition to these core concepts, Airflow has a number of more complex features. More detail on these functionalities is available [here](http://airflow.incubator.apache.org/concepts.html#additional-functionality).

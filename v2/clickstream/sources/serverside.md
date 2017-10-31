@@ -9,10 +9,10 @@ Server-side ingestion allows you to send data to Astronomer directly from your s
 
 We support a number of open source libraries, including:
 
-* [HTTP API](../httpapi.html)
-* [MeteorJS](../meteorjs.html)
-* [Node.js](../nodejs.html)
-* [.NET](../net.html)
-* [PHP](../php.html)
-* [Python](../python.html)
-* [Ruby](../ruby.html)
+* [HTTP API](../sources/httpapi.md)
+* [MeteorJS](../sources/meteorjs.md)
+* [Node.js](../sources/nodejs.md)
+* [.NET](../sources/net.md)
+* [PHP](../sources/php.md)
+* [Python](../sources/python.md)
+* [Ruby](../sources/ruby.md)

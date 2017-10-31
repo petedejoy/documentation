@@ -35,9 +35,9 @@ Astronomer Clickstream automatically maps `page`, `identify`, and `track` calls 
 To get started sending events to Lytics, you'll need your:
 
 - Data API Key
-- Account ID.
+- Account ID
 
-Once you have a Lytics account, you'll be dropped into a welcome page asking you connect a few integrations.
+Once you have a Lytics account, you'll be dropped into a welcome page asking you to connect a few integrations.
 
 ![lytics1](../../../images/lytics1.png)
 

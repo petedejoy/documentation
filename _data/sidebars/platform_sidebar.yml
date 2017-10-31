@@ -63,14 +63,14 @@ entries:
         - title: Server Side
           url: /v2/clickstream/sources/serverside.html
           output: web, pdf
-        
+
         - title: HTTP API
           url: /v2/clickstream/sources/httpapi.html
           output: web,pdf
 
         - title: MeteorJS
           url: /v2/clickstream/sources/meteorjs.html
-          output: web, pdf  
+          output: web, pdf
 
         - title: .NET
           url: /v2/clickstream/sources/net.html
@@ -79,9 +79,9 @@ entries:
         - title: Node.js
           url: /v2/clickstream/sources/nodejs.html
           output: web, pdf
-          
+
         - title: PHP
-          url: /v2/clickstream/php.html
+          url: /v2/clickstream/sources/php.html
           output: web, pdf
 
         - title: Python
@@ -103,7 +103,7 @@ entries:
         - title: Acquisio
           url: /v2/clickstream/destinations/acquisio.html
           output: web, pdf
-        
+
         - title: Amazon Kinesis
           url: /v2/clickstream/destinations/amazon-kinesis.html
           output: web, pdf
@@ -115,7 +115,7 @@ entries:
         - title: Amplitude
           url: /v2/clickstream/destinations/amplitude.html
           output: web, pdf
-        
+
         - title: Appboy
           url: /v2/clickstream/destinations/appboy.html
 
@@ -206,7 +206,7 @@ entries:
         - title: OutBrain
           url: /v2/clickstream/destinations/outbrain.html
           output: web, pdf
-          
+
         - title: Pinterest
           url: /v2/clickstream/destinations/pinterest.html
           output: web, pdf
@@ -262,8 +262,8 @@ entries:
       subfolders:
       - title: Tutorial
         output: web, pdf
-        subfolderitems: 
-    
+        subfolderitems:
+
         - title: Core Apache Airflow Concepts
           url: /v2/apache_airflow/tutorial/core-airflow-concepts.html
           output: web, pdf
@@ -283,7 +283,7 @@ entries:
         - title: Monitoring
           url:  /v2/apache_airflow/tutorial/monitoring.html
           output: web, pdf
-          
+
         - title: Airflow Connections
           url:  /v2/apache_airflow/tutorial/connections.html
           output: web, pdf
@@ -311,8 +311,3 @@ entries:
         - [//]: "title: Airflow Hooks
           url: /v2/apache_airflow/hooks/index.html
           output: web, pdf"
-
-    
-    
-        
-    

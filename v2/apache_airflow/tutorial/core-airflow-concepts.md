@@ -58,10 +58,6 @@ In Jinja, the default delimiters are configured as follows:
  * `# ... ##` for Line Statements
  {% endraw %}
 
- * \{\{ ds \}\} for Statements
- * `\{\{ ds \}\}` for Statements
-
-
 Head [here](http://jinja.pocoo.org/docs/2.9/) for more information about installing and using Jinja.
 
 With Apache Airflow, Jinja templating allows you to defer the rendering of strings in your tasks until the actual running of those tasks. This becomes particularly useful when you want to access certain parameters of a `task_run` itself (i.e. `run_date` or `file_name`).
@@ -69,7 +65,7 @@ With Apache Airflow, Jinja templating allows you to defer the rendering of strin
 ### Example
 
 ```python
-date = `"{{ ds }}"`
+date = "\{\{ ds \}\}"
 
 t = BashOperator(
         task_id='test_env',
@@ -80,7 +76,7 @@ t = BashOperator(
 ```
 In the example above, we passed the execution date as an environment variable to a Bash script. `
 
-`{{ ds}}` is a macro and because the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in your Bash script. 
+{% raw %} `{{ ds }}` {% endraw %} is a macro and because the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in your Bash script. 
 
 **Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both. 
 

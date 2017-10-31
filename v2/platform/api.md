@@ -61,10 +61,10 @@ Organization `Users` have specific read/write control over pipelines linked to t
 
 #### Creating and Editing Users
 
-Creating a new User - User accounts are tied to a specific email address and have to be confirmed via a link that is emailed to that account. We have two operations to create a User Account, Self Signup and Auto Signup. Self Signup assumes that you have both an email address and password that you want to configure. Auto Signup assumes you only have the email address for the account you want to configure, but the email account holder will need to set up their own password.
+A user account is tied to a specific email address and has to be confirmed via an emailed link. User accounts can be created either via self signup or auto signup. Self Signup assumes that you will configure both your email address and password by yourself, while auto signup assumes you only have the email address for the account you want to configure and the email account holder will need to create their own password.
 
-To create a new user account with the API, use the createNewUser mutation, you can use example below. Note: The profile argument is optional, however email and password are required.
-
+To create a new user account with the API, use the `createNewUser` mutation below. Note that the profile argument is optional, however email and password are required.
+```
 mutation {
   createNewUser(
     email: "someone.new@somewhere.com"
@@ -85,16 +85,17 @@ mutation {
     }
   }
 }
-There is no direct access to Auto Signup a user from the API, however it will be automatically triggered when adding a user to your Organization that does not have an Astronomer User account. See Editing Organization Users below to learn more.
+```
+There is no direct access to auto signup a user from the API. However the auto signup feature will be automatically triggered when adding a user to your `Organization` that does not have an existing Astronomer `User` account.
 
-#### Editing a User’s Account - (coming soon) Editing Organization Users - (coming soon)
+Note that editing a user's account and editing organization users are features on our roadmap and will be available soon!
 
 #### Creating and Editing Organizations
 
-In order to create any pipelines, you must first create an Organization to link those pipelines to. The User who creates and Organization is automatically given the Organization Owner role for that Organization, giving them access to all possible functionality.
+In order to create any pipelines, you must first create an `Organization` to link those pipelines to. The `User` who creates an `Organization` is automatically given the `Organization Owner` title, giving them access to all possible functionality.
 
 Below is the mutation to create a new Organization:
-
+```
 createOrganization(
     name: "Human-friendly Organization Name"
     userId: "123456"
@@ -103,19 +104,20 @@ createOrganization(
     message
     id
   }
+```
 
 ### Clickstream Pipelines
 
-Stream (or Clickstream) Pipelines focus on extracting or loading events in as close to real-time as possible.
+Clickstream Pipelines focus on extracting or loading events in as close to real-time as possible.
 
 #### Sources and Applications
 
-Representing the source of your streaming events, we currently support for the platforms analytics.js, server, analytics-android and analytics-ios. The SDKs we offer for those platforms forward events to our Clickstream API to be ingested and distributed by our system. These Sources are grouped under an Organization, to allow you and other contributers that you specify to have access to view and/or edit them.
+We currently support analytics.js, servers, analytics-android and analytics-ios as sources in our Clickstream module. The SDKs we offer for those platforms forward events to our Clickstream API to be ingested and distributed by our system. These sources are grouped under an `Organization`, to allow you and other contributers that you specify to have access to view and/or edit them.
 
-Upon Source creation, a 21 character long unique ID is generated to identify your Application within our system and to ensure your events are routed to the correct Destinations.
+Upon source creation, a 21 character long `Source ID` is generated to identify your Application within our system and to ensure your events are routed to the correct destinations.
 
 Below is the mutation to generate a Clickstream Source within our system:
-
+```
 mutation {
   createApplication(
       name: "Human-friendly Source Name",
@@ -127,16 +129,21 @@ mutation {
       id
     }
 }
+```
+
 #### Destinations and Integrations
 
-To find how to build the form for a Clickstream Pipeline, you want to query against clickstreamPrototypes. Within that response is a connectionPrototye and configPrototype array that list all the fields can use to configure a destination.
+To find how to build the form for a Clickstream Pipeline, you want to query against `clickstreamPrototypes`. Within that response is a `connectionPrototype` and `configPrototype` array that list all the fields can use to configure a destination.
 
-propertyName : Key for these values within a clickstreamConfig label : Human-friendly name for the field type : The form field to display. Some of these are standard (input, boolean, number) and others are more abstract (array, boolean, map). (expansion on all types to follow)
+* `propertyName` : Key for these values within a 
+* `clickstreamConfig` label : Human-friendly name
+* `field type` : The form field to display. Some of these are standard (input, boolean, number) and others are more abstract (array, boolean, map). (expansion on all types to follow)
 
-As of right now, the connection part has to be saved separately before you sane the configuration, as the Id for the connection will be referenced within the configuration. This allows you to reuse the connection for multiple configurations that are for the same platform for the tradeoff of having to make multiple requests to save them both initially.
+As of right now, the connection has to be saved separately before you save the configuration, as the Id for the connection will be referenced within the configuration. This allows you to reuse the connection for multiple configurations that are for the same platform rather than having to make multiple requests to save them both initially.
 
 Here is an example of the two mutations needed to set up a brand new clickstream destination
 
+```
 mutation {
   createConnection(
     integrationCode: "acquisio",
@@ -152,7 +159,8 @@ mutation {
     id
   }
 }
-
+```
+```
 mutation {
   createIntegration(
     appId: "456"
@@ -170,29 +178,43 @@ mutation {
     id
   }
 }
+```
 ### Query & Mutation Response
 
 #### Query Response
 
-Queries typically respond as an array of objects, even if the arguments you pass would limit the response to a single object. For instance, the query organizations will return an array with a single object if you search by orgId, but possibly multiple objects if you search by userId. This is standard due to two reasons: to (coming soon)
+Queries typically respond as an array of objects, even if the arguments you pass would limit the response to a single object. For instance, the query organizations will return an array with a single object if you search by orgId, but possibly multiple objects if you search by userId.
 
 #### Mutation Response
 
-Mutations typically respond with a statusMessage object to alert you on if the mutation you triggered was successful or not. This contains:
+Mutations typically respond with a `statusMessage` object to alert you on if the mutation you triggered was successful or not. This contains:
 
 * `success` : True or False response if the request was successful
 * `message` : Human-friendly message on what happened
 * `id` : For operations that create new data, the id of the created object will be returned
-* `code` : (coming soon)
+* `code` : Coming soon...
 
-Actions to mutate data within Astronomer’s platform tend to follow a create** and update** pattern, where we separate out the functions to make a new object with the ability to change or delete it in order to have strict control over the permissions over data control. For example, anyone can run createOrganization and make a new Organization where they are the Owner. However, only Organization Owners can run updateOrganization that allows for adding/removing users, updating Organization details, or deleting an Organization.
+Actions to mutate data within Astronomer’s platform tend to follow a "create and update" pattern, where we separate out the functions to make a new object with the ability to change or delete it in order to have strict control over the permissions over data control. For example, anyone can run `createOrganization` and make a new `Organization` where they are the owner. However, only `Organization` owners can run `updateOrganization` that allows for adding/removing users, updating details, or deleting the org.
 
 #### Error Response
 
-(coming soon)
-
+This is on our roadmap and currently being built out- check back soon for updates!
 
 ## Developer Tools
 
+### API Developer Console
 
+Please contact us directly at support@astronomer.io for access to the main developer console for Astronomer’s public API.
 
+Within the black Header Area, you want to paste the JWT into the token field and the Organization ID (found within the URL of your Organizations dashboard on alpha.astronomer.io - alpha.astronomer.io/org/). This will embed that information within the header of all of your requests within the console and will provide access to query and mutation results for your organization. Make sure you select `Prod` as your GraphQL endpoint (defaults to `Staging` on page load) to make sure you are accessing data that resides on Astronomer's Main Platform.
+
+Introspection
+
+Houston is maintained by astronomerio.
+This page was generated by GitHub Pages.
+
+## API Reference Materials
+
+* You can check out our API schema [here](https://astronomerio.github.io/houston/schema/public-API-schema-0.3.0.html)
+* API Release notes coming soon...
+* [API Roadmap](https://astronomerio.github.io/houston/roadmap.html) coming soon...

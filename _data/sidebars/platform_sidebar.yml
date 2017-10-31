@@ -19,6 +19,10 @@ entries:
       url: /v2/platform/getting_started.html
       output: web, pdf"
 
+    - title: API
+      url: /v2/platform/api.html
+      output: web, pdf
+
   - title: Clickstream
     output: web, pdf
     folderitems:

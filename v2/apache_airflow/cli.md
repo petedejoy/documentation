@@ -8,7 +8,7 @@ The Astro CLI helps users create and test activities and deploy those activities
 
 If you want to run Airflow locally through the CLI you will need docker installed.
 
-See [docker download](https://www.docker.com/community-edition#/download)to download docker for your specific operating system.
+See [docker download](https://www.docker.com/community-edition#/download) to download docker for your specific operating system.
 
 ## Setup
 

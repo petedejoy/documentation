@@ -15,8 +15,8 @@ entries:
       url: /
       output: web, pdf
 
-    - [//]: "title: Getting Started
-      url: /v2/platform/getting_started.html
+    - [//]: "title: Segment | Clickstream Merge
+      url: /v2/platform/segment|clickstream-merge.html
       output: web, pdf"
 
     - title: API

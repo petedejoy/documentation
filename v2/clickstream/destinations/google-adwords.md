@@ -9,7 +9,7 @@ Astronomer Clickstream makes it easy to send your data to Google AdWords. Once y
 
 Google AdWords is a pay-per-click ad platform for Google Search. It operates by placing advertisements across text-based searches, graphic displays, YouTube videos, and in-app mobile displays. It also is able to target custom ads based on country, city, region, or distance from the location of the advertiser.
 
-AdWords operates by installing code snippets on your site that trigger conversions or tag visitors for remarketing. It uses a `page` call to gauge these conversions and tags, and does not natively have an easy tay to fire events based on user actions other that page loads.
+AdWords operates by installing code snippets on your site that trigger conversions or tag visitors for remarketing. It uses a `page` call to gauge these conversions and tags, and does not natively have an easy way to fire events based on user actions other that page loads.
 
 Furthermore, if you want to use AdWords in your mobile apps, you'll need to learn their SDK and tag your app with custom events.
 

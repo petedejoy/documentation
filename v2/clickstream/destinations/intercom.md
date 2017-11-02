@@ -39,7 +39,7 @@ Skip the `Set up Intercom & Segment` prompt and click on the gear wheel icon on 
 
 ![intercom5](../../../images/intercom5.png)
 
-From here, click on the `API Keys` on the left hand panel to access your Source ID and API Key. Your Source ID will look something like this: `9iefb489`
+From here, click on the `API Keys` on the left hand panel to access your Source ID and API Key. Your Source ID will look something like this: `9iefb489`.
 
 ![intercom6](../../../images/intercom6.png)
 

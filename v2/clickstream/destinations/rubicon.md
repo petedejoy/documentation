@@ -21,7 +21,7 @@ Using Astronomer data to power or complement your Rubicon platform will allow yo
 Once you're signed up on [Rubicon Project](http://rubiconproject.com/), work with your account manager to:
 
 - Create your company's specific campaign
-- Retrieve your your Page ID, Conversion ID, and any conversion event names from them.  
+- Retrieve your Page ID, Conversion ID, and any conversion event names from them
 
 ***Note:** This connector supports client-side analytics.js only. You need to have implemented Astronomer [inside your website](../sources/analyticsjs.md) prior to enabling this connector.*
 

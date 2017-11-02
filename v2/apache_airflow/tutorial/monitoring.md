@@ -23,7 +23,7 @@ Some of the high-level items you can glean from a glance are:
 
 ## States
 
-A list of the various states you may see a DAG run or task instance in
+A list of the various states you may see a DAG run or task instance in:
 
 * Success
 * Running

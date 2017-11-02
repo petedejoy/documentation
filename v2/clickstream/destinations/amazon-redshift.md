@@ -19,7 +19,7 @@ Our connector periodically runs an ETL (Extract - Transform - Load) process that
 
 ## Step 1. Pick a cluster that fits your needs
 
-***Note**: If you already have a Redshift cluster, go ahead to [step 3](Step 3. Permission Astronomer to Redshift)*
+***Note**: If you already have a Redshift cluster, go ahead to step 3*
 
  Once you've logged into your AWS account and Redshift console, it's time to pick and select your cluster.
 

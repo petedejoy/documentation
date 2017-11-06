@@ -1,12 +1,41 @@
 ---
-title: Segment | Clickstream Merge
+title: Segment Switch Guide
 sidebar: platform_sidebar
 ---
-# Segment | Clickstream Merge
+# Switching from Segment
 
-Made the switch from Segment to Astronomer Clickstream but want to have all of your data in one place? It's an easy process - we'll walk you through it. 
+While Segment has standardized real-time, vendor-neutral customer event collection, no platform is a perfect fit for everyone. At Astronomer, we've provided an alternative for those searching for greater flexibility, improved security and event-based pricing.
 
-Check out this [blog post](https://www.astronomer.io/blog/switch-from-segment-to-astronomer-in-four-simple-st/) and follow the steps below:  
+Switching from Segment to Astronomer is very simple. Follow the four easy steps below to get up and running with our platform!
+
+### Step 1
+
+Create a [source](/sources/overview.html) in the Astronomer UI.
+
+! [segment-switch-1](../../../images/segment-switch-1.png)
+
+### Step 2
+
+Remove your Segment snippet and replace it with our snippet or library.
+
+! [segment-switch-2](../../../images/segment-switch-2.png)
+
+### Step 3
+
+Step 3: Configure your integrations via the Astronomer dashboard.
+
+![segment-switch-3](../../../images/segment-switch-3.png)
+
+### Step 4
+
+Step 4: Check the live debugger to make sure your data is flowing.
+
+![segment-switch-4](../../../images/segment-switch-4.gif)
+
+# Segment | Astronomer Merge Guidelines
+
+You've made the switch from Segment to Astronomer Clickstream and now you want all of your data in one place (including the data from your old Segment account). Merging is an easy process - we’ll walk you through it.
+
 
 ## Initial Column Audit
 
@@ -22,7 +51,7 @@ AND table_name = 'example_table_name'
 
 ## Datatype Conflicts
 
-If you do identify some datatype conflicts, it's likely that your destination column will be able to accomodate the previous datatype (e.g. varchar(256) or varchar(512) or timestamp with timezone. Check out the following example:
+If you do identify some datatype conflicts, it's likely that your destination column will be able to accommodate the previous datatype (e.g. varchar(256) or varchar(512) or timestamp with timezone. Check out the following example:
 
 ![clickstream-merge1](../../../images/clickstream-merge1.png)
 
@@ -55,3 +84,4 @@ This has a few more steps, but will likely be less taxing on your db depending o
 Here, you can specify the column order of the destination table that the file should load into. 
 
 
+Please don't hesitate to contact us with any questions as you get set up! You can reach us anytime at support@astronomer.io.

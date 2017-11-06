@@ -31,8 +31,8 @@ entries:
       url: /v2/clickstream/2048.html
       output: web, pdf
 
-    - title: Segment | Clickstream Merge
-      url: /v2/clickstream/segment-clickstream-merge.html
+    - title: Segment Switch Guide
+      url: /v2/clickstream/segment-switch-guide.html
       output: web, pdf
 
     - title: API Calls

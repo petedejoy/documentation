@@ -32,7 +32,7 @@ entries:
       output: web, pdf
 
     - title: Segment | Clickstream Merge
-      url: /v2/platform/segment-clickstream-merge.html
+      url: /v2/clickstream/segment-clickstream-merge.html
       output: web, pdf
 
     - title: API Calls

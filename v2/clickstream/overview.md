@@ -1,17 +1,26 @@
 ---
-title: Clickstream Overview
+title: Overview
 sidebar: platform_sidebar
 ---
 
-## Overview
+# Overview
 
 The key to delighting customers is understanding them. Since identifying what they do-or don't do-is crucial to understanding their actions, thousands of tools exist to help marketers and product managers analyze user engagement with a website or app. As if selecting the right tools isn't challenging enough, accessing the fast-accumulating data for internal analysis is often a struggle, and the cost of switching to a better tool down the road can result in a major loss of data.
 
 The Astronomer Clickstream module allows you to capture every user event from web, mobile, and server side sources. Once those events are ingested into our platform, we can push them to a data warehouse, CRM, or analytics tool of your choice. Implementing our Clickstream module in your current infrastructure allows you to better understand how exactly users are interacting with your web and mobile apps so that you can tailor marketing and product focus accordingly.
 
-If you are a current Segment user, check out [this blog post](https://www.astronomer.io/blog/switch-from-segment-to-astronomer-in-four-simple-st/) to see how easy it is to switch to Astronomer!
+# Getting Started
 
-## Sources We Support
+Once you've [signed up](https://app.astronomer.io/signup) for an account, it only takes a few minutes to start collecting valuable behavior data with Astronomer. 
+
+Use one of our library sources to record user data from your website, mobile app, or servers. We'll transform and route that data to all of the destinations you've enabled.
+
+## Sources
+
+Collecting customer data from your website, mobile app, or servers is easy, and we've built an integration with each of the following platforms. 
+
+Check it out:
+
 * [Analytics.js](/v2/clickstream/sources/analyticsjs.html)
 * [Android](/v2/clickstream/sources/android.html)
 * [HTTP API](/v2/clickstream/sources/httpapi.html)
@@ -23,8 +32,9 @@ If you are a current Segment user, check out [this blog post](https://www.astron
 * [Python](/v2/clickstream/sources/python.html)
 * [Ruby](/v2/clickstream/sources/ruby.html)
 
+## Destinations
+Check out the list below to explore all of the destinations available with Astronomer Clickstream. From there, make your way to each destination's docs and setup guide to see how to use them!
 
-## Destinations We Support
 * [Acquisio](/v2/clickstream/destinations/acquisio.html)
 * [Amazon Redshift](/v2/clickstream/destinations/amazon-redshift.html)
 * [Amplitude](/v2/clickstream/destinations/amplitude.html)
@@ -50,3 +60,7 @@ If you are a current Segment user, check out [this blog post](https://www.astron
 * [Twitter Ads](/v2/clickstream/destinations/twitter-ads.html)
 * [Webhooks](/v2/clickstream/destinations/webhooks.html)
 * [Woopra](/v2/clickstream/destinations/woopra.html)
+
+## Calls
+[Here](/documentation/v2/clickstream/calls.html), we outline the different types of customer data we capture and how to implement them for your business.
+

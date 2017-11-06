@@ -45,9 +45,11 @@ Task instances also have indicative states, which could be "running", "success",
 By combining `DAGs` and `Operators` to create `TaskInstances`, you can build complex workflows. Head [here](https://github.com/astronomerio/pro-beta/wiki/Simple-Sample-DAG) to see how they come together in a basic DAG.
 
 ## Templating with Jinja
-Imagine you want to reference a unique s3 file name that corresponds to the date of the DAG run they ran for. Templating with Jinja helps you do so without having to hardcode anything! Jinja is a template engine for Python and Apache Airflow uses it to provide authors with a set of built-in paramaters and macros. A Jinja template is simply a text file that contains the following:
- * **variables** and/or **expressions** - these get replaced with values when a template is rendered)
- * **tags** - these control the logic of the template. 
+Imagine you want to reference a unique s3 file name that corresponds to the date of the DAG run, how would you do so without hardcoding any paths? The answer: Jinja! In short, Jinja is a template engine for Python and Apache Airflow uses it to provide pipeline authors with a set of built-in parameters and macros. 
+
+A jinja template is simplay a text file that contains the following:
+ * **variables** and/or **expressions** - these get replaced with values when a template is rendered.
+ * **tags** - these control the logic of the template.
 
 In Jinja, the default delimiters are configured as follows:
 
@@ -60,12 +62,12 @@ In Jinja, the default delimiters are configured as follows:
 
 Head [here](http://jinja.pocoo.org/docs/2.9/) for more information about installing and using Jinja.
 
-With Apache Airflow, Jinja templating allows you to defer the rendering of strings in your tasks until the actual running of those tasks. This becomes particularly useful when you want to access certain parameters of a `task_run` itself (i.e. `run_date` or `file_name`).
+How does it all work? With Apache Airflow, Jinja templating allows you to defer the rendering of strings in your tasks until the actual running of those tasks. This becomes particularly useful when you want to access certain parameters of a `task_run` itself (i.e. `run_date` or `file_name`).
 
 ### Example
 
 ```python
-date = "\{\{ ds \}\}"
+date = {% raw %}"{{ ds }}"{% endraw %}
 
 t = BashOperator(
         task_id='test_env',
@@ -74,9 +76,7 @@ t = BashOperator(
         env={'EXECUTION_DATE: date}
 )
 ```
-In the example above, we passed the execution date as an environment variable to a Bash script. `
-
-{% raw %} `{{ ds }}` {% endraw %} is a macro and because the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in your Bash script. 
+In the example above, we passed the execution `date` as an environment variable to a Bash script. Since {% raw %} `{{ ds }}` {% endraw %} is a macro and the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in the Bash script. 
 
 **Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both. 
 

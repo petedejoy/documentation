@@ -15,9 +15,9 @@ entries:
       url: /
       output: web, pdf
 
-    - [//]: "title: Segment | Clickstream Merge
+    - title: Segment | Clickstream Merge
       url: /v2/platform/segment|clickstream-merge.html
-      output: web, pdf"
+      output: web, pdf
 
     - title: API
       url: /v2/platform/api.html

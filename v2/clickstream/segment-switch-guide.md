@@ -12,25 +12,25 @@ Switching from Segment to Astronomer is very simple. Follow the four easy steps 
 
 Create a [source](/sources/overview.html) in the Astronomer UI.
 
-! [segment-switch-1](../../../images/segment-switch-1.png)
+![segment-switch-1](../../images/segment-switch-1.png)
 
 ### Step 2
 
 Remove your Segment snippet and replace it with our snippet or library.
 
-! [segment-switch-2](../../../images/segment-switch-2.png)
+![segment-switch-2](../../images/segment-switch-2.png)
 
 ### Step 3
 
 Step 3: Configure your integrations via the Astronomer dashboard.
 
-![segment-switch-3](../../../images/segment-switch-3.png)
+![segment-switch-3](../../images/segment-switch-3.png)
 
 ### Step 4
 
 Step 4: Check the live debugger to make sure your data is flowing.
 
-![segment-switch-4](../../../images/segment-switch-4.gif)
+![segment-switch-4](../../images/segment-switch-4.gif)
 
 # Segment | Astronomer Merge Guidelines
 
@@ -53,7 +53,7 @@ AND table_name = 'example_table_name'
 
 If you do identify some datatype conflicts, it's likely that your destination column will be able to accommodate the previous datatype (e.g. varchar(256) or varchar(512) or timestamp with timezone. Check out the following example:
 
-![clickstream-merge1](../../../images/clickstream-merge1.png)
+![clickstream-merge1](../../images/clickstream-merge1.png)
 
 ## Non-Existent Destination Columns
 
@@ -71,7 +71,7 @@ From here, you'll have 2 options:
 
 Here, use the specific column order as the destination tables rather than`SELECT` (see below)
 
-![clickstream-merge2](../../../images/clickstream-merge2.png)
+![clickstream-merge2](../..//images/clickstream-merge2.png)
 
 **B) Unload to S3 and then Copy**
 

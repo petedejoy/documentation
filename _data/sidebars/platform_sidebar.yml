@@ -198,6 +198,9 @@ entries:
         - title: Mixpanel
           url: /v2/clickstream/destinations/mixpanel.html
           output: web, pdf
+        
+        - title: Netmining
+          url: /v2/clickstream/destinations/netmining.html
 
         - title: Optimizely
           url: /v2/clickstream/destinations/optimizely.html

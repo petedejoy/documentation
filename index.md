@@ -7,32 +7,17 @@ summary: These guides help you get up and running with the Astronomer platform.
 
 ## Overview
 
-Astronomer is a data engineering platform that collects, processes, and routes your data so you can get straight to analytics, data science and—most importantly—insights. Astronomer is built on industry proven open-source technologies and provides a foundation for handling Clickstream event ingestion and building complex data workflows with Apache Airflow.
+Astronomer is a data engineering platform that provides a highly integrated set of tools that help you collect, process, and route data (i.e. data engineering). Astronomer is built on industry proven open-source technologies (Apache Mesos, Apache Kafka, Apache Spark, Apache Airflow), and takes care of orchestrating and managing cloud infrastrucutre. The goal is to increase your ability to focus on data analytics and data science initiatives.
 
-## SaaS
+Astronomer doesn't include:
 
-Astronomer is a fully managed SaaS offering. Our platform is comprised of the following components:
+* A data warehouse: There are a growing number of great data warehouse options. Astronomer integrates with all of them.
 
-* Amazon EC2
-* Amazon S3
-* Apache Mesos 
-* Apache Kafka
-* Apache Spark
-* Docker
-* To learn more, check out [Building Next-Gen Data Infrastructure](https://www.astronomer.io/blog/building-next-generation-data-infrastructure-with-apache-mesos-and-dc-os/).
+* Data visualization: Same deal, there are a growing number of great visualization tools, and we believe that you should "own your data" and handle all data processing outside of your visualization tools.
 
-## Platform
+Astronomer does include:
 
-### Modules
+* Analytics.js-based [clickstream](v2/clickstream/overview.html) module, which helps you collect data from your wwb and mobile applications and route those events to your tools and to your data lake. 
+* A scalable managed [Apache Airflow](v2/airflow/tutorial/core-airflow-concepts.html) module, with a [CLI](https://docs.astronomer.io/v2/apache_airflow/cli.html) to make deployment easy.
 
-* [Clickstream](v2/clickstream/overview.html) 
-* [Airflow](v2/airflow/tutorial/core-airflow-concepts.html)
-
-## Enterprise
-
-Astronomer Enterprise is a highly customizable, highly secure installation option that provides:
-
-* Dedicated Environment
-* VPN Support
-* Custom Python Packages
-* On-Premise Installation
+Astronomer is currently available as a SaaS offering, however we're also in final stages of being able to deploy private instances of the platform to virtual private clouds.

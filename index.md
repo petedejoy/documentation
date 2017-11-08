@@ -2,12 +2,12 @@
 title: Introduction to Astronomer
 keywords: introduction homepage
 sidebar: platform_sidebar
-summary: These guides help you get up and running with the Astronomer platform.
+summary: Astronomer is a data engineering platform that that helps you collect, process, and route data.
 ---
 
 ## Overview
 
-Astronomer is a data engineering platform that provides a highly integrated set of tools that help you collect, process, and route data (i.e. data engineering). Astronomer is built on industry proven open-source technologies (Apache Mesos, Apache Kafka, Apache Spark, Apache Airflow), and takes care of orchestrating and managing cloud infrastrucutre. The goal is to increase your ability to focus on data analytics and data science initiatives.
+Astronomer is a data engineering platform that provides a highly integrated set of tools that helps you collect, process, and route data (i.e. data engineering). Astronomer is built on industry proven open-source technologies (Apache Mesos, Apache Kafka, Apache Spark, Apache Airflow), and takes care of orchestrating and managing cloud infrastrucutre. The goal is to increase your ability to focus on data analytics and data science initiatives.
 
 Astronomer includes:
 

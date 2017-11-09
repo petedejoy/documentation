@@ -81,7 +81,33 @@ In the example above, we passed the execution `date` as an environment variable 
 **Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both. 
 
 ## XComs
-XComs (aka cross-communication) 
+
+
+ * XComs are stored indefinitely and are capable of a lot more than Jinja templating
+ * Use XComs when Jinja no longer meets your needs
+ * XComs are much more suited for passing information between tasks, such as tasks configs _that are not known at runtime_. 
+ * If the config you are trying to pass in know-able at run-time, the it is better to use jinja templating as it is more lightweight
+
+ XComs let tasks exchange messages - allowing more nuanced forms of control and shared state
+ 
+ XComs are principlaly defined by a key, value, and timestmap, but also track attributes like the task/DAG that created the XCom and when it should become visible.
+
+ Any object that can be pickled can be used as an XCom value, so users should make sure to use objects of appropriate size.
+
+ XComs can be "pushed" (sent) or "pulled" (received). 
+ 
+ When a task pushes an XCom, it makes it generally available to other tasks.
+
+ Tasks can push XComs at any time by calling the `xcom_push()` method.
+
+ In addition, if a task returns a value (either from its Operator's `execute()` method, or from a PythonOperator's `python_callable` function), then an XCom containing that value is automatically pushed.
+
+ Tasks call `xcom_pull()` to retrieve XComs, optionally applying filters based on criteria like `key`, source `task_ids`, and source `dag_id`. By default, `xcom_pull()` filters for the keys that are automatically given to XComs when they are pushed by being returned from execute functions (as opposed to XComs that are pushed manually). 
+
+ If `xcom_pull` is passed a single string for `task_ids`, then the most recent XCom value from that task is returned; if a list of `task_ids` is passed, then a corresponding list of XCom values is returned.
+
+ 
+
 
 ## Other Core concepts
 

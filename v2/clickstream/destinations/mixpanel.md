@@ -44,14 +44,26 @@ With that, you're set! Your data should start flowing almost immediately.
 
 Click on `View Your Data` back in the Mixpanel UI to start exploring.
 
-### Things to Note.
+### Additional Features
 
 On top of our standard calls, you're free to do a few extra things with our Mixpanel integration:
 
-- *Enable Mixpanel People*: This will enable all of your analytics.identify() calls to get sent to Mixpanel's People.
-    * You can then list the events you want to see in People in the `Events to Increment in People` text field
+- `Enable Mixpanel People`: This will enable all of your analytics.identify() calls to get sent to Mixpanel's People.
+    * `Events to Increment in People` - Used for segmenting users by event counts and last event date in Mixpanel People. List the events that you want to see in Mixpanel People here.
+    * `Add People Properties` - These are set off of `identify` API calls and allow you to explicity set properties that you want to track.
+    * `Add Super Properties` - This lets you explicitly set the super properties that you wish to track.
+
+*Note that, if `Set All Traits by Default` is enabled, you will not need to specify explicit people or super properties.*
+
+- By default, we will track all pages to Mixpanel with a consolidated event name. This sends all `page` and `screen` calls as `Loaded a Page` or `Loaded a Screen` events. If you wish to do this in a different way, disable the `Consolidate Page Calls` option and see the additional options below. 
 
 - *Track additional pages*, including:
-    * Named Pages
-    * Categorized Pages
-    * All Pages
+    * `Named Pages` - This sends a `Viewed (name) Page` event to Mixpanel.
+    * `Categorized Pages` - This sends a `Viewed (category) Page to Mixpanel.
+    * `All Pages` - This causes all `page` calls to be sent to Mixpanel, regardless of how you have customized your pages. They will appear as `Loaded A Page` in Mixpanel.
+
+- Cookies
+    * `Add Cross Subdomain Cookie` - Allows Mixpanel cookiec to be read across all subdomains.
+    * `Secure Cookie` - This marks the Mixpanel cookie as `secure`, meaning that this cookie will only be transmitted over https.
+    * `Persistence Cookie` - This allows the Mixpanel cookie to persist between two separate pages of your application.
+  

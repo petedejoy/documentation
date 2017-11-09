@@ -126,6 +126,10 @@ entries:
         - title: Bing Ads
           url: /v2/clickstream/destinations/bing-ads.html
           output: web, pdf
+        
+        - title: Bloom Reach
+          url: /v2/clickstream/destinations/bloom-reach.html
+          output: web, pdf
 
         - title: Calq
           url: /v2/clickstream/destinations/calq.html
@@ -185,6 +189,10 @@ entries:
 
         - title: Keen IO
           url: /v2/clickstream/destinations/keen-io.html
+          output: web, pdf
+        
+        - title: Kenshoo
+          url: /v2/clickstream/destinations/kenshoo.html
           output: web, pdf
 
         - title: KISSmetrics

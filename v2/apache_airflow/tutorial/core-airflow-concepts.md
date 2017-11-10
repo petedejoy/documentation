@@ -81,13 +81,13 @@ In the example above, we passed the execution `date` as an environment variable 
 **Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both. 
 
 ## XComs
-XComs (short for "cross-communication) can be used to pass information between tasks, information such as task configs _that are not known at runtime_. This is a differentiating factor between XComs and Jinja templating. If the config you are trying to pass is available at run-time, then we recommend using Jinja templating as it is much more lightweight than XComs. On the flip-side, XComs can be stored indefinitely and give you more nuanced control. 
+XComs (short for "cross-communication") can be used to pass information between tasks, information such as task configs **that are not known at runtime**. This is a differentiating factor between XComs and Jinja templating. If the config you are trying to pass is available at run-time, then we recommend using Jinja templating as it is much more lightweight than XComs. On the flip-side, XComs can be stored indefinitely, give you more nuanced control and should be used when Jinja templating no longer meets your needs.  
 
-Functionally, XComs are defined by a key, a value, and a timestamp. They also track attributes like the task/DAG run that created the XCom and when it should become visible. 
+Functionally, XComs are defined by a `key`, a `value`, and a `timestamp`. They also track attributes like the task/DAG run that created the XCom and when it should become visible. 
 
 As shown in the example below, XComs can be called with either `xcom_push()` or `xcom_pull()`. "Pushing" (or sending) an XCom generally makes it available for other tasks while "Pulling" retrieves an XCom. When pulling XComs, you can apply filters based on criteria like `key`, source `task_ids`, and source `dag_id`.
 
-Example XCom ([reference](https://github.com/apache/incubator-airflow/blob/master/airflow/example_dags/example_xcom.py))
+Example XCom ([reference](https://github.com/apache/incubator-airflow/blob/master/airflow/example_dags/example_xcom.py)):
 ```python
 from __future__ import print_function
 import airflow

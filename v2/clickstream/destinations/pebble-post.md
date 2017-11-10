@@ -27,3 +27,15 @@ Once you've made a Pebble Post account, work with your account manager to identi
 - endURL mappings
 
 ### Astronomer Side
+
+Log back into your Astronomer app, and add the Pebble Post destination to your preferred choice (Note: Pebble Post is only available on client-side sources). 
+
+Once you're there, input that Site ID and any applicable end URL mappings where prompted. Check out the image below to see what this page looks like: 
+
+![Pebblepost1](../../../images/pebblepost1.png)
+
+Now, all you have to do is give your connection a unique name and activate the destination. 
+
+With that, you're all set! Get ready for insights. 
+
+

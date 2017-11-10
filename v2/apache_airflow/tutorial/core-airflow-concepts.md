@@ -81,33 +81,73 @@ In the example above, we passed the execution `date` as an environment variable 
 **Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both. 
 
 ## XComs
+XComs (short for "cross-communication) can be used to pass information between tasks, information such as task configs _that are not known at runtime_. This is a differentiating factor between XComs and Jinja templating. If the config you are trying to pass is available at run-time, then we recommend using Jinja templating as it is much more lightweight than XComs. On the flip-side, XComs can be stored indefinitely and give you more nuanced control. 
 
+Functionally, XComs are defined by a key, a value, and a timestamp. They also track attributes like the task/DAG run that created the XCom and when it should become visible. 
 
- * XComs are stored indefinitely and are capable of a lot more than Jinja templating
- * Use XComs when Jinja no longer meets your needs
- * XComs are much more suited for passing information between tasks, such as tasks configs _that are not known at runtime_. 
- * If the config you are trying to pass in know-able at run-time, the it is better to use jinja templating as it is more lightweight
+As shown in the example below, XComs can be called with either `xcom_push()` or `xcom_pull()`. "Pushing" (or sending) an XCom generally makes it available for other tasks while "Pulling" retrieves an XCom. When pulling XComs, you can apply filters based on criteria like `key`, source `task_ids`, and source `dag_id`.
 
- XComs let tasks exchange messages - allowing more nuanced forms of control and shared state
- 
- XComs are principlaly defined by a key, value, and timestmap, but also track attributes like the task/DAG that created the XCom and when it should become visible.
+Example XCom ([reference](https://github.com/apache/incubator-airflow/blob/master/airflow/example_dags/example_xcom.py))
+```python
+from __future__ import print_function
+import airflow
+from airflow import DAG
+from airflow.operators.python_operator import PythonOperator
 
- Any object that can be pickled can be used as an XCom value, so users should make sure to use objects of appropriate size.
+args = {
+  'owner': 'airflow',
+  'start_date': airflow.utils.dates.days_ago(2),
+  'provide_context': True
+}
 
- XComs can be "pushed" (sent) or "pulled" (received). 
- 
- When a task pushes an XCom, it makes it generally available to other tasks.
+dag = DAG(
+    'example_xcom',
+    schedule_interval='@once',
+    default_args=args
+)
 
- Tasks can push XComs at any time by calling the `xcom_push()` method.
+value_1 = [1, 2, 3]
+value_2 = {'a': 'b'}
 
- In addition, if a task returns a value (either from its Operator's `execute()` method, or from a PythonOperator's `python_callable` function), then an XCom containing that value is automatically pushed.
+def push(**kwargs):
+    # pushes an XCom without a specific target
+    kwargs['ti'].xcom_push(key='value from pusher 1', value=value_1)
 
- Tasks call `xcom_pull()` to retrieve XComs, optionally applying filters based on criteria like `key`, source `task_ids`, and source `dag_id`. By default, `xcom_pull()` filters for the keys that are automatically given to XComs when they are pushed by being returned from execute functions (as opposed to XComs that are pushed manually). 
+def push_by_returning(**kwargs):
+    # pushes an XCom without a specific target, just by returning it
+    return value_2
 
- If `xcom_pull` is passed a single string for `task_ids`, then the most recent XCom value from that task is returned; if a list of `task_ids` is passed, then a corresponding list of XCom values is returned.
+def puller(**kwargs):
+    ti = kwargs['ti']
 
- 
+    # get value_1
+    v1 = ti.xcom_pull(key=None, task_ids='push')
+    assert v1 == value_1
 
+    # get value_2
+    v2 = ti.xcom_pull(task_ids='push_by_returning')
+    assert v2 == value_2
+
+    # get both value_1 and value_2
+    v1, v2 = ti.xcom_pull(key=None, task_ids=['push', 'push_by_returning'])
+    assert (v1, v2) == (value_1, value_2)
+
+push1 = PythonOperator(
+    task_id='push', dag=dag, python_callable=push)
+
+push2 = PythonOperator(
+    task_id='push_by_returning', dag=dag, python_callable=push_by_returning)
+
+pull = PythonOperator(
+    task_id='puller', dag=dag, python_callable=puller)
+
+pull.set_upstream([push1, push2])
+```
+
+A few things to note about XComs:
+ * Any object that can be pickled can be used as an XCom value, so be sure to use objects of appropriate size.
+ * If a task returns a value (either from its Operator's `execute()` method, or from a PythonOperator's `python_callable` function), than an XCom containing that value is automatically pushed. When this occurs, `xcom_pull()` automatically filters for the keys that are given to the XCom when it was pushed. 
+ *  If `xcom_pull` is passed a single string for `task_ids`, then the most recent XCom value from that task is returned; if a list of `task_ids` is passed, then a corresponding list of XCom values is returned.
 
 ## Other Core concepts
 

@@ -36,7 +36,7 @@ Check out our [Calls](../calls.md) section for information on when you should us
 
 #### Identify
 
-```
+```python
 analytics.identify('userID' : '1234qwerty', {
     'name': 'Arthur Dent',
     'email': 'earthling1@hitchhikersguide.com',
@@ -46,13 +46,13 @@ analytics.identify('userID' : '1234qwerty', {
 
 #### Track
 
-```
+```python
 analytics.track('userID' : '1234qwerty', 'Signed Up')
 ```
 
 #### Page
 
-```
+```python
 analytics.page('user_id', 'Docs', 'Python', {
   'url': 'http://astronomer.io'
 })
@@ -60,7 +60,7 @@ analytics.page('user_id', 'Docs', 'Python', {
 
 #### Group
 
-```
+```python
 analytics.group('user_id', 'group_id', {
   'name': 'Astronomer',
   'domain': 'Data Engineering Platform'
@@ -69,6 +69,6 @@ analytics.group('user_id', 'group_id', {
 
 #### Alias
 
-```
+```python
 analytics.alias(previous_id, user_id)
 ```

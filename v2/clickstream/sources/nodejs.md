@@ -12,14 +12,14 @@ This library lets you record all analytics data from your node code. You can che
 #### Step 1
 Install the astronomer npm module.
 
-```
+```js
 npm install --save astronomer
 ```
 
 #### Step 2
 Initialize this package with the Source ID found in the settings section of your Astronomer account.
 
-```
+```js
 var Analytics = import('astronomer');
 var Analytics = new analytics{'ASTRONOMER_SOURCE_ID')}
 ```
@@ -36,7 +36,7 @@ Check out our [Calls](../calls.md) section for information on when you should us
 
 #### Identify
 
-```
+```js
 {
   "codes": [
     {
@@ -54,7 +54,7 @@ Check out our [Calls](../calls.md) section for information on when you should us
 
 #### Track
 
-```
+```js
 {
   "codes": [
     {
@@ -73,7 +73,7 @@ Check out our [Calls](../calls.md) section for information on when you should us
 
 #### Page
 
-```
+```js
 analytics.page({
   userId: '1234qwerty',
   section: 'Blog',
@@ -86,7 +86,7 @@ analytics.page({
 
 #### Group
 
-```
+```js
 analytics.group({
   userId: '1234qwerty',
   groupId: '5678dvorak',
@@ -99,7 +99,7 @@ analytics.group({
 
 #### Alias
 
-```
+```js
 analytics.alias({
   previousId: anonymous_id,
   userId: assigned_id_or_email

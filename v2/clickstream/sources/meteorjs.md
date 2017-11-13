@@ -11,7 +11,7 @@ If you're using the Meteor JavaScript app platform and haven't instrumented your
 
 ***Note**: If you are using the package `percolatestudio:segment.io`, you will need to remove this before installing Astronomer. This packages sets a global `analytics` object and makes the package unfunctional.*
 
-```
+```js
 {
   "type": "info",
   "title": "Which user actions get tracked?",
@@ -23,14 +23,14 @@ If you're using the Meteor JavaScript app platform and haven't instrumented your
 
 First, open your termal, cd to your app, and add the Astronomer package:
 
-```
+```js
 meteor add astronomerio:core
 ```
 
 To configure your Meteor app, follow the steps below:
 1. Copy this snippet:
 
-```
+```js
 {
   "public": {
     "astronomer": {

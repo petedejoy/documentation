@@ -14,7 +14,7 @@ This library lets you record analytics data from your PHP code. It is a little d
 
 Clone the PHP integration into your application directory.
 
-```
+```php
 git clone https://github.com/astronomerio/analytics-php
 ```
 
@@ -22,7 +22,7 @@ git clone https://github.com/astronomerio/analytics-php
 
 Add the following to your code to load in the library.
 
-```
+```php
 require_once(\"/path/to/analytics-php/lib/Segment.php\");
 ```
 
@@ -30,7 +30,7 @@ require_once(\"/path/to/analytics-php/lib/Segment.php\");
 
 Initialize the module with the Source ID found in the setting sections of your Astronomer account. Note that you are only required to do this initialization once.
 
-```
+```php
 class_alias('Segment', 'analytics');
 analytics::init("ASTRONOMER_APP_ID");
 ```
@@ -45,7 +45,7 @@ Check out our [Calls](../calls.md) section for information on when you should us
 
 #### Identify
 
-```
+```php
 analytics::identify(array(
          "userId" => "1234qwerty",
          "traits" => array(
@@ -57,7 +57,7 @@ analytics::identify(array(
 
 #### Track
 
-```
+```php
 analytics::track(array(
         "userId" => "1234qwerty",
         "event" => "Added File",
@@ -71,7 +71,7 @@ analytics::track(array(
 
 #### Page
 
-```
+```php
 analytics::page(array(
         "userId" => "1234qwerty",
         "section" => "Blog",
@@ -84,7 +84,7 @@ analytics::page(array(
 
 #### Group
 
-```
+```php
 analytics::group(array(
         "userId" => "1234qwerty",
         "groupId" => "5678dvorak",
@@ -97,7 +97,7 @@ analytics::group(array(
 
 #### Alias
 
-```
+```php
 analytics::alias(array(
         "previousId" => "1ff049u10459u7",
         "userId" => "1234qwerty")

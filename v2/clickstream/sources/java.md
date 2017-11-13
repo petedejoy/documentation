@@ -15,7 +15,7 @@ You can use this library in your web server controller code- it is built for hig
 
 #### Install the Library
 
-We reccomend installing the library with a build system like Maven. If you do it this way, you will have much less trouble upgrading and swapping out destinations. 
+We reccommend installing the library with a build system like Maven. If you do it this way, you will have much less trouble upgrading and swapping out destinations. 
 
 The library is distributed as a `jar` dependency via [Maven Central](http://search.maven.org/). Here's what it would look like with Maven.
 
@@ -31,7 +31,7 @@ Add to `pom.xml`:
 #### Initialize the SDK
 
 Before you can start sending us events, you'll need to initialize an instance of the Analytics class. Do this using the `Analytics.builder` class, inputting the `Source ID` found in the source settings of your Astronomer UI.
-```
+```java
 Analytics analytics = Analytics.builder("Your Source ID").build()
 ```
 Note that there exists an internal `AnalyticsClient` class, not to be confused with the public `Analytics` class.
@@ -46,8 +46,7 @@ Check out our [API Calls doc](../calls.html) for more information about when you
 
 #### Identify
 
-Post `https://api.astronomer.io/v1/identify`
-```
+```java
 analytics.enqueue(IdentifyMessage.builder()
     .userId("qwerty1234")
     .traits(ImmutableMap.builder()
@@ -63,7 +62,7 @@ The above call identifies Buzz by his unique `userID` and labels him with `name`
 
 
 #### Track
-```
+```java
 analytics.enqueue(TrackMessage.builder("Item Purchased")
     .userId("qwerty1234")
     .properties(ImmutableMap.builder()
@@ -82,7 +81,7 @@ The above call tells us that someone has purchased an item for 50 dollars and ha
 
 **Note**: The `screen` call pulls the same data as a `page` call, but is used for mobile rather than web sources. 
 
-```
+```java
 analytics.enqueue(ScreenMessage.builder("MoonLanding")
     .userId("qwerty1234")
     .properties(ImmutableMap.builder()
@@ -98,7 +97,7 @@ The above call tells us that someone has viewed a `MoonLanding` page that is cat
 #### Group
 
 
-```
+```java
 analytics.enqueue(GroupMessage.builder("some-group-id")
     .userId("qwerty1234")
     .traits(ImmutableMap.builder()
@@ -114,14 +113,14 @@ The above call assigns the user with the "Astronomer" group and gives that group
 
 #### Alias
 
-```
+```java
 analytics.enqueue(AliasMessage.builder("previousId")
     .userId("qwerty1234")
 );
 ```
 
 We might use the above call in the following way:
-```
+```java
 // the anonymous user clicks a button
 track("anonymous_user", "Click Button");
 // the anonymous user signs up and is aliased

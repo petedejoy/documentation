@@ -17,13 +17,13 @@ Install `astronomer` either:
 
 * Directly into a Gemfile
 
-```
+```ruby
 gem 'astronomer', '~>2.0', '>= 2.0.14'
 ```
 
 * Directly into environment gems
 
-```
+```ruby
 gem install astronomer
 ```
 
@@ -31,7 +31,7 @@ gem install astronomer
 
 Inside your Ruby application, you'll want to set your `Source ID` inside an instance of the Analytics object:
 
-```
+```ruby
 analytics = Segment::Analytics.new({
   app_id: 'YOUR_SOURCE_ID'
 })
@@ -45,7 +45,7 @@ Check out our [Calls](../calls.md) section for information on when you should us
 
 #### Identify
 
-```
+```ruby
 analytics.identify(
     user_id: '1234qwerty',
     traits: { email: "#{} user,email }", fingers: 10 },
@@ -56,7 +56,7 @@ analytics.identify(
 
 #### Track
 
-```
+```ruby
 analytics.track(
     user_id: `1234qwerty`,
     event: 'Add to cart'
@@ -66,7 +66,7 @@ analytics.track(
 
 #### Page
 
-```
+```ruby
 analytics.page(
     user_id: user_id,
     category: Prod site
@@ -77,7 +77,7 @@ analytics.page(
 
 #### Group
 
-```
+```ruby
 analytics.group(
     user_id: '1234qwerty'
     group_id: '10'
@@ -87,6 +87,6 @@ analytics.group(
 
 #### Alias
 
-```
+```ruby
 analytics.alias(previous_id: 'previous id', user_id: 'new id')
 ```

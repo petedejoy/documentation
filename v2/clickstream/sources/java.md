@@ -1,5 +1,5 @@
 ---
-title: HTTP API
+title: Java
 sidebar: platform_sidebar
 ---
 

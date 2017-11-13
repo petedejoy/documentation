@@ -68,7 +68,7 @@ entries:
           url: /v2/clickstream/sources/httpapi.html
           output: web,pdf
         
-        -title: Java
+        - title: Java
           url: /v2/clickstream/sources/java.html
           output: web, pdf
 

@@ -7,7 +7,8 @@ Astronomer utilizes 6 different types of API calls to track users. Each call rep
 
 * Identify
 * Track
-* Page
+* Page/Screen
+    - Note that, while these are two separate calls, they function in a very similar way. Page calls are used for web sources while screen calls are used for mobile ones.
 * Group
 * Alias
 

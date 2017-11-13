@@ -60,3 +60,7 @@ Lytics updates their incoming data stream every two minutes, so give it a couple
 See the image below - you can check back in on the status of your project by going to the `Data` tab at the top.
 
 ![lytics4](../../../images/lytics4.png)
+
+### Additional Features
+
+* `Stream` - Allows you to organize your data in Lytics. This is only necessary when you are tracking multiple websites

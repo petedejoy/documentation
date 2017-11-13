@@ -33,9 +33,11 @@ Once that's set up, identify your unique `pixelId`, a 15 digit number that uniqu
 
 Put your Facebook Pixel ID into your Astronomer account and give your new connection a unique name.
 
+### Additional Features
+
 **Standard Events**
 
-Facebook has nine [Standard Events,](https://www.facebook.com/business/a/add-pixel-standard-events) which are predefined within the Facebook for Business platform.
+Facebook has nine [Standard Events](https://www.facebook.com/business/a/add-pixel-standard-events), which are predefined within the Facebook for Business platform.
 
 To connect your events to these predefined ones within Facebook, just input the name of the Astronomer event and choose the appropriate Standard Facebook Event that corresponds to it.
 

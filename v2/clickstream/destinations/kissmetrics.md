@@ -55,3 +55,4 @@ Once that's done, click on `Create Destination` to activate your pipeline.
 Click around your application to send off some test events. It might take an hour or so for events to start populating into your project. You can check to see if events are coming in by clicking on the `Live` tab at the top of the page and looking at the `All Activity` section.
 
 ![kissmetrics3](../../../images/kissmetrics3.png)
+

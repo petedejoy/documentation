@@ -25,7 +25,7 @@ To get started, you'll need to add the VWO JavaScript snippet to the pages that 
 
 Since the VWO snippet is now on your site, all you need to do is enable the VWO integration in your Astronomer UI to get started. Note that there are a few different custom metrics you can track to VWO. We have outlined how to set up those methods below.
 
-### Features
+### Additional Features
 
 #### Sending Experiment Data from VWO
 

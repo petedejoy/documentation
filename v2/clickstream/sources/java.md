@@ -20,7 +20,7 @@ We reccommend installing the library with a build system like Maven. If you do i
 The library is distributed as a `jar` dependency via [Maven Central](http://search.maven.org/). Here's what it would look like with Maven.
 
 Add to `pom.xml`:
-```
+```xml
 <dependency>
     <groupId>io.astronomer.analytics.java</groupId>
     <artifactId>analytics-core</artifactId>

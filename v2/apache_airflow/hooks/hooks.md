@@ -3,9 +3,9 @@ title: Apache Airflow Hooks
 sidebar: platform_sidebar
 ---
 
-# _Available Sources_
+## _Available Sources_
 
-## [BambooHR](https://www.bamboohr.com/api/documentation/)
+## BambooHR
 
 - _Source Type_: REST API
 - _Authentication_: Basic
@@ -101,7 +101,7 @@ curl -i -u "{API Key}:x" "https://api.bamboohr.com/api/gateway.php/{subdomain}/v
 </table>
 ```
 
-## [Facebook Ads](https://developers.facebook.com/docs/marketing-api/access)
+## Facebook Ads
 
 - _Source Type_: REST-based API.
 - _Authentication_: OAuth (Token)
@@ -137,7 +137,7 @@ SELECT Id, Name FROM Account LIMIT 10
 
 # _In Progress_
 
-## [Github](https://developer.github.com/v3/)
+## GitHub
 
 - _Source Type_: REST v3 -- (GraphQL v4 API currently unsupported)
 - _Authentication_: Basic Authentication via Personal Token
@@ -456,9 +456,9 @@ Reference: https://developer.github.com/v3/
   }
 ```
 
-# _In Queue_
+## _In Queue_
 
-## [Autopilot](http://docs.autopilot.apiary.io/#)
+### AutoPilot
 
 - _Source Type_: REST API
 - _Authentication_: API key
@@ -474,7 +474,7 @@ Reference: https://developer.github.com/v3/
 - Get custom fields
 - List journeys with API triggers
 
-## [FreshDesk](https://freshdesk.com/api)
+## FreshDesk
 
 - _Source Type_: RESTful API
 - _Authentication_: API key or Basic Auth
@@ -502,13 +502,13 @@ Reference: https://developer.github.com/v3/
 - Business Hours - List All Business Hours
 - SLA Policies - List All SLA Policies
 
-## [Freshsales](LINK)
+## Freshsales
 
 - _Source Type_: REST API
 - _Authentication_: Basic or API toekn
 - _Rate Limit_: N/A
 
-## [Google Analytics](https://developers.google.com/analytics/)
+## Google Analytics
 
 - _Source Type_:
 - _Authentication_: OAuth2
@@ -593,7 +593,7 @@ Reference: https://developer.github.com/v3/
   }
   ```
 
-## [Hubspot](https://developers.hubspot.com/docs/overview)
+## Hubspot
 
 - _Source Type_: REST
 - _Authentication_: API key (OAuth is strongly encouraged and required to become an featured integration)
@@ -739,7 +739,7 @@ Optional parameters:
 
 ```
 
-## [Instagram](https://www.instagram.com/developer)
+## Instagram
 
 - _Source Type_: REST API
 - _Authentication_: OAuth 2.0
@@ -752,13 +752,13 @@ Global rate limits are applied inclusive of all API calls made by an app per acc
 |Sandbox	  |500 / hour               |
 |Live	          |5000 / hour              |
 
-## [JIRA](https://www.instagram.com/developer)
+## JIRA
 
 - _Source Type_: REST API
 - _Authentication_: OAuth 1.0 or Basic
 - _Rate Limit_: 500 API requests per 5 minutes. Once you exceed the limit, calls will return HTTP status 429 and a message telling you that you've been limited.
 
-## [Marketo](LINK)
+## Marketo
 
 - _Source Type_: REST API
 - _Authentication_: Basic

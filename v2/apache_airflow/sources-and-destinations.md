@@ -1,29 +1,24 @@
-
-
 ## Hooks
 
-### Sources:
+### Available Sources:
 
 #### [BambooHR](https://www.bamboohr.com/api/documentation/)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [X] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 Sample Request:
-`curl -i -u "{API Key}:x" "https://api.bamboohr.com/api/gateway.php/{subdomain}/v1/employees/directory"`
+
+```
+curl -i -u "{API Key}:x" "https://api.bamboohr.com/api/gateway.php/{subdomain}/v1/employees/directory"
+```
 
 - **Employees/directory**
 `https://api.bamboohr.com/api/gateway.php/{subdomain}/v1/employees/directory`
 - **jobInfo** (We can pass in an 'All' parameter to request info for all employees): `https://api.bamboohr.com/api/gateway.php/{subdomain}/v1/employees/all/tables/jobInfo/`
-
 - **employmentStatus** (We can pass in an 'All' parameter to request statuses for all employees):
 `https://api.bamboohr.com/api/gateway.php/{subdomain}/v1/employees/all/tables/employmentStatus/`
-
 
 **Employee Directory sample response:**
 
@@ -103,32 +98,8 @@ Sample Request:
 </table>
 ```
 
-#### [Autopilot](http://docs.autopilot.apiary.io/#)
-
-- [X] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
-- _Source Type_: REST API
-- _Authentication_: API key
-- _Rate Limit_: N/A
-
-**Endpoints**
-- Get all contacts (List all contacts)
-- Get Contacts (List contact records by contact ID)
-- List of Lists (List of available lists)
-- Get contacts on a list (Returns a list of all contacts on a provided list)
-- List smart segments (Get a list of all smart segments)
-- Smart segment contacts (Get a list of contacts on a smart segment)
-- Get custom fields
-- List journeys with API triggers
-
 ### [Facebook Ads](https://developers.facebook.com/docs/marketing-api/access)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [X] Available
 - _Source Type_: REST-based API.
 - _Authentication_: OAuth (Token)
 - _Rate Limit_: Rate limiting depends on the type of account being used:
@@ -147,55 +118,24 @@ Sample Request:
 	- Error, Code: 17, Message: User request limit reached
 ```
 
-### [FreshDesk](https://freshdesk.com/api)
+### [Salesforce Bulk API]([Ticket](https://github.com/astronomerio/services/issues/254))
 
-- [X] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
-- _Source Type_: RESTful API
-- _Authentication_: API key or Basic Auth
-- _Rate Limit_: Varies by plan
+- _Source Type_: REST API
+- _Authentication_: Basic
+- _Rate Limit_: N/A
 
-|Plan     |Rate Limit (_Hourly_)  |
-|---------|------------------|
-|Sprout   |1,000             |
-|Blossom  |3,000             |
-|Garden   |3,000             |
-|Estate   |5,000             |
-|Forest   |5,000             |
+**Bulk Query** (Use bulk query to efficiently query large data sets and reduce the number of API requests. A bulk query can retrieve up to 15 GB of data, divided into 15 1-GB files. The data formats supported are CSV, XML, and JSON.):
+Bulk queries can be created using the Salesforce Object Query Language. Queries can be tested using the Developer Console in the Salesforce UI.
+Sample SOQL query:
+```
+SELECT Id, Name FROM Account LIMIT 10
+```
+**Note:** While the SOAP and REST APIs return compound fields, the Bulk Query API does not support returning compound fields. The components of a compound field may be returned through the Bulk API, however. Example: "Name" is a compound field not returned through the Bulk API, while it's components, "First Name" and "Last Name" are returned through the Bulk API. Further reading: https://help.salesforce.com/articleView?id=000204592&type=1
 
-**Endpoints:**
-- Tickets - List All Tickets
-- Contacts - List All Contacts
-- Agents - List All Agents
-- Roles - List All Roles
-- Groups - List All Groups
-- Companies - List All Companies
-- Surveys - List All Surveys
-- Satisfaction Ratings - View All Satisfaction Ratings
-- Time Entries - List All Time Entries
-- Products - List All Products
-- Business Hours - List All Business Hours
-- SLA Policies - List All SLA Policies
-
-### FTP
-
-**[Scope Ticket]()**
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
-- _Source Type_:
-- _Authentication_:
-- _Rate Limit_:
+### _In Progress_
 
 ### [Github](https://developer.github.com/v3/)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [X] In Progress
-- [ ] Available
 - _Source Type_: REST v3 -- (GraphQL v4 API currently unsupported)
 - _Authentication_: Basic Authentication via Personal Token
 - _Rate Limit_: Standard rate limit is 5000 requests/hour. Additionally, Github has [Abuse Controls](https://developer.github.com/v3/#abuse-rate-limits) that have an unspecified limit but will block requests if exceeding a certain high threshold of concurrent requests.
@@ -513,12 +453,60 @@ Reference: https://developer.github.com/v3/
   }
 ```
 
+### _In Queue_
+
+#### [Autopilot](http://docs.autopilot.apiary.io/#)
+
+- _Source Type_: REST API
+- _Authentication_: API key
+- _Rate Limit_: N/A
+
+**Endpoints**
+- Get all contacts (List all contacts)
+- Get Contacts (List contact records by contact ID)
+- List of Lists (List of available lists)
+- Get contacts on a list (Returns a list of all contacts on a provided list)
+- List smart segments (Get a list of all smart segments)
+- Smart segment contacts (Get a list of contacts on a smart segment)
+- Get custom fields
+- List journeys with API triggers
+
+### [FreshDesk](https://freshdesk.com/api)
+
+- _Source Type_: RESTful API
+- _Authentication_: API key or Basic Auth
+- _Rate Limit_: Varies by plan
+
+|Plan     |Rate Limit (_Hourly_)  |
+|---------|------------------|
+|Sprout   |1,000             |
+|Blossom  |3,000             |
+|Garden   |3,000             |
+|Estate   |5,000             |
+|Forest   |5,000             |
+
+**Endpoints:**
+- Tickets - List All Tickets
+- Contacts - List All Contacts
+- Agents - List All Agents
+- Roles - List All Roles
+- Groups - List All Groups
+- Companies - List All Companies
+- Surveys - List All Surveys
+- Satisfaction Ratings - View All Satisfaction Ratings
+- Time Entries - List All Time Entries
+- Products - List All Products
+- Business Hours - List All Business Hours
+- SLA Policies - List All SLA Policies
+
+### [Freshsales](LINK)
+
+- _Source Type_: REST API
+- _Authentication_: Basic or API toekn
+- _Rate Limit_: N/A
+
 ### [Google Analytics](https://developers.google.com/analytics/)
 
-- [X] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_:
 - _Authentication_: OAuth2
 - _Rate Limit_:
@@ -604,10 +592,6 @@ Reference: https://developer.github.com/v3/
 
 ### [Hubspot](https://developers.hubspot.com/docs/overview)
 
-- [X] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST
 - _Authentication_: API key (OAuth is strongly encouraged and required to become an featured integration)
 - _Rate Limit_: https://developers.hubspot.com/apps/api_guidelines
@@ -752,24 +736,8 @@ Optional parameters:
 
 ```
 
-### [HootSuite](https://developer.hootsuite.com/docs/api-overview)
-
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
-- _Source Type_: REST API
-- _Authentication_: OAuth 2.0
-- _Rate Limit_: Hootsuite enforces API rate limits for its REST APIs. Rate limit configuration consists of a daily usage quota and per second request limit. Limits are set to 20 requests / second to a maximum daily quota of 100,000 calls per day.
-
-References: https://app-directory.s3.amazonaws.com/docs/api/index.html
-
 ### [Instagram](https://www.instagram.com/developer)
 
-- [X] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: OAuth 2.0
 - _Rate Limit_:
@@ -783,30 +751,12 @@ Global rate limits are applied inclusive of all API calls made by an app per acc
 
 ### [JIRA](https://www.instagram.com/developer)
 
-- [X] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: OAuth 1.0 or Basic
 - _Rate Limit_: 500 API requests per 5 minutes. Once you exceed the limit, calls will return HTTP status 429 and a message telling you that you've been limited.
 
-### [Kissmetrics](LINK)
-
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
-- _Source Type_: REST API
-- _Authentication_: Basic
-- _Rate Limit_: N/A
-
 ### [Marketo](LINK)
 
-- [X] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
@@ -815,16 +765,14 @@ Global rate limits are applied inclusive of all API calls made by an app per acc
 
 ##### [Authentication](http://developers.marketo.com/rest-api/endpoint-reference/authentication-endpoint-reference/#!/Identity/identityUsingGET)
 
-<details>
-<summary>Click to expand</summary><p>
-
-### Identity (Returned access token expires within 60 minutes of request. Subsequent requests will return the same token with an updated expiry count in seconds.
+Identity (Returned access token expires within 60 minutes of request. Subsequent requests will return the same token with an updated expiry count in seconds.
 **Sample request:**
 
 ```
 https://541-SJO-620.mktorest.com/identity/oauth/token?grant_type=client_credentials&client_id=b8bcba05-644f-4cd9-bc11-b196a89e4dc3&client_secret=<SECRET>
 
 ```
+
 **Sample response:**
 
 ```
@@ -835,22 +783,19 @@ https://541-SJO-620.mktorest.com/identity/oauth/token?grant_type=client_credenti
     "scope": "implementation@astronomer.io"
 }
 ```
-</p></details>
-
-
 
 ##### [Paging Tokens](http://developers.marketo.com/rest-api/paging-tokens/)
 
 > To page through results, or retrieve data updated relative to a given data, Marketo provides paging tokens.
 Documentation: http://developers.marketo.com/rest-api/paging-tokens/
 
-<details>
-<summary>Click to expand</summary><p>
-
 ### Retrieve paging token:
+
 **Sample request:**
 `GET /rest/v1/activities/pagingtoken.json?sinceDatetime=2014-10-06T13:22:17-08:00`
+
 **Sample response:**
+
 ```
 {
     "requestId": "1607c#14884f3e74e",
@@ -859,18 +804,15 @@ Documentation: http://developers.marketo.com/rest-api/paging-tokens/
 }
 ```
 
-</p></details>
-
 ##### [Activities](http://developers.marketo.com/rest-api/lead-database/activities/)
 
 ##### [Describe activities](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Activities/getAllActivityTypesUsingGET)
 
-<details>
-<summary>Click to expand</summary><p>
-
 **Sample request:**
 `GET /rest/v1/activities/types.json`
+
 **Sample response:**
+
 ```
 {  
    "requestId":"6e78#148ad3b76f1",
@@ -915,20 +857,15 @@ Documentation: http://developers.marketo.com/rest-api/paging-tokens/
 }
 ```
 
-</p></details>
-
-
-
 ##### [Get Lead Activities](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Activities/getLeadActivitiesUsingGET)
-
-<details>
-<summary>Click to expand</summary><p>
 
 **Sample request:**
 ```
 GET https://541-SJO-620.mktorest.com/rest/v1/activities.json?access_token=<TOKEN>&nextPageToken=K33T5MIVQSZCDLDDPSIAJAGHW6UR2MPYNBT7E42JMVTTXSIP4PYA====&activityTypeIds=2
 ```
+
 **Sample response:**
+
 ```
 {
     "requestId": "bad3#15f49676762",
@@ -970,14 +907,10 @@ GET https://541-SJO-620.mktorest.com/rest/v1/activities.json?access_token=<TOKEN
         }
 ```
 
-</p></details>
-
 ##### [Campaigns](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Campaigns/getCampaignsUsingGET)
 
-<details>
-<summary>Click to expand</summary><p>
+List all campaign records (Returns all campaign records, active or inactive)
 
-### List all campaign records (Returns all campaign records, active or inactive)
 **Sample request:**
 ```
 https://541-SJO-620.mktorest.com/rest/v1/campaigns.json?access_token=<TOKEN>
@@ -1013,21 +946,17 @@ https://541-SJO-620.mktorest.com/rest/v1/campaigns.json?access_token=<TOKEN>
 }
 ```
 
-</p></details>
-
 ##### [Leads](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Leads/getLeadsByFilterUsingGET)
 
-
 ##### [Describe leads](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Leads/describeUsingGET_2)
-
-<details>
-<summary>Click to expand</summary><p>
 
 **Sample request:**
 ```
 https://541-SJO-620.mktorest.com/rest/v1/leads/describe.json?access_token=<TOKEN>
 ```
+
 **Sample response:**
+
 ```
 {
     "requestId": "113b#15f4971b10c",
@@ -1092,12 +1021,7 @@ https://541-SJO-620.mktorest.com/rest/v1/leads/describe.json?access_token=<TOKEN
 }
 ```
 
-</p></details>
-
 ##### [Bulk Lead Extract](http://developers.marketo.com/rest-api/bulk-extract/bulk-lead-extract/)
-
-<details>
-<summary>Click to expand</summary><p>
 
 **Create a bulk job**
 Sample request:
@@ -1109,7 +1033,9 @@ Body:
  {   "fields": [      "firstName",      "lastName",      "id",      "email"   ],   "format": "CSV",   "columnHeaderNames": {      "firstName": "First Name",      "lastName": "Last Name",      "id": "Marketo Id",      "email": "Email Address"   },   "filter": {      "createdAt": {         "startAt": "2017-01-01T00:00:00Z",         "endAt": "2017-01-30T00:00:00Z"      }   }}
 
 ```
+
 Sample response:
+
 ```
 {   "requestId": "e42b#14272d07d78",   "success": true,   "result": [      {         "exportId": "ce45a7a1-f19d-4ce2-882c-a3c795940a7d",         "status": "Created",         "createdAt": "2017-01-21T11:47:30-08:00",         "queuedAt": "2017-01-21T11:48:30-08:00",         "format": "CSV"      }   ]}
 ```
@@ -1125,7 +1051,9 @@ Sample response:
 **Polling job status**
 Sample request:
 ```
+
 Sample response:
+
 ```
 {
    "requestId": "e42b#14272d07d78",
@@ -1150,36 +1078,29 @@ GET /bulk/v1/leads/export/{exportId}/file.json
 ```
 **[response.csv.txt](https://github.com/astronomerio/services/files/1407726/response.csv.txt)**
 
-</p></details>
-
-
 ##### [Programs](http://developers.marketo.com/rest-api/assets/programs/)
 
-<details>
-<summary>Click to expand</summary><p>
-
 ### Programs by Data Range
+
 **Sample request:**
 ```
 GET /rest/asset/v1/programs.json?earliestUpdatedAt=2015-11-18T00:00:00Z+0000&latestUpdatedAt=2015-11-19T00:00:00Z+0000
 ```
+
 **Sample request:**
+
 ```
 {    "success": true,    "warnings": [],    "errors": [],    "requestId": "7a39#1511bf8a41c",    "result": [        {            "id": 1035,            "name": "clone it",            "description": "",            "createdAt": "2015-11-18T15:25:35Z+0000",            "updatedAt": "2015-11-18T15:25:46Z+0000",            "url": "https://app-devlocal1.marketo.com/#NP1035A1",            "type": "Engagement",            "channel": "Nurture",            "folder": {                "type": "Folder",                "value": 28,                "folderName": "Nurturing"            },            "status": "on",            "workspace": "Default"        },        {            "id": 1032,            "name": "email prog",            "description": "",            "createdAt": "2015-11-18T14:56:28Z+0000",            "updatedAt": "2015-11-18T14:56:28Z+0000",            "url": "https://app-devlocal1.marketo.com/#EBP1032A1",            "type": "Email",            "channel": "Email Send",            "folder": {                "type": "Folder",                "value": 26,                "folderName": "Data Management"            },            "status": "unlocked",            "workspace": "Default"        }    ]}
 ```
 
-</p></details>
-
 ##### [Staticlists](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Static_Lists/getLeadsByListIdUsingGET)
-
-<details>
-<summary>Click to expand</summary><p>
 
 **List of lists:**
 **Sample request:**
 ```
 https://541-SJO-620.mktorest.com/rest/v1/lists.json?access_token=<TOKEN>
 ```
+
 **Sample request:**
 ```
 {
@@ -1217,6 +1138,7 @@ Additional parameter: **fields** (Comma-separated list of lead fields to return 
 ```
 https://541-SJO-620.mktorest.com/rest/v1/list/57777/leads.json?access_token=ad06332d-ceaf-49f7-91df-092394f2a378:sj
 ```
+
 **Sample response:**
 ```
 {
@@ -1244,184 +1166,116 @@ https://541-SJO-620.mktorest.com/rest/v1/list/57777/leads.json?access_token=ad06
 }
 ```
 
-</p></details>
+## _Roadmap_
+
+### FTP
+
+- _Source Type_:
+- _Authentication_:
+- _Rate Limit_:
+
+### [HootSuite](https://developer.hootsuite.com/docs/api-overview)
+
+- _Source Type_: REST API
+- _Authentication_: OAuth 2.0
+- _Rate Limit_: Hootsuite enforces API rate limits for its REST APIs. Rate limit configuration consists of a daily usage quota and per second request limit. Limits are set to 20 requests / second to a maximum daily quota of 100,000 calls per day.
+
+References: https://app-directory.s3.amazonaws.com/docs/api/index.html
+
+### [Kissmetrics](LINK)
+
+- _Source Type_: REST API
+- _Authentication_: Basic
+- _Rate Limit_: N/A
 
 ### [MongoDB](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [MySQL](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [NewRelic](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [Oracle](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [Pig](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [Pinterest](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [PostgreSQL](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [Presto](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [S3](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
-
-### [Salesforce Bulk API]([Ticket](https://github.com/astronomerio/services/issues/254))
-
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [X] Available
-- _Source Type_: REST API
-- _Authentication_: Basic
-- _Rate Limit_: N/A
-
-**Bulk Query** (Use bulk query to efficiently query large data sets and reduce the number of API requests. A bulk query can retrieve up to 15 GB of data, divided into 15 1-GB files. The data formats supported are CSV, XML, and JSON.):
-Bulk queries can be created using the Salesforce Object Query Language. Queries can be tested using the Developer Console in the Salesforce UI.
-Sample SOQL query:
-```
-SELECT Id, Name FROM Account LIMIT 10
-```
-**Note:** While the SOAP and REST APIs return compound fields, the Bulk Query API does not support returning compound fields. The components of a compound field may be returned through the Bulk API, however. Example: "Name" is a compound field not returned through the Bulk API, while it's components, "First Name" and "Last Name" are returned through the Bulk API. Further reading: https://help.salesforce.com/articleView?id=000204592&type=1
 
 ### [Samba](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [Sengrid](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [Stripe](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [SurveyMonkey](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [Twilio](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
 - _Rate Limit_: N/A
 
 ### [Zendesk](LINK)
 
-- [ ] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
 - _Source Type_: REST API
 - _Authentication_: Basic
-- _Rate Limit_: N/A
-
-### [Freshsales](LINK)
-
-- [X] In Queue
-- [ ] Not in Queue
-- [ ] In Progress
-- [ ] Available
-- _Source Type_: REST API
-- _Authentication_: Basic or API toekn
 - _Rate Limit_: N/A
 
 **Endpoints:**
@@ -1431,7 +1285,7 @@ SELECT Id, Name FROM Account LIMIT 10
 - Deals - List All Deals
 - Tasks - List All Tasks
 
-### Destinations:
+## Destinations:
 
 - S3 (LINK)
 - MongoDB (LINK)

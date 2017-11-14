@@ -278,6 +278,10 @@ entries:
       url: /v2/apache_airflow/cli.html
       output: web, pdf
 
+    - title: Sources & Destinations
+      url: /v2/apache_airflow/sources-and-destinations.html
+      output: web, pdf
+
       subfolders:
       - title: Tutorial
         output: web, pdf
@@ -329,4 +333,4 @@ entries:
 
         - title: Astronomer Hooks
           url: /v2/apache_airflow/hooks/astro-hooks.html
-          output: web, pdf"
+          output: web, pdf

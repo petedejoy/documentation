@@ -5,7 +5,6 @@ sidebar: platform_sidebar
 
 ## Available Sources
 These are sources for which we have developed hooks. Contact us to learn more about how to use them.
-
  - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#bamboohr)
  - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#facebook-ads)
  - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#salesforce-bulk-api)
@@ -17,7 +16,6 @@ These are sources for which we have developed hooks. Contact us to learn more ab
 - _Rate Limit_: N/A
 
 Sample Request:
-
 ```
 curl -i -u "{API Key}:x" "https://api.bamboohr.com/api/gateway.php/{subdomain}/v1/employees/directory"
 ```
@@ -29,7 +27,6 @@ curl -i -u "{API Key}:x" "https://api.bamboohr.com/api/gateway.php/{subdomain}/v
 `https://api.bamboohr.com/api/gateway.php/{subdomain}/v1/employees/all/tables/employmentStatus/`
 
 **Employee Directory sample response:**
-
 ```
 <directory>
     <fieldset>
@@ -142,7 +139,6 @@ SELECT Id, Name FROM Account LIMIT 10
 
 ## Sources in Progress
 Hooks for these sources are currently being developed by our team.
-
 ### GitHub
 
 - _Source Type_: REST v3 -- (GraphQL v4 API currently unsupported)
@@ -150,18 +146,17 @@ Hooks for these sources are currently being developed by our team.
 - _Rate Limit_: Standard rate limit is 5000 requests/hour. Additionally, Github has [Abuse Controls](https://developer.github.com/v3/#abuse-rate-limits) that have an unspecified limit but will block requests if exceeding a certain high threshold of concurrent requests.
 - Removed fields - Because Github returns duplicate data between endpoints, nested objects are removed (with the exception of their `id` field) to avoid unnecessary storage. For example, for each commit object, all information regarding the author is returned when this data is already available via the `members` endpoint so all unnecessary fields other than `id` are removed.
 
-| Endpoint      | Removed Object |
-|---------------|----------------|
-|Commits        |Author          |
-|Commits        |Committer       |
-|Issues         |Assignees       |
-|Issues         |Creator         |
-|Issues         |Repository      |
-|Issues         |User            |
-|Issue Comments |User            |
-|Repositories   |Owner           |
-|Repo Comments  |User            |
-
+ | Endpoint      | Removed Object |
+ |---------------|----------------|
+ |Commits        |Author          |
+ |Commits        |Committer       |
+ |Issues         |Assignees       |
+ |Issues         |Creator         |
+ |Issues         |Repository      |
+ |Issues         |User            |
+ |Issue Comments |User            |
+ |Repositories   |Owner           |
+ |Repo Comments  |User            |
 
 Reference: https://developer.github.com/v3/
 
@@ -461,10 +456,9 @@ Reference: https://developer.github.com/v3/
     "network_count": 0
   }
 ```
-
+*** 
 ## Sources in Queue
 These are sources for which we have done preliminary requirements gathering but development work has not begun. 
-
 - [AutoPilot](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#autopilot)
 - [FreshDesk](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#freshdesk)
 - [Freshsales](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#freshsales)
@@ -479,7 +473,6 @@ These are sources for which we have done preliminary requirements gathering but 
 - _Source Type_: REST API
 - _Authentication_: API key
 - _Rate Limit_: N/A
-
 **Endpoints**
 - Get all contacts (List all contacts)
 - Get Contacts (List contact records by contact ID)
@@ -496,13 +489,13 @@ These are sources for which we have done preliminary requirements gathering but 
 - _Authentication_: API key or Basic Auth
 - _Rate Limit_: Varies by plan
 
-|Plan     |Rate Limit (_Hourly_)  |
-|---------|------------------|
-|Sprout   |1,000             |
-|Blossom  |3,000             |
-|Garden   |3,000             |
-|Estate   |5,000             |
-|Forest   |5,000             |
+ |Plan     |Rate Limit (_Hourly_)  |
+ |---------|------------------|
+ |Sprout   |1,000             |
+ |Blossom  |3,000             |
+ |Garden   |3,000             |
+ |Estate   |5,000             |
+ |Forest   |5,000             |
 
 **Endpoints:**
 - Tickets - List All Tickets
@@ -534,7 +527,6 @@ These are sources for which we have done preliminary requirements gathering but 
 	- Further Reading: https://developers.google.com/analytics/devguides/reporting/core/v2/limits-quotas
 
   **Data sources**
-
   Reporting API, Batch reports: https://developers.google.com/analytics/devguides/reporting/core/v4/rest/v4/reports/batchGet
 
   Sample request:
@@ -618,6 +610,7 @@ These are sources for which we have done preliminary requirements gathering but 
    - 40,000 requests per day
 
 **`GET /email/public/v1/campaigns/by-id`**
+
 **Example request:** `https://api.hubapi.com/email/public/v1/campaigns/by-id?hapikey=demo&limit=3`
 Optional parameters:
   - Offset
@@ -648,6 +641,7 @@ Optional parameters:
 ```
 
 **`GET /email/public/v1/events`** (Query the event log for events matching specified parameters.)
+
 **Example request:** `https://api.hubapi.com/email/public/v1/events?hapikey=demo&campaignId=13054799&appId=20185`
 
 ```
@@ -781,19 +775,17 @@ Global rate limits are applied inclusive of all API calls made by an app per acc
 - _Rate Limit_: N/A
 
 **Data Sources:**
-
-##### [Authentication](http://developers.marketo.com/rest-api/endpoint-reference/authentication-endpoint-reference/#!/Identity/identityUsingGET)
+#### [Authentication](http://developers.marketo.com/rest-api/endpoint-reference/authentication-endpoint-reference/#!/Identity/identityUsingGET)
 
 Identity (Returned access token expires within 60 minutes of request. Subsequent requests will return the same token with an updated expiry count in seconds.
-**Sample request:**
 
+**Sample request:**
 ```
 https://541-SJO-620.mktorest.com/identity/oauth/token?grant_type=client_credentials&client_id=b8bcba05-644f-4cd9-bc11-b196a89e4dc3&client_secret=<SECRET>
 
 ```
 
 **Sample response:**
-
 ```
 {
     "access_token": "<ACCESS_TOKEN>",
@@ -803,12 +795,11 @@ https://541-SJO-620.mktorest.com/identity/oauth/token?grant_type=client_credenti
 }
 ```
 
-##### [Paging Tokens](http://developers.marketo.com/rest-api/paging-tokens/)
-
-> To page through results, or retrieve data updated relative to a given data, Marketo provides paging tokens.
+### [Paging Tokens](http://developers.marketo.com/rest-api/paging-tokens/)
+To page through results, or retrieve data updated relative to a given data, Marketo provides paging tokens.
 Documentation: http://developers.marketo.com/rest-api/paging-tokens/
 
-### Retrieve paging token:
+#### Retrieve paging token:
 
 **Sample request:**
 `GET /rest/v1/activities/pagingtoken.json?sinceDatetime=2014-10-06T13:22:17-08:00`
@@ -823,15 +814,14 @@ Documentation: http://developers.marketo.com/rest-api/paging-tokens/
 }
 ```
 
-##### [Activities](http://developers.marketo.com/rest-api/lead-database/activities/)
+### [Activities](http://developers.marketo.com/rest-api/lead-database/activities/)
 
-##### [Describe activities](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Activities/getAllActivityTypesUsingGET)
+#### [Describe activities](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Activities/getAllActivityTypesUsingGET)
 
 **Sample request:**
 `GET /rest/v1/activities/types.json`
 
 **Sample response:**
-
 ```
 {  
    "requestId":"6e78#148ad3b76f1",
@@ -876,7 +866,7 @@ Documentation: http://developers.marketo.com/rest-api/paging-tokens/
 }
 ```
 
-##### [Get Lead Activities](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Activities/getLeadActivitiesUsingGET)
+#### [Get Lead Activities](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Activities/getLeadActivitiesUsingGET)
 
 **Sample request:**
 ```
@@ -884,7 +874,6 @@ GET https://541-SJO-620.mktorest.com/rest/v1/activities.json?access_token=<TOKEN
 ```
 
 **Sample response:**
-
 ```
 {
     "requestId": "bad3#15f49676762",
@@ -926,8 +915,7 @@ GET https://541-SJO-620.mktorest.com/rest/v1/activities.json?access_token=<TOKEN
         }
 ```
 
-##### [Campaigns](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Campaigns/getCampaignsUsingGET)
-
+### [Campaigns](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Campaigns/getCampaignsUsingGET)
 List all campaign records (Returns all campaign records, active or inactive)
 
 **Sample request:**
@@ -965,9 +953,9 @@ https://541-SJO-620.mktorest.com/rest/v1/campaigns.json?access_token=<TOKEN>
 }
 ```
 
-##### [Leads](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Leads/getLeadsByFilterUsingGET)
+### [Leads](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Leads/getLeadsByFilterUsingGET)
 
-##### [Describe leads](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Leads/describeUsingGET_2)
+#### [Describe leads](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Leads/describeUsingGET_2)
 
 **Sample request:**
 ```
@@ -975,7 +963,6 @@ https://541-SJO-620.mktorest.com/rest/v1/leads/describe.json?access_token=<TOKEN
 ```
 
 **Sample response:**
-
 ```
 {
     "requestId": "113b#15f4971b10c",
@@ -1040,9 +1027,10 @@ https://541-SJO-620.mktorest.com/rest/v1/leads/describe.json?access_token=<TOKEN
 }
 ```
 
-##### [Bulk Lead Extract](http://developers.marketo.com/rest-api/bulk-extract/bulk-lead-extract/)
+### [Bulk Lead Extract](http://developers.marketo.com/rest-api/bulk-extract/bulk-lead-extract/)
 
 **Create a bulk job**
+
 Sample request:
 ```
 POST /bulk/v1/leads/export/create.json
@@ -1054,25 +1042,26 @@ Body:
 ```
 
 Sample response:
-
 ```
 {   "requestId": "e42b#14272d07d78",   "success": true,   "result": [      {         "exportId": "ce45a7a1-f19d-4ce2-882c-a3c795940a7d",         "status": "Created",         "createdAt": "2017-01-21T11:47:30-08:00",         "queuedAt": "2017-01-21T11:48:30-08:00",         "format": "CSV"      }   ]}
 ```
+
 **Enqueue Job** (This will start the created job, because that's not automatic.)
+
 Sample request:
 ```
 POST /bulk/v1/leads/export/{exportId}/enqueue.json
 ```
-Sample response:
 
-> This will respond with a status of “Queued” after which it will be set to “Processing” when there is an available export slot.
+Sample response:
+This will respond with a status of “Queued” after which it will be set to “Processing” when there is an available export slot.
 
 **Polling job status**
+
 Sample request:
-```
+
 
 Sample response:
-
 ```
 {
    "requestId": "e42b#14272d07d78",
@@ -1088,39 +1077,42 @@ Sample response:
    ]
 }
 ```
+````
 GET /bulk/v1/leads/export/{exportId}/status.json
 ```
+
 Retrieving job data
+
 Sample request:
 ```
 GET /bulk/v1/leads/export/{exportId}/file.json
 ```
+
 **[response.csv.txt](https://github.com/astronomerio/services/files/1407726/response.csv.txt)**
 
-##### [Programs](http://developers.marketo.com/rest-api/assets/programs/)
+### [Programs](http://developers.marketo.com/rest-api/assets/programs/)
 
-### Programs by Data Range
-
+#### Programs by Data Range
 **Sample request:**
 ```
 GET /rest/asset/v1/programs.json?earliestUpdatedAt=2015-11-18T00:00:00Z+0000&latestUpdatedAt=2015-11-19T00:00:00Z+0000
 ```
 
 **Sample request:**
-
 ```
 {    "success": true,    "warnings": [],    "errors": [],    "requestId": "7a39#1511bf8a41c",    "result": [        {            "id": 1035,            "name": "clone it",            "description": "",            "createdAt": "2015-11-18T15:25:35Z+0000",            "updatedAt": "2015-11-18T15:25:46Z+0000",            "url": "https://app-devlocal1.marketo.com/#NP1035A1",            "type": "Engagement",            "channel": "Nurture",            "folder": {                "type": "Folder",                "value": 28,                "folderName": "Nurturing"            },            "status": "on",            "workspace": "Default"        },        {            "id": 1032,            "name": "email prog",            "description": "",            "createdAt": "2015-11-18T14:56:28Z+0000",            "updatedAt": "2015-11-18T14:56:28Z+0000",            "url": "https://app-devlocal1.marketo.com/#EBP1032A1",            "type": "Email",            "channel": "Email Send",            "folder": {                "type": "Folder",                "value": 26,                "folderName": "Data Management"            },            "status": "unlocked",            "workspace": "Default"        }    ]}
 ```
 
-##### [Staticlists](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Static_Lists/getLeadsByListIdUsingGET)
+### [Staticlists](http://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Static_Lists/getLeadsByListIdUsingGET)
 
 **List of lists:**
+
 **Sample request:**
 ```
 https://541-SJO-620.mktorest.com/rest/v1/lists.json?access_token=<TOKEN>
 ```
 
-**Sample request:**
+**Sample response:**
 ```
 {
     "requestId": "1830f#15f49e770d7",
@@ -1151,8 +1143,10 @@ https://541-SJO-620.mktorest.com/rest/v1/lists.json?access_token=<TOKEN>
     "nextPageToken": "JLZMTQW6MQ23DDJ5H2FAPK4MEY======"
 }
 ```
+
 **Person records from static lists (passing in list id with each request)**
 Additional parameter: **fields** (Comma-separated list of lead fields to return for each record. If unset will return email, updatedAt, createdAt, lastName, firstName and id)
+
 **Sample request:**
 ```
 https://541-SJO-620.mktorest.com/rest/v1/list/57777/leads.json?access_token=ad06332d-ceaf-49f7-91df-092394f2a378:sj

@@ -278,6 +278,10 @@ entries:
       url: /v2/apache_airflow/cli.html
       output: web, pdf
 
+    - title: Sources and Destinations
+      url: /v2/apache_airflow/sources-and-destinations.html
+      output: web, pdf
+
       subfolders:
       - title: Tutorial
         output: web, pdf

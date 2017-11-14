@@ -3,7 +3,9 @@ title: Apache Airflow Hooks
 sidebar: platform_sidebar
 ---
 
-## _Available Sources_
+## Available Sources
+These are sources for which we have developed hooks. Contact us to learn more about how to use them.
+
  - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#bamboohr)
  - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#facebook-ads)
  - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#salesforce-bulk-api)
@@ -138,7 +140,8 @@ SELECT Id, Name FROM Account LIMIT 10
 ```
 **Note:** While the SOAP and REST APIs return compound fields, the Bulk Query API does not support returning compound fields. The components of a compound field may be returned through the Bulk API, however. Example: "Name" is a compound field not returned through the Bulk API, while it's components, "First Name" and "Last Name" are returned through the Bulk API. Further reading: https://help.salesforce.com/articleView?id=000204592&type=1
 
-## _Sources In Progress_
+## Sources in Progress
+Hooks for these sources are currently being developed by our team.
 
 ### GitHub
 
@@ -459,7 +462,9 @@ Reference: https://developer.github.com/v3/
   }
 ```
 
-## _Sources In Queue_
+## Sources in Queue
+These are sources for which we have done preliminary requirements gathering but development work has not begun. 
+
 - [AutoPilot](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#autopilot)
 - [FreshDesk](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#freshdesk)
 - [Freshsales](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#freshsales)
@@ -1180,7 +1185,7 @@ https://541-SJO-620.mktorest.com/rest/v1/list/57777/leads.json?access_token=ad06
 }
 ```
 
-## _Roadmap_
+## Roadmap
 
 ### FTP
 

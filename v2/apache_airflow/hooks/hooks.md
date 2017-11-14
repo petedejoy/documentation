@@ -4,8 +4,11 @@ sidebar: platform_sidebar
 ---
 
 ## _Available Sources_
+ - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#bamboohr)
+ - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#facebook-ads)
+ - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#salesforce-bulk-api)
 
-## BambooHR
+### BambooHR
 
 - _Source Type_: REST API
 - _Authentication_: Basic
@@ -101,7 +104,7 @@ curl -i -u "{API Key}:x" "https://api.bamboohr.com/api/gateway.php/{subdomain}/v
 </table>
 ```
 
-## Facebook Ads
+### Facebook Ads
 
 - _Source Type_: REST-based API.
 - _Authentication_: OAuth (Token)
@@ -121,7 +124,7 @@ curl -i -u "{API Key}:x" "https://api.bamboohr.com/api/gateway.php/{subdomain}/v
 	- Error, Code: 17, Message: User request limit reached
 ```
 
-## Salesforce Bulk API
+### Salesforce Bulk API
 
 - _Source Type_: REST API
 - _Authentication_: Basic
@@ -135,9 +138,9 @@ SELECT Id, Name FROM Account LIMIT 10
 ```
 **Note:** While the SOAP and REST APIs return compound fields, the Bulk Query API does not support returning compound fields. The components of a compound field may be returned through the Bulk API, however. Example: "Name" is a compound field not returned through the Bulk API, while it's components, "First Name" and "Last Name" are returned through the Bulk API. Further reading: https://help.salesforce.com/articleView?id=000204592&type=1
 
-# _In Progress_
+## _Sources In Progress_
 
-## GitHub
+### GitHub
 
 - _Source Type_: REST v3 -- (GraphQL v4 API currently unsupported)
 - _Authentication_: Basic Authentication via Personal Token
@@ -456,7 +459,15 @@ Reference: https://developer.github.com/v3/
   }
 ```
 
-## _In Queue_
+## _Sources In Queue_
+- [AutoPilot](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#autopilot)
+- [FreshDesk](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#freshdesk)
+- [Freshsales](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#freshsales)
+- [Google Analytics](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#google-analytics)
+- [Hubspot](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#hubspot)
+- [Instagram](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#instagram)
+- [JIRA](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#jira)
+- [Marketo](https://docs.astronomer.io/v2/apache_airflow/hooks/hooks.html#marketo)
 
 ### AutoPilot
 
@@ -474,7 +485,7 @@ Reference: https://developer.github.com/v3/
 - Get custom fields
 - List journeys with API triggers
 
-## FreshDesk
+### FreshDesk
 
 - _Source Type_: RESTful API
 - _Authentication_: API key or Basic Auth
@@ -502,13 +513,13 @@ Reference: https://developer.github.com/v3/
 - Business Hours - List All Business Hours
 - SLA Policies - List All SLA Policies
 
-## Freshsales
+### Freshsales
 
 - _Source Type_: REST API
 - _Authentication_: Basic or API toekn
 - _Rate Limit_: N/A
 
-## Google Analytics
+### Google Analytics
 
 - _Source Type_:
 - _Authentication_: OAuth2
@@ -593,7 +604,7 @@ Reference: https://developer.github.com/v3/
   }
   ```
 
-## Hubspot
+### Hubspot
 
 - _Source Type_: REST
 - _Authentication_: API key (OAuth is strongly encouraged and required to become an featured integration)
@@ -739,7 +750,7 @@ Optional parameters:
 
 ```
 
-## Instagram
+### Instagram
 
 - _Source Type_: REST API
 - _Authentication_: OAuth 2.0
@@ -752,13 +763,13 @@ Global rate limits are applied inclusive of all API calls made by an app per acc
 |Sandbox	  |500 / hour               |
 |Live	          |5000 / hour              |
 
-## JIRA
+### JIRA
 
 - _Source Type_: REST API
 - _Authentication_: OAuth 1.0 or Basic
 - _Rate Limit_: 500 API requests per 5 minutes. Once you exceed the limit, calls will return HTTP status 429 and a message telling you that you've been limited.
 
-## Marketo
+### Marketo
 
 - _Source Type_: REST API
 - _Authentication_: Basic
@@ -1169,7 +1180,7 @@ https://541-SJO-620.mktorest.com/rest/v1/list/57777/leads.json?access_token=ad06
 }
 ```
 
-# _Roadmap_
+## _Roadmap_
 
 ### FTP
 

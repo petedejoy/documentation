@@ -278,7 +278,7 @@ entries:
       url: /v2/apache_airflow/cli.html
       output: web, pdf
 
-    - title: Sources and Destinations
+    - [//]: Sources and Destinations
       url: /v2/apache_airflow/sources-and-destinations.html
       output: web, pdf
 
@@ -331,6 +331,6 @@ entries:
           url: /v2/apache_airflow/hooks/overview.html
           output: web, pdf
 
-        - [title]: Airflow Hooks
+        - title: Airflow Hooks
           url: /v2/apache_airflow/hooks/hooks.html
           output: web, pdf"

@@ -327,6 +327,6 @@ entries:
           url: /v2/apache_airflow/hooks/overview.html
           output: web, pdf
 
-        - title: Sources
-          url: /v2/apache_airflow/hooks/sources.html
+        - title: Astronomer Hooks
+          url: /v2/apache_airflow/hooks/astro-hooks.html
           output: web, pdf"

@@ -10,7 +10,7 @@ Apache Airflow is a data workflow management system that allows engineers to sch
 By running Apache Airflow on Astronomer, you get:
 
 * One-click deployment through the [Astro CLI](/v2/apache_airflow/cli.html)
-* Access to our [Airflow contributions](https://github.com/astronomerio/example-pipelines) which includes new hooks and operators
+* Access to our [Airflow contributions](https://github.com/airflow-plugins) which includes new hooks and operators
 * Serverless Airflow worker scalability through our SaaS platform
 * Access to our support documentation and team
 * Access to our Airflow development services team

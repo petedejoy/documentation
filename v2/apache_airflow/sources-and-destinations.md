@@ -5,9 +5,9 @@ sidebar: platform_sidebar
 ## Astronomer Hooks
 
 ### Currently Available
- - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/sources.html#bamboohr)
- - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/sources.html#facebook-ads)
- - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/sources.html#salesforce-bulk-api)
+ - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bamboohr)
+ - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro_hooks.html#facebook-ads)
+ - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#salesforce-bulk-api)
 
 ### In Progress
 Hooks for these sources are currently being developed by our team.

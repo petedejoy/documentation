@@ -6,7 +6,7 @@ sidebar: platform_sidebar
 
 ### Currently Available
  - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bamboohr)
- - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro_hooks.html#facebook-ads)
+ - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#facebook-ads)
  - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#salesforce-bulk-api)
 
 ### In Progress

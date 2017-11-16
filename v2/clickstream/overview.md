@@ -70,6 +70,53 @@ Check out the list below to explore all of the destinations available with Astro
 * [Webhooks](/v2/clickstream/destinations/webhooks.html)
 * [Woopra](/v2/clickstream/destinations/woopra.html)
 
+## Source/Destination Compatibility Matrix
+
+|            | Client | Server | Mobile |
+| ---------- | ------ | ------ | ------ |
+| Acquisio | ✔ | x | x |
+| Amazon Kinesis | ✔ | ✔ | ✔ |
+| Amazon Redshift | ✔ | ✔ | ✔ |
+| Amplitude | ✔ | ✔ | ✔ |
+| Appboy | ✔ | ✔ | x |
+| Attribution | ✔ | ✔ | x |
+| Bing Ads | ✔ | x | x |
+| Bloom Reach | ✔ | x | x |
+| Calq | x | ✔ | ✔ |
+| Clicky | ✔ | x | x |
+| Criteo | ✔ | x | x |
+| Customer.io | ✔ | ✔ | ✔ |
+| DoubleClick | ✔ | x | x |
+| Drift | ✔ | x | x |
+| Facebook App Events | x | ✔ | ✔ |
+| Facebook Pixel | ✔ | x | x |
+| Google AdWords | ✔ | x | ✔ |
+| Google Analytics | ✔ | ✔ | ✔ |
+| Google Tag Manager | ✔ | x | x |
+| Heap Analytics | ✔ | ✔ | ✔ |
+| Hubspot | ✔ | ✔ | ✔ |
+| Intercom | ✔ | ✔ | ✔ |
+| Keen IO | ✔ | ✔ | ✔ |
+| Kenshoo | ✔ | x | x |
+| KISSmetrics | ✔ | ✔ | ✔ |
+| Lytics | ✔ | ✔ | ✔ |
+| Mixpanel | ✔ | ✔ | ✔ |
+| Netmining | ✔ | x | x |
+| Optimizely | ✔ | x | x |
+| OutBrain | ✔ | x | x |
+| Pebble Post | ✔ | x | x |
+| Resonate | ✔ | x | x |
+| Retention Science | ✔ | x | x |
+| Rubicon | ✔ | x | x |
+| S3 Event Logs | ✔ | ✔ | ✔ |
+| Taboola | ✔ | x | x |
+| Twitter Ads | ✔ | x | x |
+| VWO | ✔ | x | x |
+| Webhooks | ✔ | ✔ | x |
+| Woopra | ✔ | ✔ | ✔ |
+
+
+
 ## Calls
 [Here](/documentation/v2/clickstream/calls.html), we outline the different types of customer data we capture and how to implement them for your business.
 

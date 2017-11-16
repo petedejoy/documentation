@@ -2,17 +2,17 @@
 title: Appboy
 sidebar: platform_sidebar
 ---
-Astronomer Clickstream makes it easy to send your data to Braze, formerly Appboy. Once you follow the steps below, your data will be routed through our platform and pushed to Braze in the appropriate format. 
+Astronomer Clickstream makes it easy to send your data to Braze, [formerly Appboy](https://www.braze.com/documentation/braze_faqs/?utm_campaign=2017-Braze-Launch&utm_medium=Appboy-Dashboard&utm_source=Dashboard-Email). Once you follow the steps below, your data will be routed through our platform and pushed to Braze in the appropriate format. 
 
 ## What is Braze and how does it work?
 
 Braze is a mobile marketing automation platform that allows your marketing team to engage with audience across lifecycles. It does this by pooling first-party and third-party data through APIs, in-store purchases, and mobile information. Braze also automates email delivery by using predictive analytics to decipher optimal messaging time based on user actions or API triggers.
 
-Because Braze has a predictive analytics component, it functions most effectively when all of your customer data is available in the tool. In order to collect this data across multiple channels, you would need to do a lot of upfront work: planning about what customer data you want to track, learning and implementing Appboy SDKs, and implementing server-to-server API calls.
+Because Braze has a predictive analytics component, it functions most effectively when all of your customer data is available in the tool. In order to collect this data across multiple channels, you would need to do a lot of upfront work: planning about what customer data you want to track, learning and implementing Braze SDKs, and implementing server-to-server API calls.
 
-## Why send data to AppBoy using Astronomer Clickstream?
+## Why send data to Braze using Astronomer Clickstream?
 
-Integrating Braze with Astronomer Clickstream means that you can track users accross your web, mobile, and server-side apps. Without installing additional code in the form of Braze SDKs or API libraries, you'll be able to recieve all [`identify` and `track` calls](,,/calls.html) in the format that Appboy understands.
+Integrating Braze with Astronomer Clickstream means that you can track users accross your web, mobile, and server-side apps. Without installing additional code in the form of Braze SDKs or API libraries, you'll be able to recieve all [`identify` and `track` calls](,,/calls.html) in the format that Braze understands.
 
 ## Getting started with Braze
 

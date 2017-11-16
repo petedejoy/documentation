@@ -12,7 +12,7 @@ Kenshoo is an online advertising company used by brands and agencies to handle a
 
 ### Kenshoo Side
 
-You will need to find your `CID` in your Kenshoo account. Once you have found this code, copy it to your clipboard.
+You will need to find your `CID` in your Kenshoo account. Once you have found this code copy it to your clipboard.
 
 ### Astronomer Side
 

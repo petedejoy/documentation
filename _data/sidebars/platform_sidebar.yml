@@ -200,6 +200,10 @@ entries:
           url: /v2/clickstream/destinations/kenshoo.html
           output: web, pdf
 
+        - title: Kenshoo Infinity Pixel
+          url: /v2/clickstream/destinations/kenshoo-pixel.html
+          output: web, pdf
+        
         - title: KISSmetrics
           url: /v2/clickstream/destinations/kissmetrics.html
           output: web, pdf

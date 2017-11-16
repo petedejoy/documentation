@@ -122,6 +122,7 @@ entries:
 
         - title: Appboy
           url: /v2/clickstream/destinations/appboy.html
+          output: web, pdf
 
         - title: Attribution
           url: /v2/clickstream/destinations/attribution.html

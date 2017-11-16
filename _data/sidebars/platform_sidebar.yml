@@ -96,6 +96,10 @@ entries:
           url: /v2/clickstream/sources/ruby.html
           output: web, pdf
 
+        - title: Segment Webhook
+          url: /v2/clickstream/sources/segment-webhook.html
+          output: web, pdf
+
       - title: Destinations
         output: web, pdf
         subfolderitems:
@@ -122,6 +126,7 @@ entries:
 
         - title: Appboy
           url: /v2/clickstream/destinations/appboy.html
+          output: web, pdf
 
         - title: Attribution
           url: /v2/clickstream/destinations/attribution.html

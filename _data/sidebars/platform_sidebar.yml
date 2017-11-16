@@ -324,6 +324,10 @@ entries:
           url:  /v2/apache_airflow/operators/overview.html
           output: web, pdf
 
+        - title: Astronomer Operators
+          url: /v2/apache_airflow/operators/astro-operators.html
+          output: web, pdf
+
         - title: Apache Airflow Operators
           url: /v2/apache_airflow/operators/operators.html
           output: web, pdf

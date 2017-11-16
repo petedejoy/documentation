@@ -87,7 +87,7 @@ These are sources for which we have done preliminary requirements gathering but 
  - [Wasb Hook](https://github.com/apache/incubator-airflow/blob/master/airflow/contrib/hooks/wasb_hook.py)
 
 ## Astronomer Operators
-- [MongoDB to Se](https://docs.astronomer.io/v2/apache_airflow/operators/astro-operators.html#mongodb-to-s3)
+- [MongoDB to S3](https://docs.astronomer.io/v2/apache_airflow/operators/astro-operators.html#mongodb-to-s3)
 - [Salesforce to S3](https://docs.astronomer.io/v2/apache_airflow/operators/astro-operators.html#salesforce-to-s3)
 - FTP to S3
 

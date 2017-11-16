@@ -84,12 +84,13 @@ class MongoToS3BaseOperator(BaseOperator):
         """
         Processes pyMongo cursor and returns single array with each element being
                 a JSON serializable dictionary
-        CaliberMindMongoToS3BaseOperator.transform() assumes no processing is needed
+        MongoToS3BaseOperator.transform() assumes no processing is needed
         ie. docs is a pyMongo cursor of documents and cursor just needs to be
             converted into an array.
         """
         return [doc for doc in docs]
 ```
+_[Source](https://github.com/astronomerio/example-pipelines/blob/master/plugins/MongoToRedshiftPlugin/operators/MongoToS3Operator.py)_
 
 ## Salesforce to S3
 ```python
@@ -265,4 +266,5 @@ class SalesforceToS3Operator(BaseOperator):
             tmp.close()
         logging.info("Query finished!")
 ```
+_[Source](https://github.com/astronomerio/example-pipelines/tree/master/plugins/SalesforceToS3Plugin)_
 

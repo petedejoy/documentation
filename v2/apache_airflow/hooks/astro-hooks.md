@@ -34,6 +34,7 @@ class BambooHRHook(HttpHook):
 
         return super().run(self.endpoint, data=payload, headers=headers)
 ```
+_[Source](https://github.com/airflow-plugins/bamboo_hr_plugin/blob/master/hooks/bamboo_hr_hook.py)_
 
 ## Facebook Ads
 
@@ -87,6 +88,7 @@ class FacebookAdsHook(BaseHook):
 
         return insights
 ```
+_[Source](https://github.com/airflow-plugins/facebook_ads_plugin/blob/master/hooks/facebook_ads_hook.py)_
 
 - _Source Type_: REST-based API.
 - _Authentication_: OAuth (Token)

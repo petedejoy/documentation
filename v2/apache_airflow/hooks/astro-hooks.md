@@ -36,6 +36,7 @@ class BambooHRHook(HttpHook):
 ```
 
 ## Facebook Ads
+
 ```python
 from airflow.hooks.base_hook import BaseHook
 

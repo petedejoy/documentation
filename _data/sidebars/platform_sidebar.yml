@@ -96,6 +96,10 @@ entries:
           url: /v2/clickstream/sources/ruby.html
           output: web, pdf
 
+        - title: Segment Webhook
+          url: /v2/clickstream/sources/segment-webhook.html
+          output: web, pdf
+
       - title: Destinations
         output: web, pdf
         subfolderitems:
@@ -322,6 +326,10 @@ entries:
 
         - title: Apache Airflow Operators Overview
           url:  /v2/apache_airflow/operators/overview.html
+          output: web, pdf
+
+        - title: Astronomer Operators
+          url: /v2/apache_airflow/operators/astro-operators.html
           output: web, pdf
 
         - title: Apache Airflow Operators

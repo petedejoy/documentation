@@ -4,6 +4,9 @@ sidebar: platform_sidebar
 ---
 ## Astronomer Hooks
 
+For a complete list of Airflow Hooks, Operators, and Utilities maintained by Astronomer, check out our [Airflow Plugins](https://github.com/airflow-plugins?utf8=%E2%9C%93&q=&type=&language=) organization on Github.
+
+
 ### Currently Available
  - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bamboohr)
  - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro_hooks.html#facebook-ads)

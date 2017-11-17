@@ -9,7 +9,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ### Currently Available
  - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bamboohr)
- - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro_hooks.html#facebook-ads)
+ - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#facebook-ads)
  - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#salesforce-bulk-api)
  - [GitHub](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#github)
  - [Google Anlaytics](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#google-analytics)
@@ -91,9 +91,9 @@ These are sources for which we have done preliminary requirements gathering but 
  - [Wasb Hook](https://github.com/apache/incubator-airflow/blob/master/airflow/contrib/hooks/wasb_hook.py)
 
 ## Astronomer Operators
-- MongoDB to S3 (LINK)
-- FTP to S3 (LINK)
-- Salesforce to S3 (LINK)
+- [MongoDB to S3](https://docs.astronomer.io/v2/apache_airflow/operators/astro-operators.html#mongodb-to-s3)
+- [Salesforce to S3](https://docs.astronomer.io/v2/apache_airflow/operators/astro-operators.html#salesforce-to-s3)
+- FTP to S3
 
 ## Apache Airflow Operators
  - [Bash Operator](https://github.com/apache/incubator-airflow/blob/master/airflow/operators/bash_operator.py)

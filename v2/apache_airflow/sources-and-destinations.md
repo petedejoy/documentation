@@ -8,21 +8,22 @@ sidebar: platform_sidebar
  - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bamboohr)
  - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro_hooks.html#facebook-ads)
  - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#salesforce-bulk-api)
+ - [GitHub](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#github)
+ - [Google Anlaytics](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#google-analytics)
 
 ### In Progress
 Hooks for these sources are currently being developed by our team.
- - GitHub
+ - Marketo
+ - Hubspot
 
 ### In Queue
 These are sources for which we have done preliminary requirements gathering but development work has not begun. 
  - AutoPilot
  - FreshDesk
  - Freshsales
- - Google Analytics
- - Hubspot
  - Instagram
  - JIRA
- - Marketo
+
 
 ### Roadmap
  - Hootsuite

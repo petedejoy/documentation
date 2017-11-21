@@ -324,7 +324,7 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Apache Airflow Operators Overview
+        - title: Operator Overview
           url:  /v2/apache_airflow/operators/overview.html
           output: web, pdf
 

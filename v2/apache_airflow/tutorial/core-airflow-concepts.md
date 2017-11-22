@@ -4,7 +4,7 @@ sidebar: platform_sidebar
 ---
 
 ## Apache Airflow
-Airflow is a generic workflow scheduler with dependency management. Not only does it schedule periodic jobs, it also allows you to define explicit dependencies between different stages in your data pipeline.
+Airflow is a generic workflow scheduler with dependency management. Not only does it schedule periodic jobs, but also it allows you to define explicit dependencies between different stages in your data pipeline.
 
 ## DAGs
 The main concept of Airflow is a `DAG` - or Directed Acyclic Graph.

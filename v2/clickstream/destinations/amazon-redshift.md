@@ -2,7 +2,15 @@
 title: Amazon Redshift
 sidebar: platform_sidebar
 ---
-Astronomer Clickstream makes it easy to send your data to Amazon Redshift. Once you follow the steps below, your data will be routed through our platform and pushed to Redshift in the appropriate format.
+Astronomer Clickstream makes it easy to send your data to Amazon Redshift. Once you follow the steps below, your data will be routed through our platform and pushed to Redshift in the appropriate format. Before we get started, there are a few important things to note about our Redshift integration.
+
+1. You will not immediately see events in your Redshift upon configuration. The first time your data is loaded into Redshift, it will take some added time to run DDL logic to create tables, add columns, etc.
+
+2. Data is not streamed into Redshift in real time as it is for our other destinations. Rather, our Redshift loader operates on an hourly basis and each hourly job is queued up 15 minutes after the next hour starts. For example, the load for 2-3 PM will queue at 3:15 PM.
+
+3. You will need to whitelist our IP address in order for us to load data into your Redshift. Contact us through the in-app webchat or email us at support@astronomer.io for that IP.
+
+Now, to the good stuff!
 
 ## What is Amazon Redshift?
 

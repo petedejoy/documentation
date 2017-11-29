@@ -12,7 +12,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
  - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#facebook-ads)
  - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#salesforce-bulk-api)
  - [GitHub](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#github)
- - [Google Anlaytics](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#google-analytics)
+ - [Google Analytics](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#google-analytics)
 
 ### In Progress
 Hooks for these sources are currently being developed by our team.

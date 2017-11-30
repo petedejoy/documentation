@@ -9,10 +9,15 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ### Currently Available
  - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bamboohr)
+ - [Bing Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bing-ads)
+ - [Box](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#box)
+ - [Chargify](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bamboohr)
  - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#facebook-ads)
- - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#salesforce-bulk-api)
  - [GitHub](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#github)
  - [Google Analytics](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#google-analytics)
+ - [MySQL](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#mysql)
+ - [Salesforce](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#salesforce)
+ - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#salesforce-bulk-api)
 
 ### In Progress
 Hooks for these sources are currently being developed by our team.

@@ -155,4 +155,11 @@ That's it! You'll now be receiving a livestream of data from your application in
 Redshift limits the number of [reserved words](http://docs.aws.amazon.com/redshift/latest/dg/r_pg_keywords.html) in schema, table, and column names. We'd also encourage you to stay away from naming traits or properties that conflict with top level Clickstream fields (i.e. userID, receivedAt, messageID).
 
 ### Query Speeds
+
 The speed of your queries depends on the capabilities of your hardware, the size of the dataset, and the amount of data utilization in the cluster. For instance, you might see lower query speeds if you find yourself above 75% data utilization.
+
+### Naming Conventions
+
+Be sure that the `Database` field exactly matches your Redshift `Database Name`. Astronomer will create a new schema within this database, but will not automatically create a new database for you. 
+
+If you wish to create a completely new database for your clickstream data, you can read about how to do that [here](http://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_DATABASE.html).

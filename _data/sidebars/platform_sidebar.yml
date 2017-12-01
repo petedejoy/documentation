@@ -348,7 +348,7 @@ entries:
           url: /v2/apache_airflow/hooks/google-analytics-to-s3.html
           output: web, pdf
 
-        - title: Imap to S3
+        - title: IMAP to S3
           url: /v2/apache_airflow/hooks/imap-to-s3.html
           output: web, pdf
 
@@ -420,7 +420,7 @@ entries:
           url: /v2/apache_airflow/hooks/google-analytics.html
           output: web, pdf
 
-        - title: Imap
+        - title: IMAP
           url: /v2/apache_airflow/hooks/imap.html
           output: web, pdf
 

@@ -1,11 +1,11 @@
 ---
-title: Imap to S3 Operator
+title: IMAP to S3 Operator
 sidebar: platform_sidebar
 ---
 
 For a complete list of Airflow Hooks, Operators, and Utilities maintained by Astronomer, check out our [Airflow Plugins](https://github.com/airflow-plugins?utf8=%E2%9C%93&q=&type=&language=) organization on Github.
 
-## Imap to S3
+## IMAP to S3
 
 ```python
 from airflow.utils.decorators import apply_defaults

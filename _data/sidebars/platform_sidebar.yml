@@ -300,7 +300,7 @@ entries:
           url: /v2/apache_airflow/tutorial/core-airflow-concepts.html
           output: web, pdf
 
-        - title: Simple Sample DAG
+        - title: Simple DAG Example
           url: /v2/apache_airflow/tutorial/sample-dag.html
           output: web, pdf
 
@@ -328,22 +328,110 @@ entries:
           url:  /v2/apache_airflow/operators/overview.html
           output: web, pdf
 
-        - title: Astronomer Operators
-          url: /v2/apache_airflow/operators/astro-operators.html
+        - title: Bamboo HR to S3
+          url: /v2/apache_airflow/hooks/bamboohr-to-s3.html
           output: web, pdf
 
-        - title: Apache Airflow Operators
-          url: /v2/apache_airflow/operators/operators.html
+        - title: Chargify to S3
+          url: /v2/apache_airflow/hooks/chargify-to-s3.html
+          output: web, pdf
+
+        - title: Facebook Ads to S3
+          url: /v2/apache_airflow/hooks/facebook-ads-to-s3.html
+          output: web, pdf
+
+        - title: Github to S3
+          url: /v2/apache_airflow/hooks/github-to-s3.html
+          output: web, pdf
+
+        - title: Google Analytics to S3
+          url: /v2/apache_airflow/hooks/google-analytics-to-s3.html
+          output: web, pdf
+
+        - title: Imap to S3
+          url: /v2/apache_airflow/hooks/imap-to-s3.html
+          output: web, pdf
+
+        - title: MongoDB to S3
+          url: /v2/apache_airflow/hooks/mongo-to-s3.html
+          output: web, pdf
+
+        - title: MySQL to S3
+          url: /v2/apache_airflow/hooks/mysql-to-s3.html
+          output: web, pdf
+
+        - title: S3 to MySQL
+          url: /v2/apache_airflow/hooks/s3-to-mysql.html
+          output: web, pdf
+
+        - title: S3 to Redshift
+          url: /v2/apache_airflow/hooks/s3-to-redshift.html
+          output: web, pdf
+
+        - title: S3 to Spreadsheet
+          url: /v2/apache_airflow/hooks/s3-to-spreadsheet.html
+          output: web, pdf
+
+        - title: Salesforce Schema to Redshift
+          url: /v2/apache_airflow/hooks/salesforce-schema-to-redshift.html
+          output: web, pdf
+
+        - title: Salesforce to Redshift
+          url: /v2/apache_airflow/hooks/salesforce-to-redshift.html
+          output: web, pdf
+
+        - title: Salesforce Schema to S3
+          url: /v2/apache_airflow/hooks/salesforce-to-s3.html
           output: web, pdf
 
       - title: Hooks
         output: web, pdf
         subfolderitems:
 
-        - title: Apache Airflow Hooks Overview
+        - title: Overview
           url: /v2/apache_airflow/hooks/overview.html
           output: web, pdf
 
-        - title: Astronomer Hooks
-          url: /v2/apache_airflow/hooks/astro-hooks.html
+        - title: Bamboo HR
+          url: /v2/apache_airflow/hooks/bamboohr.html
+          output: web, pdf
+
+        - title: Bing Ads
+          url: /v2/apache_airflow/hooks/bing-ads.html
+          output: web, pdf
+
+        - title: Box
+          url: /v2/apache_airflow/hooks/box.html
+          output: web, pdf
+
+        - title: Chargify
+          url: /v2/apache_airflow/hooks/chargify.html
+          output: web, pdf
+
+        - title: Facebook Ads
+          url: /v2/apache_airflow/hooks/facebook-ads.html
+          output: web, pdf
+
+        - title: Github
+          url: /v2/apache_airflow/hooks/github.html
+          output: web, pdf
+
+        - title: Google Analytics
+          url: /v2/apache_airflow/hooks/google-analytics.html
+          output: web, pdf
+
+        - title: Imap
+          url: /v2/apache_airflow/hooks/imap.html
+          output: web, pdf
+
+        - title: MySQL
+          url: /v2/apache_airflow/hooks/mysql.html
+          output: web, pdf
+
+        - title: Salesforce Bulk API
+          url: /v2/apache_airflow/hooks/salesforce-bulk-api.html
+          output: web, pdf
+
+        - title: Salesforce
+          url: /v2/apache_airflow/hooks/Salesforce.html
           output: web, pdf

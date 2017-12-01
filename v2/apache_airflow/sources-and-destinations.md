@@ -4,20 +4,24 @@ sidebar: platform_sidebar
 ---
 ## Astronomer Hooks
 
-For a complete list of Airflow Hooks, Operators, and Utilities maintained by Astronomer, check out our [Airflow Plugins](https://github.com/airflow-plugins?utf8=%E2%9C%93&q=&type=&language=) organization on Github.
+At Astronomer, we're committed to open source and release all of the Airflow hooks and operators that we build back to the community. For a complete list of Airflow Hooks, Operators, and Utilities that we maintain, check out our [Airflow Plugins](https://github.com/airflow-plugins?utf8=%E2%9C%93&q=&type=&language=) organization on Github.
 
 
 ### Currently Available
- - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bamboohr)
- - [Bing Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bing-ads)
- - [Box](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#box)
- - [Chargify](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#bamboohr)
- - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#facebook-ads)
- - [GitHub](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#github)
- - [Google Analytics](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#google-analytics)
- - [MySQL](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#mysql)
- - [Salesforce](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#salesforce)
- - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/astro-hooks.html#salesforce-bulk-api)
+
+Note that our development roadmap is influenced by customer requests. If you would like a specific hook built that isn't on our roadmap, feel free to contact us at support@astronomer.io and we'll be happy to scope it out.
+
+ - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/bamboohr.html)
+ - [Bing Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/bing-ads.html)
+ - [Box](https://docs.astronomer.io/v2/apache_airflow/hooks/box.html)
+ - [Chargify](https://docs.astronomer.io/v2/apache_airflow/hooks/chargify.html)
+ - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/facebook-ads.html)
+ - [GitHub](https://docs.astronomer.io/v2/apache_airflow/hooks/github.html)
+ - [Google Analytics](https://docs.astronomer.io/v2/apache_airflow/hooks/google-analytics.html)
+ - [Imap](https://docs.astronomer.io/v2/apache_airflow/hooks/imap.html)
+ - [MySQL](https://docs.astronomer.io/v2/apache_airflow/hooks/mysql.html)
+ - [Salesforce](https://docs.astronomer.io/v2/apache_airflow/hooks/salesforce.html)
+ - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/salesforce-bulk-api.html)
 
 ### In Progress
 Hooks for these sources are currently being developed by our team.
@@ -31,7 +35,9 @@ These are sources for which we have done preliminary requirements gathering but 
  - Freshsales
  - Instagram
  - JIRA
-
+ - Zendesk
+ - Stripe
+ - Google Adwords
 
 ### Roadmap
  - Hootsuite
@@ -41,9 +47,9 @@ These are sources for which we have done preliminary requirements gathering but 
  - Oracle
  - Pinterest
  - Sengrid
- - Stripe
  - SurveyMonkey
  - Twilio
+ - Mailchimp
 
 ## Standard Apache Airflow Hooks
  - [Base Hook](https://github.com/apache/incubator-airflow/blob/master/airflow/hooks/base_hook.py)
@@ -96,9 +102,21 @@ These are sources for which we have done preliminary requirements gathering but 
  - [Wasb Hook](https://github.com/apache/incubator-airflow/blob/master/airflow/contrib/hooks/wasb_hook.py)
 
 ## Astronomer Operators
-- [MongoDB to S3](https://docs.astronomer.io/v2/apache_airflow/operators/astro-operators.html#mongodb-to-s3)
-- [Salesforce to S3](https://docs.astronomer.io/v2/apache_airflow/operators/astro-operators.html#salesforce-to-s3)
-- FTP to S3
+- [Bamboo HR to S3](https://docs.astronomer.io/v2/apache_airflow/operators/bamboo-hr-to-s3.html)
+- [Bing Ads to S3](https://docs.astronomer.io/v2/apache_airflow/operators/bing-ads-to-s3.html)
+- [Chargify to S3](https://docs.astronomer.io/v2/apache_airflow/operators/chargify-to-s3.html)
+- [Facebook Ads to S3](https://docs.astronomer.io/v2/apache_airflow/operators/facebook-ads-to-s3.html)
+- [Github to S3](https://docs.astronomer.io/v2/apache_airflow/operators/github-to-s3.html)
+- [Google Analytics to S3](https://docs.astronomer.io/v2/apache_airflow/operators/google-analytics-to-s3.html)
+- [Imap to S3](https://docs.astronomer.io/v2/apache_airflow/operators/imap-to-s3.html)
+- [MongoDB to S3](https://docs.astronomer.io/v2/apache_airflow/operators/mongo-to-s3.html)
+- [MySQL to S3](https://docs.astronomer.io/v2/apache_airflow/operators/mysql-to-s3.html)
+- [S3 to MySQL](https://docs.astronomer.io/v2/apache_airflow/operators/S3-to-mysql.html)
+- [S3 to Redshift](https://docs.astronomer.io/v2/apache_airflow/operators/s3-to-redshift.html)
+- [S3 to Spreadsheet](https://docs.astronomer.io/v2/apache_airflow/operators/s3-to-spreadsheet.html)
+- [Salesforce Schema to Redshift](https://docs.astronomer.io/v2/apache_airflow/operators/salesforce-schema-to-redshift.html)
+- [Salesforce to Redshift](https://docs.astronomer.io/v2/apache_airflow/operators/salesforce-to-redshift.html)
+- [Salesforce to S3](https://docs.astronomer.io/v2/apache_airflow/operators/salesforce-to-s3.html)
 
 ## Apache Airflow Operators
  - [Bash Operator](https://github.com/apache/incubator-airflow/blob/master/airflow/operators/bash_operator.py)

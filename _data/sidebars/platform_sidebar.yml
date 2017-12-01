@@ -320,6 +320,58 @@ entries:
           url:  /v2/apache_airflow/tutorial/connections.html
           output: web, pdf
 
+      - title: Hooks
+        output: web, pdf
+        subfolderitems:
+
+        - title: Overview
+          url: /v2/apache_airflow/hooks/overview.html
+          output: web, pdf
+
+        - title: Bamboo HR
+          url: /v2/apache_airflow/hooks/bamboohr.html
+          output: web, pdf
+
+        - title: Bing Ads
+          url: /v2/apache_airflow/hooks/bing-ads.html
+          output: web, pdf
+
+        - title: Box
+          url: /v2/apache_airflow/hooks/box.html
+          output: web, pdf
+
+        - title: Chargify
+          url: /v2/apache_airflow/hooks/chargify.html
+          output: web, pdf
+
+        - title: Facebook Ads
+          url: /v2/apache_airflow/hooks/facebook-ads.html
+          output: web, pdf
+
+        - title: Github
+          url: /v2/apache_airflow/hooks/github.html
+          output: web, pdf
+
+        - title: Google Analytics
+          url: /v2/apache_airflow/hooks/google-analytics.html
+          output: web, pdf
+
+        - title: IMAP
+          url: /v2/apache_airflow/hooks/imap.html
+          output: web, pdf
+
+        - title: MySQL
+          url: /v2/apache_airflow/hooks/mysql.html
+          output: web, pdf
+
+        - title: Salesforce Bulk API
+          url: /v2/apache_airflow/hooks/salesforce-bulk-api.html
+          output: web, pdf
+
+        - title: Salesforce
+          url: /v2/apache_airflow/hooks/Salesforce.html
+          output: web, pdf
+          
       - title: Operators
         output: web, pdf
         subfolderitems:
@@ -384,54 +436,4 @@ entries:
           url: /v2/apache_airflow/hooks/salesforce-to-s3.html
           output: web, pdf
 
-      - title: Hooks
-        output: web, pdf
-        subfolderitems:
-
-        - title: Overview
-          url: /v2/apache_airflow/hooks/overview.html
-          output: web, pdf
-
-        - title: Bamboo HR
-          url: /v2/apache_airflow/hooks/bamboohr.html
-          output: web, pdf
-
-        - title: Bing Ads
-          url: /v2/apache_airflow/hooks/bing-ads.html
-          output: web, pdf
-
-        - title: Box
-          url: /v2/apache_airflow/hooks/box.html
-          output: web, pdf
-
-        - title: Chargify
-          url: /v2/apache_airflow/hooks/chargify.html
-          output: web, pdf
-
-        - title: Facebook Ads
-          url: /v2/apache_airflow/hooks/facebook-ads.html
-          output: web, pdf
-
-        - title: Github
-          url: /v2/apache_airflow/hooks/github.html
-          output: web, pdf
-
-        - title: Google Analytics
-          url: /v2/apache_airflow/hooks/google-analytics.html
-          output: web, pdf
-
-        - title: IMAP
-          url: /v2/apache_airflow/hooks/imap.html
-          output: web, pdf
-
-        - title: MySQL
-          url: /v2/apache_airflow/hooks/mysql.html
-          output: web, pdf
-
-        - title: Salesforce Bulk API
-          url: /v2/apache_airflow/hooks/salesforce-bulk-api.html
-          output: web, pdf
-
-        - title: Salesforce
-          url: /v2/apache_airflow/hooks/Salesforce.html
-          output: web, pdf
+      

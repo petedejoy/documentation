@@ -381,59 +381,59 @@ entries:
           output: web, pdf
 
         - title: Bamboo HR to S3
-          url: /v2/apache_airflow/hooks/bamboohr-to-s3.html
+          url: /v2/apache_airflow/operators/bamboohr-to-s3.html
           output: web, pdf
 
         - title: Chargify to S3
-          url: /v2/apache_airflow/hooks/chargify-to-s3.html
+          url: /v2/apache_airflow/operators/chargify-to-s3.html
           output: web, pdf
 
         - title: Facebook Ads to S3
-          url: /v2/apache_airflow/hooks/facebook-ads-to-s3.html
+          url: /v2/apache_airflow/operators/facebook-ads-to-s3.html
           output: web, pdf
 
         - title: Github to S3
-          url: /v2/apache_airflow/hooks/github-to-s3.html
+          url: /v2/apache_airflow/operators/github-to-s3.html
           output: web, pdf
 
         - title: Google Analytics to S3
-          url: /v2/apache_airflow/hooks/google-analytics-to-s3.html
+          url: /v2/apache_airflow/operators/google-analytics-to-s3.html
           output: web, pdf
 
         - title: IMAP to S3
-          url: /v2/apache_airflow/hooks/imap-to-s3.html
+          url: /v2/apache_airflow/operators/imap-to-s3.html
           output: web, pdf
 
         - title: MongoDB to S3
-          url: /v2/apache_airflow/hooks/mongo-to-s3.html
+          url: /v2/apache_airflow/operators/mongo-to-s3.html
           output: web, pdf
 
         - title: MySQL to S3
-          url: /v2/apache_airflow/hooks/mysql-to-s3.html
+          url: /v2/apache_airflow/operators/mysql-to-s3.html
           output: web, pdf
 
         - title: S3 to MySQL
-          url: /v2/apache_airflow/hooks/s3-to-mysql.html
+          url: /v2/apache_airflow/operators/s3-to-mysql.html
           output: web, pdf
 
         - title: S3 to Redshift
-          url: /v2/apache_airflow/hooks/s3-to-redshift.html
+          url: /v2/apache_airflow/operators/s3-to-redshift.html
           output: web, pdf
 
         - title: S3 to Spreadsheet
-          url: /v2/apache_airflow/hooks/s3-to-spreadsheet.html
+          url: /v2/apache_airflow/operators/s3-to-spreadsheet.html
           output: web, pdf
 
         - title: Salesforce Schema to Redshift
-          url: /v2/apache_airflow/hooks/salesforce-schema-to-redshift.html
+          url: /v2/apache_airflow/operators/salesforce-schema-to-redshift.html
           output: web, pdf
 
         - title: Salesforce to Redshift
-          url: /v2/apache_airflow/hooks/salesforce-to-redshift.html
+          url: /v2/apache_airflow/operators/salesforce-to-redshift.html
           output: web, pdf
 
         - title: Salesforce Schema to S3
-          url: /v2/apache_airflow/hooks/salesforce-to-s3.html
+          url: /v2/apache_airflow/operators/salesforce-to-s3.html
           output: web, pdf
 
       

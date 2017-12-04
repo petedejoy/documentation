@@ -4,19 +4,23 @@ sidebar: platform_sidebar
 ---
 
 ## Apache Airflow
-Airflow is a generic workflow scheduler with dependency management. Not only does it schedule periodic jobs, but also it allows you to define explicit dependencies between different stages in your data pipeline.
+Airflow is a platform to programmatically author, schedule and monitor workflows.
+
+When workflows are defined as code, they become more maintainable, versionable, testable, and collaborative.
+
+Airflow is **not** a data streaming solution. Airflow is not in the Spark Streaming or Storm space, it is more comparable to Oozie or Azkaban.
 
 ## DAGs
-The main concept of Airflow is a `DAG` - or Directed Acyclic Graph.
+Workflows in Airflow are designed as  `DAGs` - or Directed Acyclic Graphs.
 A `DAG` is a collection of all the tasks you want to run, organized in a way that reflects their relationships and dependencies.
 
-For example, a simple DAG could consist of 3 tasks: A, B, and C. It could say that A has to run successfully before B can run, but C can run anytime. It could also say that A times out after 5 minutes and that B can be restarted up to 5 times in case it fails. More broadly, it might also say that the workflow will run every night at 10pm but shouldn't start until a certain date.
+For example, a simple DAG could consist of 3 tasks: A, B, and C. It could say that A has to run successfully before B can run, but C can run anytime. It could also say that A times out after 5 minutes and that B can be restarted up to 5 times in case it fails. It might also say that the workflow will run every night at 10pm but shouldn't start until a certain date.
 
 ![alt_text](http://michal.karzynski.pl/images/illustrations/2017-03-19/airflow-example-dag.png)
 
 _[An example Airflow Pipeline DAG](http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/)_
 
-Notice that the DAG we just outlined only describes _how_ to carry out a workflow, not _what_ we want the workflow to actually do - A, B, and C could really be anything! This is an important element of DAGs - they aren't concerned with what its constituent tasks do, they just make sure the tasks happen at the right time, in the right order, and with the right handling of any unexpected issues.
+Notice that the DAG we just outlined only describes _how_ to carry out a workflow, not _what_ we want the workflow to actually do - A, B, and C could really be anything! DAGs aren't concerned with what its constituent tasks do, they just make sure the tasks happen at the right time, in the right order, and with the right handling of any unexpected issues. **Airflow DAGs are a framework that for the logic of how tasks relate to each other, regardless of the tasks themselves.**
 
 ## Operators
 The atomic units of DAGs - while DAGs describe _how_ to run a workflow, `Operators` determine _what actually gets done._
@@ -45,16 +49,16 @@ Task instances also have indicative states, which could be "running", "success",
 By combining `DAGs` and `Operators` to create `TaskInstances`, you can build complex workflows. Head [here](https://github.com/astronomerio/pro-beta/wiki/Simple-Sample-DAG) to see how they come together in a basic DAG.
 
 ## Templating with Jinja
-Imagine you want to reference a unique s3 file name that corresponds to the date of the DAG run, how would you do so without hardcoding any paths? The answer: Jinja! In short, Jinja is a template engine for Python and Apache Airflow uses it to provide pipeline authors with a set of built-in parameters and macros. 
+Imagine you want to reference a unique s3 file name that corresponds to the date of the DAG run, how would you do so without hardcoding any paths? The answer: Jinja! In short, Jinja is a template engine for Python and Apache Airflow uses it to provide pipeline authors with a set of built-in parameters and macros.
 
-A jinja template is simplay a text file that contains the following:
+A jinja template is simply a text file that contains the following:
  * **variables** and/or **expressions** - these get replaced with values when a template is rendered.
  * **tags** - these control the logic of the template.
 
 In Jinja, the default delimiters are configured as follows:
 
 {% raw %}
- * `{{% ... %}}` for Statements 
+ * `{{% ... %}}` for Statements
  * `{{ ... }}` for Expressions
  * `{{# ... #}}` for Comments
  * `# ... ##` for Line Statements
@@ -62,7 +66,7 @@ In Jinja, the default delimiters are configured as follows:
 
 Head [here](http://jinja.pocoo.org/docs/2.9/) for more information about installing and using Jinja.
 
-How does it all work? With Apache Airflow, Jinja templating allows you to defer the rendering of strings in your tasks until the actual running of those tasks. This becomes particularly useful when you want to access certain parameters of a `task_run` itself (i.e. `run_date` or `file_name`).
+Jinja templating allows you to defer the rendering of strings in your tasks until the actual running of those tasks. This becomes particularly useful when you want to access certain parameters of a `task_run` itself (i.e. `run_date` or `file_name`).
 
 ### Example
 
@@ -76,14 +80,14 @@ t = BashOperator(
         env={'EXECUTION_DATE: date}
 )
 ```
-In the example above, we passed the execution `date` as an environment variable to a Bash script. Since {% raw %} `{{ ds }}` {% endraw %} is a macro and the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in the Bash script. 
+In the example above, we passed the execution `date` as an environment variable to a Bash script. Since {% raw %} `{{ ds }}` {% endraw %} is a macro and the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in the Bash script.
 
-**Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both. 
+**Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both.
 
 ## XComs
-XComs (short for "cross-communication") can be used to pass information between tasks, information such as task configs **that are not known at runtime**. This is a differentiating factor between XComs and Jinja templating. If the config you are trying to pass is available at run-time, then we recommend using Jinja templating as it is much more lightweight than XComs. On the flip-side, XComs can be stored indefinitely, give you more nuanced control and should be used when Jinja templating no longer meets your needs.  
+XComs (short for "cross-communication") can be used to pass information between tasks **that are not known at runtime**. This is a differentiating factor between XComs and Jinja templating. If the config you are trying to pass is available at run-time, then we recommend using Jinja templating as it is much more lightweight than XComs. On the flip-side, XComs can be stored indefinitely, give you more nuanced control and should be used when Jinja templating no longer meets your needs.  
 
-Functionally, XComs are defined by a `key`, a `value`, and a `timestamp`. They also track attributes like the task/DAG run that created the XCom and when it should become visible. 
+Functionally, XComs can almost be thought of as dictionaries. They are defined by a `key`, a `value`, and a `timestamp` and have associated metadata about the task/DAG run that created the XCom and when it should become visible.
 
 As shown in the example below, XComs can be called with either `xcom_push()` or `xcom_pull()`. "Pushing" (or sending) an XCom generally makes it available for other tasks while "Pulling" retrieves an XCom. When pulling XComs, you can apply filters based on criteria like `key`, source `task_ids`, and source `dag_id`.
 
@@ -146,7 +150,7 @@ pull.set_upstream([push1, push2])
 
 A few things to note about XComs:
  * Any object that can be pickled can be used as an XCom value, so be sure to use objects of appropriate size.
- * If a task returns a value (either from its Operator's `execute()` method, or from a PythonOperator's `python_callable` function), than an XCom containing that value is automatically pushed. When this occurs, `xcom_pull()` automatically filters for the keys that are given to the XCom when it was pushed. 
+ * If a task returns a value (either from its Operator's `execute()` method, or from a PythonOperator's `python_callable` function), than an XCom containing that value is automatically pushed. When this occurs, `xcom_pull()` automatically filters for the keys that are given to the XCom when it was pushed.
  *  If `xcom_pull` is passed a single string for `task_ids`, then the most recent XCom value from that task is returned; if a list of `task_ids` is passed, then a corresponding list of XCom values is returned.
 
 ## Other Core concepts

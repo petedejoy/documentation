@@ -20,7 +20,7 @@ For example, a simple DAG could consist of 3 tasks: A, B, and C. It could say th
 
 _[An example Airflow Pipeline DAG](http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/)_
 
-Notice that the DAG we just outlined only describes _how_ to carry out a workflow, not _what_ we want the workflow to actually do - A, B, and C could really be anything! DAGs aren't concerned with what its constituent tasks do, they just make sure the tasks happen at the right time, in the right order, and with the right handling of any unexpected issues. **Airflow DAGs are a framework that for the logic of how tasks relate to each other, regardless of the tasks themselves.**
+Notice that the DAG we just outlined only describes _how_ to carry out a workflow, not _what_ we want the workflow to actually do - A, B, and C could really be anything! DAGs aren't concerned with what its constituent tasks do, they just make sure the tasks happen at the right time, in the right order, and with the right handling of any unexpected issues. **Airflow DAGs are a framework to express how tasks relate to each other, regardless of the tasks themselves.**
 
 ## Operators
 The atomic units of DAGs - while DAGs describe _how_ to run a workflow, `Operators` determine _what actually gets done._
@@ -33,20 +33,20 @@ Here are some common operators and the tasks they accomplish:
 
 * `BashOperator` - executes a bash command
 * `EmailOperator` - sends an email
-* `PythonOperator` - uses python to run a task
+* `PythonOperator` - executes Python code
 
 See [here](https://github.com/astronomerio/pro-beta/wiki/Airflow-Operators) for more detailed descriptions of Airflow Operators and how to utilize them.
 
 ## Tasks
-Once an operator is instantiated, it is referred to as a `task`. The instantiation defines specific values when calling the abstract operator, and the parameterized task becomes a node in a DAG.
+Once an operator is instantiated, it is referred to as a `task`. The instantiation defines specific values when calling the abstract operator, and the parameterized task becomes a node in a DAG. Each task must have a `task_id` that serves as a unique identifier and an `owner`.
 
 ### Task Instances
-A task executed at a time is called a `TaskInstance`. This represents a specific run of a task and is a combination of a DAG, at task, and a specific point in time.
+An executed task is called a `TaskInstance`. This represents a specific run of a task and is a combination of a DAG, at task, and a specific point in time.
 
 Task instances also have indicative states, which could be "running", "success", "failed", "skipped", "up for retry", etc.
 
 ## Workflows
-By combining `DAGs` and `Operators` to create `TaskInstances`, you can build complex workflows. Head [here](https://github.com/astronomerio/pro-beta/wiki/Simple-Sample-DAG) to see how they come together in a basic DAG.
+By stringing together operators and how they depend on each other, you can build workflows in the form of `DAGs`.
 
 ## Templating with Jinja
 Imagine you want to reference a unique s3 file name that corresponds to the date of the DAG run, how would you do so without hardcoding any paths? The answer: Jinja! In short, Jinja is a template engine for Python and Apache Airflow uses it to provide pipeline authors with a set of built-in parameters and macros.
@@ -91,9 +91,8 @@ Functionally, XComs can almost be thought of as dictionaries. They are defined b
 
 As shown in the example below, XComs can be called with either `xcom_push()` or `xcom_pull()`. "Pushing" (or sending) an XCom generally makes it available for other tasks while "Pulling" retrieves an XCom. When pulling XComs, you can apply filters based on criteria like `key`, source `task_ids`, and source `dag_id`.
 
-Example XCom ([reference](https://github.com/apache/incubator-airflow/blob/master/airflow/example_dags/example_xcom.py)):
+### Example XCom ([reference](https://github.com/apache/incubator-airflow/blob/master/airflow/example_dags/example_xcom.py)):
 ```python
-from __future__ import print_function
 import airflow
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
@@ -157,6 +156,19 @@ A few things to note about XComs:
 
 ### Default Arguments
 If a dictionary of `default_args` is passed to a DAG, it will apply them to any of its operators. This makes it easy to apply a common parameter (e.g. start_date) to many operators without having to type it many times.
+```python
+from datetime import datetime, timedelta
+default_args = {
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'start_date': datetime(2017, 3, 14),
+    'email': ['airflow@airflow.com'],
+    'email_on_failure': False,
+    'email_on_retry': False,
+    'retries': 1,
+    'retry_delay': timedelta(minutes=5)
+}
+```
 
 ### Context Manager
 DAGs can be used as context managers to automatically assign new operators to that DAG.

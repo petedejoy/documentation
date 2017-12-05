@@ -21,7 +21,7 @@ from datetime import datetime
 
 class FacebookAdsInsightsToS3Operator(BaseOperator):
 
- """
+    '''
     Facebook Ads Insights To S3 Operator
     :param facebook_conn_id:        The source facebook connection id.
     :type s3_conn_id:               string
@@ -54,7 +54,7 @@ class FacebookAdsInsightsToS3Operator(BaseOperator):
     :type level:                    string
     :param limit:                   The number of records to fetch in each request. Defaults to 100.
     :type limit:                    integer
- """
+    '''
 
     template_fields = ('s3_key', 'since', 'until')
 

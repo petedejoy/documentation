@@ -384,6 +384,10 @@ entries:
           url: /v2/apache_airflow/operators/bamboohr-to-s3.html
           output: web, pdf
 
+        - title: Bing Ads to S3
+          url: /v2/apache_airflow/operators/bing-ads-to-s3.html
+          output: web, pdf
+
         - title: Chargify to S3
           url: /v2/apache_airflow/operators/chargify-to-s3.html
           output: web, pdf

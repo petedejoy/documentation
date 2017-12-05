@@ -97,3 +97,4 @@ class ChargifyToS3Operator(BaseOperator):
             replace=True
         )
         s3.connection.close()
+```

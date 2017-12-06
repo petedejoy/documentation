@@ -113,7 +113,7 @@ Check out the list below to explore all of the destinations available with Astro
 | Taboola | ✔ | x | x |
 | Twitter Ads | ✔ | x | x |
 | VWO | ✔ | x | x |
-| Webhooks | ✔ | ✔ | x |
+| Webhooks | ✔ | ✔ | ✔ |
 | Woopra | ✔ | ✔ | ✔ |
 
 ## Calls

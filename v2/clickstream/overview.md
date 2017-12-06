@@ -31,6 +31,7 @@ Check it out:
 * [Ruby](/v2/clickstream/sources/ruby.html)
 
 ## Destinations
+
 Check out the list below to explore all of the destinations available with Astronomer Clickstream. From there, make your way to each destination's docs and setup guide to see how to use them!
 
 * [Acquisio](/v2/clickstream/destinations/acquisio.html)
@@ -115,8 +116,6 @@ Check out the list below to explore all of the destinations available with Astro
 | Webhooks | ✔ | ✔ | x |
 | Woopra | ✔ | ✔ | ✔ |
 
-
-
 ## Calls
-[Here](/v2/clickstream/calls.html), we outline the different types of customer data we capture and how to implement them for your business.
 
+[Here](/v2/clickstream/calls.html), we outline the different types of customer data we capture and how to implement them for your business.

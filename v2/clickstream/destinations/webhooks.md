@@ -20,14 +20,14 @@ If you're already setup with Astronomer Clickstream,  you can start using webhoo
 
 Read below to kickoff your integration and start gaining insights.
 
-## Getting Started with webhooks and Astronomer Clickstream
+## Getting started with webhooks and Astronomer Clickstream
 
 Add your domain name into the webhook connector on your Astronomer dashboard and give your new connection a unique name.
 
 Click `Create Destination` to activate your pipeline.
 
-## Beyond the Basics
+## Beyond the basics
 
-### Sending to Multiple webhooks
+### Sending to multiple webhooks
 
 For each webhook you'd like to enable, enter the full URL that we can send data to. You'll be able to provide up to 5 webhooks.

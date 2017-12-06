@@ -53,7 +53,7 @@ from datetime import datetime
 # DAG Object - we need this to instantiate the DAG
 from airflow import DAG
 
-#Operators - these are needed for the DAG to actually operate. We are just using Dummy operators in this example
+# Operators - these are needed for the DAG to actually operate. We are just using Dummy operators in this example
 from airflow.operators.dummy_operator import DummyOperator
 ```
 
@@ -119,6 +119,13 @@ Since the tasks we created aren't inherently dependent on each other, we can exp
 ```
 t1.set_downstream(t2)
 t2.set_downstream(t3)
+```
+
+We can also use bitshift operators to set dependencies.
+
+```
+t1 >> t2
+t2 >> t3
 ```
 
 With that, we have successfully written an Airflow DAG! Head [here](/v2/apache_airflow/tutorial/dag-deployment) to see how to deploy this DAG. Or, check out our docs on [example DAGS](https://github.com/astronomerio/example-dags) and [DAG Writing Best Practices](/v2/apache_airflow/tutorial/best-practices).

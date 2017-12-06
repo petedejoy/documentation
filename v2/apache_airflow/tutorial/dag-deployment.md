@@ -3,18 +3,19 @@ title: Sample DAG Deployment
 sidebar: platform_sidebar
 ---
 
-This is a step-by-step guide for using the Astronomer CLI to deploy a DAG to your Airflow instance.
+This is a step-by-step guide for using the Astronomer CLI (command line interface) to deploy a DAG to your Airflow instance.
 
 ### Prerequisites
 
 * Before you can deploy a DAG, you will need to have both docker and the Astronomer CLI installed. Head to [Astronomer CLI Setup](/v2/apache_airflow/cli) for more instructions.
 
-* You will also need to have a provisioned Airflow instance for your organization. Check this by going to your [Astronomer Pro App](https://pro.astronomer.io/login). Your PRO tab should show Web Server and Scheduler as "Ready".
+* You will also need to have a provisioned an Airflow instance for your organization. Check this by going to your [Astronomer Pro App](https://pro.astronomer.io/login). Your PRO tab should show Web Server and Scheduler as "Ready".
 
 ### Project Setup
 First, you will need to login with your Astronomer credentials: `astro login`.
+You can login from any directory.
 
-Next, create a project directory, this is where your DAGs will be stored locally:
+Next, create a project directory where you'll work locally:
 
 >mkdir /path/to/project
 
@@ -23,7 +24,7 @@ and navigate to it:
 >cd /path/to/project
 
 ### Quickstart DAG Deployment
-Initialize a project: `astro init` which will create 2 folders in your project: `dags` and `plugins`.
+Initialize a project: `astro init` will create 2 folders in your project: `dags` and `plugins`.
 
 Navigate to `dags`:
 
@@ -84,6 +85,6 @@ Once you confirm, it will bundle all but a few blacklisted files and push to the
 
 At this point, you can navigate to your Airflow instance via the Dashboard URL at pro.astronomer.io to see the deployed DAG. If necessary, refresh the page to see your newly deployed DAG.
 
-In order to log out of your account, simply enter:
+When you're ready to logout:
 
 `astro logout`

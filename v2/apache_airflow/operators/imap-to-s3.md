@@ -98,7 +98,7 @@ class ImapToS3Operator(BaseOperator):
 
 
 class S3ToRedshiftOperator(BaseOperator):
-    """
+    '''
     S3 To Redshift Operator
     :param mysql_conn_id:           The destination redshift connection id.
     :type mysql_conn_id:            string
@@ -144,7 +144,7 @@ class S3ToRedshiftOperator(BaseOperator):
                                     with. Only required if using a load_type of
                                     "upsert".
     :type incremental_key:          string
-    """
+    '''
 
     template_fields = ['s3_key', 'origin_schema']
 

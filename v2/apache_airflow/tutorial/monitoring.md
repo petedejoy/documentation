@@ -39,7 +39,8 @@ A list of the various states you may see a DAG run or task instance in:
 This method is best when you want to selectively email users who may be dependent on the outcome of workflows. Like most things in Airflow there a some options of how you can accomplish this task.
 
 #### Email in Default Args
-When defining a DAG, many will often choose to define a set of default arguments (default_args), which will then be passed to every task in your workflow. A subset of these default_args are specific to emailing on retries and failures.
+Most DAGs will be defined with a set of default arguments (default_args) that are passed to every task instance in your workflow.
+You can include parameters about email alerts on retries and failures in these arguments.
 
 * ```email```
   - A string representation of an email or a list of emails
@@ -48,13 +49,15 @@ When defining a DAG, many will often choose to define a set of default arguments
 * ```email_on_failure```
   - A boolean representing whether or not to send an email to ```email``` on failure
 
-[Example Usecase](https://airflow.incubator.apache.org/tutorial.html?highlight=email)
+[Example](https://airflow.incubator.apache.org/tutorial.html?highlight=email)
 
 #### Custom Messaging Tasks
-Airflow allows you to define complex workflows, this includes sending messages as a part of those workflows. Thanks to community contributed operators such as the [Slack](https://airflow.incubator.apache.org/_modules/slack_operator.html) or [email](https://pythonhosted.org/airflow/_modules/email_operator.html) operator you can notify your customers of successes, failures, or other custom events as they happen.
+Thanks to community contributed operators such as the [Slack](https://airflow.incubator.apache.org/_modules/slack_operator.html) or [email](https://pythonhosted.org/airflow/_modules/email_operator.html) operator, you can send notifications for success, failure, or other custom events as they happen.
 
 ##### Message on Success
-In some cases, you may want to be notified when a workflow succeeds. The easiest way to achieve this is to add a task that happens at the end of your workflow for positive notifications.
+In some cases, you may want to be notified when a workflow succeeds. An easy way to do this is to add a task downstream
+of the rest of your tasks that sends a notification.
 
 ##### Message on Failure
-The built-in failure emails may not meet your needs for providing rich HTML content or sending a notification on failure via Slack. By adding a custom messaging task to your workflow and changing the [trigger rule](https://pythonhosted.org/airflow/concepts.html?highlight=trigger_rule#trigger-rules), these tasks can be customized to give notifications for DAG or task level granularity.
+Depending on your use-case, there's different ways you can handle failure notifications. The failure emails and Slack operator are can all be highly customized and built-on.
+In some cases when you have more complex logic, you can change the [trigger rule](https://pythonhosted.org/airflow/concepts.html?highlight=trigger_rule#trigger-rules) and define custom logic for different scenarios.

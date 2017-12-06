@@ -2,7 +2,7 @@
 title: DAG Writing Best Practices
 sidebar: platform_sidebar
 ---
-## Idempotency
+### Idempotency
 Data pipelines are a messy business with a lot of various components that can fail. [Idempotent](https://en.wikipedia.org/wiki/Idempotence) DAGs allow you to deliver results faster when something breaks and can save you from losing data down the road.
 
 ### Incremental Record Filtering
@@ -23,14 +23,17 @@ It can be tempting to write your DAGs so that they move data directly from your 
 
 For example, depending on your data retention policy you could modify the load logic and re-run the entire historical pipeline without having to re-run the extracts. This is also useful in situations where you no longer have to the source systems for various reasons.
 
-## Transformations
-Look to implement an ELT data pipeline pattern with your DAG definition file. This means that you should look to offload as much of the transformation logic to the source systems or the destinations systems as possible. With python at your fingertips it can be tempting to attempt the transformations in the DAG but offloading those transformations to the source or destination systems will lead to better performance overall and you'll get the added benefit of keeping your DAG lean and readable.
+### Static start_date
+A dynamic start_date is misleading. It can cause failures when clearing out failed task instances and missing DAG runs.
 
-### SQL Destination
+## Transformations
+Look to implement an ELT (extract, load, transform) data pipeline pattern with your DAG definition file. This means that you should look to offload as much of the transformation logic to the source systems or the destinations systems as possible. With python at your fingertips it can be tempting to attempt the transformations in the DAG but offloading those transformations to the source or destination systems will lead to better performance overall and you'll get the added benefit of keeping your DAG lean and readable.
+
+### Use Staging Tables
 Users will have a wide variety of constraints depending on the flavor of SQL used and resources available to that system. In general, seek to create staging tables in the form of temp tables or a more permanent schema. These staging tables will give you greater control of your data before pushing to a final destination.
 
 ### Mongo Source
-To use [aggregation pipelines](https://docs.mongodb.com/manual/core/aggregation-pipeline/) to perform your transformations on extract from a Mongo source.
+Use [aggregation pipelines](https://docs.mongodb.com/manual/core/aggregation-pipeline/) to perform your transformations on extract from a Mongo source.
 
 ### SQL Source
 A SQL query can go a long way to cleaning up and combining data before it ever enters the pipeline - this will reduce headaches overall.

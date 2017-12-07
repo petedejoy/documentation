@@ -8,8 +8,6 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 ## MongoDB to S3
 
 ~~~ python
-"""
-"""
 import json
 from bson import json_util
 

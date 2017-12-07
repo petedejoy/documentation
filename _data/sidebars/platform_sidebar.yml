@@ -30,10 +30,6 @@ entries:
     - title: Basic Clickstream Example
       url: /v2/clickstream/2048.html
       output: web, pdf
-
-    - title: Common Fields
-      url: /v2/clickstream/common.md
-      output: web,pdf  
     
     - title: Segment Switch Guide
       url: /v2/clickstream/segment-switch-guide.html

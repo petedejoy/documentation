@@ -3,6 +3,8 @@ title: Common Fields of API Calls
 sidebar: platform_sidebar
 ---
 
+# Common Fields of API Calls
+
 Every [API call](../calls.html) has a common structure. While some specific calls pass extra information, they will all pass the information detailed in this document. Note that, while Astronomer will send all of these fields, not every destination will accept every field listed below.
 
 ## General Structure

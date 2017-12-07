@@ -32,6 +32,8 @@ Look to implement an ELT (extract, load, transform) data pipeline pattern with y
 ### Use Staging Tables
 Try to use staging tables before pushing to a final destination. This makes debugging errors easier as you'll have the exact data that caused an error and adds a layer of safety.
 
+**Note** By default, each task counts as its own database session, so avoid temporary tables that only last a session. Instead, have the last task in your DAG clear out intermediary tables if everything runs successfully.  
+
 ### Mongo Source
 Use [aggregation pipelines](https://docs.mongodb.com/manual/core/aggregation-pipeline/) to perform your transformations on extract from a Mongo source.
 
@@ -39,6 +41,14 @@ Use [aggregation pipelines](https://docs.mongodb.com/manual/core/aggregation-pip
 Try to do basic transformations and aggregations in SQL queries - this offloads transformation logic onto the source system and keeps your DAG readable.
 
 ## Readability
+
+### Change the name of your DAG when you change the start date.
+Changing the `start_date` of a DAG creates a new entry in Airflow's database, which could confuse the scheduler because there will be two DAGs with the same name but different schedules.
+
+Changing the name of a DAG also creates a new entry in the database, which powers the dashboard, so follow a consistent naming convention since changing a DAG's name doesn't delete the entry in the database for the old name.
+
+### Avoid top level code in your DAG file.
+The Airflow executor executes top level code on every heartbeat, so a small amount of top level code can cause performance issues. Try to treat the DAG file like a config file and leave all the heavy lifting for the hook and operator.
 
 ### Task Dependencies
 Task dependencies are set using the ```set_upstream()``` and ```set_upstream()``` operators. Using either will depend on your preferences, but it is best to stay consistent with which one you use.

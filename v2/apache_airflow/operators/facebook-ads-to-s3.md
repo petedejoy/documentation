@@ -8,7 +8,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 ## Facebook Ads to S3
 
 
-```py
+~~~py
 
 from facebook_ads_plugin.hooks.facebook_ads_hook import FacebookAdsHook
 from airflow.hooks.S3_hook import S3Hook
@@ -109,4 +109,4 @@ class FacebookAdsInsightsToS3Operator(BaseOperator):
 
         s3_conn.load_file(file_name, self.s3_key, self.s3_bucket, True)
         os.remove(file_name)
-```
+~~~

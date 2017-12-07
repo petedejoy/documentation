@@ -8,7 +8,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Facebook Ads
 
-```python
+~~~ python
 from airflow.hooks.base_hook import BaseHook
 
 from urllib.parse import urlencode
@@ -57,7 +57,7 @@ class FacebookAdsHook(BaseHook):
         insights.extend(response_body['data'])
 
         return insights
-```
+~~~
 _[Source](https://github.com/airflow-plugins/facebook_ads_plugin/blob/master/hooks/facebook_ads_hook.py)_
 
 - _Source Type_: REST-based API.
@@ -70,10 +70,10 @@ _[Source](https://github.com/airflow-plugins/facebook_ads_plugin/blob/master/hoo
 |Basic  |Moderately rate limited per ad account             |
 |Standard   |Lightly rate limited per ad account             |
 
-```
+~~~
 - Rate limitation happens real time on a sliding window.
 - Each Marketing API call is assigned a score. Your score is the sum of your API calls.
 - Updates are 10~100 more expensive than creates.
 - There's a max score, and when it's is reached, the throttling error is thrown.
 	- Error, Code: 17, Message: User request limit reached
-```
+~~~

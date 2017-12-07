@@ -7,7 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Chargify
 
-```python
+~~~ python
 from airflow.hooks.http_hook import HttpHook
 
 
@@ -33,6 +33,6 @@ class ChargifyHook(HttpHook):
         # Hard code hook to return JSON
         headers = {"Accept": "application/json"}
         return super().run(self.endpoint, data=payload, headers=headers)
-```
+~~~
 [Source](https://github.com/airflow-plugins/chargify_plugin/blob/master/hooks/chargify_hook.py)
 

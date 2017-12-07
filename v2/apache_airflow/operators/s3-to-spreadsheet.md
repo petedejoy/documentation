@@ -8,7 +8,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 ## S3 to Spreadsheet
 
 
-```python
+~~~ python
 from airflow.utils.decorators import apply_defaults
 from airflow.hooks.S3_hook import S3Hook
 from airflow.models import BaseOperator
@@ -199,4 +199,4 @@ class S3ToSpreadsheetOperator(BaseOperator):
             for i in self.append_fields:
                 df[i] = self.append_fields[i]
         return df
-```
+~~~

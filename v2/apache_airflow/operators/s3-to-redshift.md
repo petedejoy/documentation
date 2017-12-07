@@ -7,7 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## S3 to Redshift
 
-```python
+~~~ python
 import json
 import random
 import string
@@ -353,4 +353,4 @@ class S3ToRedshiftOperator(BaseOperator):
                                                           output)
         pg_hook.run(create_schema_query)
         pg_hook.run(create_table_query)
-```
+~~~

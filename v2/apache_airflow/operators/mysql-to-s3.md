@@ -7,7 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## MySQL to S3
 
-```python
+~~~ python
 from airflow.models import BaseOperator
 from airflow.hooks.S3_hook import S3Hook
 from mysql_plugin.hooks.astro_mysql_hook import AstroMySqlHook
@@ -160,4 +160,4 @@ class MySQLToS3Operator(BaseOperator):
         )
         s3.connection.close()
         logging.info('File uploaded to s3')
-```
+~~~

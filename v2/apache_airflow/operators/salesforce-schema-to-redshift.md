@@ -6,7 +6,7 @@ sidebar: platform_sidebar
 For a complete list of Airflow Hooks, Operators, and Utilities maintained by Astronomer, check out our [Airflow Plugins](https://github.com/airflow-plugins?utf8=%E2%9C%93&q=&type=&language=) organization on Github.
 
 ## Salesforce Schema to S3
-```python
+~~~ python
 from airflow.models import BaseOperator
 
 class SalesforceSchemaToRedshiftOperator(BaseOperator):
@@ -333,4 +333,4 @@ class SalesforceSchemaToRedshiftOperator(BaseOperator):
 
         # Push SF Columns to Xcom or S3
         self.xcom_push(context, key='sf_cols', value=[col['sf_name'] for col in sf_cols])
-```
+~~~

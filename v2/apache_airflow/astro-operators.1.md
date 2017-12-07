@@ -6,7 +6,7 @@ sidebar: platform_sidebar
 For a complete list of Airflow Hooks, Operators, and Utilities maintained by Astronomer, check out our [Airflow Plugins](https://github.com/airflow-plugins?utf8=%E2%9C%93&q=&type=&language=) organization on Github.
 
 ## MongoDB to S3
-```python
+~~~ python
 import json
 from bson import json_util
 
@@ -89,11 +89,11 @@ class MongoToS3BaseOperator(BaseOperator):
             converted into an array.
         """
         return [doc for doc in docs]
-```
+~~~
 _[Source](https://github.com/astronomerio/example-pipelines/blob/master/plugins/MongoToRedshiftPlugin/operators/MongoToS3Operator.py)_
 
 ## Salesforce to S3
-```python
+~~~ python
 from airflow.contrib.hooks.salesforce_hook import SalesforceHook
 from airflow.hooks.S3_hook import S3Hook
 from airflow.models import BaseOperator
@@ -265,6 +265,6 @@ class SalesforceToS3Operator(BaseOperator):
             dest_s3.connection.close()
             tmp.close()
         logging.info("Query finished!")
-```
+~~~
 _[Source](https://github.com/astronomerio/example-pipelines/tree/master/plugins/SalesforceToS3Plugin)_
 

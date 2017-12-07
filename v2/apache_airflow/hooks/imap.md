@@ -7,7 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## IMAP
 
-```python
+~~~ python
 from airflow.hooks.base_hook import BaseHook
 from datetime import datetime
 
@@ -56,4 +56,4 @@ class ImapHook(BaseHook):
                     self.server.store(mid, '+FLAGS', '\Seen')
 
         return downloaded_files
-```
+~~~

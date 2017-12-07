@@ -1,5 +1,5 @@
 ## Box Hook
-```python
+~~~ python
 efrom airflow.models import Connection
 from airflow.utils.db import provide_session
 from airflow.hooks.base_hook import BaseHook
@@ -47,5 +47,5 @@ class BoxHook(BaseHook):
                                         file_path=file_path,
                                         file_name=file_name,
                                         preflight_check=True)
-```
+~~~
 [Source](https://github.com/airflow-plugins/box_plugin/edit/master/hooks/box_hook.py)

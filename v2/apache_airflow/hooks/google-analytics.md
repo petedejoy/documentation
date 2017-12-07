@@ -7,7 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Google Analytics
 
-```python
+~~~ python
 from airflow.hooks.base_hook import BaseHook
 
 from apiclient.discovery import build
@@ -58,5 +58,5 @@ class GoogleAnalyticsHook(BaseHook):
             return report
         else:
             return {}
-```
+~~~
 [Source](https://github.com/airflow-plugins/google_analytics_plugin/blob/master/hooks/google_analytics_hook.py)

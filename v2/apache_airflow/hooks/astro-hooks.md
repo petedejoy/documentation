@@ -8,7 +8,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## BambooHR
 
-```python
+~~~ python
 
 from airflow.hooks.http_hook import HttpHook
 
@@ -35,12 +35,12 @@ class BambooHRHook(HttpHook):
         headers = {"Accept": "application/json"}
 
         return super().run(self.endpoint, data=payload, headers=headers)
-```
+~~~
 _[Source](https://github.com/airflow-plugins/bamboo_hr_plugin/blob/master/hooks/bamboo_hr_hook.py)_
 
 ## Bing Ads
 
-```python
+~~~ python
 """Bing Ads Client Hook"""
 from bingads.service_client import ServiceClient
 from bingads.authorization import *
@@ -290,11 +290,11 @@ class BingAdsHook(BaseHook):
 
         # output_status_message("Download result file: {0}".format(result_file_path))
         # output_status_message("Status: {0}\n".format(reporting_operation_status.status))
-```
+~~~
 [Source](https://github.com/airflow-plugins/bing_ads_plugin/blob/master/hooks/bing_ads_client_v11_hook.py)
 
 ## Box
-```python
+~~~ python
 efrom airflow.models import Connection
 from airflow.utils.db import provide_session
 from airflow.hooks.base_hook import BaseHook
@@ -342,12 +342,12 @@ class BoxHook(BaseHook):
                                         file_path=file_path,
                                         file_name=file_name,
                                         preflight_check=True)
-```
+~~~
 [Source](https://github.com/airflow-plugins/box_plugin/edit/master/hooks/box_hook.py)
 
 ## Chargify
 
-```python
+~~~ python
 from airflow.hooks.http_hook import HttpHook
 
 
@@ -373,12 +373,12 @@ class ChargifyHook(HttpHook):
         # Hard code hook to return JSON
         headers = {"Accept": "application/json"}
         return super().run(self.endpoint, data=payload, headers=headers)
-```
+~~~
 [Source](https://github.com/airflow-plugins/chargify_plugin/blob/master/hooks/chargify_hook.py)
 
 ## Facebook Ads
 
-```python
+~~~ python
 from airflow.hooks.base_hook import BaseHook
 
 from urllib.parse import urlencode
@@ -427,7 +427,7 @@ class FacebookAdsHook(BaseHook):
         insights.extend(response_body['data'])
 
         return insights
-```
+~~~
 _[Source](https://github.com/airflow-plugins/facebook_ads_plugin/blob/master/hooks/facebook_ads_hook.py)_
 
 - _Source Type_: REST-based API.
@@ -440,18 +440,18 @@ _[Source](https://github.com/airflow-plugins/facebook_ads_plugin/blob/master/hoo
 |Basic  |Moderately rate limited per ad account             |
 |Standard   |Lightly rate limited per ad account             |
 
-```
+~~~
 - Rate limitation happens real time on a sliding window.
 - Each Marketing API call is assigned a score. Your score is the sum of your API calls.
 - Updates are 10~100 more expensive than creates.
 - There's a max score, and when it's is reached, the throttling error is thrown.
 	- Error, Code: 17, Message: User request limit reached
-```
+~~~
 
 
 ## Github
 
-```python
+~~~ python
 from airflow.hooks.http_hook import HttpHook
 
 
@@ -480,10 +480,10 @@ class GithubHook(HttpHook):
             session.auth = None
             return session
         return super().get_conn(headers)
-```
+~~~
 ## Google Analytics
 
-```python
+~~~ python
 from airflow.hooks.base_hook import BaseHook
 
 from apiclient.discovery import build
@@ -534,11 +534,11 @@ class GoogleAnalyticsHook(BaseHook):
             return report
         else:
             return {}
-```
+~~~
 [Source](https://github.com/airflow-plugins/google_analytics_plugin/blob/master/hooks/google_analytics_hook.py)
 
 ## MySQL
-```python
+~~~ python
 from airflow.hooks.mysql_hook import MySqlHook
 
 
@@ -552,11 +552,11 @@ class AstroMySqlHook(MySqlHook):
             """.format(table)
         self.schema = 'information_schema'
         return super().get_records(query)
-```
+~~~
 [Source](https://github.com/airflow-plugins/mysql_plugin/blob/master/hooks/astro_mysql_hook.py)
 
 ## Salesforce
-```python
+~~~ python
 from airflow.hooks.base_hook import BaseHook
 from simple_salesforce import Salesforce
 
@@ -621,7 +621,7 @@ class SalesforceHook(BaseHook):
         self.sf = Salesforce(**auth_kwargs)
 
         return self.sf
-```
+~~~
 [Source](https://github.com/airflow-plugins/salesforce_plugin/blob/master/hooks/salesforce_hook.py)
 
 
@@ -634,8 +634,8 @@ class SalesforceHook(BaseHook):
 **Bulk Query** (Use bulk query to efficiently query large data sets and reduce the number of API requests. A bulk query can retrieve up to 15 GB of data, divided into 15 1-GB files. The data formats supported are CSV, XML, and JSON.):
 Bulk queries can be created using the Salesforce Object Query Language. Queries can be tested using the Developer Console in the Salesforce UI.
 Sample SOQL query:
-```
+~~~
 SELECT Id, Name FROM Account LIMIT 10
-```
+~~~
 **Note:** While the SOAP and REST APIs return compound fields, the Bulk Query API does not support returning compound fields. The components of a compound field may be returned through the Bulk API, however. Example: "Name" is a compound field not returned through the Bulk API, while it's components, "First Name" and "Last Name" are returned through the Bulk API. Further reading: https://help.salesforce.com/articleView?id=000204592&type=1
 

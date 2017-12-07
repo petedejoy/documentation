@@ -8,7 +8,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 ## S3 to MySQL
 
 
-```python
+~~~ python
 from airflow.models import BaseOperator
 from airflow.hooks.S3_hook import S3Hook
 from airflow.hooks.mysql_hook import MySqlHook
@@ -246,4 +246,4 @@ class S3ToMySQLOperator(BaseOperator):
         cur.close()
         conn.commit()
         conn.close()
-```
+~~~

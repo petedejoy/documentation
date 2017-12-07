@@ -81,7 +81,7 @@ template_fields = ('mission', 'commander')
 
 ### Example
 
-```python
+~~~ python
 date = {% raw %}"{{ ds }}"{% endraw %}
 
 t = BashOperator(
@@ -90,8 +90,9 @@ t = BashOperator(
         dag=dag,
         env={'EXECUTION_DATE: date}
 )
-```
-In the example above, we passed the `execution date` as an environment variable to a Bash script. Since {% raw %} `{{ ds }}` {% endraw %} is a macro and the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in the Bash script.
+~~~
+
+In the example above, we passed the execution `date` as an environment variable to a Bash script. Since {% raw %} `{{ ds }}` {% endraw %} is a macro and the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in the Bash script.
 
 **Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both.
 
@@ -103,7 +104,7 @@ Functionally, XComs can almost be thought of as dictionaries. They are defined b
 As shown in the example below, XComs can be called with either `xcom_push()` or `xcom_pull()`. "Pushing" (or sending) an XCom generally makes it available for other tasks while "Pulling" retrieves an XCom. When pulling XComs, you can apply filters based on criteria like `key`, source `task_ids`, and source `dag_id`.
 
 ### Example XCom ([reference](https://github.com/apache/incubator-airflow/blob/master/airflow/example_dags/example_xcom.py)):
-```python
+~~~ python
 import airflow
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
@@ -156,7 +157,7 @@ pull = PythonOperator(
     task_id='puller', dag=dag, python_callable=puller)
 
 pull.set_upstream([push1, push2])
-```
+~~~
 
 A few things to note about XComs:
  * Any object that can be pickled can be used as an XCom value, so be sure to use objects of appropriate size.
@@ -167,7 +168,7 @@ A few things to note about XComs:
 
 ### Default Arguments
 If a dictionary of `default_args` is passed to a DAG, it will apply them to any of its operators. This makes it easy to apply a common parameter (e.g. start_date) to many operators without having to type it many times.
-```python
+~~~ python
 from datetime import datetime, timedelta
 default_args = {
     'owner': 'airflow',
@@ -179,7 +180,7 @@ default_args = {
     'retries': 1,
     'retry_delay': timedelta(minutes=5)
 }
-```
+~~~
 
 ### Context Manager
 DAGs can be used as context managers to automatically assign new operators to that DAG.

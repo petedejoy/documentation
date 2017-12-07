@@ -66,10 +66,10 @@ class MongoToS3BaseOperator(BaseOperator):
         # Grab collection and execute query according to whether or not it is a pipeline
         collection = mongo_conn.get_database(self.mongo_db).get_collection(self.mongo_collection)
         results = collection.aggregate(self.mongo_query) if self.is_pipeline else collection.find(self.mongo_query)
-        
+
         # Performs transform then stringifies the docs results into json format
         docs_str = self._stringify(self.transform(results))
-        
+
         #if len(docs_str) > 0:
         s3_conn.load_string(docs_str, self.s3_key, bucket_name=self.s3_bucket, replace=self.replace)
 

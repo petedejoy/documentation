@@ -96,7 +96,7 @@ In the example above, we passed the `execution date` as an environment variable 
 **Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both.
 
 ## XComs
-XComs (short for "cross-communication") can be used to pass information between tasks **that are not known at runtime**. This is a differentiating factor between XComs and Jinja templating. If the config you are trying to pass is available at run-time, then we recommend using Jinja templating as it is much more lightweight than XComs. On the flip-side, XComs can be stored indefinitely, give you more nuanced control and should be used when Jinja templating no longer meets your needs.  
+XComs (short for "cross-communication") can be used to pass information between tasks **that are not known at runtime**. This is a differentiating factor between XComs and Jinja templating. If the config you are trying to pass is available at run-time, then we recommend using Jinja templating as it is much more lightweight than XComs. On the flip-side, XComs can be stored indefinitely, give you more nuanced control and should be used when Jinja templating no longer meets your needs.
 
 Functionally, XComs can almost be thought of as dictionaries. They are defined by a `key`, a `value`, and a `timestamp` and have associated metadata about the task/DAG run that created the XCom and when it should become visible.
 

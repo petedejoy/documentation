@@ -143,7 +143,7 @@ class S3ToRedshiftOperator(BaseOperator):
 
             del_ddl = self.del_from_tbl_ddl(
                 self.rs_schema,
-                self.rs_table, 
+                self.rs_table,
                 self.tmp_schema,
                 self.tmp_tbl,
                 del_conditions,

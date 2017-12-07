@@ -29,7 +29,7 @@ Hooks for these sources are currently being developed by our team.
  - Hubspot
 
 ### In Queue
-These are sources for which we have done preliminary requirements gathering but development work has not begun. 
+These are sources for which we have done preliminary requirements gathering but development work has not begun.
  - AutoPilot
  - FreshDesk
  - Freshsales
@@ -149,7 +149,7 @@ These are sources for which we have done preliminary requirements gathering but 
  - [Slack Operator](https://github.com/apache/incubator-airflow/blob/master/airflow/operators/slack_operator.py)
  - [SQLite Operator](https://github.com/apache/incubator-airflow/blob/master/airflow/operators/sqlite_operator.py)
  - [SubDAG Operator](https://github.com/apache/incubator-airflow/blob/master/airflow/operators/subdag_operator.py)
- 
+
 ## Apache Airflow Contrib Operators
  - [BigQuery Check Operator](https://github.com/apache/incubator-airflow/blob/master/airflow/contrib/operators/bigquery_check_operator.py)
  - [BigQuery Operator](https://github.com/apache/incubator-airflow/blob/master/airflow/contrib/operators/bigquery_operator.py)

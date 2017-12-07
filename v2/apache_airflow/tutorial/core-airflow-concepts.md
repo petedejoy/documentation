@@ -22,6 +22,9 @@ _[An example Airflow Pipeline DAG](http://michal.karzynski.pl/blog/2017/03/19/de
 
 Notice that the DAG we just outlined only describes _how_ to carry out a workflow, not _what_ we want the workflow to actually do - A, B, and C could really be anything! DAGs aren't concerned with what its constituent tasks do, they just make sure the tasks happen at the right time, in the right order, and with the right handling of any unexpected issues. **Airflow DAGs are a framework to express how tasks relate to each other, regardless of the tasks themselves.**
 
+## Hooks and Operators
+Airflow DAGs are powered by hooks and operators. Hooks are interfaces to external APIs (Google Analytics, SalesForce, etc.), databases (MySQL, Postgres, etc.) and other external platforms. Whereas hooks are the interfaces, Operators determine what your DAG actually does.
+
 ## Operators
 The atomic units of DAGs - while DAGs describe _how_ to run a workflow, `Operators` determine _what actually gets done._
 
@@ -68,6 +71,14 @@ Head [here](http://jinja.pocoo.org/docs/2.9/) for more information about install
 
 Jinja templating allows you to defer the rendering of strings in your tasks until the actual running of those tasks. This becomes particularly useful when you want to access certain parameters of a `task_run` itself (i.e. `run_date` or `file_name`).
 
+Not all parameters in operators are templated, so you cannot use Jinja templates everywhere by default.
+However, you can add code in your operator to add any fields you need to template:
+
+```python
+template_fields = ('mission', 'commander')
+```
+
+
 ### Example
 
 ```python
@@ -80,7 +91,7 @@ t = BashOperator(
         env={'EXECUTION_DATE: date}
 )
 ```
-In the example above, we passed the execution `date` as an environment variable to a Bash script. Since {% raw %} `{{ ds }}` {% endraw %} is a macro and the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in the Bash script.
+In the example above, we passed the `execution date` as an environment variable to a Bash script. Since {% raw %} `{{ ds }}` {% endraw %} is a macro and the `env` parameter of the `BashOperator` is templated with Jinja, the execution date will be available as an environment variable named `EXECUTION_DATE` in the Bash script.
 
 **Note:** Astronomer's architecture is built in a way so that a task's container is spun down as soon as the task is completed. So, if you're trying to do something like download a file with one task and then upload that same task with another, you'll need to create a combined Operator that does both.
 

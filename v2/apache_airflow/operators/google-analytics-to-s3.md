@@ -112,4 +112,4 @@ class GoogleAnalyticsReportingToS3Operator(BaseOperator):
 
         s3_conn.load_file(file_name, self.s3_key, self.s3_bucket, True)
         os.remove(file_name)
-        ```
+```

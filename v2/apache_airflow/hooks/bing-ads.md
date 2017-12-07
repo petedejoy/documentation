@@ -112,9 +112,9 @@ class BingAdsHook(BaseHook):
     # TODO: Impliment save_refresh_token
     @provide_session
     def save_refresh_token(self, oauth, session=None):
-        '''
+        """
         Stores a refresh token locally. Be sure to save your refresh token securely.
-        '''
+        """
         print("this is oauth.refresh_token", oauth.refresh_token)
         ba_conn = session.query(Connection).filter(
             Connection.conn_id == self.conn_id).first()
@@ -189,11 +189,11 @@ class BingAdsHook(BaseHook):
             # output_status_message(ex)
 
     def background_completion(self, reporting_download_parameters):
-        '''
+        """
         You can submit a download request and the ReportingServiceManager will automatically
         return results. The ReportingServiceManager abstracts the details of checking for result file
         completion, and you don't have to write any code for results polling.
-        '''
+        """
         global reporting_service_manager
         result_file_path = reporting_service_manager.download_file(
             reporting_download_parameters)
@@ -201,11 +201,11 @@ class BingAdsHook(BaseHook):
         #    "Download result file: {0}\n".format(result_file_path))
 
     def submit_and_download(self, report_request, download_file_name):
-        '''
+        """
         Submit the download request and then use the ReportingDownloadOperation result to
         track status until the report is complete e.g. either using
         ReportingDownloadOperation.track() or ReportingDownloadOperation.get_status().
-        '''
+        """
         global reporting_service_manager
         reporting_download_operation = reporting_service_manager.submit_download(
             report_request)
@@ -227,12 +227,12 @@ class BingAdsHook(BaseHook):
         # output_status_message("Download result file: {0}\n".format(result_file_path))
 
     def download_results(self, request_id, authorization_data, download_file_name):
-        '''
+        """
         If for any reason you have to resume from a previous application state,
         you can use an existing download request identifier and use it
         to download the result file. Use ReportingDownloadOperation.track() to indicate that the application
         should wait to ensure that the download status is completed.
-        '''
+        """
         reporting_download_operation = ReportingDownloadOperation(
             request_id=request_id,
             authorization_data=authorization_data,

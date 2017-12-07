@@ -15,18 +15,18 @@ Visit the [Python Package Index (PyPI)] (https://pypi.python.org/pypi/astronomer
 
 Install `astronomer-analytics` using `pip`
 
-```
+~~~ python
 pip install astronomer-analytics
-```
+~~~
 
 #### Step 2
 
 Inside your python app, set you Source ID inside an instance of the Analytics object.
 
-```
+~~~ python
 import analytics
 analytics.source_id = ‘astronomer_source_id’
-```
+~~~
 
 ***Note**: You can find your source_id in the settings section of your Astronomer App.*
 

@@ -34,5 +34,6 @@ class ChargifyHook(HttpHook):
         headers = {"Accept": "application/json"}
         return super().run(self.endpoint, data=payload, headers=headers)
 ~~~
+
 [Source](https://github.com/airflow-plugins/chargify_plugin/blob/master/hooks/chargify_hook.py)
 

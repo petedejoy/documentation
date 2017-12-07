@@ -36,4 +36,5 @@ class BambooHRHook(HttpHook):
 
         return super().run(self.endpoint, data=payload, headers=headers)
 ~~~
+
 _[Source](https://github.com/airflow-plugins/bamboo_hr_plugin/blob/master/hooks/bamboo_hr_hook.py)_

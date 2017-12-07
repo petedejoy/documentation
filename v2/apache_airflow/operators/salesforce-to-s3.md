@@ -7,6 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 
 ## Salesforce to S3
+
 ~~~ python
 from airflow.contrib.hooks.salesforce_hook import SalesforceHook
 from airflow.hooks.S3_hook import S3Hook
@@ -180,4 +181,5 @@ class SalesforceToS3Operator(BaseOperator):
             tmp.close()
         logging.info("Query finished!")
 ~~~
+
 _[Source](https://github.com/astronomerio/example-pipelines/tree/master/plugins/SalesforceToS3Plugin)_

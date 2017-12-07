@@ -7,7 +7,6 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## S3 to Spreadsheet
 
-
 ~~~ python
 from airflow.utils.decorators import apply_defaults
 from airflow.hooks.S3_hook import S3Hook

@@ -72,7 +72,6 @@ t3 = DummyOperator(
 
 t1.set_downstream(t2)
 t2.set_downstream(t3)
-
 ~~~
 
 Save the DAG, return to the shell prompt, and now, we're ready to deploy (make sure your User belongs to an organization):

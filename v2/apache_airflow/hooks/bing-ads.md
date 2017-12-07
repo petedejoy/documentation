@@ -259,4 +259,5 @@ class BingAdsHook(BaseHook):
         # output_status_message("Download result file: {0}".format(result_file_path))
         # output_status_message("Status: {0}\n".format(reporting_operation_status.status))
 ~~~
+
 [Source](https://github.com/airflow-plugins/bing_ads_plugin/blob/master/hooks/bing_ads_client_v11_hook.py)

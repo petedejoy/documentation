@@ -73,4 +73,5 @@ class SalesforceHook(BaseHook):
 
         return self.sf
 ~~~
+
 [Source](https://github.com/airflow-plugins/salesforce_plugin/blob/master/hooks/salesforce_hook.py)

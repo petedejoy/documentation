@@ -291,9 +291,11 @@ class BingAdsHook(BaseHook):
         # output_status_message("Download result file: {0}".format(result_file_path))
         # output_status_message("Status: {0}\n".format(reporting_operation_status.status))
 ~~~
+
 [Source](https://github.com/airflow-plugins/bing_ads_plugin/blob/master/hooks/bing_ads_client_v11_hook.py)
 
 ## Box
+
 ~~~ python
 efrom airflow.models import Connection
 from airflow.utils.db import provide_session
@@ -343,6 +345,7 @@ class BoxHook(BaseHook):
                                         file_name=file_name,
                                         preflight_check=True)
 ~~~
+
 [Source](https://github.com/airflow-plugins/box_plugin/edit/master/hooks/box_hook.py)
 
 ## Chargify
@@ -374,6 +377,7 @@ class ChargifyHook(HttpHook):
         headers = {"Accept": "application/json"}
         return super().run(self.endpoint, data=payload, headers=headers)
 ~~~
+
 [Source](https://github.com/airflow-plugins/chargify_plugin/blob/master/hooks/chargify_hook.py)
 
 ## Facebook Ads
@@ -428,6 +432,7 @@ class FacebookAdsHook(BaseHook):
 
         return insights
 ~~~
+
 _[Source](https://github.com/airflow-plugins/facebook_ads_plugin/blob/master/hooks/facebook_ads_hook.py)_
 
 - _Source Type_: REST-based API.
@@ -481,6 +486,7 @@ class GithubHook(HttpHook):
             return session
         return super().get_conn(headers)
 ~~~
+
 ## Google Analytics
 
 ~~~ python
@@ -535,9 +541,11 @@ class GoogleAnalyticsHook(BaseHook):
         else:
             return {}
 ~~~
+
 [Source](https://github.com/airflow-plugins/google_analytics_plugin/blob/master/hooks/google_analytics_hook.py)
 
 ## MySQL
+
 ~~~ python
 from airflow.hooks.mysql_hook import MySqlHook
 
@@ -553,9 +561,11 @@ class AstroMySqlHook(MySqlHook):
         self.schema = 'information_schema'
         return super().get_records(query)
 ~~~
+
 [Source](https://github.com/airflow-plugins/mysql_plugin/blob/master/hooks/astro_mysql_hook.py)
 
 ## Salesforce
+
 ~~~ python
 from airflow.hooks.base_hook import BaseHook
 from simple_salesforce import Salesforce
@@ -622,8 +632,8 @@ class SalesforceHook(BaseHook):
 
         return self.sf
 ~~~
-[Source](https://github.com/airflow-plugins/salesforce_plugin/blob/master/hooks/salesforce_hook.py)
 
+[Source](https://github.com/airflow-plugins/salesforce_plugin/blob/master/hooks/salesforce_hook.py)
 
 ## Salesforce Bulk API
 
@@ -633,9 +643,12 @@ class SalesforceHook(BaseHook):
 
 **Bulk Query** (Use bulk query to efficiently query large data sets and reduce the number of API requests. A bulk query can retrieve up to 15 GB of data, divided into 15 1-GB files. The data formats supported are CSV, XML, and JSON.):
 Bulk queries can be created using the Salesforce Object Query Language. Queries can be tested using the Developer Console in the Salesforce UI.
+
 Sample SOQL query:
+
 ~~~
 SELECT Id, Name FROM Account LIMIT 10
 ~~~
+
 **Note:** While the SOAP and REST APIs return compound fields, the Bulk Query API does not support returning compound fields. The components of a compound field may be returned through the Bulk API, however. Example: "Name" is a compound field not returned through the Bulk API, while it's components, "First Name" and "Last Name" are returned through the Bulk API. Further reading: https://help.salesforce.com/articleView?id=000204592&type=1
 

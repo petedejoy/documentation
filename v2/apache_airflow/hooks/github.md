@@ -37,6 +37,7 @@ class GithubHook(HttpHook):
             return session
         return super().get_conn(headers)
 ~~~
+
 ## Google Analytics
 
 ~~~ python
@@ -91,4 +92,5 @@ class GoogleAnalyticsHook(BaseHook):
         else:
             return {}
 ~~~
+
 [Source](https://github.com/airflow-plugins/google_analytics_plugin/blob/master/hooks/google_analytics_hook.py)

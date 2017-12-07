@@ -104,6 +104,7 @@ Functionally, XComs can almost be thought of as dictionaries. They are defined b
 As shown in the example below, XComs can be called with either `xcom_push()` or `xcom_pull()`. "Pushing" (or sending) an XCom generally makes it available for other tasks while "Pulling" retrieves an XCom. When pulling XComs, you can apply filters based on criteria like `key`, source `task_ids`, and source `dag_id`.
 
 ### Example XCom ([reference](https://github.com/apache/incubator-airflow/blob/master/airflow/example_dags/example_xcom.py)):
+
 ~~~ python
 import airflow
 from airflow import DAG
@@ -168,6 +169,7 @@ A few things to note about XComs:
 
 ### Default Arguments
 If a dictionary of `default_args` is passed to a DAG, it will apply them to any of its operators. This makes it easy to apply a common parameter (e.g. start_date) to many operators without having to type it many times.
+
 ~~~ python
 from datetime import datetime, timedelta
 default_args = {

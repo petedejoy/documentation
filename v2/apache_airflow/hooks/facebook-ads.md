@@ -58,6 +58,7 @@ class FacebookAdsHook(BaseHook):
 
         return insights
 ~~~
+
 _[Source](https://github.com/airflow-plugins/facebook_ads_plugin/blob/master/hooks/facebook_ads_hook.py)_
 
 - _Source Type_: REST-based API.

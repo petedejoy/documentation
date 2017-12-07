@@ -163,4 +163,5 @@ class S3ToRedshiftOperator(BaseOperator):
             drop_ddl = self.drop_tbl_ddl(self.tmp_schema, self.tmp_tbl)
             pg.run(drop_ddl)
 ~~~
+
 [Source](https://github.com/airflow-plugins/salesforce_plugin/blob/master/operators/s3_to_redshift_operator.py)

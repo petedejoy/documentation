@@ -7,8 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Facebook Ads to S3
 
-
-~~~py
+~~~ python
 
 from facebook_ads_plugin.hooks.facebook_ads_hook import FacebookAdsHook
 from airflow.hooks.S3_hook import S3Hook

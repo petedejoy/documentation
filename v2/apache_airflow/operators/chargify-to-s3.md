@@ -7,7 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Chargify to S3
 
-```python
+~~~ python
 
 
 from chargify_plugin.hooks.chargify_hook import ChargifyHook
@@ -97,4 +97,4 @@ class ChargifyToS3Operator(BaseOperator):
             replace=True
         )
         s3.connection.close()
-```
+~~~

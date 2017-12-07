@@ -7,7 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Salesforce
 
-```python
+~~~ python
 from airflow.hooks.base_hook import BaseHook
 from simple_salesforce import Salesforce
 
@@ -72,5 +72,6 @@ class SalesforceHook(BaseHook):
         self.sf = Salesforce(**auth_kwargs)
 
         return self.sf
-```
+~~~
+
 [Source](https://github.com/airflow-plugins/salesforce_plugin/blob/master/hooks/salesforce_hook.py)

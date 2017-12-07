@@ -8,7 +8,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## BambooHR
 
-```python
+~~~ python
 
 from airflow.hooks.http_hook import HttpHook
 
@@ -35,5 +35,6 @@ class BambooHRHook(HttpHook):
         headers = {"Accept": "application/json"}
 
         return super().run(self.endpoint, data=payload, headers=headers)
-```
+~~~
+
 _[Source](https://github.com/airflow-plugins/bamboo_hr_plugin/blob/master/hooks/bamboo_hr_hook.py)_

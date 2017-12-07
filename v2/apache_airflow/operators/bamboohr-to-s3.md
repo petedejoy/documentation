@@ -7,7 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Bamboo HR to S3
 
-```python
+~~~ python
 from bamboo_hr_plugin.hooks.bamboo_hr_hook import BambooHRHook
 from airflow.utils.decorators import apply_defaults
 from airflow.models import BaseOperator
@@ -159,4 +159,4 @@ class BambooHRToS3Operator(BaseOperator):
         )
 
         s3.connection.close()
-```
+~~~

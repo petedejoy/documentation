@@ -12,9 +12,9 @@ See [docker download](https://www.docker.com/community-edition#/download) to dow
 
 ## Setup
 
-```
+~~~
 curl -o- http://cli.astronomer.io/install.sh | bash
-```
+~~~
 
 **Note:** The above command only works on Mac & Linux. All other OS users will need to head [here](https://github.com/astronomerio/astro/releases/tag/v0.0.9) and download the binary manually.
 
@@ -25,10 +25,10 @@ Login:
 
 Create a project directory and navigate to it:
 
-```
+~~~
 mkdir /path/to/project
 cd /path/to/project
-```
+~~~
 
 ## Deploying with the Astro CLI
 
@@ -38,14 +38,14 @@ Initialize a project:
 
 Create a DAG:
 
-```
+~~~
 nano /path/to/project/dags/hello_world.py
 vi /path/to/project/dags/hello_word.py
-```
+~~~
 
 Copy and paste:
 
-```python
+~~~ python
 from datetime import datetime
 from airflow import DAG
 from airflow.operators.dummy_operator import DummyOperator
@@ -66,22 +66,22 @@ hello_operator = PythonOperator(task_id='hello_task', python_callable=print_hell
 
 dummy_operator >> hello_operator
 
-```
+~~~
 
 And now we're ready to deploy (make sure your user belongs to an organization):
 
-```
+~~~
 astro deploy
-```
+~~~
 
 This will prompt you to select the organization, and confirms you are sure you want to deploy.
 Once you do that, it will bundle all but a few blacklisted files and push to the API, and then to S3.
 
 If you want to log out of your account:
 
-```
+~~~
 astro logout
-```
+~~~
 
 ## Local Airflow
 
@@ -95,7 +95,7 @@ Once finished you can run `astro airflow down` to stop the cluster.
 
 ## Practical Example DAG
 
-```python
+~~~ python
 from airflow import DAG
 from astronomer import Activity
 
@@ -108,19 +108,19 @@ redshift_sink = Activity(dag, 'astronomerio/redshift-sink', ...)
 
 custom_transform.set_upstream([salesforce_entity_1, salesforce_entity_2, salesforce_entity_3])
 redshift_sink.set_upstream(custom_transform)
-```
+~~~
 
 ## Commands
 
 Usage:
 
-```
+~~~
   astro [command]
-```
+~~~
 
 Available Commands:
 
-```
+~~~
   airflow       Run a local Airflow cluster
   config        Get or set Astro configs
   deploy        Deploy to production Airflow cluster
@@ -131,15 +131,15 @@ Available Commands:
   logout        Logout of current session
   organization  Organization functions
   status        Airflow cluster status
-```
+~~~
 
 Flags:
 
-```
+~~~
   -d, --debug   debug output
   -h, --Help    help for astro
   -v, --verbose verbose output
-```
+~~~
 
 Use `astro [command] --help` for more information about a command.
 

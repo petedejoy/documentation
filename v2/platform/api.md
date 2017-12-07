@@ -11,7 +11,7 @@ Houston is a GraphQL API (utilizing Apollo) that allows interaction with the Ast
 We are currently in the Alpha stage of this project, so please expect changes to available queries, mutations, and their responses as we continue to develop this project.
 
 We recommend using these projects while connecting to GraphQL:
-* Client-side: [Apollo GraphQL](http://dev.apollodata.com/) 
+* Client-side: [Apollo GraphQL](http://dev.apollodata.com/)
 * Node.js: [graphql-request](https://github.com/graphcool/graphql-request)
 
 [Check out the API here!](https://houston-explorer.astronomer.io/)
@@ -137,7 +137,7 @@ mutation {
 
 To find how to build the form for a Clickstream Pipeline, you want to query against `clickstreamPrototypes`. Within that response is a `connectionPrototype` and `configPrototype` array that list all the fields can use to configure a destination.
 
-* `propertyName` : Key for these values within a 
+* `propertyName` : Key for these values within a
 * `clickstreamConfig` label : Human-friendly name
 * `field type` : The form field to display. Some of these are standard (input, boolean, number) and others are more abstract (array, boolean, map). (expansion on all types to follow)
 

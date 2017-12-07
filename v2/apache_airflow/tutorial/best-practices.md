@@ -51,27 +51,27 @@ Changing the name of a DAG also creates a new entry in the database, which power
 The Airflow executor executes top level code on every heartbeat, so a small amount of top level code can cause performance issues. Try to treat the DAG file like a config file and leave all the heavy lifting for the hook and operator.
 
 ### Task Dependencies
-Task dependencies are set using the ```set_upstream()``` and ```set_upstream()``` operators. Using either will depend on your preferences, but it is best to stay consistent with which one you use.
+Task dependencies are set using the `set_upstream()` and `set_upstream()` operators. Using either will depend on your preferences, but it is best to stay consistent with which one you use.
 
 #### Example
 
 Instead of this
 
-```
+~~~
 task_1.set_downstream(task_2)
 task_3.set_upstream(task_2)
-```
+~~~
 
 Try to use the same operator like this
 
-```
+~~~
 task_1.set_downstream(task_2)
 task_2.set_downstream(task_3)
-```
+~~~
 
 or this
 
-```
+~~~
 task_3.set_upstream(task_2)
 task_2.set_upstream(task_1)
-```
+~~~

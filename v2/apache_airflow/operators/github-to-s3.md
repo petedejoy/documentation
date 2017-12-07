@@ -7,7 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Github to S3
 
-```python
+~~~ python
 from airflow.utils.decorators import apply_defaults
 from airflow.models import BaseOperator
 from ..hooks.github_hook import GithubHook
@@ -270,4 +270,4 @@ class GithubToS3Operator(BaseOperator):
             return record
 
         return process(record, mapping)
-```
+~~~

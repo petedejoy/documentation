@@ -7,7 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Salesforce to Redshift
 
-```python
+~~~ python
 from airflow.models import BaseOperator
 
 class S3ToRedshiftOperator(BaseOperator):
@@ -143,7 +143,7 @@ class S3ToRedshiftOperator(BaseOperator):
 
             del_ddl = self.del_from_tbl_ddl(
                 self.rs_schema,
-                self.rs_table, 
+                self.rs_table,
                 self.tmp_schema,
                 self.tmp_tbl,
                 del_conditions,
@@ -162,5 +162,6 @@ class S3ToRedshiftOperator(BaseOperator):
             # Cleanup Temp Table
             drop_ddl = self.drop_tbl_ddl(self.tmp_schema, self.tmp_tbl)
             pg.run(drop_ddl)
-```
+~~~
+
 [Source](https://github.com/airflow-plugins/salesforce_plugin/blob/master/operators/s3_to_redshift_operator.py)

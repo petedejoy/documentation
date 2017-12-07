@@ -7,8 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Google Analytics to S3
 
-```python
-
+~~~ python
 from google_analytics_plugin.hooks.google_analytics_hook import GoogleAnalyticsHook
 
 from airflow.hooks.S3_hook import S3Hook
@@ -113,4 +112,4 @@ class GoogleAnalyticsReportingToS3Operator(BaseOperator):
 
         s3_conn.load_file(file_name, self.s3_key, self.s3_bucket, True)
         os.remove(file_name)
-        ```
+~~~

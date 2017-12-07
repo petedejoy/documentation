@@ -7,8 +7,7 @@ For a complete list of Airflow Hooks, Operators, and Utilities maintained by Ast
 
 ## Facebook Ads to S3
 
-
-```py
+~~~ python
 
 from facebook_ads_plugin.hooks.facebook_ads_hook import FacebookAdsHook
 from airflow.hooks.S3_hook import S3Hook
@@ -21,7 +20,7 @@ from datetime import datetime
 
 class FacebookAdsInsightsToS3Operator(BaseOperator):
 
-    '''
+    """
     Facebook Ads Insights To S3 Operator
     :param facebook_conn_id:        The source facebook connection id.
     :type s3_conn_id:               string
@@ -54,7 +53,7 @@ class FacebookAdsInsightsToS3Operator(BaseOperator):
     :type level:                    string
     :param limit:                   The number of records to fetch in each request. Defaults to 100.
     :type limit:                    integer
-    '''
+    """
 
     template_fields = ('s3_key', 'since', 'until')
 
@@ -109,4 +108,4 @@ class FacebookAdsInsightsToS3Operator(BaseOperator):
 
         s3_conn.load_file(file_name, self.s3_key, self.s3_bucket, True)
         os.remove(file_name)
-        ```
+~~~

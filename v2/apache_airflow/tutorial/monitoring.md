@@ -42,12 +42,12 @@ This method is best when you want to selectively email users who may be dependen
 Most DAGs will be defined with a set of default arguments (default_args) that are passed to every task instance in your workflow.
 You can include parameters about email alerts on retries and failures in these arguments.
 
-* ```email```
+* `email`
   - A string representation of an email or a list of emails
-* ```email_on_retry```
-  - A boolean representing whether or not to send an email to ```email``` on retry
-* ```email_on_failure```
-  - A boolean representing whether or not to send an email to ```email``` on failure
+* `email_on_retry`
+  - A boolean representing whether or not to send an email to `email` on retry
+* `email_on_failure`
+  - A boolean representing whether or not to send an email to `email` on failure
 
 [Example](https://airflow.incubator.apache.org/tutorial.html?highlight=email)
 

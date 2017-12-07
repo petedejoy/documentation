@@ -32,13 +32,13 @@ Navigate to `dags`:
 
 Now, we need a DAG:
 
-```
+~~~
 nano /path/to/project/dags/sample_dag.py
-```
+~~~
 
 Copy and Paste this Sample DAG:
 
-```python
+~~~ python
 from datetime import datetime
 from airflow import DAG
 from airflow.operators.dummy_operator import DummyOperator
@@ -72,8 +72,7 @@ t3 = DummyOperator(
 
 t1.set_downstream(t2)
 t2.set_downstream(t3)
-
-```
+~~~
 
 Save the DAG, return to the shell prompt, and now, we're ready to deploy (make sure your User belongs to an organization):
 

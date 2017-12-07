@@ -28,7 +28,7 @@ from imap_plugin.hooks.imap_hook import ImapHook
 
 
 class ImapToS3Operator(BaseOperator):
-    '''
+    """
     S3 To Redshift Operator
     :param imap_conn_id:        The source imap connection id.
     :type imap_conn_id:         string
@@ -42,7 +42,7 @@ class ImapToS3Operator(BaseOperator):
     :type s3_bucket:            string
     :param s3_key:              The source s3 key.
     :type s3_key:               string
-    '''
+    """
 
     template_fields = ('s3_key',)
 
@@ -98,7 +98,7 @@ class ImapToS3Operator(BaseOperator):
 
 
 class S3ToRedshiftOperator(BaseOperator):
-    '''
+    """
     S3 To Redshift Operator
     :param mysql_conn_id:           The destination redshift connection id.
     :type mysql_conn_id:            string
@@ -144,7 +144,7 @@ class S3ToRedshiftOperator(BaseOperator):
                                     with. Only required if using a load_type of
                                     "upsert".
     :type incremental_key:          string
-    '''
+    """
 
     template_fields = ['s3_key', 'origin_schema']
 

@@ -36,39 +36,39 @@ Check out our [Calls](../calls.md) section for information on when you should us
 
 #### Identify
 
-```python
+~~~ python
 analytics.identify('userID' : '1234qwerty', {
     'name': 'Arthur Dent',
     'email': 'earthling1@hitchhikersguide.com',
     'friends': 100
 })
-```
+~~~
 
 #### Track
 
-```python
+~~~ python
 analytics.track('userID' : '1234qwerty', 'Signed Up')
-```
+~~~
 
 #### Page
 
-```python
+~~~ python
 analytics.page('user_id', 'Docs', 'Python', {
   'url': 'http://astronomer.io'
 })
-```
+~~~
 
 #### Group
 
-```python
+~~~ python
 analytics.group('user_id', 'group_id', {
   'name': 'Astronomer',
   'domain': 'Data Engineering Platform'
 })
-```
+~~~
 
 #### Alias
 
-```python
+~~~ python
 analytics.alias(previous_id, user_id)
-```
+~~~

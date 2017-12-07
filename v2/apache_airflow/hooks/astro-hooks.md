@@ -297,7 +297,7 @@ class BingAdsHook(BaseHook):
 ## Box
 
 ~~~ python
-efrom airflow.models import Connection
+from airflow.models import Connection
 from airflow.utils.db import provide_session
 from airflow.hooks.base_hook import BaseHook
 from boxsdk import OAuth2

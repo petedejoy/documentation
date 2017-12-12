@@ -36,7 +36,7 @@ Step 3: Configure your integrations via the Astronomer dashboard.
 
 Step 4: Check the live debugger to make sure your data is flowing.
 
-![segment-switch-4](../../images/segment-switch-4.gif)
+![segment-switch-4](../../images/segment-switch-4.png)
 
 # Segment | Astronomer Merge Guidelines
 

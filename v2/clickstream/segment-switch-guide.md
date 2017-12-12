@@ -10,13 +10,13 @@ Switching from Segment to Astronomer is very simple. Follow the four easy steps 
 
 ### Step 1
 
-Create a [source](/sources/overview.html) in the Astronomer UI.
+Create a [source](https://docs.astronomer.io/v2/clickstream/sources/overview.html) in the Astronomer UI.
 
 ![segment-switch-1](../../images/segment-switch-1.png)
 
 ### Step 2
 
-Remove your Segment snippet and replace it with our snippet or library.
+Remove your Segment snippet and replace it with our snippet, which can be found in the [analytics.js source doc](https://docs.astronomer.io/v2/clickstream/sources/analyticsjs.html).
 
 ![segment-switch-2](../../images/segment-switch-2.png)
 
@@ -43,7 +43,7 @@ To start, we'd recommend that you take a few minutes to review your existing Seg
 
 Here's the SQL to view that information:
 
-```
+```sql
 SELECT * FROM information_schema.columns
 WHERE table_schema = 'example_schema_name'
 AND table_name = 'example_table_name'

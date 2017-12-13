@@ -23,7 +23,13 @@ _[An example Airflow Pipeline DAG](http://michal.karzynski.pl/blog/2017/03/19/de
 Notice that the DAG we just outlined only describes _how_ to carry out a workflow, not _what_ we want the workflow to actually do - A, B, and C could really be anything! DAGs aren't concerned with what its constituent tasks do, they just make sure the tasks happen at the right time, in the right order, and with the right handling of any unexpected issues. **Airflow DAGs are a framework to express how tasks relate to each other, regardless of the tasks themselves.**
 
 ## Hooks and Operators
-Airflow DAGs are powered by hooks and operators. Hooks are interfaces to external APIs (Google Analytics, SalesForce, etc.), databases (MySQL, Postgres, etc.) and other external platforms. Whereas hooks are the interfaces, Operators determine what your DAG actually does.
+Airflow DAGs are made up of `tasks`, which consist of `hooks` and `operators`.
+
+## Hooks
+
+`Hooks` are interfaces to external APIs (Google Analytics, SalesForce, etc.), databases (MySQL, Postgres, etc.), and other external platforms.
+
+Whereas hooks are the interfaces, `Operators` determine what your DAG actually does.
 
 ## Operators
 The atomic units of DAGs - while DAGs describe _how_ to run a workflow, `Operators` determine _what actually gets done._

@@ -43,6 +43,8 @@ See [here](https://github.com/astronomerio/pro-beta/wiki/Airflow-Operators) for 
 ## Tasks
 Once an operator is instantiated, it is referred to as a `task`. The instantiation defines specific values when calling the abstract operator, and the parameterized task becomes a node in a DAG. Each task must have a `task_id` that serves as a unique identifier and an `owner`.
 
+**Note**: Be sure that `task_ids` aren't duplicated when dynamically generating DAGs - your DAG may not throw error if there is a duplicated `task_id`, but it definitely wont' execute properly.
+
 ### Task Instances
 An executed task is called a `TaskInstance`. This represents a specific run of a task and is a combination of a DAG, at task, and a specific point in time.
 

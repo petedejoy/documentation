@@ -48,12 +48,12 @@ To keep any custom plugins easy for someone else to use, use a consistent file s
 ~~~
 +--plugin_name
 | README.md - High level description of what the plugin contains and what it does.
-| init.py - Calls the AirflowPLugins manager.
+| __init__.py - Calls the AirflowPLugins manager.
 +--operators - Contains the operators.
-|  +--init.py
+|  +--__init__.py
 |  +--operator_one.py
 +--hooks - Contains the hook.
-|  +--init.py
+|  +--__init__.py
 |  +--hook_one.py
 ~~~
 

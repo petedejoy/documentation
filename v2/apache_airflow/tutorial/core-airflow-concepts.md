@@ -34,17 +34,15 @@ Whereas hooks are the interfaces, `Operators` determine what your DAG actually d
 ## Operators
 The atomic units of DAGs - while DAGs describe _how_ to run a workflow, `Operators` determine _what actually gets done._
 
-Operators describe single tasks in a workflow and can usually stand on their own, meaning they don't need to share resources with any other operators. They are so independent that they may even run on two completely different machines.
+Operators describe single tasks in a workflow and can usually stand on their own, meaning they don't need to share resources (or even a machine in some cases) with any other operators.
 
-Note: in general, if two operators need to share information (e.g. a filename or a small amount of data), you should consider combining them into a single operator.
+**Note:** In general, if two operators need to share information (e.g. a filename or a small amount of data), you should consider combining them into a single operator.
 
 Here are some common operators and the tasks they accomplish:
 
 * `BashOperator` - executes a bash command
 * `EmailOperator` - sends an email
 * `PythonOperator` - executes Python code
-
-See [here](https://github.com/astronomerio/pro-beta/wiki/Airflow-Operators) for more detailed descriptions of Airflow Operators and how to utilize them.
 
 ## Tasks
 Once an operator is instantiated, it is referred to as a `task`. The instantiation defines specific values when calling the abstract operator, and the parameterized task becomes a node in a DAG. Each task must have a `task_id` that serves as a unique identifier and an `owner`.

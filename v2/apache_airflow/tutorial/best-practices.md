@@ -42,6 +42,23 @@ Try to do basic transformations and aggregations in SQL queries - this offloads 
 
 ## Readability
 
+### Use a consistent file structure.
+
+To keep any custom plugins easy for someone else to use, use a consistent file structure. At Astronomer, we use:
+~~~
++--plugin_name
+| README.md - High level description of what the plugin contains and what it does.
+| init.py - Calls the AirflowPLugins manager.
++--operators - Contains the operators.
+|  +--init.py
+|  +--operator_one.py
++--hooks - Contains the hook.
+|  +--init.py
+|  +--hook_one.py
+~~~
+
+See [here](https://github.com/airflow-plugins/) for examples!
+
 ### Change the name of your DAG when you change the start date.
 Changing the `start_date` of a DAG creates a new entry in Airflow's database, which could confuse the scheduler because there will be two DAGs with the same name but different schedules.
 

@@ -12,7 +12,7 @@ Astronomer is a data engineering platform that provides a highly integrated set 
 Astronomer includes:
 
 * Analytics.js-based [clickstream](v2/clickstream/overview.html) module, which helps you collect data from your web and mobile applications, and route those events to your tools and to your data lake. 
-* A scalable managed [Apache Airflow](v2/airflow/tutorial/core-airflow-concepts.html) module, with a [CLI](v2/apache_airflow/cli.html) to make deployment easy.
+* A scalable managed [Apache Airflow](v2/apache_airflow/tutorial/core-airflow-concepts.html) module, with a [CLI](v2/apache_airflow/cli.html) to make deployment easy.
 
 Astronomer doesn't include:
 

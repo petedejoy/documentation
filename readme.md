@@ -64,7 +64,7 @@ Upload any image files with the appropriate names to https://github.com/astronom
 
 Once you have images in there, follow the guidelines below to reference them using a relative path in markdown:
 
-Use `./` to reference the same level you are in, or `../` to go up a level. For example, let's say you are in `documentation/v2/airflow/best-practices.md`. To reference an image, you would type `../../images/{filename}.jpg`, because `images` is at the same level as `v2` . This command takes you up once to `v2`, then up again to root, then over to `/images/` then refrences the filename.
+Use `./` to reference the same level you are in, or `../` to go up a level. For example, let's say you are in `v2/apache_airflow/tutorial/best-practices.html`. To reference an image, you would type `../../images/{filename}.jpg`, because `images` is at the same level as `v2` . This command takes you up once to `v2`, then up again to root, then over to `/images/` then refrences the filename.
 
 
 

@@ -187,6 +187,10 @@ entries:
         - title: Heap Analytics
           url: /v2/clickstream/destinations/heap-analytics.html
           output: web, pdf
+        
+        - title: Hotjar
+          url: /v2/clickstream/destinations/hotjar.html
+          output: web, pdf
 
         - title: Hubspot
           url: /v2/clickstream/destinations/hubspot.html

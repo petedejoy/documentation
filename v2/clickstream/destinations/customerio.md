@@ -11,6 +11,8 @@ Customer.io is an automated email based on customer behavioral data. It allows y
 
 Using Customer.io involves placing their JavaScript snippet in the footer of your website and using their client libraries.
 
+*Note that Customer.io accepts a maximum of 30 unique traits per identify call. If you have more than 30 traits attached to these calls, some will not be passed.*
+
 [Learn more about customer.io.](https://customer.io/)
 
 ## Why send data to Customer.io using Astronomer Clickstream?

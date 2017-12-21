@@ -10,7 +10,7 @@ Switching from Segment to Astronomer is very simple. Follow the four easy steps 
 
 ### Step 1
 
-Create a [source](https://docs.astronomer.io/v2/clickstream/sources/overview.html) in the Astronomer UI.
+[Sign up for Astronomer](https://app.astronomer.io/signup) and create a [source](https://docs.astronomer.io/v2/clickstream/sources/overview.html) in the Astronomer UI.
 
 ![segment-switch-1](../../images/segment-switch-1.png)
 

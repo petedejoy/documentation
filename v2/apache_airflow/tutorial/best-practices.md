@@ -89,6 +89,6 @@ task_2.set_downstream(task_3)
 or this
 
 ~~~
-task_3.set_upstream(task_2)
-task_2.set_upstream(task_1)
+task_3 >> task_2
+task_2 >> task_1
 ~~~

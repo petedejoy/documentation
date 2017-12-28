@@ -58,7 +58,9 @@ Task instances also have indicative states, which could be "running", "success",
 By stringing together operators and how they depend on each other, you can build workflows in the form of `DAGs`.
 
 ## Templating with Jinja
-Imagine you want to reference a unique s3 file name that corresponds to the date of the DAG run, how would you do so without hardcoding any paths? The answer: Jinja! In short, Jinja is a template engine for Python and Apache Airflow uses it to provide pipeline authors with a set of built-in parameters and macros.
+Imagine you want to reference a unique s3 file name that corresponds to the date of the DAG run, how would you do so without hardcoding any paths?
+
+Jinja is a template engine for Python and Apache Airflow uses it to provide pipeline authors with a set of built-in parameters and macros.
 
 A jinja template is simply a text file that contains the following:
  * **variables** and/or **expressions** - these get replaced with values when a template is rendered.
@@ -79,6 +81,8 @@ Jinja templating allows you to defer the rendering of strings in your tasks unti
 
 Not all parameters in operators are templated, so you cannot use Jinja templates everywhere by default.
 However, you can add code in your operator to add any fields you need to template:
+
+**Note:** Your Jinja templates can be affected by other parts of your DAG. For example, if your DAG is scheduled to run '@once',  `next_execution_date` and `previous_execution_date` macros will be `None` since your DAG is defined to run just once.
 
 ```python
 template_fields = ('mission', 'commander')

@@ -13,7 +13,7 @@ See [docker download](https://www.docker.com/community-edition#/download) to dow
 ## Setup
 
 ~~~
-curl -o- http://cli.astronomer.io/install.sh | bash
+curl -o- https://cli.astronomer.io/install.sh | bash
 ~~~
 
 **Note:** The above command only works on Mac & Linux. All other OS users will need to head [here](https://github.com/astronomerio/astro/releases/tag/v0.0.9) and download the binary manually.

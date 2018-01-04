@@ -332,6 +332,10 @@ entries:
           url: /v2/apache_airflow/hooks/overview.html
           output: web, pdf
 
+        - title: Autopilot
+          url: /v2/apache_airflow/hooks/autopilot.html
+          output: web, pdf
+
         - title: Bamboo HR
           url: /v2/apache_airflow/hooks/bamboohr.html
           output: web, pdf
@@ -364,6 +368,10 @@ entries:
           url: /v2/apache_airflow/hooks/imap.html
           output: web, pdf
 
+        - title: Intercom
+          url: /v2/apache_airflow/hooks/intercom.html
+          output: web, pdf
+
         - title: MySQL
           url: /v2/apache_airflow/hooks/mysql.html
           output: web, pdf
@@ -383,6 +391,9 @@ entries:
         - title: Operator Overview
           url:  /v2/apache_airflow/operators/overview.html
           output: web, pdf
+
+        - title: Autopilot to s3
+          url: /v2/apache_airflow/operators/autopilot-to-s3.html
 
         - title: Bamboo HR to S3
           url: /v2/apache_airflow/operators/bamboohr-to-s3.html
@@ -411,6 +422,9 @@ entries:
         - title: IMAP to S3
           url: /v2/apache_airflow/operators/imap-to-s3.html
           output: web, pdf
+
+        - title: Intercom to S3
+          url: /v2/apache_airflow/operators/intercom-to-s3.html
 
         - title: MongoDB to S3
           url: /v2/apache_airflow/operators/mongo-to-s3.html

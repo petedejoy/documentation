@@ -25,14 +25,16 @@ To get started sending events to OutBrain, all you're gonna need is your `Advert
 
 ### Astronomer Side
 
-Once you've identified your `Advertiser ID`, go ahead to your Astronomer dashboard and add OutBrain as a destination under your client-side connection.
+Once you've identified your `Advertiser ID`, go ahead to your [Astronomer dashboard](app.astronomer.io) and add OutBrain as a destination under your client-side connection.
 
 Give your connection a unique name and input that `Advertiser ID` where asked.
 
-![OutBrain1](../../../images/Outbrain1.png)
+![OutBrain1-v2](../../../images/outbrain1-v2.png)
 
 Lastly, input the OutBrain events you want to track. This is something like: `email_sign_up`.
 
-Click on `Create Destination` to activate your pipeline.
+Click on `Add` at the bottom of the form to activate your pipeline.
 
-With that, you're ready for insights.
+Once your pipeline is activated, navigate over to the `Logs` or `Analytics` section to monitor live data. 
+
+With that - you're ready for insights! 

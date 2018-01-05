@@ -232,7 +232,7 @@ entries:
           output: web, pdf
 
         - title: OutBrain
-          url: /v2/clickstream/destinations/outbrain.html
+          url: /v2/clickstream/destinations/OutBrain.html
           output: web, pdf
 
         - title: Pebble Post

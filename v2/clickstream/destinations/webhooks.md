@@ -2,13 +2,13 @@
 title: Webhooks
 sidebar: platform_sidebar
 ---
-Astronomer Clickstream makes it easy to send your data to webhooks. Once you follow the steps below, your data will be routed through our platform and pushed to webhooks in the appropriate format.
+Astronomer Clickstream makes it easy to send your data to webhooks from server-side, mobile, *and* client-side. Once you follow the steps below, your data will be routed through our platform and pushed to webhooks in the appropriate format.
 
 ## What are webhooks and how do they work?
 
-A webhook, is a custom user-defined callback function fired on the server side in response to an HTTP POST request.
+A webhook is a custom, user-defined callback function fired in response to an HTTP POST request. It's a useful tool for apps that want to execute code in response to an event occurrence. For example, you might want to post a message to a Slack channel every time a user completes a custom "Sign Up" track event in your app. 
 
-They are used to provide custom actions in reaction to event notification, for example, posting a message to a Slack channel every time a user completes a custom "Sign Up" track event in your app. It's an efficient way to provide realtime updates.
+It's an efficient way to provide realtime updates.
 
 A webhook submits realtime user data, ties customer information to a dedicate API, records mobile and e-commerce data, and maps events to custom features within FB ads and Google Analytics.
 

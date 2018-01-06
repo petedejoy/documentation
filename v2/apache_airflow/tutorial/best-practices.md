@@ -23,6 +23,11 @@ It can be tempting to write your DAGs so that they move data directly from your 
 
 For example, depending on your data retention policy you could modify the load logic and re-run the entire historical pipeline without having to re-run the extracts. This is also useful in situations where you no longer have to the source systems for various reasons.
 
+### depends_on_past and wait_for_downstream can be used for added safety
+`depends_on_past` and `wait_for_downstream` are set at the DAG level, but filters down to tasks. If `depends_on_past` is set to `true`, the previously scheduled task instance needs to have succeeded before the next task instance will be scheduled (assuming all dependencies are met). Additionally, if `wait_for_downstream` is set to `true`, a task will wait for all tasks downstream of the previously scheduled task to finish before being scheduled.
+
+Using these effectively can help ensure data integrity when scheduling a backfill where data is aggregated by some time interval.
+
 ### Static start_date
 A dynamic start_date is misleading. It can cause failures when clearing out failed task instances and missing DAG runs.
 

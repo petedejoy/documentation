@@ -304,6 +304,10 @@ entries:
           url: /v2/apache_airflow/tutorial/core-airflow-concepts.html
           output: web, pdf
 
+        - title: Sign-up Walkthrough
+          url: /v2/apache_airflow/sign-up-walk-through
+          output: web, pdf
+          
         - title: Simple DAG Example
           url: /v2/apache_airflow/tutorial/sample-dag.html
           output: web, pdf

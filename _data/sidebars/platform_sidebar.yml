@@ -112,10 +112,6 @@ entries:
           url: /v2/clickstream/destinations/acquisio.html
           output: web, pdf
 
-        - title: Amazon Kinesis
-          url: /v2/clickstream/destinations/amazon-kinesis.html
-          output: web, pdf
-
         - title: Amazon Redshift
           url: /v2/clickstream/destinations/amazon-redshift.html
           output: web, pdf

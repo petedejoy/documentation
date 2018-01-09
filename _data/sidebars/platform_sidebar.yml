@@ -305,9 +305,9 @@ entries:
           output: web, pdf
 
         - title: Sign-up Walkthrough
-          url: /v2/apache_airflow/sign-up-walk-through
+          url: /v2/apache_airflow/tutorial/sign-up-walk-through.html
           output: web, pdf
-          
+
         - title: Simple DAG Example
           url: /v2/apache_airflow/tutorial/sample-dag.html
           output: web, pdf

@@ -39,7 +39,7 @@ It'll take a couple of seconds for your Webserver and Scheduler to start kickin'
 
 ![airflow-signup5](../../../images/airflow-signup5.png)
 
-### 6. Run the CLI (Command Line Interface) Install Script
+## 6. Run the CLI (Command Line Interface) Install Script
 
 *iOS or Linux users*: Download the CLI by copying this into your Terminal command line: 
 

@@ -26,13 +26,27 @@ Furthermore, you do not need to learn the AdWords SDK methods if you want to sen
 
 ### Adwords Side
 
-Once you create an Adwords account, you'll need to find your Conversion ID. To do this, you'll need to navigate through `Tools-->Conversions` and have to click the red `+ Conversion` button.
+Once you create an Adwords account, you'll need to find your Conversion ID. To do this, you'll need to click the wrench icon in the upper right hand corner of your screen. It should look something like this:
 
-![Adwords-1](../../../images/AdWords1.png)
+![Adwords1](../../../images/adwords1.png)
 
-Copy the Conversion ID to your clipboard.
+After you click the wrench, you'll be prompted with a menu. Under `Measurement`, select `Conversions`. Create a new conversion by clicking the plus icon in the upper left hand corner of the screen.
 
-![AdWords-2](../../../images/AdWords2.png)
+You will see a `Global Site Tag` that looks like the following:
+~~~js
+<!-- Global Site Tag (gtag.js) - Google AdWords: GOOGLE_CONVERSION_ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-GOOGLE_CONVERSION_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'AW-GOOGLE_CONVERSION_ID');
+</script>
+~~~
+[Source](https://developers.google.com/adwords-remarketing-tag/)
+
+In the code snippet above, the conversion ID has been replaced with `AW-Google_Conversion_ID`. In your new conversion, this will be a uniuqe numberical ID that is tied to your Adwords account. Copy this to your clipboard and navigate back to your Astronomer app.
 
 ### Astronomer Side
 

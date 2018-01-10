@@ -16,7 +16,7 @@ Once you've verified your email address, you'll be set to log in.
 
 To provision an instance, go right ahead to the Airflow tab on the left side bar of our interface.
 
-![airflow-signup2](../../../images/airflow-signup2.png) 
+![airflow-signup2.1](../../../images/airflow-signup2.1.png) 
 
 ## 3. Enter your Upgrade Code
 
@@ -24,30 +24,34 @@ If you've reached out to our sales team to access our Airflow beta program, you 
 
 If you haven't been in touch with our team, reach out to R. Brad Kirn at brad@astronomer.io. He'll get you set up. 
 
-![airflow-signup3](../../../images/airflow-signup3.png)
+![airflow-signup3.1](../../../images/airflow-signup3.1.png)
 
 
 ## 4. Provision an Airflow Instance
 
 Now that you've made it in, go ahead and create your own private Apache Airflow Webserver and Scheduler.
 
-![airflow-signup4](../../../images/airflow-signup4.png)
+![airflow-signup4.1](../../../images/airflow-signup4.1.png)
 
 ## 5. Wait for Webserver and Scheduler to Start
 
 It'll take a couple of seconds for your Webserver and Scheduler to start kickin'. You should see both icons first turn yellow ("Staging") and then green ("Running").
 
-![airflow-signup5](../../../images/airflow-signup5.png)
+![airflow-signup5.1](../../../images/airflow-signup5.1.png)
 
 ## 6. Run the CLI (Command Line Interface) Install Script
 
-*iOS or Linux users*: Download the CLI by copying this into your Terminal command line: 
+Now, you're ready to install the CLI. Here are some instructions, depending on your operating system:
+
+**iOS or Linux users**: Download the CLI by copying this into your Terminal command line: 
 
 ```
 curl -o- https://cli.astronomer.io/install.sh | bash
 ```
 
-*Windows users*: Check out our [GitHub READ-ME](https://github.com/astronomerio/astro) to manually download the CLI. 
+**Windows users**: Check out our [GitHub README](https://github.com/astronomerio/astro) to manually download the CLI. 
+
+*Note: While we support Windows, our product is optimized for Linux and iOS users. Consider making the switch if you can, and reach out if you have any trouble.*
 
 [Here's](https://docs.astronomer.io/v2/apache_airflow/cli.html) more documentation on our CLI. 
 

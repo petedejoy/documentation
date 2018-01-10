@@ -37,7 +37,7 @@ Now that you've made it in, go ahead and create your own private Apache Airflow 
 
 It'll take a couple of seconds for your Webserver and Scheduler to start kickin'. You should see both icons first turn yellow ("Staging") and then green ("Running").
 
-![airflow-signup5.1](../../../images/airflow-signup5.1.png)
+![airflow-signup5.2](../../../images/airflow-signup5.2.png)
 
 ## 6. Run the CLI (Command Line Interface) Install Script
 
@@ -55,7 +55,7 @@ curl -o- https://cli.astronomer.io/install.sh | bash
 
 [Here's](https://docs.astronomer.io/v2/apache_airflow/cli.html) more documentation on our CLI. 
 
-![airflow-signup6](../../../images/airflow-signup6.png)
+![airflow-signup6.1](../../../images/airflow-signup6.1.png)
 
 ## 7. Sign into the CLI 
 

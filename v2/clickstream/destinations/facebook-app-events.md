@@ -44,4 +44,4 @@ Input your `appid` and App Event Mappings.
 
 As a final step, give your destination a unique name in the `Friendly Name` box.
 
-With that, just click on `Create Destination` to active your pipeline!
+With that, just click on `Save` to active your pipeline!

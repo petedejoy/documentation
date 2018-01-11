@@ -50,7 +50,7 @@ Back in the Astronomer UI, select Pinterest Conversion Tracking as a destination
 
 Then, provide your custom event name and paste the value for that event.
 
-Finally, click `Create Destination` to activate your pipeline.
+Finally, click `Save` to activate your pipeline.
 
 ![pinterest4](../../../images/pinterest4.png)
 

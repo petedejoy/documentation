@@ -53,7 +53,7 @@ Add your Account ID and Data API Key into the Lytics connector on your Astronome
 
 Now, just click `Create Destination` to activate your pipeline.
 
-![lytics3](../../../images/lytics3.gif)
+![lytics3](../../../images/lytics3.png)
 
 Lytics updates their incoming data stream every two minutes, so give it a couple of minutes for your events to show up.
 

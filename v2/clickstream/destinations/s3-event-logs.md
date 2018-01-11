@@ -64,7 +64,7 @@ Add the following S3 bucket policy, which will grant Astronomer permission to co
 
 ### Astronomer Side
 
-Configure a new S3 connection in your Astronomer dashboard and give your new connection a unique name. Click `Create Destination` to activate your pipeline.
+Configure a new S3 connection in your Astronomer dashboard and give your new connection a unique name. Click `Save` to activate your pipeline.
 
 ### Things to Note:
 
@@ -77,4 +77,4 @@ AWS S3 supports [server side encryption](http://docs.aws.amazon.com/AmazonS3/lat
 3. *Path Prefix (optional)*
 The file path at which your S3 events will be stored.
 
-![s3-event-logs1](../../../images/s3-event-logs3.gif)
+![s3-event-logs1](../../../images/s3-event-logs3.png)

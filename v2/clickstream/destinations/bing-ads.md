@@ -51,6 +51,6 @@ Add Bing Ads as a destination. From there, give your connection a unique name an
 
 ![bing-ads4](../../../images/bing-ads4.png)
 
-Now, just click on `Create Destination` to activate your pipeline.
+Now, just click on `Save` to activate your pipeline.
 
 That's it! Get ready for insights.

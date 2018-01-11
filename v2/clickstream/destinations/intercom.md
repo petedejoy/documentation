@@ -49,9 +49,9 @@ Enter your Source ID and API Key into the Intercom connector on your Astronomer 
 
 Give your new connection a unique name.
 
-Click `Create Destination` to activate your pipeline.
+Click `Save` to activate your pipeline.
 
-![intercom7](../../../images/intercom7.gif)
+![intercom7](../../../images/intercom7.png)
 
 At this point, you'll see events coming in to your Intercom account. If you click on the `People` icon on the top of your dashboard, you'll see 1 new user. That's you!
 

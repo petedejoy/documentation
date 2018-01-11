@@ -37,6 +37,6 @@ You will find both your Site ID and API Key clearly presented and labeled once y
 
 ### Astronomer Side
 
-Add your Site ID and API Key into the Customer.io connector on your Astronomer dashboard and give your new connection a unique name. Click 'Create Destination' and your pipeline will be activated.
+Add your Site ID and API Key into the Customer.io connector on your Astronomer dashboard and give your new connection a unique name. Click 'Save' and your pipeline will be activated.
 
-![customerio3](../../../images/customerio3.gif)
+![customerio3](../../../images/customerio3.png)

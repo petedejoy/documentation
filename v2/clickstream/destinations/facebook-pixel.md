@@ -41,12 +41,12 @@ Facebook has nine [Standard Events](https://www.facebook.com/business/a/add-pixe
 
 To connect your events to these predefined ones within Facebook, just input the name of the Astronomer event and choose the appropriate Standard Facebook Event that corresponds to it.
 
-![facebook-pixel3](../../../images/facebook-pixel3.gif)
+![facebook-pixel3](../../../images/facebook-pixel3.png)
 
 **Conversion Pixel ID**
 
 If you are using the Facebook Pixel integration as a replacement for Conversion Pixels as well, put each `Conversion Pixel ID` into your Astronomer account next to the corresponding event in Astronomer that you've already set up. Make sure you include all capitals letters and spaces used in your event labels.
 
-![facebook-pixel4](../../../images/facebook-pixel4.gif)
+![facebook-pixel4](../../../images/facebook-pixel4.png)
 
-With that, just click `Create Destination` to activate your pipeline.
+With that, just click `Save` to activate your pipeline.

@@ -33,7 +33,7 @@ After you create a new project, you will be given a write key.
 
 ### Astronomer Side
 
-Copy this key and add it into your Astronomer UI to get started. Click 'Create Destination' to activate your pipeline.
+Copy this key and add it into your Astronomer UI to get started. Click 'Save' to activate your pipeline.
 
 
 If you look back at your Calq account, you should see a message confirming that events have been received.

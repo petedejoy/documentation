@@ -48,6 +48,6 @@ One handy feature of HubSpot is the full API Key History, including creation, vi
 
 Now, all you have to do is add both of these credentials (your Portal ID and your newly created API Key) into the Astronomer UI and give your new connection a unique name.
 
-![hubspot4](../../../images/hubspot4.gif)
+![hubspot4](../../../images/hubspot4.png)
 
-Once you do that, just click `Create Destination` to activate your pipeline.
+Once you do that, just click `Save` to activate your pipeline.

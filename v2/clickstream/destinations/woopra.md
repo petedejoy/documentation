@@ -32,7 +32,7 @@ Now, add your domain name into the Woopra connector on your Astronomer dashboard
 
 Click `Create Destination` to activate your pipeline.
 
-![woopra2](../../../images/woopra2.gif)
+![woopra2](../../../images/woopra2.png)
 
 
 ### The Pipeline

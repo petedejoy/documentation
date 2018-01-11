@@ -30,7 +30,7 @@ Once your loader `.js` file is deployed on your page, you'll be ready to configu
 
 ### Astronomer Side
 
-Copy your Criteo Account ID into the "Account ID" field in your Astronomer Criteo configuration, and give your new connection a unique name. Your pipeline will be activated once you click 'Create Destination'.
+Copy your Criteo Account ID into the "Account ID" field in your Astronomer Criteo configuration, and give your new connection a unique name. Your pipeline will be activated once you click 'Save'.
 
 ## Beyond the Basics
 

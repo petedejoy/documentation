@@ -31,7 +31,7 @@ Your site ID will be at the top of this page. Copy this ID to your clipboard.
 
 ![clicky4](../../../images/clicky4.png)
 
-Paste this ID into the Astronomer UI to begin sending data to Clicky. Your pipeline will be activated once you click 'Create Destination.'
+Paste this ID into the Astronomer UI to begin sending data to Clicky. Your pipeline will be activated once you click 'Save.'
 
 
 

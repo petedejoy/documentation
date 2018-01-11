@@ -31,7 +31,7 @@ Next, head to app.astronomer.io and add a new destination for the source you wan
 
 Here, you'll need to create a Friendly Name and enter your Google Analytics Tracking ID for the application. With just these two pieces of information, you can click `Create Destination` and Astronomer will start sending your Clickstream data to Google Analytics.
 
-![google-analytics1](../../../images/google-analytics2.gif)
+![google-analytics1](../../../images/google-analytics2.png)
 
 ***Note:** Unless you specify otherwise, Astronomer will automatically enable `Track Named Pages` and `Track Categorized Pages`.*
 

@@ -35,7 +35,7 @@ With that 8-character ID, go right ahead to your Astronomer dashboard to finish 
 
 Once you're on our UI, add Attribution as a destination on your client-side or server-side source. From there, give your connection a unique name and enter your `Project ID` where prompted. 
 
-Finally, click `Create Destination` to activate your pipeline. 
+Finally, click `Save` to activate your pipeline. 
 
 ![attribution2](../../../images/attribution2.png).  
 

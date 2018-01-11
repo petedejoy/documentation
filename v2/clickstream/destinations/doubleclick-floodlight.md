@@ -63,4 +63,4 @@ Custom properties can be added to the events sent to Doubleclick by specifying t
 
 **Note**: When adding new events to track with DoubleClick, make sure the `Event key` matches the `Event name` exactly.
 
-Once you have all of this set up, click 'Create Destination' to activate your pipeline.
+Once you have all of this set up, click `Save` to activate your pipeline.

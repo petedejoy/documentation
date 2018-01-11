@@ -120,7 +120,7 @@ entries:
           url: /v2/clickstream/destinations/amplitude.html
           output: web, pdf
 
-        - title: Appboy
+        - title: Appboy/Braze
           url: /v2/clickstream/destinations/appboy.html
           output: web, pdf
 
@@ -232,7 +232,7 @@ entries:
           output: web, pdf
 
         - title: Pebble Post
-          url: /v2/clickstream/destinations/pebblepost.html
+          url: /v2/clickstream/destinations/pebble-post.html
           output: web, pdf
 
         - title: Pinterest

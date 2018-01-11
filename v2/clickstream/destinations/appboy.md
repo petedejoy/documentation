@@ -12,7 +12,7 @@ Because Braze has a predictive analytics component, it functions most effectivel
 
 ## Why send data to Braze using Astronomer Clickstream?
 
-Integrating Braze with Astronomer Clickstream means that you can track users accross your web, mobile, and server-side apps. Without installing additional code in the form of Braze SDKs or API libraries, you'll be able to recieve all [`identify` and `track` calls](,,/calls.html) in the format that Braze understands.
+Integrating Braze with Astronomer Clickstream means that you can track users across your web, mobile, and server-side apps. Without installing additional code in the form of Braze SDKs or API libraries, you'll be able to receive all [`identify` and `track` calls](,,/calls.html) in the format that Braze understands.
 
 ## Getting started with Braze
 
@@ -24,4 +24,4 @@ Once you've created your Braze account, you'll need to find your `App Group Iden
 
 ### Astronomer side
 
-Paste your `App Group Identifier` into the approprate field in your Astronomer UI to get your data flowing!
+Paste your `App Group Identifier` into the appropriate field in your Astronomer UI to get your data flowing!

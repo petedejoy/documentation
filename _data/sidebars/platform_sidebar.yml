@@ -5,168 +5,188 @@ entries:
   product: Astronomer
   version: v2
   current: true
+
   folders:
 
   - title: Platform
-    output: web, pdf
+    output: web
+
     folderitems:
 
-    - title: Introduction
+    - title: Overview
       url: /
-      output: web, pdf
+      output: web
 
-    - title: API
-      url: /v2/platform/api.html
-      output: web, pdf
+    - title: Private Cloud Edition
+      url: /v2/editions/private-cloud/overview.html
+      output: web
+
+    - title: Open Edition
+      url: /v2/editions/open/overview.html
+      output: web
+
+      subfolders:
+      - title: SaaS Edition
+        output: web
+        subfolderitems:
+
+        - title: Overview
+          url: /v2/editions/saas/overview.html
+          output: web
+
+        - title: API
+          url: /v2/editions/saas/api.html
+          output: web
+
 
   - title: Clickstream
-    output: web, pdf
+    output: web
     folderitems:
 
     - title: Overview
       url: /v2/clickstream/overview.html
-      output: web, pdf
+      output: web
 
     - title: Basic Clickstream Example
       url: /v2/clickstream/2048.html
-      output: web, pdf
-    
+      output: web
+
     - title: Segment Switch Guide
       url: /v2/clickstream/segment-switch-guide.html
-      output: web, pdf
+      output: web
 
     - title: API Calls
       url: /v2/clickstream/calls.html
-      output: web, pdf
+      output: web
       subfolders:
 
       - title: Sources
-        output: web, pdf
+        output: web
         subfolderitems:
 
         - title: Overview
           url: /v2/clickstream/sources/overview.html
-          output: web, pdf
+          output: web
 
         - title: Analytics.js
           url: /v2/clickstream/sources/analyticsjs.html
-          output: web, pdf
+          output: web
 
         - title: Android
           url: /v2/clickstream/sources/android.html
-          output: web, pdf
+          output: web
 
         - title: iOS
           url: /v2/clickstream/sources/ios.html
-          output: web, pdf
+          output: web
 
         - title: Server Side
           url: /v2/clickstream/sources/serverside.html
-          output: web, pdf
+          output: web
 
         - title: HTTP API
           url: /v2/clickstream/sources/httpapi.html
           output: web,pdf
-        
+
         - title: Java
           url: /v2/clickstream/sources/java.html
-          output: web, pdf
+          output: web
 
         - title: MeteorJS
           url: /v2/clickstream/sources/meteorjs.html
-          output: web, pdf
+          output: web
 
         - title: .NET
           url: /v2/clickstream/sources/net.html
-          output: web, pdf
+          output: web
 
         - title: Node.js
           url: /v2/clickstream/sources/nodejs.html
-          output: web, pdf
+          output: web
 
         - title: PHP
           url: /v2/clickstream/sources/php.html
-          output: web, pdf
+          output: web
 
         - title: Python
           url: /v2/clickstream/sources/python.html
-          output: web, pdf
+          output: web
 
         - title: Ruby
           url: /v2/clickstream/sources/ruby.html
-          output: web, pdf
+          output: web
 
         - title: Segment Webhook
           url: /v2/clickstream/sources/segment-webhook.html
-          output: web, pdf
+          output: web
 
       - title: Destinations
-        output: web, pdf
+        output: web
         subfolderitems:
 
         - title: Overview
           url: /v2/clickstream/destinations/overview.html
-          output: web, pdf
+          output: web
 
         - title: Acquisio
           url: /v2/clickstream/destinations/acquisio.html
-          output: web, pdf
+          output: web
 
         - title: Amazon Redshift
           url: /v2/clickstream/destinations/amazon-redshift.html
-          output: web, pdf
+          output: web
 
         - title: Amplitude
           url: /v2/clickstream/destinations/amplitude.html
-          output: web, pdf
+          output: web
 
         - title: Appboy/Braze
           url: /v2/clickstream/destinations/appboy.html
-          output: web, pdf
+          output: web
 
         - title: Attribution
           url: /v2/clickstream/destinations/attribution.html
-          output: web, pdf
+          output: web
 
         - title: Bing Ads
           url: /v2/clickstream/destinations/bing-ads.html
-          output: web, pdf
-        
+          output: web
+
         - title: Bloom Reach
           url: /v2/clickstream/destinations/bloom-reach.html
-          output: web, pdf
+          output: web
 
         - title: Calq
           url: /v2/clickstream/destinations/calq.html
-          output: web, pdf
+          output: web
 
         - title: Clicky
           url: /v2/clickstream/destinations/clicky.html
-          output: web, pdf
+          output: web
 
         - title: Criteo
           url: /v2/clickstream/destinations/criteo.html
-          output: web, pdf
+          output: web
 
         - title: Customer.io
           url: /v2/clickstream/destinations/customerio.html
-          output: web, pdf
+          output: web
 
         - title: DoubleClick Floodlight
           url: /v2/clickstream/destinations/doubleclick-floodlight.html
-          output: web, pdf
+          output: web
 
         - title: Drift
           url: /v2/clickstream/destinations/drift.html
-          output: web, pdf
+          output: web
 
         - title: Facebook App Events
           url: /v2/clickstream/destinations/facebook-app-events.html
-          output: web, pdf
+          output: web
 
         - title: Facebook Pixel
           url: /v2/clickstream/destinations/facebook-pixel.html
-          output: web, pdf
+          output: web
 
         - title: Google AdWords
           url: /v2/clickstream/destinations/google-adwords.html
@@ -174,288 +194,286 @@ entries:
 
         - title: Google Analytics
           url: /v2/clickstream/destinations/google-analytics.html
-          output: web, pdf
+          output: web
 
         - title: Google Tag Manager
           url: /v2/clickstream/destinations/google-tagmanager.html
-          output: web, pdf
+          output: web
 
         - title: Heap Analytics
           url: /v2/clickstream/destinations/heap-analytics.html
-          output: web, pdf
-        
+          output: web
+
         - title: Hotjar
           url: /v2/clickstream/destinations/hotjar.html
-          output: web, pdf
+          output: web
 
         - title: Hubspot
           url: /v2/clickstream/destinations/hubspot.html
-          output: web, pdf
+          output: web
 
         - title: Intercom
           url: /v2/clickstream/destinations/intercom.html
-          output: web, pdf
+          output: web
 
         - title: Keen IO
           url: /v2/clickstream/destinations/keen-io.html
-          output: web, pdf
-        
+          output: web
+
         - title: Kenshoo
           url: /v2/clickstream/destinations/kenshoo.html
-          output: web, pdf
+          output: web
 
         - title: Kenshoo Infinity Pixel
           url: /v2/clickstream/destinations/kenshoo-pixel.html
-          output: web, pdf
-        
+          output: web
+
         - title: KISSmetrics
           url: /v2/clickstream/destinations/kissmetrics.html
-          output: web, pdf
+          output: web
 
         - title: Lytics
           url: /v2/clickstream/destinations/lytics.html
-          output: web, pdf
+          output: web
 
         - title: Mixpanel
           url: /v2/clickstream/destinations/mixpanel.html
-          output: web, pdf
-        
+          output: web
+
         - title: Netmining
           url: /v2/clickstream/destinations/netmining.html
 
         - title: Optimizely
           url: /v2/clickstream/destinations/optimizely.html
-          output: web, pdf
+          output: web
 
         - title: OutBrain
           url: /v2/clickstream/destinations/OutBrain.html
-          output: web, pdf
+          output: web
 
         - title: Pebble Post
           url: /v2/clickstream/destinations/pebble-post.html
-          output: web, pdf
+          output: web
 
         - title: Pinterest
           url: /v2/clickstream/destinations/pinterest.html
-          output: web, pdf
+          output: web
 
         - title: Resonate
           url: /v2/clickstream/destinations/resonate.html
-          output: web, pdf
+          output: web
 
         - title: Retention Science
           url: /v2/clickstream/destinations/retention-science.html
-          output: web, pdf
+          output: web
 
         - title: Rubicon
           url: /v2/clickstream/destinations/rubicon.html
-          output: web, pdf
+          output: web
 
         - title: S3 Event Logs
           url: /v2/clickstream/destinations/s3-event-logs.html
-          output: web, pdf
+          output: web
 
         - title: Taboola
           url: /v2/clickstream/destinations/taboola.html
-          output: web, pdf
+          output: web
 
         - title: Twitter Ads
           url: /v2/clickstream/destinations/twitter-ads.html
-          output: web, pdf
+          output: web
 
         - title: Webhooks
           url: /v2/clickstream/destinations/webhooks.html
-          output: web, pdf
+          output: web
 
         - title: Woopra
           url: /v2/clickstream/destinations/woopra.html
-          output: web, pdf
-        
+          output: web
+
         - title: VWO
           url: /v2/clickstream/destinations/vwo.html
-          output: web, pdf
+          output: web
 
   - title: Apache Airflow
-    output: web, pdf
+    output: web
     folderitems:
 
     - title: Overview
       url: /v2/apache_airflow/overview.html
-      output: web, pdf
+      output: web
 
     - title: Astro CLI
       url: /v2/apache_airflow/cli.html
-      output: web, pdf
+      output: web
 
     - title: Sources & Destinations
       url: /v2/apache_airflow/sources-and-destinations.html
-      output: web, pdf
+      output: web
 
       subfolders:
       - title: Tutorial
-        output: web, pdf
+        output: web
         subfolderitems:
 
         - title: Core Apache Airflow Concepts
           url: /v2/apache_airflow/tutorial/core-airflow-concepts.html
-          output: web, pdf
+          output: web
 
         - title: Sign-up Walkthrough
           url: /v2/apache_airflow/tutorial/sign-up-walk-through.html
-          output: web, pdf
+          output: web
 
         - title: Simple DAG Example
           url: /v2/apache_airflow/tutorial/sample-dag.html
-          output: web, pdf
+          output: web
 
         - title: Sample DAG Deployment
           url: /v2/apache_airflow/tutorial/dag-deployment.html
-          output: web, pdf
+          output: web
 
         - title: DAG Writing Best Practices
           url:  /v2/apache_airflow/tutorial/best-practices.html
-          output: web, pdf
+          output: web
 
         - title: Monitoring
           url:  /v2/apache_airflow/tutorial/monitoring.html
-          output: web, pdf
+          output: web
 
         - title: Airflow Connections
           url:  /v2/apache_airflow/tutorial/connections.html
-          output: web, pdf
+          output: web
 
       - title: Hooks
-        output: web, pdf
+        output: web
         subfolderitems:
 
         - title: Overview
           url: /v2/apache_airflow/hooks/overview.html
-          output: web, pdf
+          output: web
 
         - title: Autopilot
           url: /v2/apache_airflow/hooks/autopilot.html
-          output: web, pdf
+          output: web
 
         - title: Bamboo HR
           url: /v2/apache_airflow/hooks/bamboohr.html
-          output: web, pdf
+          output: web
 
         - title: Bing Ads
           url: /v2/apache_airflow/hooks/bing-ads.html
-          output: web, pdf
+          output: web
 
         - title: Box
           url: /v2/apache_airflow/hooks/box.html
-          output: web, pdf
+          output: web
 
         - title: Chargify
           url: /v2/apache_airflow/hooks/chargify.html
-          output: web, pdf
+          output: web
 
         - title: Facebook Ads
           url: /v2/apache_airflow/hooks/facebook-ads.html
-          output: web, pdf
+          output: web
 
         - title: Github
           url: /v2/apache_airflow/hooks/github.html
-          output: web, pdf
+          output: web
 
         - title: Google Analytics
           url: /v2/apache_airflow/hooks/google-analytics.html
-          output: web, pdf
+          output: web
 
         - title: IMAP
           url: /v2/apache_airflow/hooks/imap.html
-          output: web, pdf
+          output: web
 
         - title: Intercom
           url: /v2/apache_airflow/hooks/intercom.html
-          output: web, pdf
+          output: web
 
         - title: MySQL
           url: /v2/apache_airflow/hooks/mysql.html
-          output: web, pdf
+          output: web
 
         - title: Salesforce Bulk API
           url: /v2/apache_airflow/hooks/salesforce-bulk-api.html
-          output: web, pdf
+          output: web
 
         - title: Salesforce
           url: /v2/apache_airflow/hooks/Salesforce.html
-          output: web, pdf
-          
+          output: web
+
       - title: Operators
-        output: web, pdf
+        output: web
         subfolderitems:
 
         - title: Operator Overview
           url:  /v2/apache_airflow/operators/overview.html
-          output: web, pdf
+          output: web
 
         - title: Autopilot to s3
           url: /v2/apache_airflow/operators/autopilot-to-s3.html
 
         - title: Bamboo HR to S3
           url: /v2/apache_airflow/operators/bamboohr-to-s3.html
-          output: web, pdf
+          output: web
 
         - title: Bing Ads to S3
           url: /v2/apache_airflow/operators/bing-ads-to-s3.html
-          output: web, pdf
+          output: web
 
         - title: Chargify to S3
           url: /v2/apache_airflow/operators/chargify-to-s3.html
-          output: web, pdf
+          output: web
 
         - title: Facebook Ads to S3
           url: /v2/apache_airflow/operators/facebook-ads-to-s3.html
-          output: web, pdf
+          output: web
 
         - title: Github to S3
           url: /v2/apache_airflow/operators/github-to-s3.html
-          output: web, pdf
+          output: web
 
         - title: Google Analytics to S3
           url: /v2/apache_airflow/operators/google-analytics-to-s3.html
-          output: web, pdf
+          output: web
 
         - title: IMAP to S3
           url: /v2/apache_airflow/operators/imap-to-s3.html
-          output: web, pdf
+          output: web
 
         - title: Intercom to S3
           url: /v2/apache_airflow/operators/intercom-to-s3.html
 
         - title: MongoDB to S3
           url: /v2/apache_airflow/operators/mongo-to-s3.html
-          output: web, pdf
+          output: web
 
         - title: MySQL to S3
           url: /v2/apache_airflow/operators/mysql-to-s3.html
-          output: web, pdf
+          output: web
 
         - title: S3 to MySQL
           url: /v2/apache_airflow/operators/s3-to-mysql.html
-          output: web, pdf
+          output: web
 
         - title: S3 to Redshift
           url: /v2/apache_airflow/operators/s3-to-redshift.html
-          output: web, pdf
+          output: web
 
         - title: S3 to Spreadsheet
           url: /v2/apache_airflow/operators/s3-to-spreadsheet.html
-          output: web, pdf
+          output: web
 
         - title: Salesforce Schema to Redshift
           url: /v2/apache_airflow/operators/salesforce-schema-to-redshift.html
-          output: web, pdf
+          output: web
 
         - title: Salesforce to Redshift
           url: /v2/apache_airflow/operators/salesforce-to-redshift.html
-          output: web, pdf
+          output: web
 
         - title: Salesforce Schema to S3
           url: /v2/apache_airflow/operators/salesforce-to-s3.html
-          output: web, pdf
-
-      
+          output: web

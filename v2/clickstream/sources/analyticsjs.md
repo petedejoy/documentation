@@ -2,15 +2,14 @@
 title: Source - Analytics.js
 sidebar: platform_sidebar
 ---
-## Getting Started with Astronomer Clickstream - Website
 
-Using our analytics.js library, you can start sending customer data directly from your website to Astronomer. Accessing this user data will yield rich, actionable insights, and it only takes a few minutes to get set up.
+Using the Javascript analytics.js library, you can start sending customer data directly from your website or web application to Astronomer. Accessing this user data will yield rich, actionable insights, and it only takes a few minutes to get set up.
 
-### Create a Client-Side Source in the Astronomer UI
+## Create a Client-Side Source in the Astronomer UI
 
 After logging in with your Astronomer credentials, add a new `Source → Client-Side`. Give your source a friendly name and copy that `Source ID` for the next step.
 
-### Copy & Paste the Snippet
+## Copy & Paste the Snippet
 
 Next, you’ll need to copy and paste the snippet below into the <head> of your website.
 
@@ -29,13 +28,13 @@ As soon as this snippet is running on your site, you can begin experimenting wit
 
 To test your newly configured source, trigger some events on your website and look for them in the Monitoring Overview & Logs.
 
-***Note**: You will want to remove any other native 3rd party destination code that you may already have on your website. Skipping this step could cause issues if you turn on those same destinations (e.g. Mixpanel, Google Analytics, Amplitude, etc.) through Astronomer.*
+> NOTE: You will want to remove any other native 3rd party destination code that you may already have on your website. Skipping this step could cause issues if you turn on those same destinations (e.g. Mixpanel, Google Analytics, Amplitude, etc.) through Astronomer.*
 
 If you are just looking for basic clickstream functionality, you’re all done setting up! We recommend enabling a simple integration, like Google Analytics, to start analyzing your website’s data.
 
 If you’d like to use any tool that deals with the identity of your users (e.g. Mixpanel), keep reading to learn how to use the `identify` call.
 
-### Identify Your Users
+## Identify Your Users
 
 The `identify` method helps you associate your users and their actions to a unique and recognizable `userID` and `traits`. We recommend using a backend template to insert an `identify` call directly into the footer of every page of your site where the user is logged in. That way, your users will always be identified, no matter what page they first land on.
 
@@ -59,7 +58,7 @@ You’re now set up to use any basic CRM. Go ahead and switch on a CRM, like Int
 
 While `identify` is an extremely useful call for a lot of integrations, many other analytics tools go beyond just identifying users; they record the actions each user performs too. See below for how to get to an even more holistic event tracking analytics setup.
 
-### Track Your Users’ Actions
+## Track Your Users’ Actions
 
 To get to a more complete event tracking analytics setup, you can add a `track` call to your website. This will tell Astronomer which actions you are performing on your site. With `track`, each user action triggers an “event,” which can also have associated properties.
 
@@ -78,7 +77,7 @@ analytics.track('Viewed Product', {
 });
 ```
 
-***Note**: In order to use a `track` call, you must specify a name for the event you want to track whereas properties, options, and callback are all optional fields.*
+> NOTE: In order to use a `track` call, you must specify a name for the event you want to track whereas properties, options, and callback are all optional fields.*
 
 A lot of analytics tools support custom event mapping so, with `track` implemented, you’ll be able to attribute events to your users and start targeting them in a more informed and relevant way.
 

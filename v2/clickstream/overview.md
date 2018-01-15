@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Clickstream Module Overview
 sidebar: platform_sidebar
 ---
 
@@ -9,13 +9,13 @@ The Astronomer Clickstream module allows you to capture every user event from we
 
 # Getting Started
 
-Once you've [signed up](https://app.astronomer.io/signup) for an account, it only takes a few minutes to start collecting valuable behavior data with Astronomer. 
+Once you've [signed up](https://app.astronomer.io/signup) for an account, it only takes a few minutes to start collecting valuable behavior data with Astronomer.
 
 Use one of our library sources to record user data from your website, mobile app, or servers. We'll transform and route that data to all of the destinations you've enabled.
 
 ## Sources
 
-Collecting customer data from your website, mobile app, or servers is easy, and we've built an integration with each of the following platforms. 
+Collecting customer data from your website, mobile app, or servers is easy, and we've built an integration with each of the following platforms.
 
 Check it out:
 

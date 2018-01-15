@@ -64,6 +64,9 @@ Deploying DAGs involves a Docker Registry that sends a webhook to a component we
 
 The Astronomer Platform aims to provide a managed, convenient, open-source-based clickstream experience in any cloud. You can learn more about the functionality of the clickstream module [here](/v2/clickstream/overview.html).
 
-* User Events are sent from
+* User Events are sent from your applications to the Go-based Event API which drops them into Apache Kafka.
+* The Event Router reads from configuration for the application to determine what to do with each event, where to forward it to, etc., and rewrites the event to destination-specific Kafka topics.
+* Serverside workers process events off those destination-specific Kafka topics and send the events in real-time off to their destination.
+* Sending events in batch (for example, to Redshift) require the Airflow Module.
 
 ![Airflow Open Diagram](/images/pce/clickstream_open_diagram.png)

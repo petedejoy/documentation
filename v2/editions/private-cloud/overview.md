@@ -4,17 +4,24 @@ keywords: private-cloud airflow clickstream
 sidebar: platform_sidebar
 ---
 
-## Pilot
+## Overview
 
-Content coming soon.
+Astronomer PCE aims to provide a managed, open-source-based data ingestion applications that can in any cloud.
 
-## Commander
+* **Astronomer Pilot** provides a centralized GUI, API, monitoring, and alerts.
+* **Astronomer Commander** provides orchestration with Kubernetes and Marathon (and Docker Swarm soon), which makes the platform deployable to AWS, Google Cloud, and Azure using your orchestration tool of choice.
 
-Content coming soon.
+Modules are deployed as interfaces and services that utilized shared data stores (Postgres, Redis, Kafka).
+
+![Astronomer PCE Overview](/images/pce/pce_overview.png)
 
 ## Airflow
 
-The Astronomer Platform aims to provide a managed, convenient, mostly-stock Airflow experience in any cloud. Airflow has several ways to hook in and customize different pieces. Since we are aiming to provide the best possible Airflow experience, with minimal commits on our fork, we’ve dropped support for the Mesos Executor, in favor of the Celery Executor.
+The Astronomer Platform aims to provide a managed, convenient, mostly-stock Airflow experience in any cloud.
+
+![Airflow Open Diagram](/images/pce/airflow_open_diagram.png)
+
+ Airflow has several ways to hook in and customize different pieces. Since we are aiming to provide the best possible Airflow experience, with minimal commits on our fork, we’ve dropped support for the Mesos Executor, in favor of the Celery Executor.
 
 ### Celery
 
@@ -45,8 +52,18 @@ On a slightly related note, Kubernetes primarily works with YAML files to declar
 
 Finally, Kubernetes exposes a lot more than just “applications”, that can be declaratively defined and submitted to the cluster, allowing us to build up an entire distributed system, rather than juggling multiple steps to piece the system together. For example, our source controlled YAML files can be deployed in a single step, and it creates everything from managed configs and secrets, to load balancers, to replicated services and everything in between. With a single command, the entire system is deployed, wired-up and properly exposed to the outside world. Although we can do some similar things with Marathon it’s not as straightforward and we’d again probably need to build some custom tooling.
 
-In general, Kubernetes provide a lot more primitives for building up distributed systems, while Marathon is more bare-bones. Under the hood, Mesos provides a low-level way to programatically allocate resources, which is great for things like Spark. Declaratively defining services with Kubernetes provides a lot of nice features that Marathon does not support and also allows us to quickly build more robust, interconnected systems. These are just some of the big reasons we’re moving forward with Kubernetes. We’d be happy to talk more in depth about the pros and cons and differences.
+In general, Kubernetes provide a lot more primitives for building up distributed systems, while Marathon is more bare-bones. Under the hood, Mesos provides a low-level way to programatically allocate resources, which is great for things like Spark. Declaratively defining services with Kubernetes provides a lot of nice features that Marathon does not support and also allows us to quickly build more robust, interconnected systems. These are just some of the big reasons we’re moving forward with Kubernetes.
+
+### Deploying DAGs
+
+Deploying DAGs involves a Docker Registry that sends a webhook to a component we call Commander, which will generate Kubernetes calls and send them to the Airflow deployment, which will perform a rolling update to the Airflow deployment containers.
+
+![DAG Deployment](/images/pce/dag_deployment.png)
 
 ## Clickstream
 
-Coming soon.
+The Astronomer Platform aims to provide a managed, convenient, open-source-based clickstream experience in any cloud. You can learn more about the functionality of the clickstream module [here](/v2/clickstream/overview.html).
+
+* User Events are sent from
+
+![Airflow Open Diagram](/images/pce/clickstream_open_diagram.png)

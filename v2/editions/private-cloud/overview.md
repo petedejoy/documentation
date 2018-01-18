@@ -6,14 +6,27 @@ sidebar: platform_sidebar
 
 ## Overview
 
-Astronomer PCE aims to provide a managed, open-source-based data ingestion applications that can in any cloud.
+Astronomer PCE provides managed open-source-based data applications
+that run on Kubernetes on AWS, Google Cloud, Azure, IBM Bluemix,
+and Digital Ocean.
 
-* **Astronomer Pilot** provides a centralized GUI, API, monitoring, and alerts.
-* **Astronomer Commander** provides orchestration with Kubernetes and Marathon (and Docker Swarm soon), which makes the platform deployable to AWS, Google Cloud, and Azure using your orchestration tool of choice.
+* **Astronomer Pilot** provides a centralized GUI, API, monitoring,
+alerts, and orchestration with Kubernetes.
+* **Modules** are deployed as interfaces and services that utilized
+shared data stores (Postgres, Redis, Kafka).
 
-Modules are deployed as interfaces and services that utilized shared data stores (Postgres, Redis, Kafka).
+[![Astronomer PCE Overview](/images/pce/pce_overview.png)](/images/pce/pce_overview_white.png)
 
-![Astronomer PCE Overview](/images/pce/pce_overview.png)
+## Clickstream
+
+The Astronomer Platform aims to provide a managed, convenient, open-source-based clickstream experience in any cloud. You can learn more about the functionality of the clickstream module [here](/v2/clickstream/overview.html).
+
+* User Events are sent from your applications to the Go-based Event API which drops them into Apache Kafka.
+* The Event Router reads from configuration for the application to determine what to do with each event, where to forward it to, etc., and rewrites the event to destination-specific Kafka topics.
+* Serverside workers process events off those destination-specific Kafka topics and send the events in real-time off to their destination.
+* Sending events in batch (for example, to Redshift) require the Airflow Module.
+
+![Clickstream Open Diagram](/images/pce/clickstream_open_diagram.png)
 
 ## Airflow
 
@@ -59,14 +72,3 @@ In general, Kubernetes provide a lot more primitives for building up distributed
 Deploying DAGs involves a Docker Registry that sends a webhook to a component we call Commander, which will generate Kubernetes calls and send them to the Airflow deployment, which will perform a rolling update to the Airflow deployment containers.
 
 ![DAG Deployment](/images/pce/dag_deployment.png)
-
-## Clickstream
-
-The Astronomer Platform aims to provide a managed, convenient, open-source-based clickstream experience in any cloud. You can learn more about the functionality of the clickstream module [here](/v2/clickstream/overview.html).
-
-* User Events are sent from your applications to the Go-based Event API which drops them into Apache Kafka.
-* The Event Router reads from configuration for the application to determine what to do with each event, where to forward it to, etc., and rewrites the event to destination-specific Kafka topics.
-* Serverside workers process events off those destination-specific Kafka topics and send the events in real-time off to their destination.
-* Sending events in batch (for example, to Redshift) require the Airflow Module.
-
-![Airflow Open Diagram](/images/pce/clickstream_open_diagram.png)

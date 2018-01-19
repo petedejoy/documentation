@@ -18,7 +18,31 @@ Astronomer is a data engineering platform that provides a highly integrated set 
 ## Modules
 
 * [Clickstream](v2/clickstream/overview.html) - an Analytics.js-based module, which helps you collect data from your web and mobile applications, and route those events to your tools and to your data lake.
+    - Best suited for those:
+        - Just getting started collecting User Data
+        - Have web apps and mobile apps with users that aren’t being tracked
+        - Are using Google Analytics and a couple others tools
+        - Want to warehouse user interaction data
+        - Are a freemium, low revenue per monthly active user or ecommerce business model
+
+    - Use Cases for Clickstream:
+        - Product Analytics
+        - Marketing Automation
+        - User data tracking and warehousing
+
 * [Apache Airflow](v2/apache_airflow/tutorial/core-airflow-concepts.html) - Run and monitor Apache Airflow data workflows, with a [CLI](v2/apache_airflow/cli.html) to make deployment easy.
+    - Best suited for those:
+        - Familiar with Airflow, but tired of running it themselves
+        - Already using Airflow but planning on adding more team members
+        - Wanting to collaborate on workflows
+        - Currently using a drag-and-drop or other ETL solution, but unhappy or have outgrown it
+        - Ready to invest in modern data infrastructure
+        
+    - Use Cases for Airflow:
+        - Aggregating various data sources to a data lake, data warehouse or database
+        - Post-processing data (more of an ELT approach than ETL)
+        - Enhancing or enriching data mid-stream
+        - Automating workflows
 
 ## What it's not
 

@@ -292,7 +292,7 @@ entries:
           output: web
 
         - title: VWO
-          url: /v2/clickstream/destinations/vwo.html
+          url: /v2/clickstream/destinations/VWO.html
           output: web
 
   - title: Apache Airflow

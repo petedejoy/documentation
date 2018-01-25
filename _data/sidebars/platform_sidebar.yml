@@ -80,10 +80,6 @@ entries:
           url: /v2/clickstream/sources/ios.html
           output: web
 
-        - title: Server Side
-          url: /v2/clickstream/sources/serverside.html
-          output: web
-
         - title: HTTP API
           url: /v2/clickstream/sources/httpapi.html
           output: web,pdf

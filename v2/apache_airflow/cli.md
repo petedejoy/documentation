@@ -30,6 +30,23 @@ mkdir /path/to/project
 cd /path/to/project
 ~~~
 
+
+## Local Airflow
+
+Run `astro airflow up` to start the local airflow cluster.
+
+Once started, it can be accessed at `http://localhost:8080`.
+
+This will start a local version of Astronomer Airflow on your machine along with a local Postgres database.
+(Run `docker ps` to see the images)
+
+
+Once finished you can run `astro airflow down` to stop the cluster.
+
+The next time you run `astro airflow up`, the data from previous runs will still be available (i.e. you won't have to enter credentials again unless you rebuild the Postgres image).
+
+---
+
 ## Deploying with the Astro CLI
 
 Initialize a project:
@@ -70,6 +87,7 @@ dummy_operator >> hello_operator
 
 And now we're ready to deploy (make sure your user belongs to an organization):
 
+
 ~~~
 astro deploy
 ~~~
@@ -77,37 +95,13 @@ astro deploy
 This will prompt you to select the organization, and confirms you are sure you want to deploy.
 Once you do that, it will bundle all but a few blacklisted files and push to the API, and then to S3.
 
+**Note**: Information in the `Connections` panel and metadata on local DAG runs will not get pushed up.
+
+
 If you want to log out of your account:
 
 ~~~
 astro logout
-~~~
-
-## Local Airflow
-
-Run `astro airflow up` to start the local airflow cluster.
-
-Once started, it can be accessed at `http://localhost:8080`.
-
-Once finished you can run `astro airflow down` to stop the cluster.
-
----
-
-## Practical Example DAG
-
-~~~ python
-from airflow import DAG
-from astronomer import Activity
-
-dag = DAG()
-salesforce_entity_1 = Activity(dag, 'astronomerio/salesforce-source', ...)
-salesforce_entity_2 = Activity(dag, 'astronomerio/salesforce-source', ...)
-salesforce_entity_3 = Activity(dag, 'astronomerio/salesforce-source', ...)
-custom_transform = Activity(dag, 'myorganization/salesforce-transform', ...)
-redshift_sink = Activity(dag, 'astronomerio/redshift-sink', ...)
-
-custom_transform.set_upstream([salesforce_entity_1, salesforce_entity_2, salesforce_entity_3])
-redshift_sink.set_upstream(custom_transform)
 ~~~
 
 ## Commands
@@ -144,6 +138,10 @@ Flags:
 Use `astro [command] --help` for more information about a command.
 
 ## Developing
+
+### Old Deploys
+
+In your project directory there will be a hidden `.astro` folder that contains past deploys (made from that machine).
 
 ### Metadata
 When running/building locally you will need to generate the metadata file.  Running `make build-meta` or a `make build`

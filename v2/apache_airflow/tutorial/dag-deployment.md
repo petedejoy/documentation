@@ -84,8 +84,12 @@ Once you confirm, it will bundle all but a few blacklisted files and push to the
 
 At this point, you can navigate to your Airflow instance via the Dashboard URL at pro.astronomer.io to see the deployed DAG. If necessary, refresh the page to see your newly deployed DAG.
 
-**Note**: Be sure you have the right value for `catchup` in your DAG's arguments before you deploy. If `catchup` is set to `True`, the Airflow scheduler will schedule jobs from the `start_date` to the current date. This can be helpful when backfilling data, but can cause issues if used incorrectly. 
+**Note**: Be sure you have the right value for `catchup` in your DAG's arguments before you deploy. If `catchup` is set to `True`, the Airflow scheduler will schedule jobs from the `start_date` to the current date. This can be helpful when backfilling data, but can cause issues if used incorrectly.
 
 When you're ready to logout:
 
 `astro logout`
+
+### What actually gets deployed?
+
+When you deploy, only the DAG files and plugins in your directory get deployed. Metadata for DAG runs and entries in the `Connections` are stored separately for DAGs running on your Airflow instance.

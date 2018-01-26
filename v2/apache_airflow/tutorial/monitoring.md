@@ -55,8 +55,7 @@ You can include parameters about email alerts on retries and failures in these a
 Thanks to community contributed operators such as the [Slack](https://airflow.incubator.apache.org/_modules/slack_operator.html) or [email](https://pythonhosted.org/airflow/_modules/email_operator.html) operator, you can send notifications for success, failure, or other custom events as they happen.
 
 ##### Message on Success
-In some cases, you may want to be notified when a workflow succeeds. An easy way to do this is to add a task downstream
-of the rest of your tasks that sends a notification.
+In some cases, you may want to be notified when a workflow succeeds. An easy way to do this is to add a task downstream from the rest of your tasks that sends a notification.
 
 ##### Message on Failure
 Depending on your use-case, there's different ways you can handle failure notifications. The failure emails and Slack operator are can all be highly customized and built-on.

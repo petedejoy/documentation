@@ -178,7 +178,7 @@ A few things to note about XComs:
 ## Other Core concepts
 
 ### Default Arguments
-If a dictionary of `default_args` is passed to a DAG, it will apply them to any of its operators. This makes it easy to apply a common parameter (e.g. start_date) to many operators without having to type it many times.
+If a dictionary of `default_args` is passed to a DAG, it will apply them to any of its operators. This makes it easy to apply a common parameter (e.g. start_date) to many operators without having to retype it.
 
 ~~~ python
 from datetime import datetime, timedelta

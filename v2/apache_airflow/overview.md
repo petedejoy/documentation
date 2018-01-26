@@ -7,6 +7,11 @@ As data gets bigger and faster, many organizations struggle to centralize and pr
 
 Apache Airflow is a data workflow management system that allows engineers to schedule, deploy and monitor their own data pipes as DAGs (directed acyclic graphs). Built by developers, for developers, it’s based on the principle that ETL is best expressed in code.
 
+Airflow orchestrates tasks between different databases, datalakes, APIs, etc.
+
+Unlike proprietary tools that only work well within single systems or cloud services, Airflow lets you define (in code), schedule, and monitor workflows between any system to let you use your data however you want.
+
+
 By running Apache Airflow on Astronomer, you get:
 
 * One-click deployment through the [Astro CLI](/v2/apache_airflow/cli.html)

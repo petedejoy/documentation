@@ -9,6 +9,8 @@ summary: Astronomer is a data engineering platform that that helps you collect, 
 
 Astronomer is a data engineering platform that provides a highly integrated set of tools that helps you collect, process, and route data (i.e. data engineering). Astronomer is built on industry proven open-source technologies (Apache Mesos, Apache Kafka, Apache Spark, Apache Airflow), and takes care of orchestrating and managing cloud infrastructure. The goal is to increase your ability to focus on data analytics and data science initiatives.
 
+[![Astronomer PCE Overview](/images/how_it_works.png)](/images/how_it_works.png)
+
 ## Editions
 
 * [Private Cloud](/v2/editions/private-cloud/overview.html) - we deploy a managed deployment of our platform to your preferred cloud (AWS, Google Cloud, Azure) through our Kubernetes Orchastrator.
@@ -37,7 +39,7 @@ Astronomer is a data engineering platform that provides a highly integrated set 
         - Wanting to collaborate on workflows
         - Currently using a drag-and-drop or other ETL solution, but unhappy or have outgrown it
         - Ready to invest in modern data infrastructure
-        
+
     - Use Cases for Airflow:
         - Aggregating various data sources to a data lake, data warehouse or database
         - Post-processing data (more of an ELT approach than ETL)

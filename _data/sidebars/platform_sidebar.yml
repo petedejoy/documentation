@@ -17,8 +17,8 @@ entries:
       url: /
       output: web
 
-    - title: Private Cloud Edition
-      url: /v2/editions/private-cloud/overview.html
+    - title: Enterprise Edition
+      url: /v2/editions/enterprise/overview.html
       output: web
 
     - title: Open Edition
@@ -26,16 +26,16 @@ entries:
       output: web
 
       subfolders:
-      - title: SaaS Edition
+      - title: Cloud Edition
         output: web
         subfolderitems:
 
         - title: Overview
-          url: /v2/editions/saas/overview.html
+          url: /v2/editions/cloud/overview.html
           output: web
 
         - title: API
-          url: /v2/editions/saas/api.html
+          url: /v2/editions/cloud/api.html
           output: web
 
 

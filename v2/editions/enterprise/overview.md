@@ -1,12 +1,12 @@
 ---
-title: Astronomer Private Cloud Edition
-keywords: private-cloud airflow clickstream
+title: Astronomer Enterprise Edition
+keywords: enterprise airflow clickstream
 sidebar: platform_sidebar
 ---
 
 ## Overview
 
-Astronomer PCE provides managed open-source-based data applications
+Astronomer Enterprise provides managed open-source-based data applications
 that run on Kubernetes on AWS, Google Cloud, Azure, IBM Bluemix,
 and Digital Ocean.
 
@@ -15,7 +15,7 @@ alerts, and orchestration with Kubernetes.
 * **Modules** are deployed as interfaces and services that utilized
 shared data stores (Postgres, Redis, Kafka).
 
-[![Astronomer PCE Overview](/images/pce/pce_overview.png)](/images/pce/pce_overview_white.png)
+[![Astronomer Enterprise Overview](/images/enterprise/enterprise_overview.png)](/images/enterprise/enterprise_overview_white.png)
 
 ## Clickstream
 
@@ -26,13 +26,13 @@ The Astronomer Platform aims to provide a managed, convenient, open-source-based
 * Serverside workers process events off those destination-specific Kafka topics and send the events in real-time off to their destination.
 * Sending events in batch (for example, to Redshift) require the Airflow Module.
 
-![Clickstream Open Diagram](/images/pce/clickstream_open_diagram.png)
+![Clickstream Open Diagram](/images/enterprise/clickstream_open_diagram.png)
 
 ## Airflow
 
 The Astronomer Platform aims to provide a managed, convenient, mostly-stock Airflow experience in any cloud.
 
-![Airflow Open Diagram](/images/pce/airflow_open_diagram.png)
+![Airflow Open Diagram](/images/enterprise/airflow_open_diagram.png)
 
  Airflow has several ways to hook in and customize different pieces. Since we are aiming to provide the best possible Airflow experience, with minimal commits on our fork, we’ve dropped support for the Mesos Executor, in favor of the Celery Executor.
 
@@ -71,4 +71,4 @@ In general, Kubernetes provide a lot more primitives for building up distributed
 
 Deploying DAGs involves a Docker Registry that sends a webhook to a component we call Commander, which will generate Kubernetes calls and send them to the Airflow deployment, which will perform a rolling update to the Airflow deployment containers.
 
-![DAG Deployment](/images/pce/dag_deployment.png)
+![DAG Deployment](/images/enterprise/dag_deployment.png)

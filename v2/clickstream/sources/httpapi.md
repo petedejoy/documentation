@@ -18,7 +18,7 @@ Basic Auth base64 encodes a 'username:password' and prepends it with the string 
 For example, if your Source ID is ILoveData123, that will be encoded to SUxvdmVEYXRhMTIz. Then, your encoded authentication line in your header will look like this:
 
 ```
-Authentication: Basic SUxvdmVEYXRhMTIz
+Authorization: Basic SUxvdmVEYXRhMTIz
 ```
 
 #### Content-Type

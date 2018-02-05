@@ -6,18 +6,17 @@ sidebar: platform_sidebar
 
 ## Overview
 
-Astronomer Enterprise provides managed open-source-based data applications
-that run on Kubernetes on AWS, Google Cloud, Azure, IBM Bluemix,
-and Digital Ocean.
+Astronomer Enterprise is a collection open-source-based data applications
+that run on Kubernetes.
 
 * **Astronomer Pilot** provides a centralized GUI, API, monitoring,
-alerts, and orchestration with Kubernetes.
+alerts, and orchestration.
 * **Modules** are deployed as interfaces and services that utilized
 shared data stores (Postgres, Redis, Kafka).
 
 [![Astronomer Enterprise Overview](/images/enterprise/enterprise_overview.png)](/images/enterprise/enterprise_overview_white.png)
 
-## Clickstream
+## Module: Clickstream
 
 The Astronomer Platform aims to provide a managed, convenient, open-source-based clickstream experience in any cloud. You can learn more about the functionality of the clickstream module [here](/v2/clickstream/overview.html).
 
@@ -28,7 +27,7 @@ The Astronomer Platform aims to provide a managed, convenient, open-source-based
 
 ![Clickstream Open Diagram](/images/enterprise/clickstream_open_diagram.png)
 
-## Airflow
+## Module: Airflow
 
 The Astronomer Platform aims to provide a managed, convenient, mostly-stock Airflow experience in any cloud.
 

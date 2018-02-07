@@ -298,6 +298,10 @@ entries:
     - title: Overview
       url: /v2/apache_airflow/overview.html
       output: web
+    
+    - title: Airflow Best Practice Guide
+      url: /v2/apache_airflow/best-practices-guide.html
+      output: web
 
     - title: Astro CLI
       url: /v2/apache_airflow/cli.html

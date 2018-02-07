@@ -2,54 +2,39 @@
 title: Sources and Destinations
 sidebar: platform_sidebar
 ---
-## Astronomer Hooks
+## Astronomer Hooks and Operators
 
 At Astronomer, we're committed to open source and release all of the Airflow hooks and operators that we build back to the community. For a complete list of Airflow Hooks, Operators, and Utilities that we maintain, check out our [Airflow Plugins](https://github.com/airflow-plugins?utf8=%E2%9C%93&q=&type=&language=) organization on Github.
 
 
-### Currently Available
+### Currently Available Airflow Plugins
 
 Note that our development roadmap is influenced by customer requests. If you would like a specific hook built that isn't on our roadmap, feel free to contact us at support@astronomer.io and we'll be happy to scope it out.
 
- - [BambooHR](https://docs.astronomer.io/v2/apache_airflow/hooks/bamboohr.html)
- - [Bing Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/bing-ads.html)
- - [Box](https://docs.astronomer.io/v2/apache_airflow/hooks/box.html)
- - [Chargify](https://docs.astronomer.io/v2/apache_airflow/hooks/chargify.html)
- - [Facebook Ads](https://docs.astronomer.io/v2/apache_airflow/hooks/facebook-ads.html)
- - [GitHub](https://docs.astronomer.io/v2/apache_airflow/hooks/github.html)
- - [Google Analytics](https://docs.astronomer.io/v2/apache_airflow/hooks/google-analytics.html)
- - [Imap](https://docs.astronomer.io/v2/apache_airflow/hooks/imap.html)
- - [MySQL](https://docs.astronomer.io/v2/apache_airflow/hooks/mysql.html)
- - [Salesforce](https://docs.astronomer.io/v2/apache_airflow/hooks/salesforce.html)
+ - [Autopilot](https://github.com/airflow-plugins/autopilot_plugin)
+ - [BambooHR](https://github.com/airflow-plugins/bamboo_hr_plugin)
+ - [Bing Ads](https://github.com/airflow-plugins/bing_ads_plugin)
+ - [Box](https://github.com/airflow-plugins/box_plugin)
+ - [Chargify](https://github.com/airflow-plugins/chargify_plugin)
+ - [Facebook Ads](https://github.com/airflow-plugins/facebook_ads_plugin)
+ - [GitHub](https://github.com/airflow-plugins/github_plugin)
+ - [Google Analytics](https://github.com/airflow-plugins/google_analytics_plugin)
+ - [Hubspot](https://github.com/airflow-plugins/hubspot_plugin)
+ - [Intercom](https://github.com/airflow-plugins/intercom_plugin)
+ - [IMAP](https://github.com/airflow-plugins/imap_plugin)
+ - [Marketo](https://github.com/airflow-plugins/marketo_plugin)
+ - [Mongo](https://github.com/airflow-plugins/mongo_plugin)
+ - [MySQL](https://github.com/airflow-plugins/mysql_plugin)
+ - [Pardot](https://github.com/airflow-plugins/pardot_plugin)
+ - [Rate Limit](https://github.com/airflow-plugins/rate_limit_plugin)
+ - [Redshift](https://github.com/airflow-plugins/redshift_plugin)
+ - [Salesforce](https://github.com/airflow-plugins/salesforce_plugin)
  - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/salesforce-bulk-api.html)
+ - [SFTP](https://github.com/airflow-plugins/sftp_plugin)
+ - [Snowflake](https://github.com/airflow-plugins/snowflake_plugin)
+ - [Spreadsheet](https://github.com/airflow-plugins/spreadsheet_plugin)
+ - [Stripe](https://github.com/airflow-plugins/stripe_plugin)
 
-### In Progress
-Hooks for these sources are currently being developed by our team.
- - Marketo
- - Hubspot
-
-### In Queue
-These are sources for which we have done preliminary requirements gathering but development work has not begun.
- - AutoPilot
- - FreshDesk
- - Freshsales
- - Instagram
- - JIRA
- - Zendesk
- - Stripe
- - Google Adwords
-
-### Roadmap
- - Hootsuite
- - Kissmetrics
- - MongoDB
- - New Relic
- - Oracle
- - Pinterest
- - Sengrid
- - SurveyMonkey
- - Twilio
- - Mailchimp
 
 ## Standard Apache Airflow Hooks
  - [Base Hook](https://github.com/apache/incubator-airflow/blob/master/airflow/hooks/base_hook.py)

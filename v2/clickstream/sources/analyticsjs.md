@@ -34,7 +34,7 @@ If you are just looking for basic clickstream functionality, you’re all done s
 
 If you’d like to use any tool that deals with the identity of your users (e.g. Mixpanel), keep reading to learn how to use the `identify` call.
 
-## Identify Your Users
+## Identify
 
 The `identify` method helps you associate your users and their actions to a unique and recognizable `userID` and `traits`. We recommend using a backend template to insert an `identify` call directly into the footer of every page of your site where the user is logged in. That way, your users will always be identified, no matter what page they first land on.
 
@@ -43,6 +43,13 @@ The `identify` method helps you associate your users and their actions to a uniq
 ```
 analytics.identify([userId], [traits], [options], [callback]);
 ```
+
+The `identify` call contains the following fields:
+
+| userId | Optional | String | The database ID for the user |
+| traits | Optional | Object | A group of traits you know about the user, including email and name |
+| options | Optional | Object | A group of options tied to the call. Note that, if you elect to not pass a `traits` object, you must pass an empty object with `{}` before options. |
+| callback | Optional | Function | A function executed after a short timeout that gives the browser time to make outbound requests |
 
 For example, a simple `identify` looks something like this:
 
@@ -58,7 +65,8 @@ You’re now set up to use any basic CRM. Go ahead and switch on a CRM, like Int
 
 While `identify` is an extremely useful call for a lot of integrations, many other analytics tools go beyond just identifying users; they record the actions each user performs too. See below for how to get to an even more holistic event tracking analytics setup.
 
-## Track Your Users’ Actions
+
+## Track
 
 To get to a more complete event tracking analytics setup, you can add a `track` call to your website. This will tell Astronomer which actions you are performing on your site. With `track`, each user action triggers an “event,” which can also have associated properties.
 
@@ -67,6 +75,13 @@ Setting up `track` is very similar to the process you just went through to set u
 ```
 analytics.track(event, [properties], [options], [callback]);
 ```
+
+The fields mentioned above are defined here:
+
+| event | Mandatory | String | Name of the event you're tracking |
+| properties | Optional | Object | A library of properties to be associated with the event. Check out our [API Call doc](docs.astronomer.io/v2/clickstream/calls.html) to learn more about properties you can pass with your track calls |
+| options | Optional | Object | A library of options, such as enabiling or disabiling specfiic destinations for a given call. Note that, if you elect to not pass a `properties` object, you must pass an empty object with `{}` before options. |
+| callback | Optional | Function | A function that is executed after a short timeout. This gives the browser time to make outbound requests. |
 
 And, here’s an example of what a simple `track` might look like:
 
@@ -84,3 +99,44 @@ A lot of analytics tools support custom event mapping so, with `track` implement
 Congratulations, you’ve now successfully installed website tracking with Astronomer Connect!
 
 Now the fun begins: head back to our app, turn on some destinations, and hit your business with insightful user data.
+
+## Page
+
+The `page` method allows you to record page views on your website. It also allows you to pass addtional information about the pages people are viewing. Note that a `page` call is included by default in our analytics.js snippet. Here's the basic `page` definition:
+
+```
+analytics.page([category], [name], [properties], [options], [callback]);
+```
+
+The fields outlined above are explained here:
+| category | Optional | String | Category of the page. |
+| name | Optional | String | Name of the page. |
+| properties | Optional | String | A library of properties that you want to pass with your `page` call. Note that url, title, referrer, and path are automatically collected with `page` calls, so no need to include them here! |
+| options | Optional | Object | A library of options that you might want to pass with your call.  Note that, if you elect to not pass a `properties` object, you must pass an empty object with `{}` before options.|
+| callback | Optional | Function | A function that is executed after a short timeout. This gives the browser time to make outbound requests.|
+
+
+# Group
+
+The `group` method associates an identified user with a company, organization, project, etc. Here's the basic `group` definition:
+```
+analytics.group(groupId, [traits], [options], [callback])
+```
+The fields outlined above are explained here:
+| groupId | Mandatory | String | The Group ID associated with the user |
+| traits | Optional | String | A library of trais that you'd like to associate with the group. Can include address, website, employees, etc. |
+| options | Optional | Object | A library of options that you might want to pass with your call.  Note that, if you elect to not pass a `traits` object, you must pass an empty object with `{}` before options.|
+| callback | Optional | Function | A function that is executed after a short timeout. This gives the browser time to make outbound requests.|
+
+
+# Alias
+
+The `alias` method combines two unassociated User IDs. Here's the basic `alias` definition:
+```
+analytics.alias(userId, [previousId], [options], [callback])
+```
+The fields outlined above are explained here:
+| userId | Mandatory | String | The new user ID that you want to associate with the user |
+| previousId | Optional | String | The previous ID that was assigned to the user. |
+| options | Optional | Object | A library of options that you might want to pass with your call.|
+| callback | Optional | Function | A function that is executed after a short timeout. This gives the browser time to make outbound requests.|

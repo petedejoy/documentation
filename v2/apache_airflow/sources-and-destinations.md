@@ -31,7 +31,7 @@ Note that our development roadmap is influenced by customer requests. If you wou
  - [Redshift](https://github.com/airflow-plugins/redshift_plugin)
  - [Salesforce](https://github.com/airflow-plugins/salesforce_plugin)
  - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/salesforce-bulk-api.html)
- - [Sendgrid(https://github.com/airflow-plugins/sendgrid_plugin)
+ - [Sendgrid](https://github.com/airflow-plugins/sendgrid_plugin)
  - [SFTP](https://github.com/airflow-plugins/sftp_plugin)
  - [Snowflake](https://github.com/airflow-plugins/snowflake_plugin)
  - [Spreadsheet](https://github.com/airflow-plugins/spreadsheet_plugin)

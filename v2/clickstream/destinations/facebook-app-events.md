@@ -33,14 +33,27 @@ Once you have a Facebook Apps account, all you'll need to do is retrieve your 15
 
 Once that's set, you'll need to know what specific events you want to map. For each event, we'll ask you for the event *key* (e.g. `Products Searched`) as well as the *value* (e.g. `fb_mobile_search`).
 
-
 ### Astronomer Side
 
 Now that you have what you need from the Facebook Apps side, go ahead to your Astronomer [dashboard](https://app.astronomer.io/login).
 
 ![facebook-apps1](../../../images/facebook-apps1.png)
 
-Input your `appid` and App Event Mappings.
+Input your `appid` and App Event Mappings. Note that we'll automatically translate events so that they're passed to Facebook in the correct format. The event mappings are listed below. When filling out the `event mappings` section of thes destination, place the name of your `track` call in the `key` column on the left hand side and the corresponding `value` from the table below on the right hand side. Be sure that the names are spelled correctly!
+
+| Value | Translation |
+|-------|-------------|
+| Application Installed | MOBILE_APP_INSTALL |
+| Application Opened | fb_mobile_activate_app |
+| Products Searched | fb_mobile_search |
+| Product Viewed | fb_mobile_content_view |
+| Product Added | fb_mobile_add_to_cart |
+| Product Added to Wishlist | fb_mobile_add_to_wishlist |
+| Payment Info Entered | fb_mobile_add_payment_info |
+| Checkout Started | fb_mobile_initiated_checkout |
+| Order Completed | fb_mobile_purchase |
+
+
 
 As a final step, give your destination a unique name in the `Friendly Name` box.
 

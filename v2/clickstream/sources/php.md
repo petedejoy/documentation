@@ -39,6 +39,31 @@ After this initialization, you have a ready-to-use instance with all calls built
 
 ***Note:** We've standardized to analytics.js. If you've used a tool like [Segment](https://segment.com/) in the past, you will find that instrumenting events in Astronomer works in the exact same way.*
 
+
+### Using Composer to Install the PHP Library from Github
+
+To add the Astronomer PHP library to a PHP app using composer:
+
+In composer.json, add the GitHub url to the repositories section and then require the library as usual.
+
+***Note:** you need the ‘dev-‘ prefix on the version in the require section as noted in the [composer docs](https://getcomposer.org/doc/05-repositories.md#loading-a-package-from-a-vcs-repository).
+
+```
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/astronomerio/analytics-php"
+        }
+    ],
+
+    "require": {
+        "segmentio/analytics-php": "dev-master"
+    }
+}
+
+```
+
 ### Calls in PHP
 
 Check out our [Calls](../calls.md) section for information on when you should use each call. Below are some examples of how you'd call specific objects in PHP.
@@ -50,7 +75,7 @@ analytics::identify(array(
          "userId" => "1234qwerty",
          "traits" => array(
          "name" => "Arthur Dent",
-         "email" => "earthling1@hitchhikersguide.com\",
+         "email" => "earthling1@hitchhikersguide.com",
          "hasTowel" => True,)
 );
 ```
@@ -62,7 +87,7 @@ analytics::track(array(
         "userId" => "1234qwerty",
         "event" => "Added File",
         "properties" => array(
-        "fileTitle" => "Life, the Universe, and Everything\",
+        "fileTitle" => "Life, the Universe, and Everything",
         "fileSize" => "42kb",
         "fileType" => "PDF")
         )

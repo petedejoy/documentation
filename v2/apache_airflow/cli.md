@@ -10,6 +10,8 @@ If you want to run Airflow locally through the CLI you will need docker installe
 
 See [docker download](https://www.docker.com/community-edition#/download) to download docker for your specific operating system.
 
+You should also make sure you have Python and pip installed.
+
 ## Setup
 
 ~~~
@@ -19,9 +21,6 @@ curl -o- https://cli.astronomer.io/install.sh | bash
 **Note:** The above command only works on Mac & Linux. All other OS users will need to head [here](https://github.com/astronomerio/astro/releases/tag/v0.0.9) and download the binary manually.
 
 ## Usage
-
-Login:
-`astro login`
 
 Create a project directory and navigate to it:
 
@@ -60,7 +59,7 @@ nano /path/to/project/dags/hello_world.py
 vi /path/to/project/dags/hello_word.py
 ~~~
 
-Copy and paste:
+Here's an easy sample DAG:
 
 ~~~ python
 from datetime import datetime
@@ -84,6 +83,10 @@ hello_operator = PythonOperator(task_id='hello_task', python_callable=print_hell
 dummy_operator >> hello_operator
 
 ~~~
+
+Login:
+`astro login`
+
 
 And now we're ready to deploy (make sure your user belongs to an organization):
 

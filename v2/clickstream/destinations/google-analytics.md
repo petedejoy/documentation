@@ -75,7 +75,7 @@ When creating your Google Analytics profile, you can choose between Classic and 
 
 To check your version, look for `_gaq.push` in your code. If you see it, you're using Classic and will need to enable this.
 
-### remarketing, Display Ads, and Demographic Reports
+### Remarketing, Display Ads, and Demographic Reports
 Turn this feature on to use Google's remarketing tag (what was formerly known as DoubleClick) or to identify demographic and interest data on visitors that is displayed in Demographic & Interest reports in Google Analytics.
 
 ### Cookie Domain Name
@@ -99,12 +99,15 @@ Enabling this will track events to Google Analytics for `page` calls that have a
 ***Note:** We enable this automatically when you set-up Google Analytics as a Clickstream destination.*
 
 ### Track Categorized Pages
-Enabling this will track events to Google Analytics for `page` calls that have a `category` associated with them. For example, `page('Blog', 'Index') will translate to Viewed Blog Page.
+Enabling this will track events to Google Analytics for `page` calls that have a `category` associated with them. For example, `page('Blog', 'Index')` will translate to Viewed Blog Page.
 
 ***Note:** We enable this automatically when you set-up Google Analytics as a Clickstream destination.*
 
 ### Include Querystring in Page Views
 By default, we only send the domain and path to Google Analytics. Enable this feature if you would like to pass a whole URL with query string to Google Analytics. This is helpful when you would like to track search queries.
+
+### Content Groupings
+Enter a property name on the left. Choose the Google Analytics content grouping you want on the right. Google Analytics only accepts numbered content groupings (e.g. `contentGrouping3`). When you use `analytics.page(name, properties)` with custom properties, we’ll use the value of the property you designate as the value of the specified content grouping.
 
 ### Anonymize IP Addresses
 Read more about anonymizing IP addresses for client-side libraries [here](https://support.google.com/analytics/answer/2763052?hl=en).
@@ -126,3 +129,15 @@ When creating your Google Analytics profile, you can choose between Classic and 
 
 ### Send Uncaught Exceptions to GA (Mobile)
 This feature lets you study errors and exceptions in your iOS and Android apps in Google Analytics.
+
+### Use Google AMP Client ID
+Google’s AMP Client ID API lets you uniquely identify users who engage with your content on AMP and non-AMP pages. If you opt-in, Google Analytics will use the user’s AMP Client ID to determine that multiple site events belong to the same user when those users visit AMP pages via a [Google viewer](https://support.google.com/websearch/answer/7220196). Associating events and users provides features like user counts and session-based metrics. Enabling this feature will affect your reporting. Please carefully reference Google’s [documentation](https://support.google.com/analytics/answer/7486764?hl=en&ref_topic=7378717) for more info before you enable it.
+
+### Set Custom Dimensions & Metrics to the Page
+Google Analytics allows users to either pass custom dimensions / metrics as properties of specific events or as properties for all events on a given page (or the lifetime of the global tracker object). The default Segment behavior is the latter. Any metrics / dimensions that are mapped to a given property will be set to the page and sent as properties of all subsequent events on that page. You can disable this functionality with this setting. If disabled, Segment will only pass custom dimensions / metrics as part of the payload of the event with which they are explicitly associated. Please reference the Google Analytics [documentation](https://developers.google.com/analytics/devguides/collection/analyticsjs/custom-dims-mets#implementation) for more info.
+
+### Name Tracker
+Name the tracker `astronomerGATracker`. Enable this if you're working with additional Google Analytics trackers and want to ensure that your Segment tracker has a distinct name. If this is enabled you must prepend this tracker name to any native Google Analytics (except for create) that you call, e.g. `astronomerGATracker.require(….)`
+
+### Optimize Container ID
+Integrate with Google Analytics Optimize plugin. Please enter your Optimize Container ID

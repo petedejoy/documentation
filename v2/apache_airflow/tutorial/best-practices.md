@@ -11,9 +11,9 @@ When possible, seek to break out your pipelines into incremental extracts and lo
 There are three ways you can achieve incremental pipelines.
 
 #### Last Modified Date
-This is the gold standard for incremental loads. Ideally each record in your source system contains a column containing the last time the record was modified. Every DagRun then looks for records that were updated within it's specified date parameters.
+This is the gold standard for incremental loads. Ideally each record in your source system contains a column containing the last time the record was modified. Every DAG run then looks for records that were updated within it's specified date parameters.
 
-As an example, an DAG that runs hourly will have 24 DagRuns in for each day. Each DagRun will be responsible for loading any records that fall between the start and end of it's hour. When any of those DagRuns fail it will not stop the others from continuing to run.
+For example, a DAG that runs hourly will have 24 runs times a day. Each DAG run will be responsible for loading any records that fall between the start and end of it's hour. When any of those runs fail it will not stop the others from continuing to run.
 
 #### Sequence IDs
 When a last modified date is not available, a sequence or incrementing ID, can be used for incremental loads. This logic works best when the source records are only being appended to and never updated. If the source records are updated you should seek to implement a Last Modified Date in that source system and key your logic off of that. In the case of the source system not being updated, basing your incremental logic off of a sequence ID can be a sound way to filter pipeline records without a last modified date.
@@ -56,7 +56,7 @@ Depending on your data retention policy you could modify the load logic and re-r
 Using these effectively can help ensure data integrity when scheduling a backfill where data is aggregated by some time interval.
 
 ### Static start_date
-A dynamic start_date is misleading. It can cause failures when clearing out failed task instances and missing DAG runs.
+A dynamic start_date is misleading. It can cause failures when clearing out failed task instances and missing DAG runs.  
 
 ## Transformations
 Look to implement an ELT (extract, load, transform) data pipeline pattern with your DAG definition file. This means that you should look to offload as much of the transformation logic to the source systems or the destinations systems as possible. With python at your fingertips it can be tempting to attempt the transformations in the DAG but offloading those transformations to the source or destination systems will lead to better overall performance and keeps your DAG lean and readable.

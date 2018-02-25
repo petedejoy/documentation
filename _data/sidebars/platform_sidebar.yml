@@ -299,7 +299,7 @@ entries:
       url: /v2/apache_airflow/overview.html
       output: web
     
-    - title: Airflow Best Practice Guide
+    - title: Airflow Best Practices Guide
       url: /v2/apache_airflow/best-practices-guide.html
       output: web
 

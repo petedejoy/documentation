@@ -77,17 +77,18 @@ Try to do basic transformations and aggregations in SQL queries - this offloads 
 ### Use a consistent file structure.
 
 To keep any custom plugins easy for someone else to use, use a consistent file structure. At Astronomer, we use:
-~~~
-+--plugin_name
-| README.md - High level description of what the plugin contains and what it does.
-| __init__.py - Calls the AirflowPLugins manager.
-+--operators - Contains the operators.
-|  +--__init__.py
-|  +--operator_one.py
-+--hooks - Contains the hook.
-|  +--__init__.py
-|  +--hook_one.py
-~~~
+
+```
+plugin_name/
+├── README.md  <--- High level description of what the plugin contains and what it does
+├── __init__.py  <--- Calls the Airflow plugins manager
+├── hooks  <-- Contains the hook
+│   ├── __init__.py
+│   └── hook_one.py
+└── operators  <--- Contains the operators
+    ├── __init__.py
+    └── operator_one.py
+```
 
 See [here](https://github.com/airflow-plugins/) for examples!
 

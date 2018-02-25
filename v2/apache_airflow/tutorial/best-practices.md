@@ -2,8 +2,17 @@
 title: DAG Writing Best Practices
 sidebar: platform_sidebar
 ---
+
 ### Idempotency
 Data pipelines are a messy business with a lot of various components that can fail. [Idempotent](https://en.wikipedia.org/wiki/Idempotence) DAGs allow you to deliver results faster when something breaks and can save you from losing data down the road.
+
+### Use Retries
+
+In a distributed environment where task containers are executed on shared hosts, it's possible for tasks to be killed off unexpectedly. When this happens you may see Airflow's logs mention a zombie process.
+
+A [zombie process](https://en.wikipedia.org/wiki/Zombie_process) occurs when Airflow goes to check on the process for a task that it thinks is running but finds out that the process was killed or is otherwise not actually running. (It could have been killed for any number of reasons.)
+
+This can often be resolved by bumping up retries on the task. A good range to try is ~2–4 retries.
 
 ### Incremental Record Filtering
 When possible, seek to break out your pipelines into incremental extracts and loads. This results in each DagRun representing only a small subset of your total dataset. This means that a failure in one subset of the data won't affect the rest of your DagRuns from completing successfully.

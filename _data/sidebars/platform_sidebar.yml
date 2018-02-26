@@ -307,6 +307,10 @@ entries:
       url: /v2/apache_airflow/cli.html
       output: web
 
+    - title: Available Packages
+      url: /v2/apache_airflow/available-packages.html
+      output: web
+
     - title: Sources & Destinations
       url: /v2/apache_airflow/sources-and-destinations.html
       output: web

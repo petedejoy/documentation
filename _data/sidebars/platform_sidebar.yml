@@ -344,6 +344,10 @@ entries:
           url:  /v2/apache_airflow/tutorial/connections.html
           output: web
 
+        - title: Airflow with Singer
+          url:  /v2/apache_airflow/tutorial/airflow-with-singer.html
+          output: web
+      
       - title: Hooks
         output: web
         subfolderitems:

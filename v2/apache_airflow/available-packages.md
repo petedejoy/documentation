@@ -47,7 +47,7 @@ html5lib==0.999999999
 http-parser==0.8.3
 httplib2==0.10.3
 idna==2.6
-ijson==2.6
+ijson==2.3
 ipython-genutils==0.2.0
 jmespath==0.9.3
 jsonschema==2.6.0

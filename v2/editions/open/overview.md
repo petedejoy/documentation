@@ -6,7 +6,7 @@ sidebar: platform_sidebar
 
 ## Overview
 
-Astronomer [Open Edition](http://open.astronomer.io/)
+Astronomer [Open Edition](https://open.astronomer.io/)
 allows you to run Astronomer on your own
 machine in order to support the dev experience, but it can also be
 used to under Apache 2 license for any purpose supported by that

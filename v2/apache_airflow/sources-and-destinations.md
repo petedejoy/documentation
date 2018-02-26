@@ -9,7 +9,7 @@ At Astronomer, we're committed to open source and release all of the Airflow hoo
 
 ### Currently Available Airflow Plugins
 
-Note that our development roadmap is influenced by customer requests. If you would like a specific hook built that isn't on our roadmap, feel free to contact us at support@astronomer.io and we'll be happy to scope it out.
+Note that our development roadmap is influenced by customer requests. If you would like a specific hook built that isn't on our roadmap, feel free to contact us at support@astronomer.io and we'll be happy to scope it out. Note: These plugins are in continuous development so please make sure to use the most recent version.
 
  - [Autopilot](https://github.com/airflow-plugins/autopilot_plugin)
  - [BambooHR](https://github.com/airflow-plugins/bamboo_hr_plugin)
@@ -22,6 +22,7 @@ Note that our development roadmap is influenced by customer requests. If you wou
  - [Hubspot](https://github.com/airflow-plugins/hubspot_plugin)
  - [Intercom](https://github.com/airflow-plugins/intercom_plugin)
  - [IMAP](https://github.com/airflow-plugins/imap_plugin)
+ - [Mailchimp](https://github.com/airflow-plugins/mailchimp_plugin)
  - [Marketo](https://github.com/airflow-plugins/marketo_plugin)
  - [Mongo](https://github.com/airflow-plugins/mongo_plugin)
  - [MySQL](https://github.com/airflow-plugins/mysql_plugin)
@@ -30,11 +31,12 @@ Note that our development roadmap is influenced by customer requests. If you wou
  - [Redshift](https://github.com/airflow-plugins/redshift_plugin)
  - [Salesforce](https://github.com/airflow-plugins/salesforce_plugin)
  - [Salesforce Bulk API](https://docs.astronomer.io/v2/apache_airflow/hooks/salesforce-bulk-api.html)
+ - [Sendgrid](https://github.com/airflow-plugins/sendgrid_plugin)
  - [SFTP](https://github.com/airflow-plugins/sftp_plugin)
  - [Snowflake](https://github.com/airflow-plugins/snowflake_plugin)
  - [Spreadsheet](https://github.com/airflow-plugins/spreadsheet_plugin)
  - [Stripe](https://github.com/airflow-plugins/stripe_plugin)
-
+ - [Trello](https://github.com/airflow-plugins/trello_plugin)
 
 ## Standard Apache Airflow Hooks
  - [Base Hook](https://github.com/apache/incubator-airflow/blob/master/airflow/hooks/base_hook.py)

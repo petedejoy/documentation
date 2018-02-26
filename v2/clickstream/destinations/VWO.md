@@ -50,7 +50,27 @@ analytics.track('Order Completed'. {
 });
 ```
 
+## Settings
 
+#### Account ID
+Inside the Destination's Connection, add your VWO account ID in order to fetch your VWO async smart code.
 
+This setting is only effective if *Use Async Smart Code* is set to `true`.
 
+#### Library Tolerance
+The maximum amount of time (in milliseconds) to wait for VWO’s full library to be downloaded before simply displaying your original page.
 
+This setting is only effective if *Use Async Smart Code* is set to `true`.
+
+#### Settings Tolerance
+The maximum amount of time (in milliseconds) to wait for test settings before VWO will simply display your original page.
+
+This setting is only effective if *Use Async Smart Code* is set to `true`.
+
+#### Use Async Smart Code
+If you would like to utilize VWO’s asynchronous smart code, toggle on this feature. This means you will not need to include VWO’s native snippet on your page as Astronomer will do this on your behalf. If this feature is toggled off, you will need to include VWO’s native smart code on your webpage.
+
+#### Use Existing JQuery
+If your page already includes JQuery, you can set this to `true`. Otherwise, VWO will include JQuery onto the page for you. VWO needs JQuery on the page to function correctly.
+
+This setting is only effective if *Use Async Smart Code* is set to `true`.

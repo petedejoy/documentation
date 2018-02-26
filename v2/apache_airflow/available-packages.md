@@ -8,8 +8,8 @@ Because each task is run in an individual Docker container, the available Python
 The Astronomer team is happy to add additional packages you need for your workflows. If you would like to have a package added, please just message us via the in-app chat with the package name. Note that because these packages will become standard for all customers using our Cloud Edition, we default to using the most recent version of the package.
 
 ## Currently Available Packages
--e git+https://github.com/astronomerio/incubator-airflow@astronomer-fixes-182#egg=apache-airflow[s3,postgres,mysql,mssql,password]
--e git+https://github.com/astronomerio/simple-salesforce@master#egg=simple-salesforce
+-e git+https://github.com/astronomerio/incubator-airflow@astronomer-fixes-182#egg=apache-airflow[s3,postgres,mysql,mssql,password]   
+-e git+https://github.com/astronomerio/simple-salesforce@master#egg=simple-salesforce   
 -e git+https://github.com/astronomerio/PyPardot4.git#egg=pypardot
 
 addict==2.1.0   

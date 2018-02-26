@@ -56,7 +56,7 @@ Depending on your data retention policy you could modify the load logic and re-r
 Using these effectively can help ensure data integrity when scheduling a backfill where data is aggregated by some time interval.
 
 ### Static start_date
-A dynamic start_date is misleading. It can cause failures when clearing out failed task instances and missing DAG runs.  
+A dynamic start_date is misleading. It can cause failures when clearing out failed task instances and missing DAG runs.
 
 ## Transformations
 Look to implement an ELT (extract, load, transform) data pipeline pattern with your DAG definition file. This means that you should look to offload as much of the transformation logic to the source systems or the destinations systems as possible. With python at your fingertips it can be tempting to attempt the transformations in the DAG but offloading those transformations to the source or destination systems will lead to better overall performance and keeps your DAG lean and readable.
@@ -64,7 +64,7 @@ Look to implement an ELT (extract, load, transform) data pipeline pattern with y
 ### Use Staging Tables
 Try to use staging tables before pushing to a final destination. This makes debugging errors easier as you'll have the exact data that caused an error and adds a layer of safety.
 
-**Note** By default, each task counts as its own database session, so avoid temporary tables that only last a session. Instead, have the last task in your DAG clear out intermediary tables if everything runs successfully.  
+**Note** By default, each task counts as its own database session, so avoid temporary tables that only last a session. Instead, have the last task in your DAG clear out intermediary tables if everything runs successfully.
 
 ### Mongo Source
 Use [aggregation pipelines](https://docs.mongodb.com/manual/core/aggregation-pipeline/) to perform your transformations on extract from a Mongo source.
@@ -77,17 +77,18 @@ Try to do basic transformations and aggregations in SQL queries - this offloads 
 ### Use a consistent file structure.
 
 To keep any custom plugins easy for someone else to use, use a consistent file structure. At Astronomer, we use:
-~~~
-+--plugin_name
-| README.md - High level description of what the plugin contains and what it does.
-| __init__.py - Calls the AirflowPLugins manager.
-+--operators - Contains the operators.
-|  +--__init__.py
-|  +--operator_one.py
-+--hooks - Contains the hook.
-|  +--__init__.py
-|  +--hook_one.py
-~~~
+
+```
+plugin_name/
+├── README.md  <--- High level description of what the plugin contains and what it does
+├── __init__.py  <--- Calls the Airflow plugins manager
+├── hooks  <-- Contains the hook
+│   ├── __init__.py
+│   └── hook_one.py
+└── operators  <--- Contains the operators
+    ├── __init__.py
+    └── operator_one.py
+```
 
 See [here](https://github.com/airflow-plugins/) for examples!
 

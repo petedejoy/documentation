@@ -10,7 +10,12 @@ If you want to run Airflow locally through the CLI you will need docker installe
 
 See [docker download](https://www.docker.com/community-edition#/download) to download docker for your specific operating system.
 
-You should also make sure you have Python and pip installed.
+You should also make sure you Go installed (pip and Python too, but they're packaged with most operating systems).
+
+```
+brew install go
+```
+More info: https://golang.org/doc/install
 
 ## Setup
 
@@ -142,6 +147,27 @@ Use `astro [command] --help` for more information about a command.
 
 ## Developing
 
+How to get started as a developer.
+
+1. Build:
+
+    ```
+    $ git clone git@github.com:astronomerio/astro-cli.git
+    $ cd astro-cli
+    $ make build
+    ```
+
+1. (Optional) Install to `$GOBIN`:
+
+    ```
+    $ make install
+    ```
+
+1. Run:
+
+    ```
+    $ astro
+    ```
 ### Old Deploys
 
 In your project directory there will be a hidden `.astro` folder that contains past deploys (made from that machine).

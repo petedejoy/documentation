@@ -7,15 +7,15 @@ sidebar: platform_sidebar
 
 This library lets you record analytics data from your Python code. You can use this library in your web server controller code. It is high-performing in that it uses an internal queue to make 'identify' and 'track' calls non-blocking and fast. It also batches messages and flushes asynchronously to our servers.
 
-Visit the [Python Package Index (PyPI)] (https://pypi.python.org/pypi/astronomer-analytics) for the `astronomer-analytics` package details.
+Visit <https://pypi.python.org/pypi/astronomer-analytics> for full package details.
 
 ### Getting Started with Python
 
 #### Step 1
 
-Install `astronomer-analytics` using `pip`
+Install it.
 
-~~~ python
+~~~ bash
 pip install astronomer-analytics
 ~~~
 

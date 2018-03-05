@@ -46,11 +46,15 @@ You will see a `Global Site Tag` that looks like the following:
 ~~~
 [Source](https://developers.google.com/adwords-remarketing-tag/)
 
-In the code snippet above, the conversion ID has been replaced with `AW-Google_Conversion_ID`. In your new conversion, this will be a uniuqe numberical ID that is tied to your Adwords account. Copy this to your clipboard and navigate back to your Astronomer app.
+In the code snippet above, the conversion ID has been replaced with `AW-Google_Conversion_ID`. In your new conversion, this will be a unique numerical ID that is tied to your Adwords account. Copy this to your clipboard and navigate back to your Astronomer app.
 
 ### Astronomer Side
 
 Once you've obtained your Conversion ID, copy and paste it into the corresponding field in your Astronomer UI. You can now enable the pipeline and watch your data flow into AdWords!
+
+#### Event Mapping to Adwords
+
+In you Astronomer UI, you'll need to map your conversion `track` events to your Adwords `google_conversion_label`s. To do this, enter the name of your track event **exactly** as you've named it in the left hand column and the corresponding `google_conversion_label` from  your Adwords conversion event in the right hand column. For more information on where to find your `google_Converion_id` and  `google_conversion_label`, check out [this forum](https://www.en.advertisercommunity.com/t5/AdWords-Tracking-and-Reporting/Find-conversion-ID-and-Conversion-label/td-p/364894#).
 
 ### Additional Features
 

@@ -20,8 +20,8 @@ npm install --save astronomer
 Initialize this package with the Source ID found in the settings section of your Astronomer account.
 
 ```js
-var analytics = import('astronomer');
-var Analytics = new analytics{'ASTRONOMER_SOURCE_ID')}
+var Analytics = import('astronomer');
+var analytics = new Analytics{'ASTRONOMER_SOURCE_ID')}
 ```
 
 #### Step 3

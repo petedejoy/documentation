@@ -5,7 +5,7 @@ sidebar: platform_sidebar
 
 ## Node.js
 
-This library lets you record all analytics data from your node code. You can check out it's open source code [here](https://github.com/segmentio/analytics-node).You can use this library in your web server controller code. It is high-performing in that it uses an internal queue to make 'identify' and 'track' calls non-blocking and fast. It also batches messages and flushes asynchronously to our servers.
+This library lets you record all analytics data from your node code. You can check out it's open source code [here](https://github.com/astronomerio/analytics-node). You can use this library in your web server controller code. It is high-performing in that it uses an internal queue to make `identify` and `track` calls non-blocking and fast. It also batches messages and flushes asynchronously to our servers.
 
 ### Getting Started with Node.js
 
@@ -37,38 +37,28 @@ Check out our [Calls](../calls.md) section for information on when you should us
 #### Identify
 
 ```js
-{
-  "codes": [
-    {
-      "code": "analytics.identify({
-          \n  userId: '1234qwerty',
-          \n  traits: {
-              \n    name: 'Arthur Dent',
-              \n    email: 'earthling1@hitchhikersguide.com',
-              \n    hasTowel: True,\n  }\n});",
-      "language": "javascript"
-    }
-  ]
-}
+analytics.identify({
+  userId: '1234qwerty',
+  traits: {
+    name: 'Arthur Dent',
+    email: 'earthling1@hitchhikersguide.com',
+    hasTowel: True
+  }
+});
 ```
 
 #### Track
 
 ```js
-{
-  "codes": [
-    {
-      "code": "analytics.track({
-          \n  userId: '1234qwerty',
-          \n  event: 'Added File',
-          \n  properties: {
-              \n    fileTitle: 'Life, the Universe, and Everything',
-              \n    fileSize: '42kb',
-              \n    fileType: 'PDF'\n  }\n});",
-      "language": "javascript"
-    }
-  ]
-}
+analytics.track({
+  userId: '1234qwerty',
+  event: 'Added File',
+  properties: {
+    fileTitle: 'Life, the Universe, and Everything',
+    fileSize: '42kb',
+    fileType: 'PDF'
+  }
+});
 ```
 
 #### Page

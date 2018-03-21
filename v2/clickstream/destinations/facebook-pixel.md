@@ -33,6 +33,8 @@ Once that's set up, identify your unique `pixelId`, a 15 digit number that uniqu
 
 Put your Facebook Pixel ID into your Astronomer account and give your new connection a unique name.
 
+With that, just click `Save` to activate your pipeline.
+
 ### Additional Features
 
 **Standard Events**
@@ -49,4 +51,9 @@ If you are using the Facebook Pixel integration as a replacement for Conversion 
 
 ![facebook-pixel4](../../../images/facebook-pixel4.png)
 
-With that, just click `Save` to activate your pipeline.
+**Send all Events as Single Events** 
+
+Enabling this will force FB Pixel events triggered by Astronomer to fire in trackSingle/trackSingleCustom mode to prevent them from going to other FB Pixels loaded on the page. This is helpful if there are different team managing their own pixel, or if you have installed analytics.js on a site with an existing pixel.
+
+You can find out more about the specific use-case and benefits from this [Facebook Developers article](https://developers.facebook.com/ads/blog/post/2017/11/28/event-tracking-with-multiple-pixels-tracksingle/)
+

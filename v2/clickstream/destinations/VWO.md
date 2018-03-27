@@ -19,36 +19,13 @@ Since VWO loads data synchronously, we can't add their JavaScript snippet for yo
 
 ### VWO Side
 
-To get started, you'll need to add the VWO JavaScript snippet to the pages that you want to track. You can check out their docs on how to do that [here](https://vwo.com/knowledge/add-vwo-smartcode-to-your-website/).  
+To get started, you'll need to add the VWO JavaScript snippet to the pages that you want to track. You can check out their docs on how to do that [here](https://vwo.com/knowledge/add-vwo-smartcode-to-your-website/). Keep in mind, they use different Javascript snippets based on if your Application is a Single-Page Application or not. Make sure you load the correct one.
+
+If you would like for analytics.js to manage the loading of the snippet for you, ensure that you have **Use Async Smart Code** enabled in your Destination settings.
 
 ### Astronomer Side
 
 Since the VWO snippet is now on your site, all you need to do is enable the VWO integration in your Astronomer UI to get started. Note that there are a few different custom metrics you can track to VWO. We have outlined how to set up those methods below.
-
-### Additional Features
-
-#### Sending Experiment Data from VWO
-
-Begin by checking the option to `Send experiment data to other tools` for either a `track` or `identify` call in your VWO UI.
-
-![vwo1](../../../images/vwo1.png)
-
-In JavaScript, a `track` call that sends experiment data to another tool will look like this:
-```
-analytics.track('Experiment Viewed', {
-    experiment_id: 'Astro-home-page-title-1`
-    variation_name: 'Stop wondering what your users want.'
-});
-```
-
-#### Sending Revenue Data from VWO
-
-You can send revenue data from VWO as a `track` event. You would do this with the following example code:
-```
-analytics.track('Order Completed'. {
-        total: 100  
-});
-```
 
 ## Settings
 
@@ -56,6 +33,20 @@ analytics.track('Order Completed'. {
 Inside the Destination's Connection, add your VWO account ID in order to fetch your VWO async smart code.
 
 This setting is only effective if *Use Async Smart Code* is set to `true`.
+
+#### Send Experiment Data to other Destinations (as Track)
+If enabled, analytics.js will fire a `track` event for other destinations when a page is loaded with an active VWO Experiment.
+
+It will automatically do the same as if you programed the following code below in your application
+```
+analytics.track('Experiment Viewed', {
+    experiment_id: 'Astro-home-page-title-1`
+    variation_name: 'Stop wondering what your users want.'
+});
+```
+
+#### Send Experiment Data to other Destinations (as Identify)
+Akin to the above setting, enabling this option will have analytics.js fire an `identify` event for other destinations when a page is loaded with an active VWO Experiemnt.
 
 #### Library Tolerance
 The maximum amount of time (in milliseconds) to wait for VWO’s full library to be downloaded before simply displaying your original page.
@@ -74,3 +65,6 @@ If you would like to utilize VWO’s asynchronous smart code, toggle on this fea
 If your page already includes JQuery, you can set this to `true`. Otherwise, VWO will include JQuery onto the page for you. VWO needs JQuery on the page to function correctly.
 
 This setting is only effective if *Use Async Smart Code* is set to `true`.
+
+#### Single Page App Mode
+By enabling Single Page App (SPA) mode, analytics.js will load the SPA version of the VWO Async Smart Code (if that option is enabled) and will watch for new experiments that VWO loads after the app is initialized in order to trigger *Send Experiment Data to other Destinations* option correctly. By default, analytics.js will only send Experiment data to other Destinations the first time the page is loaded. However, SPA Mode will contine to watch for new Experiments and will re-trigger sending Experiment Data to other Destination on every `.page()` call. Only one "Experiment Viewed" event will be triggered per Experiment unless the user reloads the page.

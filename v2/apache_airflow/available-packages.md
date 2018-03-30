@@ -13,6 +13,7 @@ The Astronomer team is happy to add additional packages you need for your workfl
 -e git+https://github.com/astronomerio/PyPardot4.git#egg=pypardot  
 
 addict==2.1.0  
+asn1crypto==0.24.0  
 avro-python3==1.8.2  
 backports.ssl-match-hostname==3.5.0.1  
 beautifulsoup4==4.6.0  
@@ -33,6 +34,7 @@ cssselect==1.0.1
 cssselect2==0.2.0  
 cycler==0.10.0  
 datadog==0.19.0  
+dbt==0.10.0  
 decorator==4.1.2  
 docker-py==1.8.1  
 docutils==0.14  
@@ -44,6 +46,7 @@ google-api-core==0.1.4
 google-api-python-client==1.6.5  
 google-cloud==0.30.0  
 googleads==8.1.0  
+gspread==2.0.0  
 html5lib==0.999999999  
 http-parser==0.8.3  
 httplib2==0.10.3  
@@ -62,9 +65,10 @@ numpy==1.13.1
 oauth2client==4.1.2  
 olefile==0.44  
 openpyxl==2.4.8  
-oauth2==1.9.0.post1  
+oauth2==1.9.0.post1    
 pandas-gbq==0.2.1  
 paramiko==2.4.0  
+parsedatetime==2.4.0  
 Pillow==4.2.1  
 plotly==2.0.15  
 pyasn1==0.3.4  
@@ -89,17 +93,19 @@ rsa==3.4.2
 s3transfer==0.1.11  
 scikit-learn==0.19.1  
 scipy==0.19.1  
+simple-salesforce==0.73.0  
 singer-python==5.0.12  
 six==1.10.0  
 sklearn-pandas==1.6.0  
 slackclient==1.0.7  
 smart_open==1.5.5  
+snowflake-connector-python==1.5.5  
 stripe==1.79.1  
 suds-jurko==0.6  
 tap-github==0.2.3  
 tap-fixerio==0.1.2  
 target-csv==0.2.4  
-target-gsheet==0.2.5   
+target-gsheet==0.2.5  
 target-json==0.0.11  
 target-s3==0.1.0  
 tinycss==0.4  
@@ -111,4 +117,4 @@ uritemplate==3.0.0
 urllib3==1.22  
 WeasyPrint==0.40  
 webencodings==0.5.1  
-websocket-client==0.44.0  
+websocket-client==0.44.0   

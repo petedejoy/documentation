@@ -56,8 +56,9 @@ ipython-genutils==0.2.0
 jmespath==0.9.3  
 jsonschema==2.6.0  
 jupyter-core==4.3.0  
+kaggle==1.1.0    
 lxml==3.8.0  
-marshmallow==2.13.6  
+marshmallow==2.13.6   
 matplotlib==2.0.2  
 nbformat==4.4.0  
 nose2==0.6.5  

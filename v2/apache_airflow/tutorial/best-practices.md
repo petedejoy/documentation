@@ -59,6 +59,16 @@ For more details, please visit: https://docs.aws.amazon.com/AmazonS3/latest/dev/
 
 Depending on your data retention policy you could modify the load logic and re-run the entire historical pipeline without having to re-run the extracts. This is also useful in situations where you no longer have access to the source system (i.e. hit an API limit).
 
+### Use Template Fields when writing custom hooks and operators
+
+Specifying that a field is templatable allows for it to be set by using environment variables using jinja templating.
+
+For example, the `s3_key` and `since` and `until` fields are set as `template_fields` here:
+ https://github.com/airflow-plugins/google_analytics_plugin/blob/master/operators/google_analytics_reporting_to_s3_operator.py#L41
+
+ This allows for these values to be dynamically set by the `schedule_interval`.
+
+
 ### depends_on_past and wait_for_downstream can be used for added safety
 `depends_on_past` and `wait_for_downstream` are set at the DAG level, but filters down to tasks. If `depends_on_past` is set to `true`, the previously scheduled task instance needs to have succeeded before the next task instance will be scheduled (assuming all dependencies are met). Additionally, if `wait_for_downstream` is set to `true`, a task will wait for all tasks downstream of the previously scheduled task to finish before being scheduled.
 

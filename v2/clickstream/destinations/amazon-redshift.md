@@ -79,6 +79,8 @@ CREATE USER astronomer PASSWORD "<enter password here>";
 GRANT CREATE ON DATABASE "<enter database name here>" TO "astronomer";
 ```
 
+**Note: Because we do not persist or store your data, Astronomer will be unable to recover any events lost due to improper Redshift credentials or configuration by the user.**
+
 ### Configure Security Groups
 Redshift clusters can either be in a EC2 Classic subnet or VPC subnet
 

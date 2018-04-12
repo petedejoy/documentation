@@ -58,7 +58,7 @@ For example, a simple `identify` looks something like this:
 ```
 analytics.identify('123456', {
   name: 'Dagny',
-  email: 'dagny@astronomer.io}'
+  email: 'dagny@astronomer.io'
   role: 'buyer'
 });
 ```

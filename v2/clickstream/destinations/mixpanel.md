@@ -66,4 +66,7 @@ On top of our standard calls, you're free to do a few extra things with our Mixp
     * `Add Cross Subdomain Cookie` - Allows Mixpanel cookiec to be read across all subdomains.
     * `Secure Cookie` - This marks the Mixpanel cookie as `secure`, meaning that this cookie will only be transmitted over https.
     * `Persistence Cookie` - This allows the Mixpanel cookie to persist between two separate pages of your application.
+
+- Geolocation
+    * To stop geolocation from occuring based on the IP of your server side calls, add `ignoreIp: true` to the context of your `identify`, `track`, and `alias` calls. This will prevent ip and location from being updated in Mixpanel.
   

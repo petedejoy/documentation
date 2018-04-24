@@ -20,9 +20,7 @@ To provision an instance, go right ahead to the Airflow tab on the left side bar
 
 ## 3. Input your Billing Information
 
-If you've reached out to our sales team to access our Airflow beta program, you should have received an upgrade code.
-
-If you haven't been in touch with our team, reach out to R. Brad Kirn at brad@astronomer.io. He'll get you set up. 
+You'll now be prompted to input your billing information. Don't worry, you won't be charged until you select a plan and actually provision your Airflow instance. 
 
 ![airflow-signup3.1](../../../images/airflow-billing-info.png)
 

@@ -18,16 +18,19 @@ To provision an instance, go right ahead to the Airflow tab on the left side bar
 
 ![airflow-signup2.1](../../../images/airflow-signup2.1.png) 
 
-## 3. Enter your Upgrade Code
+## 3. Input your Billing Information
 
 If you've reached out to our sales team to access our Airflow beta program, you should have received an upgrade code.
 
 If you haven't been in touch with our team, reach out to R. Brad Kirn at brad@astronomer.io. He'll get you set up. 
 
-![airflow-signup3.1](../../../images/airflow-signup3.1.png)
+![airflow-signup3.1](../../../images/airflow-billing-info.png)
 
+## 4. Select A Plan
 
-## 4. Provision an Airflow Instance
+Next, you'll be prompted to select a specific Airflow plan. You can view our plans and how they are priced on our [Airflow Pricing Page](https://astronomer.io/pricing-airflow/)
+
+## 5. Provision an Airflow Instance
 
 Now that you've made it in, go ahead and create your own private Apache Airflow Webserver and Scheduler.
 

@@ -27,6 +27,12 @@ For example, a DAG that runs hourly will have 24 runs times a day. Each DAG run 
 #### Sequence IDs
 When a last modified date is not available, a sequence or incrementing ID, can be used for incremental loads. This logic works best when the source records are only being appended to and never updated. If the source records are updated you should seek to implement a Last Modified Date in that source system and key your logic off of that. In the case of the source system not being updated, basing your incremental logic off of a sequence ID can be a sound way to filter pipeline records without a last modified date.
 
+### Limit how much data gets pulled into a task.
+Every task gets run in its own container with limited memory (based on the selected plan) in Astronomer Cloud. If the task container doesn't have enough memory for a task, it will fail with:
+`{jobs.py:2127} INFO - Task exited with return code -9`.
+
+Try to limit in memory manipulations (some packages like pandas are very memory intensive) and use intermediary data storage whenever possible.
+
 ### Intermediary Data Storage
 It can be tempting to write your DAGs so that they move data directly from your source to destination. It usually makes for less code and involves less pieces, but doing so removes your ability to re-run just the extract or load portion of the pipeline individually. By putting an intermediary storage layer such as S3 or SQL Staging tables in between your source and destination, you can separate the testing and re-running of the extract and load.
 

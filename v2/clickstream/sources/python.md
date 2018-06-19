@@ -25,10 +25,10 @@ Inside your python app, set you Source ID inside an instance of the Analytics ob
 
 ~~~ python
 import analytics
-analytics.source_id = ‘astronomer_source_id’
+analytics.app_id = ‘astronomer_source_id’
 ~~~
 
-***Note**: You can find your source_id in the settings section of your Astronomer App.*
+***Note**: You can find your astronomer_source_id in the settings section of your Astronomer App.*
 
 ### Calls in Python
 

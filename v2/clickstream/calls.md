@@ -131,7 +131,7 @@ We have reserved some properties that have semantic meanings and are handled in 
 | Property   | Type   | Description |
 | ---------- | ------ | ----------- |
 | `revenue`  | Number | The amount of revenue an event resulted in. This should be a decimal value. |
-| `currency` | Number | Currency of the revenue an event resulted in (in ISO 4127 format). We will assume USD if this is not set |
+| `currency` | String | Currency of the revenue an event resulted in (in ISO 4127 format). We will assume USD if this is not set |
 | `value`    | Number | An abstract "value" to associate with an event |
 
 ## Page

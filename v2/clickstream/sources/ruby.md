@@ -18,7 +18,7 @@ Install `astronomer` either:
 * Directly into a Gemfile
 
 ```ruby
-gem 'astronomer', '~>2.0', '>= 2.0.14'
+gem 'astronomer', :require => "segment"
 ```
 
 * Directly into environment gems
